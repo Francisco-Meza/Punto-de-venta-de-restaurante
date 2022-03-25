@@ -29,12 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.SuspendLayout();
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 40;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // FrmLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmLogin";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }
 
