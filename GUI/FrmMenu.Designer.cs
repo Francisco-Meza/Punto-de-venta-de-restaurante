@@ -91,6 +91,7 @@
             // 
             this.PanelPadre.BackColor = System.Drawing.Color.LightCyan;
             this.PanelPadre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelPadre.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.PanelPadre.Location = new System.Drawing.Point(173, 39);
             this.PanelPadre.Name = "PanelPadre";
             this.PanelPadre.Size = new System.Drawing.Size(753, 499);
@@ -145,7 +146,7 @@
             this.BtnPersonal.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPersonal.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPersonal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnPersonal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPersonal.ForeColor = System.Drawing.Color.White;
             this.BtnPersonal.Image = ((System.Drawing.Image)(resources.GetObject("BtnPersonal.Image")));
             this.BtnPersonal.ImageSize = new System.Drawing.Size(20, 20);
@@ -169,7 +170,7 @@
             this.BtnProductos.BorderSize = 1;
             this.BtnProductos.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnProductos.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnProductos.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnProductos.ForeColor = System.Drawing.Color.White;
             this.BtnProductos.Image = ((System.Drawing.Image)(resources.GetObject("BtnProductos.Image")));
             this.BtnProductos.ImageSize = new System.Drawing.Size(20, 20);
@@ -194,7 +195,7 @@
             this.BtnCajero.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnCajero.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCajero.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnCajero.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnCajero.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnCajero.ForeColor = System.Drawing.Color.White;
             this.BtnCajero.Image = ((System.Drawing.Image)(resources.GetObject("BtnCajero.Image")));
             this.BtnCajero.ImageSize = new System.Drawing.Size(20, 20);
@@ -218,7 +219,7 @@
             this.BtnPedidoDomi.BorderSize = 1;
             this.BtnPedidoDomi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPedidoDomi.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPedidoDomi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnPedidoDomi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPedidoDomi.ForeColor = System.Drawing.Color.White;
             this.BtnPedidoDomi.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidoDomi.Image")));
             this.BtnPedidoDomi.ImageSize = new System.Drawing.Size(20, 20);
@@ -243,7 +244,7 @@
             this.BtnPerfil.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPerfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPerfil.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPerfil.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnPerfil.ForeColor = System.Drawing.Color.White;
             this.BtnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("BtnPerfil.Image")));
             this.BtnPerfil.ImageSize = new System.Drawing.Size(20, 20);
@@ -267,7 +268,7 @@
             this.BtnPedidosLocal.BorderSize = 1;
             this.BtnPedidosLocal.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPedidosLocal.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPedidosLocal.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnPedidosLocal.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnPedidosLocal.ForeColor = System.Drawing.Color.White;
             this.BtnPedidosLocal.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidosLocal.Image")));
             this.BtnPedidosLocal.ImageSize = new System.Drawing.Size(20, 20);
