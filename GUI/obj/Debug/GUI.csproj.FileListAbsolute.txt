@@ -10,3 +10,17 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.exe
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.pdb
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe.config
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.pdb
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmLogin.resources
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
+C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
