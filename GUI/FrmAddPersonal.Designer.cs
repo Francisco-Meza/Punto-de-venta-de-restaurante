@@ -106,6 +106,7 @@
             this.TxtPuesto.Radius = 10;
             this.TxtPuesto.Size = new System.Drawing.Size(306, 30);
             this.TxtPuesto.TabIndex = 13;
+            this.TxtPuesto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPuesto_KeyPress);
             // 
             // TxtContra
             // 
@@ -157,6 +158,7 @@
             this.TxtFechaN.Radius = 10;
             this.TxtFechaN.Size = new System.Drawing.Size(306, 30);
             this.TxtFechaN.TabIndex = 10;
+            this.TxtFechaN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtFechaN_KeyPress);
             // 
             // TxtApeM
             // 
@@ -174,6 +176,7 @@
             this.TxtApeM.Radius = 10;
             this.TxtApeM.Size = new System.Drawing.Size(306, 30);
             this.TxtApeM.TabIndex = 9;
+            this.TxtApeM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // TxtApeP
             // 
@@ -191,6 +194,7 @@
             this.TxtApeP.Radius = 10;
             this.TxtApeP.Size = new System.Drawing.Size(306, 30);
             this.TxtApeP.TabIndex = 8;
+            this.TxtApeP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // TxtNombreP
             // 
@@ -208,6 +212,7 @@
             this.TxtNombreP.Radius = 10;
             this.TxtNombreP.Size = new System.Drawing.Size(306, 30);
             this.TxtNombreP.TabIndex = 7;
+            this.TxtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // gunaLabel8
             // 

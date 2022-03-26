@@ -83,6 +83,7 @@
             this.TxtCorreo.Radius = 10;
             this.TxtCorreo.Size = new System.Drawing.Size(306, 30);
             this.TxtCorreo.TabIndex = 11;
+            this.TxtCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCorreo_KeyPress);
             // 
             // TxtApeM
             // 
@@ -100,6 +101,7 @@
             this.TxtApeM.Radius = 10;
             this.TxtApeM.Size = new System.Drawing.Size(306, 30);
             this.TxtApeM.TabIndex = 9;
+            this.TxtApeM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // TxtApeP
             // 
@@ -117,6 +119,7 @@
             this.TxtApeP.Radius = 10;
             this.TxtApeP.Size = new System.Drawing.Size(306, 30);
             this.TxtApeP.TabIndex = 8;
+            this.TxtApeP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // TxtNombreP
             // 
@@ -134,6 +137,7 @@
             this.TxtNombreP.Radius = 10;
             this.TxtNombreP.Size = new System.Drawing.Size(306, 30);
             this.TxtNombreP.TabIndex = 7;
+            this.TxtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // gunaLabel6
             // 
