@@ -43,12 +43,12 @@
             this.BtnPersonal = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.PanelBarra = new Guna.UI.WinForms.GunaPanel();
+            this.IconMaximizar = new FontAwesome.Sharp.IconButton();
+            this.IconRestaurar = new FontAwesome.Sharp.IconButton();
+            this.IconMinimizar = new FontAwesome.Sharp.IconButton();
+            this.IconCerrar = new FontAwesome.Sharp.IconButton();
             this.PanelBarraInferior = new Guna.UI.WinForms.GunaPanel();
             this.PanelPadre = new Guna.UI.WinForms.GunaPanel();
-            this.IconCerrar = new FontAwesome.Sharp.IconButton();
-            this.IconMinimizar = new FontAwesome.Sharp.IconButton();
-            this.IconRestaurar = new FontAwesome.Sharp.IconButton();
-            this.IconMaximizar = new FontAwesome.Sharp.IconButton();
             this.PanelMenu.SuspendLayout();
             this.gunaPanel4.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
@@ -94,7 +94,7 @@
             this.BtnPedidosLocal.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPedidosLocal.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPedidosLocal.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnPedidosLocal.ForeColor = System.Drawing.Color.White;
+            this.BtnPedidosLocal.ForeColor = System.Drawing.Color.Black;
             this.BtnPedidosLocal.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidosLocal.Image")));
             this.BtnPedidosLocal.ImageSize = new System.Drawing.Size(20, 20);
             this.BtnPedidosLocal.Location = new System.Drawing.Point(0, 48);
@@ -119,7 +119,7 @@
             this.BtnPerfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPerfil.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnPerfil.ForeColor = System.Drawing.Color.White;
+            this.BtnPerfil.ForeColor = System.Drawing.Color.Black;
             this.BtnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("BtnPerfil.Image")));
             this.BtnPerfil.ImageSize = new System.Drawing.Size(20, 20);
             this.BtnPerfil.Location = new System.Drawing.Point(0, 0);
@@ -153,7 +153,7 @@
             this.BtnPedidoDomi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPedidoDomi.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPedidoDomi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPedidoDomi.ForeColor = System.Drawing.Color.White;
+            this.BtnPedidoDomi.ForeColor = System.Drawing.Color.Black;
             this.BtnPedidoDomi.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidoDomi.Image")));
             this.BtnPedidoDomi.ImageSize = new System.Drawing.Size(20, 20);
             this.BtnPedidoDomi.Location = new System.Drawing.Point(0, 48);
@@ -178,7 +178,7 @@
             this.BtnCajero.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCajero.FocusedColor = System.Drawing.Color.Empty;
             this.BtnCajero.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnCajero.ForeColor = System.Drawing.Color.White;
+            this.BtnCajero.ForeColor = System.Drawing.Color.Black;
             this.BtnCajero.Image = ((System.Drawing.Image)(resources.GetObject("BtnCajero.Image")));
             this.BtnCajero.ImageSize = new System.Drawing.Size(20, 20);
             this.BtnCajero.Location = new System.Drawing.Point(0, 0);
@@ -212,7 +212,7 @@
             this.BtnProductos.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnProductos.FocusedColor = System.Drawing.Color.Empty;
             this.BtnProductos.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnProductos.ForeColor = System.Drawing.Color.White;
+            this.BtnProductos.ForeColor = System.Drawing.Color.Black;
             this.BtnProductos.Image = ((System.Drawing.Image)(resources.GetObject("BtnProductos.Image")));
             this.BtnProductos.ImageSize = new System.Drawing.Size(20, 20);
             this.BtnProductos.Location = new System.Drawing.Point(0, 48);
@@ -237,7 +237,7 @@
             this.BtnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPersonal.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPersonal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPersonal.ForeColor = System.Drawing.Color.White;
+            this.BtnPersonal.ForeColor = System.Drawing.Color.Black;
             this.BtnPersonal.Image = ((System.Drawing.Image)(resources.GetObject("BtnPersonal.Image")));
             this.BtnPersonal.ImageSize = new System.Drawing.Size(20, 20);
             this.BtnPersonal.Location = new System.Drawing.Point(0, 0);
@@ -253,7 +253,8 @@
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.Green;
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.gunaPanel1.BackgroundImage = global::GUI.Properties.Resources.Captura_de_pantalla__78__removebg_preview_removebg_preview;
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
@@ -274,6 +275,66 @@
             this.PanelBarra.TabIndex = 1;
             this.PanelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarra_MouseDown);
             // 
+            // IconMaximizar
+            // 
+            this.IconMaximizar.FlatAppearance.BorderSize = 0;
+            this.IconMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IconMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.IconMaximizar.IconColor = System.Drawing.Color.Black;
+            this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconMaximizar.IconSize = 40;
+            this.IconMaximizar.Location = new System.Drawing.Point(642, 1);
+            this.IconMaximizar.Name = "IconMaximizar";
+            this.IconMaximizar.Size = new System.Drawing.Size(57, 38);
+            this.IconMaximizar.TabIndex = 0;
+            this.IconMaximizar.UseVisualStyleBackColor = true;
+            this.IconMaximizar.Click += new System.EventHandler(this.IconMaximizar_Click);
+            // 
+            // IconRestaurar
+            // 
+            this.IconRestaurar.FlatAppearance.BorderSize = 0;
+            this.IconRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IconRestaurar.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
+            this.IconRestaurar.IconColor = System.Drawing.Color.Black;
+            this.IconRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconRestaurar.IconSize = 40;
+            this.IconRestaurar.Location = new System.Drawing.Point(642, -6);
+            this.IconRestaurar.Name = "IconRestaurar";
+            this.IconRestaurar.Size = new System.Drawing.Size(56, 49);
+            this.IconRestaurar.TabIndex = 0;
+            this.IconRestaurar.UseVisualStyleBackColor = true;
+            this.IconRestaurar.Click += new System.EventHandler(this.IconRestaurar_Click);
+            // 
+            // IconMinimizar
+            // 
+            this.IconMinimizar.FlatAppearance.BorderSize = 0;
+            this.IconMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IconMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.IconMinimizar.IconColor = System.Drawing.Color.Black;
+            this.IconMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconMinimizar.IconSize = 40;
+            this.IconMinimizar.Location = new System.Drawing.Point(580, 1);
+            this.IconMinimizar.Name = "IconMinimizar";
+            this.IconMinimizar.Size = new System.Drawing.Size(56, 36);
+            this.IconMinimizar.TabIndex = 0;
+            this.IconMinimizar.UseVisualStyleBackColor = true;
+            this.IconMinimizar.Click += new System.EventHandler(this.IconMinimizar_Click);
+            // 
+            // IconCerrar
+            // 
+            this.IconCerrar.FlatAppearance.BorderSize = 0;
+            this.IconCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IconCerrar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.IconCerrar.IconColor = System.Drawing.Color.Black;
+            this.IconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconCerrar.IconSize = 40;
+            this.IconCerrar.Location = new System.Drawing.Point(697, 3);
+            this.IconCerrar.Name = "IconCerrar";
+            this.IconCerrar.Size = new System.Drawing.Size(44, 37);
+            this.IconCerrar.TabIndex = 0;
+            this.IconCerrar.UseVisualStyleBackColor = true;
+            this.IconCerrar.Click += new System.EventHandler(this.IconCerrar_Click);
+            // 
             // PanelBarraInferior
             // 
             this.PanelBarraInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
@@ -292,66 +353,6 @@
             this.PanelPadre.Name = "PanelPadre";
             this.PanelPadre.Size = new System.Drawing.Size(753, 499);
             this.PanelPadre.TabIndex = 3;
-            // 
-            // IconCerrar
-            // 
-            this.IconCerrar.FlatAppearance.BorderSize = 0;
-            this.IconCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IconCerrar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.IconCerrar.IconColor = System.Drawing.Color.Black;
-            this.IconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconCerrar.IconSize = 40;
-            this.IconCerrar.Location = new System.Drawing.Point(697, 3);
-            this.IconCerrar.Name = "IconCerrar";
-            this.IconCerrar.Size = new System.Drawing.Size(44, 37);
-            this.IconCerrar.TabIndex = 0;
-            this.IconCerrar.UseVisualStyleBackColor = true;
-            this.IconCerrar.Click += new System.EventHandler(this.IconCerrar_Click);
-            // 
-            // IconMinimizar
-            // 
-            this.IconMinimizar.FlatAppearance.BorderSize = 0;
-            this.IconMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IconMinimizar.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.IconMinimizar.IconColor = System.Drawing.Color.Black;
-            this.IconMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconMinimizar.IconSize = 40;
-            this.IconMinimizar.Location = new System.Drawing.Point(580, 1);
-            this.IconMinimizar.Name = "IconMinimizar";
-            this.IconMinimizar.Size = new System.Drawing.Size(56, 36);
-            this.IconMinimizar.TabIndex = 0;
-            this.IconMinimizar.UseVisualStyleBackColor = true;
-            this.IconMinimizar.Click += new System.EventHandler(this.IconMinimizar_Click);
-            // 
-            // IconRestaurar
-            // 
-            this.IconRestaurar.FlatAppearance.BorderSize = 0;
-            this.IconRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IconRestaurar.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
-            this.IconRestaurar.IconColor = System.Drawing.Color.Black;
-            this.IconRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconRestaurar.IconSize = 40;
-            this.IconRestaurar.Location = new System.Drawing.Point(642, -6);
-            this.IconRestaurar.Name = "IconRestaurar";
-            this.IconRestaurar.Size = new System.Drawing.Size(56, 49);
-            this.IconRestaurar.TabIndex = 0;
-            this.IconRestaurar.UseVisualStyleBackColor = true;
-            this.IconRestaurar.Click += new System.EventHandler(this.IconRestaurar_Click);
-            // 
-            // IconMaximizar
-            // 
-            this.IconMaximizar.FlatAppearance.BorderSize = 0;
-            this.IconMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.IconMaximizar.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.IconMaximizar.IconColor = System.Drawing.Color.Black;
-            this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconMaximizar.IconSize = 40;
-            this.IconMaximizar.Location = new System.Drawing.Point(642, 1);
-            this.IconMaximizar.Name = "IconMaximizar";
-            this.IconMaximizar.Size = new System.Drawing.Size(57, 38);
-            this.IconMaximizar.TabIndex = 0;
-            this.IconMaximizar.UseVisualStyleBackColor = true;
-            this.IconMaximizar.Click += new System.EventHandler(this.IconMaximizar_Click);
             // 
             // FrmMenu
             // 

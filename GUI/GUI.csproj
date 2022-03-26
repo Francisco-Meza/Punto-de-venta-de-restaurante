@@ -64,12 +64,14 @@
     <Compile Include="FrmAddPersonal.Designer.cs">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
     </Compile>
+
     <Compile Include="FrmAddProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddProductos.Designer.cs">
       <DependentUpon>FrmAddProductos.cs</DependentUpon>
     </Compile>
+
     <Compile Include="FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,9 +148,11 @@
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +164,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -174,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura_de_pantalla__78_-removebg-preview-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
