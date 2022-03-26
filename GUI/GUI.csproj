@@ -82,6 +82,12 @@
     <Compile Include="FrmPedidos.Designer.cs">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTicket.Designer.cs">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDetallePedidos.resx">
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTicket.resx">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

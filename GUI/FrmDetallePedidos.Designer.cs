@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDetallePedidos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDetallePedidos));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaNumeric1 = new Guna.UI.WinForms.GunaNumeric();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
@@ -45,7 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
             this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,31 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(753, 499);
             this.gunaPanel1.TabIndex = 0;
+            // 
+            // gunaButton3
+            // 
+            this.gunaButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaButton3.AnimationSpeed = 0.03F;
+            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton3.ForeColor = System.Drawing.Color.White;
+            this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
+            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton3.Location = new System.Drawing.Point(139, 81);
+            this.gunaButton3.Name = "gunaButton3";
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton3.OnHoverImage = null;
+            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton3.Radius = 10;
+            this.gunaButton3.Size = new System.Drawing.Size(90, 28);
+            this.gunaButton3.TabIndex = 6;
+            this.gunaButton3.Text = "Editar";
             // 
             // gunaNumeric1
             // 
@@ -90,7 +115,7 @@
             this.gunaButton2.AnimationHoverSpeed = 0.07F;
             this.gunaButton2.AnimationSpeed = 0.03F;
             this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.gunaButton2.BaseColor = System.Drawing.Color.Red;
             this.gunaButton2.BorderColor = System.Drawing.Color.Black;
             this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
@@ -280,31 +305,6 @@
             this.gunaComboBox1.Radius = 10;
             this.gunaComboBox1.Size = new System.Drawing.Size(121, 28);
             this.gunaComboBox1.TabIndex = 0;
-            // 
-            // gunaButton3
-            // 
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
-            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(139, 81);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Radius = 10;
-            this.gunaButton3.Size = new System.Drawing.Size(90, 28);
-            this.gunaButton3.TabIndex = 6;
-            this.gunaButton3.Text = "Editar";
             // 
             // FrmDetallePedidos
             // 
