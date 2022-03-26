@@ -12,8 +12,10 @@ namespace GUI
 {
     public partial class FrmPedidos : Form
     {
-        public FrmPedidos()
+        private FrmMenu padreMenu;
+        public FrmPedidos(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
         }
     }

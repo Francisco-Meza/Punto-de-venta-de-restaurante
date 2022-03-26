@@ -270,6 +270,7 @@
             this.BtnPedidoDomi.Size = new System.Drawing.Size(173, 42);
             this.BtnPedidoDomi.TabIndex = 1;
             this.BtnPedidoDomi.Text = "Pedidos Domicilio";
+            this.BtnPedidoDomi.Click += new System.EventHandler(this.BtnPedidoDomi_Click);
             // 
             // BtnCajero
             // 
@@ -295,6 +296,7 @@
             this.BtnCajero.Size = new System.Drawing.Size(173, 42);
             this.BtnCajero.TabIndex = 0;
             this.BtnCajero.Text = "Cajero";
+            this.BtnCajero.Click += new System.EventHandler(this.BtnCajero_Click);
             // 
             // BtnProductos
             // 

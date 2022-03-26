@@ -75,5 +75,15 @@ namespace GUI
         {
             abrirFHijo(new FrmProductos(this));
         }
+
+        private void BtnPedidoDomi_Click(object sender, EventArgs e)
+        {
+            abrirFHijo(new FrmPedidosDomicilio(this));
+        }
+
+        private void BtnCajero_Click(object sender, EventArgs e)
+        {
+            abrirFHijo(new FrmPedidos(this));
+        }
     }
 }
