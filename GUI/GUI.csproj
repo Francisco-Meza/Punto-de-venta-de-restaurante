@@ -64,6 +64,15 @@
     <Compile Include="FrmAddPersonal.Designer.cs">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="FrmAddProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProductos.Designer.cs">
+      <DependentUpon>FrmAddProductos.cs</DependentUpon>
+    </Compile>
+>>>>>>> 7d62e73c20f2bc3b0294f60fcb29ec8ce4e3fff4
     <Compile Include="FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +109,12 @@
     <Compile Include="FrmPersonal.Designer.cs">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAddPersonal.resx">
@@ -113,6 +128,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddProductos.resx">
+      <DependentUpon>FrmAddProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +149,12 @@
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 7d62e73c20f2bc3b0294f60fcb29ec8ce4e3fff4
     <EmbeddedResource Include="FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
     </EmbeddedResource>

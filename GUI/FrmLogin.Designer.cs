@@ -60,7 +60,7 @@
             // txtUsuario
             // 
             this.txtUsuario.BaseColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderColor = System.Drawing.Color.Silver;
+            this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.FocusedBaseColor = System.Drawing.Color.White;
             this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -88,7 +88,7 @@
             // txtContrasena
             // 
             this.txtContrasena.BaseColor = System.Drawing.Color.White;
-            this.txtContrasena.BorderColor = System.Drawing.Color.Silver;
+            this.txtContrasena.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.txtContrasena.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtContrasena.FocusedBaseColor = System.Drawing.Color.White;
             this.txtContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
