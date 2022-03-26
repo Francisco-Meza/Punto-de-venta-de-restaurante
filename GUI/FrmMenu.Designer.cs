@@ -71,7 +71,7 @@
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(173, 557);
+            this.PanelMenu.Size = new System.Drawing.Size(193, 600);
             this.PanelMenu.TabIndex = 0;
             // 
             // gunaPanel4
@@ -80,7 +80,7 @@
             this.gunaPanel4.Controls.Add(this.BtnPerfil);
             this.gunaPanel4.Location = new System.Drawing.Point(0, 365);
             this.gunaPanel4.Name = "gunaPanel4";
-            this.gunaPanel4.Size = new System.Drawing.Size(173, 100);
+            this.gunaPanel4.Size = new System.Drawing.Size(193, 100);
             this.gunaPanel4.TabIndex = 3;
             // 
             // gunaPanel3
@@ -89,7 +89,7 @@
             this.gunaPanel3.Controls.Add(this.BtnCajero);
             this.gunaPanel3.Location = new System.Drawing.Point(3, 269);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(173, 98);
+            this.gunaPanel3.Size = new System.Drawing.Size(190, 98);
             this.gunaPanel3.TabIndex = 2;
             // 
             // gunaPanel2
@@ -98,7 +98,7 @@
             this.gunaPanel2.Controls.Add(this.BtnPersonal);
             this.gunaPanel2.Location = new System.Drawing.Point(0, 173);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(173, 98);
+            this.gunaPanel2.Size = new System.Drawing.Size(195, 98);
             this.gunaPanel2.TabIndex = 1;
             // 
             // PanelBarra
@@ -109,9 +109,9 @@
             this.PanelBarra.Controls.Add(this.IconMinimizar);
             this.PanelBarra.Controls.Add(this.IconCerrar);
             this.PanelBarra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBarra.Location = new System.Drawing.Point(173, 0);
+            this.PanelBarra.Location = new System.Drawing.Point(193, 0);
             this.PanelBarra.Name = "PanelBarra";
-            this.PanelBarra.Size = new System.Drawing.Size(753, 39);
+            this.PanelBarra.Size = new System.Drawing.Size(757, 39);
             this.PanelBarra.TabIndex = 1;
             this.PanelBarra.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarra_MouseDown);
             // 
@@ -119,9 +119,9 @@
             // 
             this.PanelBarraInferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.PanelBarraInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelBarraInferior.Location = new System.Drawing.Point(173, 538);
+            this.PanelBarraInferior.Location = new System.Drawing.Point(193, 581);
             this.PanelBarraInferior.Name = "PanelBarraInferior";
-            this.PanelBarraInferior.Size = new System.Drawing.Size(753, 19);
+            this.PanelBarraInferior.Size = new System.Drawing.Size(757, 19);
             this.PanelBarraInferior.TabIndex = 2;
             // 
             // PanelPadre
@@ -129,9 +129,9 @@
             this.PanelPadre.BackColor = System.Drawing.Color.LightCyan;
             this.PanelPadre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPadre.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.PanelPadre.Location = new System.Drawing.Point(173, 39);
+            this.PanelPadre.Location = new System.Drawing.Point(193, 39);
             this.PanelPadre.Name = "PanelPadre";
-            this.PanelPadre.Size = new System.Drawing.Size(753, 499);
+            this.PanelPadre.Size = new System.Drawing.Size(757, 542);
             this.PanelPadre.TabIndex = 3;
             // 
             // IconMaximizar
@@ -143,7 +143,7 @@
             this.IconMaximizar.IconColor = System.Drawing.Color.Black;
             this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMaximizar.IconSize = 40;
-            this.IconMaximizar.Location = new System.Drawing.Point(642, 0);
+            this.IconMaximizar.Location = new System.Drawing.Point(646, 0);
             this.IconMaximizar.Name = "IconMaximizar";
             this.IconMaximizar.Size = new System.Drawing.Size(57, 40);
             this.IconMaximizar.TabIndex = 0;
@@ -159,7 +159,7 @@
             this.IconRestaurar.IconColor = System.Drawing.Color.Black;
             this.IconRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconRestaurar.IconSize = 40;
-            this.IconRestaurar.Location = new System.Drawing.Point(642, -6);
+            this.IconRestaurar.Location = new System.Drawing.Point(646, -6);
             this.IconRestaurar.Name = "IconRestaurar";
             this.IconRestaurar.Size = new System.Drawing.Size(56, 49);
             this.IconRestaurar.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.IconMinimizar.IconColor = System.Drawing.Color.Black;
             this.IconMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMinimizar.IconSize = 40;
-            this.IconMinimizar.Location = new System.Drawing.Point(580, 1);
+            this.IconMinimizar.Location = new System.Drawing.Point(584, 1);
             this.IconMinimizar.Name = "IconMinimizar";
             this.IconMinimizar.Size = new System.Drawing.Size(56, 36);
             this.IconMinimizar.TabIndex = 0;
@@ -191,7 +191,7 @@
             this.IconCerrar.IconColor = System.Drawing.Color.Black;
             this.IconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconCerrar.IconSize = 40;
-            this.IconCerrar.Location = new System.Drawing.Point(697, 3);
+            this.IconCerrar.Location = new System.Drawing.Point(701, 3);
             this.IconCerrar.Name = "IconCerrar";
             this.IconCerrar.Size = new System.Drawing.Size(44, 37);
             this.IconCerrar.TabIndex = 0;
@@ -218,7 +218,7 @@
             this.BtnPedidosLocal.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPedidosLocal.OnHoverImage = null;
             this.BtnPedidosLocal.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPedidosLocal.Size = new System.Drawing.Size(176, 42);
+            this.BtnPedidosLocal.Size = new System.Drawing.Size(193, 42);
             this.BtnPedidosLocal.TabIndex = 1;
             this.BtnPedidosLocal.Text = "Pedidos Local";
             this.BtnPedidosLocal.Click += new System.EventHandler(this.BtnPedidosLocal_Click);
@@ -244,7 +244,7 @@
             this.BtnPerfil.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPerfil.OnHoverImage = null;
             this.BtnPerfil.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPerfil.Size = new System.Drawing.Size(173, 42);
+            this.BtnPerfil.Size = new System.Drawing.Size(193, 42);
             this.BtnPerfil.TabIndex = 0;
             this.BtnPerfil.Text = "Perfil";
             // 
@@ -257,7 +257,7 @@
             this.BtnPedidoDomi.BorderSize = 1;
             this.BtnPedidoDomi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnPedidoDomi.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPedidoDomi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPedidoDomi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPedidoDomi.ForeColor = System.Drawing.Color.Black;
             this.BtnPedidoDomi.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidoDomi.Image")));
             this.BtnPedidoDomi.ImageSize = new System.Drawing.Size(20, 20);
@@ -268,7 +268,7 @@
             this.BtnPedidoDomi.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPedidoDomi.OnHoverImage = null;
             this.BtnPedidoDomi.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPedidoDomi.Size = new System.Drawing.Size(173, 42);
+            this.BtnPedidoDomi.Size = new System.Drawing.Size(192, 42);
             this.BtnPedidoDomi.TabIndex = 1;
             this.BtnPedidoDomi.Text = "Pedidos Domicilio";
             this.BtnPedidoDomi.Click += new System.EventHandler(this.BtnPedidoDomi_Click);
@@ -294,7 +294,7 @@
             this.BtnCajero.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnCajero.OnHoverImage = null;
             this.BtnCajero.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnCajero.Size = new System.Drawing.Size(173, 42);
+            this.BtnCajero.Size = new System.Drawing.Size(190, 42);
             this.BtnCajero.TabIndex = 0;
             this.BtnCajero.Text = "Cajero";
             this.BtnCajero.Click += new System.EventHandler(this.BtnCajero_Click);
@@ -319,7 +319,7 @@
             this.BtnProductos.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnProductos.OnHoverImage = null;
             this.BtnProductos.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnProductos.Size = new System.Drawing.Size(176, 42);
+            this.BtnProductos.Size = new System.Drawing.Size(195, 42);
             this.BtnProductos.TabIndex = 1;
             this.BtnProductos.Text = "Productos";
             this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
@@ -345,7 +345,7 @@
             this.BtnPersonal.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPersonal.OnHoverImage = null;
             this.BtnPersonal.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPersonal.Size = new System.Drawing.Size(173, 42);
+            this.BtnPersonal.Size = new System.Drawing.Size(195, 42);
             this.BtnPersonal.TabIndex = 0;
             this.BtnPersonal.Text = "Personal";
             this.BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
@@ -357,14 +357,14 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(173, 167);
+            this.gunaPanel1.Size = new System.Drawing.Size(193, 167);
             this.gunaPanel1.TabIndex = 0;
             // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 557);
+            this.ClientSize = new System.Drawing.Size(950, 600);
             this.Controls.Add(this.PanelPadre);
             this.Controls.Add(this.PanelBarraInferior);
             this.Controls.Add(this.PanelBarra);

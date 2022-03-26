@@ -19,7 +19,7 @@ namespace GUI
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
     }
 }
