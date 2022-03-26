@@ -32,35 +32,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
-            this.BtnCerrar = new FontAwesome.Sharp.IconButton();
             this.dgvListaPedidos = new Guna.UI.WinForms.GunaDataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.btnEditar = new Guna.UI.WinForms.GunaButton();
             this.btnAgregar = new Guna.UI.WinForms.GunaButton();
+            this.BtnCerrar = new FontAwesome.Sharp.IconButton();
             this.columnIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdClasificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnConsistencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnCerrar.FlatAppearance.BorderSize = 0;
-            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.BtnCerrar.IconColor = System.Drawing.Color.Black;
-            this.BtnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnCerrar.IconSize = 35;
-            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrar.Location = new System.Drawing.Point(659, 15);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(40, 30);
-            this.BtnCerrar.TabIndex = 9;
-            this.BtnCerrar.UseVisualStyleBackColor = true;
             // 
             // dgvListaPedidos
             // 
@@ -88,7 +71,6 @@
             this.columnIdProducto,
             this.columnDescripcion,
             this.columnIdClasificacion,
-            this.ColumnConsistencia,
             this.ColumnPrecio});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
@@ -221,6 +203,22 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrar.FlatAppearance.BorderSize = 0;
+            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.BtnCerrar.IconColor = System.Drawing.Color.Black;
+            this.BtnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCerrar.IconSize = 35;
+            this.BtnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrar.Location = new System.Drawing.Point(659, 15);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(40, 30);
+            this.BtnCerrar.TabIndex = 9;
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            // 
             // columnIdProducto
             // 
             this.columnIdProducto.HeaderText = "Producto";
@@ -238,12 +236,6 @@
             this.columnIdClasificacion.HeaderText = "Clasificacion";
             this.columnIdClasificacion.Name = "columnIdClasificacion";
             this.columnIdClasificacion.ReadOnly = true;
-            // 
-            // ColumnConsistencia
-            // 
-            this.ColumnConsistencia.HeaderText = "Consistencia";
-            this.ColumnConsistencia.Name = "ColumnConsistencia";
-            this.ColumnConsistencia.ReadOnly = true;
             // 
             // ColumnPrecio
             // 
@@ -277,13 +269,12 @@
         private FontAwesome.Sharp.IconButton BtnCerrar;
         private Guna.UI.WinForms.GunaDataGridView dgvListaPedidos;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnDescripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdClasificacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnConsistencia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrecio;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton btnEditar;
         private Guna.UI.WinForms.GunaButton btnAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnDescripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdClasificacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrecio;
     }
 }

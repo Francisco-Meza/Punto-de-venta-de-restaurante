@@ -31,18 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddProductos));
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.TxtCorreo = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtFechaN = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtApeM = new Guna.UI.WinForms.GunaTextBox();
             this.TxtApeP = new Guna.UI.WinForms.GunaTextBox();
             this.TxtNombreP = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.BtnGuardar = new Guna.UI.WinForms.GunaButton();
+            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
+            this.TxtApeM = new Guna.UI.WinForms.GunaTextBox();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,12 +52,10 @@
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gunaGroupBox1.BorderSize = 1;
             this.gunaGroupBox1.Controls.Add(this.TxtCorreo);
-            this.gunaGroupBox1.Controls.Add(this.TxtFechaN);
             this.gunaGroupBox1.Controls.Add(this.TxtApeM);
             this.gunaGroupBox1.Controls.Add(this.TxtApeP);
             this.gunaGroupBox1.Controls.Add(this.TxtNombreP);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel6);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel5);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel4);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
@@ -80,46 +76,12 @@
             this.TxtCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtCorreo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreo.Location = new System.Drawing.Point(219, 221);
+            this.TxtCorreo.Location = new System.Drawing.Point(219, 220);
             this.TxtCorreo.Name = "TxtCorreo";
             this.TxtCorreo.PasswordChar = '\0';
             this.TxtCorreo.Radius = 10;
             this.TxtCorreo.Size = new System.Drawing.Size(306, 30);
             this.TxtCorreo.TabIndex = 11;
-            // 
-            // TxtFechaN
-            // 
-            this.TxtFechaN.BackColor = System.Drawing.Color.Transparent;
-            this.TxtFechaN.BaseColor = System.Drawing.Color.White;
-            this.TxtFechaN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtFechaN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtFechaN.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtFechaN.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TxtFechaN.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtFechaN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFechaN.Location = new System.Drawing.Point(220, 168);
-            this.TxtFechaN.Name = "TxtFechaN";
-            this.TxtFechaN.PasswordChar = '\0';
-            this.TxtFechaN.Radius = 10;
-            this.TxtFechaN.Size = new System.Drawing.Size(306, 30);
-            this.TxtFechaN.TabIndex = 10;
-            // 
-            // TxtApeM
-            // 
-            this.TxtApeM.BackColor = System.Drawing.Color.Transparent;
-            this.TxtApeM.BaseColor = System.Drawing.Color.White;
-            this.TxtApeM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtApeM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtApeM.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtApeM.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TxtApeM.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtApeM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApeM.Location = new System.Drawing.Point(219, 118);
-            this.TxtApeM.Name = "TxtApeM";
-            this.TxtApeM.PasswordChar = '\0';
-            this.TxtApeM.Radius = 10;
-            this.TxtApeM.Size = new System.Drawing.Size(306, 30);
-            this.TxtApeM.TabIndex = 9;
             // 
             // TxtApeP
             // 
@@ -159,27 +121,17 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(73, 221);
+            this.gunaLabel6.Location = new System.Drawing.Point(73, 220);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(56, 20);
             this.gunaLabel6.TabIndex = 4;
             this.gunaLabel6.Text = "Precio";
             // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(52, 168);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(102, 20);
-            this.gunaLabel5.TabIndex = 3;
-            this.gunaLabel5.Text = "Consistencia";
-            // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(58, 118);
+            this.gunaLabel4.Location = new System.Drawing.Point(61, 142);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(103, 20);
             this.gunaLabel4.TabIndex = 2;
@@ -215,22 +167,6 @@
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "Añadir productos";
             // 
-            // BtnCerrarHijo
-            // 
-            this.BtnCerrarHijo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
-            this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
-            this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnCerrarHijo.IconSize = 40;
-            this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(681, 6);
-            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
-            this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
-            this.BtnCerrarHijo.TabIndex = 7;
-            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
-            // 
             // BtnGuardar
             // 
             this.BtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -259,6 +195,39 @@
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // BtnCerrarHijo
+            // 
+            this.BtnCerrarHijo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
+            this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCerrarHijo.IconSize = 40;
+            this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(681, 6);
+            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
+            this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
+            this.BtnCerrarHijo.TabIndex = 7;
+            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            // 
+            // TxtApeM
+            // 
+            this.TxtApeM.BackColor = System.Drawing.Color.Transparent;
+            this.TxtApeM.BaseColor = System.Drawing.Color.White;
+            this.TxtApeM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtApeM.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtApeM.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtApeM.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtApeM.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtApeM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtApeM.Location = new System.Drawing.Point(219, 142);
+            this.TxtApeM.Name = "TxtApeM";
+            this.TxtApeM.PasswordChar = '\0';
+            this.TxtApeM.Radius = 10;
+            this.TxtApeM.Size = new System.Drawing.Size(306, 30);
+            this.TxtApeM.TabIndex = 9;
+            // 
             // FrmAddProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,17 +252,15 @@
 
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private Guna.UI.WinForms.GunaTextBox TxtCorreo;
-        private Guna.UI.WinForms.GunaTextBox TxtFechaN;
-        private Guna.UI.WinForms.GunaTextBox TxtApeM;
         private Guna.UI.WinForms.GunaTextBox TxtApeP;
         private Guna.UI.WinForms.GunaTextBox TxtNombreP;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaButton BtnGuardar;
+        private Guna.UI.WinForms.GunaTextBox TxtApeM;
     }
 }
