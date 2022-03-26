@@ -52,7 +52,7 @@
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.Green;
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.gunaPanel1.Controls.Add(this.gunaPanel2);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
