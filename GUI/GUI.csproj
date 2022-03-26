@@ -58,19 +58,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="FrmAddPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddPersonal.Designer.cs">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDetallePedidos.Designer.cs">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
-
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -90,7 +88,6 @@
     <Compile Include="FrmPedidos.Designer.cs">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </Compile>
-
     <Compile Include="FrmPedidosDomicilio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,7 +104,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAddPersonal.resx">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <Compile Include="FrmTicket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,7 +115,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -129,16 +125,14 @@
     <EmbeddedResource Include="FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FrmPedidosDomicilio.resx">
       <DependentUpon>FrmPedidosDomicilio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -148,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -162,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura_de_pantalla__78_-removebg-preview-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
