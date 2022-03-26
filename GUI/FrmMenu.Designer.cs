@@ -221,6 +221,7 @@
             this.BtnPedidosLocal.Size = new System.Drawing.Size(176, 42);
             this.BtnPedidosLocal.TabIndex = 1;
             this.BtnPedidosLocal.Text = "Pedidos Local";
+            this.BtnPedidosLocal.Click += new System.EventHandler(this.BtnPedidosLocal_Click);
             // 
             // BtnPerfil
             // 

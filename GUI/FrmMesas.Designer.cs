@@ -60,6 +60,7 @@
             this.BtnMesa1.Size = new System.Drawing.Size(120, 120);
             this.BtnMesa1.TabIndex = 0;
             this.BtnMesa1.Text = "Mesa 1";
+            this.BtnMesa1.Click += new System.EventHandler(this.BtnMesa1_Click);
             // 
             // BtnMesa2
             // 
@@ -84,6 +85,7 @@
             this.BtnMesa2.Size = new System.Drawing.Size(120, 120);
             this.BtnMesa2.TabIndex = 1;
             this.BtnMesa2.Text = "Mesa 2";
+            this.BtnMesa2.Click += new System.EventHandler(this.BtnMesa2_Click);
             // 
             // BtnMesa3
             // 
@@ -108,6 +110,7 @@
             this.BtnMesa3.Size = new System.Drawing.Size(120, 120);
             this.BtnMesa3.TabIndex = 2;
             this.BtnMesa3.Text = "Mesa 3";
+            this.BtnMesa3.Click += new System.EventHandler(this.BtnMesa3_Click);
             // 
             // gunaLabel1
             // 
@@ -142,6 +145,7 @@
             this.BtnMesa4.Size = new System.Drawing.Size(120, 120);
             this.BtnMesa4.TabIndex = 4;
             this.BtnMesa4.Text = "Mesa 4";
+            this.BtnMesa4.Click += new System.EventHandler(this.BtnMesa4_Click);
             // 
             // BtnMesa5
             // 
@@ -166,6 +170,7 @@
             this.BtnMesa5.Size = new System.Drawing.Size(120, 120);
             this.BtnMesa5.TabIndex = 5;
             this.BtnMesa5.Text = "Mesa 5";
+            this.BtnMesa5.Click += new System.EventHandler(this.BtnMesa5_Click);
             // 
             // BtnCerrarHijo
             // 
