@@ -12,9 +12,21 @@ namespace GUI
 {
     public partial class FrmProductos : Form
     {
-        public FrmProductos()
+        private FrmMenu padreMenu;
+        public FrmProductos(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            padreMenu.abrirFHijo(new FrmAddProductos());
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            padreMenu.abrirFHijo(new FrmAddProductos());
         }
     }
 }
