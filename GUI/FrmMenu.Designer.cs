@@ -319,6 +319,7 @@
             this.BtnProductos.Size = new System.Drawing.Size(176, 42);
             this.BtnProductos.TabIndex = 1;
             this.BtnProductos.Text = "Productos";
+            this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
             // 
             // BtnPersonal
             // 
@@ -344,6 +345,7 @@
             this.BtnPersonal.Size = new System.Drawing.Size(173, 42);
             this.BtnPersonal.TabIndex = 0;
             this.BtnPersonal.Text = "Personal";
+            this.BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
             // 
             // gunaPanel1
             // 
