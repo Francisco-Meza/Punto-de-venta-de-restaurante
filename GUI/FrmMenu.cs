@@ -32,24 +32,20 @@ namespace GUI
         }
 
         int Lx, Ly;
+        int sw, sh;
         private void IconMaximizar_Click(object sender, EventArgs e)
         {
             Lx = this.Location.X;
             Ly = this.Location.Y;
+            sw = this.Size.Width;
+            sh = this.Size.Height;
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location=Screen.PrimaryScreen.WorkingArea.Location;
-            IconMaximizar.Visible = true;
-            IconRestaurar.Visible=false;
+            IconMaximizar.Visible = false;
+            IconRestaurar.Visible=true;
         }
 
-        private void IconRestaurar_Click(object sender, EventArgs e)
-        {
-            //this.WindowState = FormWindowState.Normal;
-            this.Size = new Size(950, 600);
-            this.Location = new Point(Lx, Ly);
-            IconRestaurar.Visible = false;
-            IconMaximizar.Visible = true;
-        }
+        
 
         private void IconMinimizar_Click(object sender, EventArgs e)
         {
@@ -86,6 +82,15 @@ namespace GUI
         private void BtnPedidoDomi_Click(object sender, EventArgs e)
         {
             abrirFHijo(new FrmPedidosDomicilio(this));
+        }
+
+        private void IconRestaurar_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(sw, sh);
+            this.Size = new Size(950, 600);
+            this.Location = new Point(Lx, Ly);
+            IconRestaurar.Visible = false;
+            IconMaximizar.Visible = true;
         }
 
         private void BtnCajero_Click(object sender, EventArgs e)

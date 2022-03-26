@@ -287,7 +287,7 @@
             this.IconMaximizar.IconColor = System.Drawing.Color.Black;
             this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMaximizar.IconSize = 40;
-            this.IconMaximizar.Location = new System.Drawing.Point(646, 0);
+            this.IconMaximizar.Location = new System.Drawing.Point(647, -1);
             this.IconMaximizar.Name = "IconMaximizar";
             this.IconMaximizar.Size = new System.Drawing.Size(57, 40);
             this.IconMaximizar.TabIndex = 0;
@@ -303,7 +303,7 @@
             this.IconRestaurar.IconColor = System.Drawing.Color.Black;
             this.IconRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconRestaurar.IconSize = 40;
-            this.IconRestaurar.Location = new System.Drawing.Point(646, -6);
+            this.IconRestaurar.Location = new System.Drawing.Point(647, -3);
             this.IconRestaurar.Name = "IconRestaurar";
             this.IconRestaurar.Size = new System.Drawing.Size(56, 49);
             this.IconRestaurar.TabIndex = 0;
