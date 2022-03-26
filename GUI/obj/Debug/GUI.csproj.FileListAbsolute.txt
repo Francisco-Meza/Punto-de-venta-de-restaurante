@@ -32,3 +32,4 @@ C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmP
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPersonal.resources
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmProductos.resources
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmTicket.resources
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMesas.resources
