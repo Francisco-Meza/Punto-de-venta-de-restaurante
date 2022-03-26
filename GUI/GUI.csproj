@@ -64,14 +64,12 @@
     <Compile Include="FrmAddPersonal.Designer.cs">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
     </Compile>
-
     <Compile Include="FrmAddProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddProductos.Designer.cs">
       <DependentUpon>FrmAddProductos.cs</DependentUpon>
     </Compile>
-
     <Compile Include="FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +87,12 @@
     </Compile>
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMesas.Designer.cs">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPedidos.cs">
       <SubType>Form</SubType>
@@ -139,6 +143,9 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMesas.resx">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,11 +155,9 @@
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
     </EmbeddedResource>

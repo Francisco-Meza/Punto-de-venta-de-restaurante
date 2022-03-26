@@ -16,5 +16,26 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
+            {
+                e.Handled = true;//-- Decimos que si se controlo el evento
+            }
+        }
+
+        private void TxtCorreo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
+            {
+                e.Handled = true;//-- Decimos que si se controlo el evento
+            }
+        }
     }
 }

@@ -12,9 +12,21 @@ namespace GUI
 {
     public partial class FrmPedidosDomicilio : Form
     {
-        public FrmPedidosDomicilio()
+        private FrmMenu padreMenu;
+        public FrmPedidosDomicilio(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
+        }
+
+        private void BtnAceptarDomicilio_Click(object sender, EventArgs e)
+        {
+            padreMenu.abrirFHijo(new FrmDetallePedidos());
+        }
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
