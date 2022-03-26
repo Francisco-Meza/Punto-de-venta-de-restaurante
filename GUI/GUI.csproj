@@ -58,19 +58,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="FrmAddPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAddPersonal.Designer.cs">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
-	</Compile>
+    </Compile>
+    <Compile Include="FrmAddProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProductos.Designer.cs">
+      <DependentUpon>FrmAddProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDetallePedidos.Designer.cs">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
-
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -90,7 +94,6 @@
     <Compile Include="FrmPedidos.Designer.cs">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </Compile>
-
     <Compile Include="FrmPedidosDomicilio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +106,17 @@
     <Compile Include="FrmPersonal.Designer.cs">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAddPersonal.resx">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <Compile Include="FrmTicket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,9 +125,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddProductos.resx">
+      <DependentUpon>FrmAddProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -129,16 +140,17 @@
     <EmbeddedResource Include="FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FrmPedidosDomicilio.resx">
       <DependentUpon>FrmPedidosDomicilio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
