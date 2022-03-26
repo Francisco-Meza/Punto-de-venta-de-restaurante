@@ -359,6 +359,7 @@
             this.PanelPadre.Name = "PanelPadre";
             this.PanelPadre.Size = new System.Drawing.Size(754, 543);
             this.PanelPadre.TabIndex = 3;
+            
             // 
             // FrmMenu
             // 

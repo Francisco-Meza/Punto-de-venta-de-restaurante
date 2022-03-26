@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PanelPrincipal = new Guna.UI.WinForms.GunaPanel();
+            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnFinalizar = new Guna.UI.WinForms.GunaButton();
             this.btnEditar = new Guna.UI.WinForms.GunaButton();
@@ -41,7 +42,6 @@
             this.columnIdPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,23 @@
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(757, 542);
             this.PanelPrincipal.TabIndex = 0;
+            // 
+            // BtnCerrarHijo
+            // 
+            this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
+            this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCerrarHijo.IconSize = 40;
+            this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(708, 3);
+            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
+            this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
+            this.BtnCerrarHijo.TabIndex = 7;
+            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
             // 
             // btnEliminar
             // 
@@ -239,27 +256,9 @@
             this.columnIdPersonal.Name = "columnIdPersonal";
             this.columnIdPersonal.ReadOnly = true;
             // 
-            // BtnCerrarHijo
-            // 
-            this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
-            this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
-            this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnCerrarHijo.IconSize = 40;
-            this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(708, 3);
-            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
-            this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
-            this.BtnCerrarHijo.TabIndex = 7;
-            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
-            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
-            // 
             // FrmPedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(757, 542);
             this.Controls.Add(this.PanelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

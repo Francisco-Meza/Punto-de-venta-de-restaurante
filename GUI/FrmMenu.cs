@@ -93,6 +93,7 @@ namespace GUI
             abrirFHijo(new FrmPedidos(this));
         }
 
+
         private void BtnPedidosLocal_Click(object sender, EventArgs e)
         {
             abrirFHijo(new FrmMesas(this));
