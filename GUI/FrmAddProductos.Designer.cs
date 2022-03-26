@@ -46,7 +46,8 @@
             // 
             // gunaGroupBox1
             // 
-            this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.LightCyan;
@@ -63,12 +64,13 @@
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox1.Location = new System.Drawing.Point(46, 93);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(680, 292);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(680, 307);
             this.gunaGroupBox1.TabIndex = 2;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
             // TxtCorreo
             // 
+            this.TxtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtCorreo.BackColor = System.Drawing.Color.Transparent;
             this.TxtCorreo.BaseColor = System.Drawing.Color.White;
             this.TxtCorreo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -87,6 +89,7 @@
             // 
             // TxtApeM
             // 
+            this.TxtApeM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtApeM.BackColor = System.Drawing.Color.Transparent;
             this.TxtApeM.BaseColor = System.Drawing.Color.White;
             this.TxtApeM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -105,6 +108,7 @@
             // 
             // TxtApeP
             // 
+            this.TxtApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtApeP.BackColor = System.Drawing.Color.Transparent;
             this.TxtApeP.BaseColor = System.Drawing.Color.White;
             this.TxtApeP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -123,6 +127,7 @@
             // 
             // TxtNombreP
             // 
+            this.TxtNombreP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtNombreP.BackColor = System.Drawing.Color.Transparent;
             this.TxtNombreP.BaseColor = System.Drawing.Color.White;
             this.TxtNombreP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -141,6 +146,7 @@
             // 
             // gunaLabel6
             // 
+            this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.Location = new System.Drawing.Point(73, 220);
@@ -151,6 +157,7 @@
             // 
             // gunaLabel4
             // 
+            this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.Location = new System.Drawing.Point(61, 142);
@@ -161,6 +168,7 @@
             // 
             // gunaLabel3
             // 
+            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(58, 72);
@@ -171,6 +179,7 @@
             // 
             // gunaLabel2
             // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(61, 18);
@@ -204,7 +213,7 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(315, 437);
+            this.BtnGuardar.Location = new System.Drawing.Point(310, 436);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -212,14 +221,14 @@
             this.BtnGuardar.OnHoverImage = null;
             this.BtnGuardar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnGuardar.Radius = 20;
-            this.BtnGuardar.Size = new System.Drawing.Size(130, 42);
+            this.BtnGuardar.Size = new System.Drawing.Size(170, 46);
             this.BtnGuardar.TabIndex = 8;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BtnCerrarHijo
             // 
-            this.BtnCerrarHijo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
             this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;

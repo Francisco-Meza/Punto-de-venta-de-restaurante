@@ -353,13 +353,15 @@
             // 
             // PanelPadre
             // 
+            this.PanelPadre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelPadre.BackColor = System.Drawing.Color.LightCyan;
             this.PanelPadre.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.PanelPadre.Location = new System.Drawing.Point(193, 37);
             this.PanelPadre.Name = "PanelPadre";
             this.PanelPadre.Size = new System.Drawing.Size(754, 543);
             this.PanelPadre.TabIndex = 3;
-            
             // 
             // FrmMenu
             // 

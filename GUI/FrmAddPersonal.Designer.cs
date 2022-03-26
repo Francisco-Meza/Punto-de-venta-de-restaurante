@@ -92,6 +92,7 @@
             // 
             // TxtPuesto
             // 
+            this.TxtPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtPuesto.BackColor = System.Drawing.Color.Transparent;
             this.TxtPuesto.BaseColor = System.Drawing.Color.White;
             this.TxtPuesto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -110,6 +111,7 @@
             // 
             // TxtContra
             // 
+            this.TxtContra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtContra.BackColor = System.Drawing.Color.Transparent;
             this.TxtContra.BaseColor = System.Drawing.Color.White;
             this.TxtContra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -127,6 +129,7 @@
             // 
             // TxtCorreo
             // 
+            this.TxtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtCorreo.BackColor = System.Drawing.Color.Transparent;
             this.TxtCorreo.BaseColor = System.Drawing.Color.White;
             this.TxtCorreo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -144,6 +147,7 @@
             // 
             // TxtFechaN
             // 
+            this.TxtFechaN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtFechaN.BackColor = System.Drawing.Color.Transparent;
             this.TxtFechaN.BaseColor = System.Drawing.Color.White;
             this.TxtFechaN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -162,6 +166,7 @@
             // 
             // TxtApeM
             // 
+            this.TxtApeM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtApeM.BackColor = System.Drawing.Color.Transparent;
             this.TxtApeM.BaseColor = System.Drawing.Color.White;
             this.TxtApeM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -180,6 +185,7 @@
             // 
             // TxtApeP
             // 
+            this.TxtApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtApeP.BackColor = System.Drawing.Color.Transparent;
             this.TxtApeP.BaseColor = System.Drawing.Color.White;
             this.TxtApeP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -198,6 +204,7 @@
             // 
             // TxtNombreP
             // 
+            this.TxtNombreP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtNombreP.BackColor = System.Drawing.Color.Transparent;
             this.TxtNombreP.BaseColor = System.Drawing.Color.White;
             this.TxtNombreP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -216,6 +223,7 @@
             // 
             // gunaLabel8
             // 
+            this.gunaLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel8.Location = new System.Drawing.Point(82, 317);
@@ -226,6 +234,7 @@
             // 
             // gunaLabel7
             // 
+            this.gunaLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.Location = new System.Drawing.Point(71, 267);
@@ -236,6 +245,7 @@
             // 
             // gunaLabel6
             // 
+            this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.Location = new System.Drawing.Point(89, 221);
@@ -246,6 +256,7 @@
             // 
             // gunaLabel5
             // 
+            this.gunaLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.Location = new System.Drawing.Point(39, 168);
@@ -256,6 +267,7 @@
             // 
             // gunaLabel4
             // 
+            this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.Location = new System.Drawing.Point(58, 118);
@@ -266,6 +278,7 @@
             // 
             // gunaLabel3
             // 
+            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(58, 72);
@@ -276,6 +289,7 @@
             // 
             // gunaLabel2
             // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(82, 18);
@@ -299,7 +313,7 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(585, 488);
+            this.BtnGuardar.Location = new System.Drawing.Point(562, 477);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;

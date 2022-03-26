@@ -76,6 +76,7 @@
             // 
             // TxtDomicilioCliente
             // 
+            this.TxtDomicilioCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtDomicilioCliente.BackColor = System.Drawing.Color.Transparent;
             this.TxtDomicilioCliente.BaseColor = System.Drawing.Color.White;
             this.TxtDomicilioCliente.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -93,6 +94,7 @@
             // 
             // TxtTelefonoCliente
             // 
+            this.TxtTelefonoCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtTelefonoCliente.BackColor = System.Drawing.Color.Transparent;
             this.TxtTelefonoCliente.BaseColor = System.Drawing.Color.White;
             this.TxtTelefonoCliente.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -110,6 +112,7 @@
             // 
             // TxtNombreCliente
             // 
+            this.TxtNombreCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtNombreCliente.BackColor = System.Drawing.Color.Transparent;
             this.TxtNombreCliente.BaseColor = System.Drawing.Color.White;
             this.TxtNombreCliente.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -127,6 +130,7 @@
             // 
             // gunaLabel4
             // 
+            this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.Location = new System.Drawing.Point(60, 245);
@@ -137,6 +141,7 @@
             // 
             // gunaLabel3
             // 
+            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(63, 137);
@@ -147,6 +152,7 @@
             // 
             // gunaLabel2
             // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(17, 34);

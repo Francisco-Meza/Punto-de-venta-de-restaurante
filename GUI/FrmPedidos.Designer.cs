@@ -101,7 +101,7 @@
             this.btnEliminar.OnHoverImage = null;
             this.btnEliminar.OnPressedColor = System.Drawing.Color.Black;
             this.btnEliminar.Radius = 20;
-            this.btnEliminar.Size = new System.Drawing.Size(120, 40);
+            this.btnEliminar.Size = new System.Drawing.Size(138, 40);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -157,7 +157,7 @@
             this.btnEditar.OnHoverImage = null;
             this.btnEditar.OnPressedColor = System.Drawing.Color.Black;
             this.btnEditar.Radius = 20;
-            this.btnEditar.Size = new System.Drawing.Size(120, 40);
+            this.btnEditar.Size = new System.Drawing.Size(145, 40);
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
