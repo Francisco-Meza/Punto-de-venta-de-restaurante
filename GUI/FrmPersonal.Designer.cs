@@ -196,7 +196,7 @@
             this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
             this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(134, 474);
+            this.BtnAgregar.Location = new System.Drawing.Point(140, 453);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -225,7 +225,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(305, 474);
+            this.BtnEditar.Location = new System.Drawing.Point(311, 453);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -233,7 +233,7 @@
             this.BtnEditar.OnHoverImage = null;
             this.BtnEditar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnEditar.Radius = 20;
-            this.BtnEditar.Size = new System.Drawing.Size(100, 40);
+            this.BtnEditar.Size = new System.Drawing.Size(115, 40);
             this.BtnEditar.TabIndex = 38;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -254,7 +254,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(483, 474);
+            this.BtnEliminar.Location = new System.Drawing.Point(487, 453);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;

@@ -22,7 +22,7 @@ namespace GUI
         private extern static void RelaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-        
+
         //--------------Eventos de minimizar,restaurar,Maximizar y cerrar------//
         private void IconCerrar_Click(object sender, EventArgs e)
         {
@@ -90,5 +90,6 @@ namespace GUI
         {
             abrirFHijo(new FrmMesas(this));
         }
+       
     }
 }

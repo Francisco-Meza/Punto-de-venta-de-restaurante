@@ -64,8 +64,7 @@
             // 
             // BtnMesa2
             // 
-            this.BtnMesa2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMesa2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnMesa2.AnimationHoverSpeed = 0.07F;
             this.BtnMesa2.AnimationSpeed = 0.03F;
             this.BtnMesa2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
