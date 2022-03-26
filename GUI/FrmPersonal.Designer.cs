@@ -57,8 +57,7 @@
             this.gunaDataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gunaDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gunaDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -98,7 +97,7 @@
             this.gunaDataGridView1.ReadOnly = true;
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(733, 320);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(729, 320);
             this.gunaDataGridView1.TabIndex = 0;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
@@ -183,9 +182,9 @@
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnAgregar.AnimationHoverSpeed = 0.07F;
-            this.BtnAgregar.AnimationSpeed = 0.03F;
+            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnAgregar.AnimationHoverSpeed = 1F;
+            this.BtnAgregar.AnimationSpeed = 1F;
             this.BtnAgregar.BackColor = System.Drawing.Color.Transparent;
             this.BtnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnAgregar.BorderColor = System.Drawing.Color.Black;
@@ -196,7 +195,7 @@
             this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
             this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(140, 453);
+            this.BtnAgregar.Location = new System.Drawing.Point(341, 454);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -212,9 +211,9 @@
             // 
             // BtnEditar
             // 
-            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnEditar.AnimationHoverSpeed = 0.07F;
-            this.BtnEditar.AnimationSpeed = 0.03F;
+            this.BtnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnEditar.AnimationHoverSpeed = 1F;
+            this.BtnEditar.AnimationSpeed = 1F;
             this.BtnEditar.BackColor = System.Drawing.Color.Transparent;
             this.BtnEditar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnEditar.BorderColor = System.Drawing.Color.Black;
@@ -225,7 +224,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(311, 453);
+            this.BtnEditar.Location = new System.Drawing.Point(476, 454);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -242,8 +241,8 @@
             // BtnEliminar
             // 
             this.BtnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnEliminar.AnimationHoverSpeed = 0.07F;
-            this.BtnEliminar.AnimationSpeed = 0.03F;
+            this.BtnEliminar.AnimationHoverSpeed = 1F;
+            this.BtnEliminar.AnimationSpeed = 1F;
             this.BtnEliminar.BackColor = System.Drawing.Color.Transparent;
             this.BtnEliminar.BaseColor = System.Drawing.Color.Red;
             this.BtnEliminar.BorderColor = System.Drawing.Color.Black;
@@ -254,7 +253,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(487, 453);
+            this.BtnEliminar.Location = new System.Drawing.Point(621, 454);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -276,7 +275,7 @@
             this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 38;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(718, 0);
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(714, 0);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(36, 39);
             this.BtnCerrarHijo.TabIndex = 5;
@@ -284,16 +283,18 @@
             // 
             // gunaPanel1
             // 
+            this.gunaPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaPanel1.Controls.Add(this.gunaDataGridView1);
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
             this.gunaPanel1.Controls.Add(this.BtnCerrarHijo);
             this.gunaPanel1.Controls.Add(this.BtnAgregar);
             this.gunaPanel1.Controls.Add(this.BtnEliminar);
             this.gunaPanel1.Controls.Add(this.BtnEditar);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(757, 542);
+            this.gunaPanel1.Size = new System.Drawing.Size(753, 543);
             this.gunaPanel1.TabIndex = 6;
             // 
             // FrmPersonal

@@ -16,6 +16,8 @@ namespace GUI
         public FrmMenu()
         {
             InitializeComponent();
+            this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
+            this.DoubleBuffered = true;
         }
         //---------------Metodo para arrastrar en form-----------------//
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -29,16 +31,22 @@ namespace GUI
             Application.Exit();
         }
 
+        int Lx, Ly;
         private void IconMaximizar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            IconRestaurar.Visible = true;
-            IconMaximizar.Visible = false;
+            Lx = this.Location.X;
+            Ly = this.Location.Y;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location=Screen.PrimaryScreen.WorkingArea.Location;
+            IconMaximizar.Visible = true;
+            IconRestaurar.Visible=false;
         }
 
         private void IconRestaurar_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            //this.WindowState = FormWindowState.Normal;
+            this.Size = new Size(950, 600);
+            this.Location = new Point(Lx, Ly);
             IconRestaurar.Visible = false;
             IconMaximizar.Visible = true;
         }
@@ -56,19 +64,18 @@ namespace GUI
         {
             abrirFHijo(new FrmPersonal(this));
         }
-        private Form frmHijo = null;
-        public void abrirFHijo(Form Hijo)
+        public void abrirFHijo(object FormHijo)
         {
-            if (frmHijo != null)
-                frmHijo.Close();
-            frmHijo = Hijo;
-            frmHijo.TopLevel = false;
-            frmHijo.FormBorderStyle = FormBorderStyle.None;
-            frmHijo.Dock = DockStyle.Fill;
-            PanelPadre.Controls.Add(frmHijo);
-            PanelPadre.Tag = frmHijo;
-            frmHijo.BringToFront();
-            frmHijo.Show();
+            
+            if (this.PanelPadre.Controls.Count > 0)
+                this.PanelPadre.Controls.RemoveAt(0);
+            Form fh = FormHijo as Form;
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;
+            this.PanelPadre.Controls.Add(fh);
+            this.PanelPadre.Tag = fh;
+            fh.Show();
         }
 
         private void BtnProductos_Click(object sender, EventArgs e)

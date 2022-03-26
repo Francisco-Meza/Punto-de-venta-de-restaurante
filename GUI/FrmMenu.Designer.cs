@@ -63,6 +63,7 @@
             // 
             // PanelMenu
             // 
+            this.PanelMenu.AutoScroll = true;
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.PanelMenu.Controls.Add(this.gunaPanel4);
             this.PanelMenu.Controls.Add(this.gunaPanel2);
@@ -260,7 +261,7 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(193, 167);
+            this.gunaPanel1.Size = new System.Drawing.Size(195, 167);
             this.gunaPanel1.TabIndex = 0;
             // 
             // PanelBarra
@@ -286,7 +287,7 @@
             this.IconMaximizar.IconColor = System.Drawing.Color.Black;
             this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMaximizar.IconSize = 40;
-            this.IconMaximizar.Location = new System.Drawing.Point(646, 3);
+            this.IconMaximizar.Location = new System.Drawing.Point(646, 0);
             this.IconMaximizar.Name = "IconMaximizar";
             this.IconMaximizar.Size = new System.Drawing.Size(57, 40);
             this.IconMaximizar.TabIndex = 0;
@@ -353,11 +354,10 @@
             // PanelPadre
             // 
             this.PanelPadre.BackColor = System.Drawing.Color.LightCyan;
-            this.PanelPadre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPadre.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.PanelPadre.Location = new System.Drawing.Point(193, 39);
+            this.PanelPadre.Location = new System.Drawing.Point(193, 37);
             this.PanelPadre.Name = "PanelPadre";
-            this.PanelPadre.Size = new System.Drawing.Size(757, 542);
+            this.PanelPadre.Size = new System.Drawing.Size(754, 543);
             this.PanelPadre.TabIndex = 3;
             // 
             // FrmMenu
@@ -370,6 +370,7 @@
             this.Controls.Add(this.PanelBarra);
             this.Controls.Add(this.PanelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "FrmMenu";
             this.Text = "FrmMenu";
             this.PanelMenu.ResumeLayout(false);
