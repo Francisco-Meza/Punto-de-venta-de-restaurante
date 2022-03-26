@@ -50,7 +50,7 @@
             this.BtnMesa1.ForeColor = System.Drawing.Color.White;
             this.BtnMesa1.Image = null;
             this.BtnMesa1.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa1.Location = new System.Drawing.Point(82, 111);
+            this.BtnMesa1.Location = new System.Drawing.Point(52, 111);
             this.BtnMesa1.Name = "BtnMesa1";
             this.BtnMesa1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -77,14 +77,14 @@
             this.BtnMesa2.ForeColor = System.Drawing.Color.White;
             this.BtnMesa2.Image = null;
             this.BtnMesa2.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa2.Location = new System.Drawing.Point(301, 111);
+            this.BtnMesa2.Location = new System.Drawing.Point(318, 111);
             this.BtnMesa2.Name = "BtnMesa2";
             this.BtnMesa2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnMesa2.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnMesa2.OnHoverImage = null;
             this.BtnMesa2.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa2.Size = new System.Drawing.Size(120, 120);
+            this.BtnMesa2.Size = new System.Drawing.Size(124, 120);
             this.BtnMesa2.TabIndex = 1;
             this.BtnMesa2.Text = "Mesa 2";
             this.BtnMesa2.Click += new System.EventHandler(this.BtnMesa2_Click);
@@ -103,7 +103,7 @@
             this.BtnMesa3.ForeColor = System.Drawing.Color.White;
             this.BtnMesa3.Image = null;
             this.BtnMesa3.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa3.Location = new System.Drawing.Point(512, 111);
+            this.BtnMesa3.Location = new System.Drawing.Point(582, 111);
             this.BtnMesa3.Name = "BtnMesa3";
             this.BtnMesa3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -139,7 +139,7 @@
             this.BtnMesa4.ForeColor = System.Drawing.Color.White;
             this.BtnMesa4.Image = null;
             this.BtnMesa4.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa4.Location = new System.Drawing.Point(188, 281);
+            this.BtnMesa4.Location = new System.Drawing.Point(166, 334);
             this.BtnMesa4.Name = "BtnMesa4";
             this.BtnMesa4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -165,7 +165,7 @@
             this.BtnMesa5.ForeColor = System.Drawing.Color.White;
             this.BtnMesa5.Image = null;
             this.BtnMesa5.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa5.Location = new System.Drawing.Point(427, 281);
+            this.BtnMesa5.Location = new System.Drawing.Point(468, 334);
             this.BtnMesa5.Name = "BtnMesa5";
             this.BtnMesa5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,7 +187,7 @@
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
             this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(706, 3);
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(710, 3);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 6;
@@ -199,7 +199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(753, 499);
+            this.ClientSize = new System.Drawing.Size(757, 542);
             this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.BtnMesa5);
             this.Controls.Add(this.BtnMesa4);

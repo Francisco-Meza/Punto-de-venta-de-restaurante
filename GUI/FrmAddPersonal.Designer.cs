@@ -86,7 +86,7 @@
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox1.Location = new System.Drawing.Point(56, 48);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(574, 369);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(578, 423);
             this.gunaGroupBox1.TabIndex = 1;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -294,7 +294,7 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(581, 434);
+            this.BtnGuardar.Location = new System.Drawing.Point(585, 488);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -317,7 +317,7 @@
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
             this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(695, 6);
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(699, 6);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 6;
@@ -329,7 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(753, 488);
+            this.ClientSize = new System.Drawing.Size(757, 542);
             this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.BtnGuardar);
             this.Controls.Add(this.gunaGroupBox1);

@@ -58,7 +58,7 @@
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(753, 499);
+            this.PanelPrincipal.Size = new System.Drawing.Size(757, 542);
             this.PanelPrincipal.TabIndex = 0;
             // 
             // btnEliminar
@@ -76,7 +76,7 @@
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(320, 407);
+            this.btnEliminar.Location = new System.Drawing.Point(322, 450);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -104,7 +104,7 @@
             this.btnFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnFinalizar.Image")));
             this.btnFinalizar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnFinalizar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnFinalizar.Location = new System.Drawing.Point(500, 407);
+            this.btnFinalizar.Location = new System.Drawing.Point(504, 450);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnFinalizar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -132,7 +132,7 @@
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(124, 407);
+            this.btnEditar.Location = new System.Drawing.Point(124, 450);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -196,7 +196,7 @@
             this.dgvListaPedidos.ReadOnly = true;
             this.dgvListaPedidos.RowHeadersVisible = false;
             this.dgvListaPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListaPedidos.Size = new System.Drawing.Size(664, 271);
+            this.dgvListaPedidos.Size = new System.Drawing.Size(668, 271);
             this.dgvListaPedidos.TabIndex = 0;
             this.dgvListaPedidos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
             this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
@@ -249,7 +249,7 @@
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
             this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(704, 3);
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(708, 3);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 7;
@@ -260,7 +260,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 499);
+            this.ClientSize = new System.Drawing.Size(757, 542);
             this.Controls.Add(this.PanelPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPedidos";
