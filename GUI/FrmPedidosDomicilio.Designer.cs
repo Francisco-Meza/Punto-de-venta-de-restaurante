@@ -46,7 +46,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(112, 40);
+            this.gunaLabel1.Location = new System.Drawing.Point(32, 19);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(139, 21);
             this.gunaLabel1.TabIndex = 0;
@@ -54,7 +54,9 @@
             // 
             // gunaGroupBox1
             // 
-            this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.LightCyan;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -197,6 +199,7 @@
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 7;
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
             // 
             // FrmPedidosDomicilio
             // 

@@ -23,5 +23,10 @@ namespace GUI
         {
             padreMenu.abrirFHijo(new FrmDetallePedidos());
         }
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

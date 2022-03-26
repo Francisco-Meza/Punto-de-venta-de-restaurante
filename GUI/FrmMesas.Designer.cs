@@ -50,7 +50,7 @@
             this.BtnMesa1.ForeColor = System.Drawing.Color.White;
             this.BtnMesa1.Image = null;
             this.BtnMesa1.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa1.Location = new System.Drawing.Point(83, 141);
+            this.BtnMesa1.Location = new System.Drawing.Point(82, 111);
             this.BtnMesa1.Name = "BtnMesa1";
             this.BtnMesa1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -64,6 +64,8 @@
             // 
             // BtnMesa2
             // 
+            this.BtnMesa2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnMesa2.AnimationHoverSpeed = 0.07F;
             this.BtnMesa2.AnimationSpeed = 0.03F;
             this.BtnMesa2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
@@ -75,7 +77,7 @@
             this.BtnMesa2.ForeColor = System.Drawing.Color.White;
             this.BtnMesa2.Image = null;
             this.BtnMesa2.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa2.Location = new System.Drawing.Point(305, 141);
+            this.BtnMesa2.Location = new System.Drawing.Point(301, 111);
             this.BtnMesa2.Name = "BtnMesa2";
             this.BtnMesa2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -89,6 +91,7 @@
             // 
             // BtnMesa3
             // 
+            this.BtnMesa3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnMesa3.AnimationHoverSpeed = 0.07F;
             this.BtnMesa3.AnimationSpeed = 0.03F;
             this.BtnMesa3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
@@ -100,7 +103,7 @@
             this.BtnMesa3.ForeColor = System.Drawing.Color.White;
             this.BtnMesa3.Image = null;
             this.BtnMesa3.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa3.Location = new System.Drawing.Point(536, 141);
+            this.BtnMesa3.Location = new System.Drawing.Point(512, 111);
             this.BtnMesa3.Name = "BtnMesa3";
             this.BtnMesa3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -116,7 +119,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 30);
+            this.gunaLabel1.Location = new System.Drawing.Point(27, 21);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(127, 21);
             this.gunaLabel1.TabIndex = 3;
@@ -124,6 +127,7 @@
             // 
             // BtnMesa4
             // 
+            this.BtnMesa4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BtnMesa4.AnimationHoverSpeed = 0.07F;
             this.BtnMesa4.AnimationSpeed = 0.03F;
             this.BtnMesa4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
@@ -135,7 +139,7 @@
             this.BtnMesa4.ForeColor = System.Drawing.Color.White;
             this.BtnMesa4.Image = null;
             this.BtnMesa4.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa4.Location = new System.Drawing.Point(195, 322);
+            this.BtnMesa4.Location = new System.Drawing.Point(188, 281);
             this.BtnMesa4.Name = "BtnMesa4";
             this.BtnMesa4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -149,6 +153,7 @@
             // 
             // BtnMesa5
             // 
+            this.BtnMesa5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnMesa5.AnimationHoverSpeed = 0.07F;
             this.BtnMesa5.AnimationSpeed = 0.03F;
             this.BtnMesa5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
@@ -160,7 +165,7 @@
             this.BtnMesa5.ForeColor = System.Drawing.Color.White;
             this.BtnMesa5.Image = null;
             this.BtnMesa5.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa5.Location = new System.Drawing.Point(441, 322);
+            this.BtnMesa5.Location = new System.Drawing.Point(427, 281);
             this.BtnMesa5.Name = "BtnMesa5";
             this.BtnMesa5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnMesa5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,6 +192,7 @@
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 6;
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
             // 
             // FrmMesas
             // 

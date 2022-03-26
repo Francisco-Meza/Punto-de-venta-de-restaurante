@@ -18,5 +18,10 @@ namespace GUI
             this.padreMenu = padreMenu;
             InitializeComponent();
         }
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
