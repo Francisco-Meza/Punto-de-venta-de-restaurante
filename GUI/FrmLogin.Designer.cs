@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.txtUsuario = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtContrasena = new Guna.UI.WinForms.GunaTextBox();
@@ -39,7 +40,6 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.BtnCerrar = new FontAwesome.Sharp.IconButton();
-            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -60,6 +60,15 @@
             this.gunaPanel1.Size = new System.Drawing.Size(182, 312);
             this.gunaPanel1.TabIndex = 1;
             // 
+            // gunaPanel2
+            // 
+            this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.gunaPanel2.BackgroundImage = global::GUI.Properties.Resources.Captura_de_pantalla__78__removebg_preview_removebg_preview;
+            this.gunaPanel2.Location = new System.Drawing.Point(3, 63);
+            this.gunaPanel2.Name = "gunaPanel2";
+            this.gunaPanel2.Size = new System.Drawing.Size(173, 182);
+            this.gunaPanel2.TabIndex = 1;
+            // 
             // txtUsuario
             // 
             this.txtUsuario.BaseColor = System.Drawing.Color.White;
@@ -69,6 +78,7 @@
             this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtUsuario.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.Color.LightGray;
             this.txtUsuario.Location = new System.Drawing.Point(272, 81);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
@@ -97,6 +107,7 @@
             this.txtContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtContrasena.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasena.ForeColor = System.Drawing.Color.LightGray;
             this.txtContrasena.Location = new System.Drawing.Point(272, 152);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '\0';
@@ -140,7 +151,7 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(232, 81);
+            this.iconPictureBox1.Location = new System.Drawing.Point(234, 81);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.TabIndex = 6;
@@ -175,15 +186,6 @@
             this.BtnCerrar.TabIndex = 8;
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            // 
-            // gunaPanel2
-            // 
-            this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.gunaPanel2.BackgroundImage = global::GUI.Properties.Resources.Captura_de_pantalla__78__removebg_preview_removebg_preview;
-            this.gunaPanel2.Location = new System.Drawing.Point(3, 63);
-            this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(173, 182);
-            this.gunaPanel2.TabIndex = 1;
             // 
             // FrmLogin
             // 
