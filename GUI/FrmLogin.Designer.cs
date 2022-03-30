@@ -40,6 +40,8 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.BtnCerrar = new FontAwesome.Sharp.IconButton();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -71,6 +73,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.BackColor = System.Drawing.Color.Transparent;
             this.txtUsuario.BaseColor = System.Drawing.Color.White;
             this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -78,21 +81,19 @@
             this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtUsuario.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.LightGray;
-            this.txtUsuario.Location = new System.Drawing.Point(272, 81);
+            this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsuario.Location = new System.Drawing.Point(268, 96);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
-            this.txtUsuario.Size = new System.Drawing.Size(307, 30);
-            this.txtUsuario.TabIndex = 2;
-            this.txtUsuario.Text = "USUARIO";
-            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
-            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
+            this.txtUsuario.Radius = 8;
+            this.txtUsuario.Size = new System.Drawing.Size(296, 30);
+            this.txtUsuario.TabIndex = 0;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(354, 18);
+            this.gunaLabel1.Location = new System.Drawing.Point(367, 13);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(77, 30);
             this.gunaLabel1.TabIndex = 3;
@@ -100,6 +101,7 @@
             // 
             // txtContrasena
             // 
+            this.txtContrasena.BackColor = System.Drawing.Color.Transparent;
             this.txtContrasena.BaseColor = System.Drawing.Color.White;
             this.txtContrasena.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.txtContrasena.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -107,15 +109,14 @@
             this.txtContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtContrasena.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.ForeColor = System.Drawing.Color.LightGray;
-            this.txtContrasena.Location = new System.Drawing.Point(272, 152);
+            this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
+            this.txtContrasena.Location = new System.Drawing.Point(269, 172);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.PasswordChar = '\0';
-            this.txtContrasena.Size = new System.Drawing.Size(307, 30);
-            this.txtContrasena.TabIndex = 4;
-            this.txtContrasena.Text = "CONTRASEÑA";
-            this.txtContrasena.Enter += new System.EventHandler(this.txtContrasena_Enter);
-            this.txtContrasena.Leave += new System.EventHandler(this.txtContrasena_Leave);
+            this.txtContrasena.PasswordChar = '●';
+            this.txtContrasena.Radius = 8;
+            this.txtContrasena.Size = new System.Drawing.Size(295, 30);
+            this.txtContrasena.TabIndex = 1;
+            this.txtContrasena.UseSystemPasswordChar = true;
             // 
             // btnAceptar
             // 
@@ -130,7 +131,7 @@
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
             this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAceptar.Location = new System.Drawing.Point(316, 227);
+            this.btnAceptar.Location = new System.Drawing.Point(336, 227);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAceptar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -139,7 +140,7 @@
             this.btnAceptar.OnPressedColor = System.Drawing.Color.Black;
             this.btnAceptar.Radius = 20;
             this.btnAceptar.Size = new System.Drawing.Size(160, 42);
-            this.btnAceptar.TabIndex = 5;
+            this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -151,7 +152,7 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(234, 81);
+            this.iconPictureBox1.Location = new System.Drawing.Point(230, 94);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox1.TabIndex = 6;
@@ -164,7 +165,7 @@
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Key;
             this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.Location = new System.Drawing.Point(234, 150);
+            this.iconPictureBox2.Location = new System.Drawing.Point(231, 170);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox2.TabIndex = 7;
@@ -187,11 +188,35 @@
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(274, 73);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(76, 20);
+            this.gunaLabel3.TabIndex = 9;
+            this.gunaLabel3.Text = "USUARIO";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(274, 149);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(107, 20);
+            this.gunaLabel2.TabIndex = 10;
+            this.gunaLabel2.Text = "CONTRASEÑA";
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 312);
+            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.iconPictureBox2);
             this.Controls.Add(this.iconPictureBox1);
@@ -223,6 +248,8 @@
         private Guna.UI.WinForms.GunaButton btnAceptar;
         private FontAwesome.Sharp.IconButton BtnCerrar;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
     }
 }
 
