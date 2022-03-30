@@ -38,15 +38,17 @@
             this.TxtApeM = new Guna.UI.WinForms.GunaTextBox();
             this.TxtApeP = new Guna.UI.WinForms.GunaTextBox();
             this.TxtNombreP = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.lblPuesto = new Guna.UI.WinForms.GunaLabel();
+            this.lblContraP = new Guna.UI.WinForms.GunaLabel();
+            this.lblCorreoP = new Guna.UI.WinForms.GunaLabel();
+            this.lblFechaNac = new Guna.UI.WinForms.GunaLabel();
+            this.lblApeM = new Guna.UI.WinForms.GunaLabel();
+            this.lblApeP = new Guna.UI.WinForms.GunaLabel();
+            this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.BtnGuardar = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
+            this.txtTelefonoPersonal = new Guna.UI.WinForms.GunaTextBox();
+            this.lblTelefonoPersonal = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +71,8 @@
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.LightCyan;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gunaGroupBox1.BorderSize = 1;
+            this.gunaGroupBox1.Controls.Add(this.lblTelefonoPersonal);
+            this.gunaGroupBox1.Controls.Add(this.txtTelefonoPersonal);
             this.gunaGroupBox1.Controls.Add(this.TxtPuesto);
             this.gunaGroupBox1.Controls.Add(this.TxtContra);
             this.gunaGroupBox1.Controls.Add(this.TxtCorreo);
@@ -76,13 +80,13 @@
             this.gunaGroupBox1.Controls.Add(this.TxtApeM);
             this.gunaGroupBox1.Controls.Add(this.TxtApeP);
             this.gunaGroupBox1.Controls.Add(this.TxtNombreP);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel8);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel7);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel6);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel5);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel4);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
+            this.gunaGroupBox1.Controls.Add(this.lblPuesto);
+            this.gunaGroupBox1.Controls.Add(this.lblContraP);
+            this.gunaGroupBox1.Controls.Add(this.lblCorreoP);
+            this.gunaGroupBox1.Controls.Add(this.lblFechaNac);
+            this.gunaGroupBox1.Controls.Add(this.lblApeM);
+            this.gunaGroupBox1.Controls.Add(this.lblApeP);
+            this.gunaGroupBox1.Controls.Add(this.lblNombre);
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox1.Location = new System.Drawing.Point(56, 48);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
@@ -101,7 +105,7 @@
             this.TxtPuesto.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtPuesto.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtPuesto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPuesto.Location = new System.Drawing.Point(219, 317);
+            this.TxtPuesto.Location = new System.Drawing.Point(220, 361);
             this.TxtPuesto.Name = "TxtPuesto";
             this.TxtPuesto.PasswordChar = '\0';
             this.TxtPuesto.Radius = 10;
@@ -120,7 +124,7 @@
             this.TxtContra.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtContra.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtContra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContra.Location = new System.Drawing.Point(219, 267);
+            this.TxtContra.Location = new System.Drawing.Point(219, 314);
             this.TxtContra.Name = "TxtContra";
             this.TxtContra.PasswordChar = '\0';
             this.TxtContra.Radius = 10;
@@ -138,7 +142,7 @@
             this.TxtCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtCorreo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreo.Location = new System.Drawing.Point(219, 221);
+            this.TxtCorreo.Location = new System.Drawing.Point(220, 262);
             this.TxtCorreo.Name = "TxtCorreo";
             this.TxtCorreo.PasswordChar = '\0';
             this.TxtCorreo.Radius = 10;
@@ -156,7 +160,7 @@
             this.TxtFechaN.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtFechaN.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtFechaN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFechaN.Location = new System.Drawing.Point(220, 168);
+            this.TxtFechaN.Location = new System.Drawing.Point(220, 171);
             this.TxtFechaN.Name = "TxtFechaN";
             this.TxtFechaN.PasswordChar = '\0';
             this.TxtFechaN.Radius = 10;
@@ -175,7 +179,7 @@
             this.TxtApeM.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtApeM.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtApeM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApeM.Location = new System.Drawing.Point(219, 118);
+            this.TxtApeM.Location = new System.Drawing.Point(219, 123);
             this.TxtApeM.Name = "TxtApeM";
             this.TxtApeM.PasswordChar = '\0';
             this.TxtApeM.Radius = 10;
@@ -194,7 +198,7 @@
             this.TxtApeP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtApeP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtApeP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApeP.Location = new System.Drawing.Point(219, 72);
+            this.TxtApeP.Location = new System.Drawing.Point(220, 78);
             this.TxtApeP.Name = "TxtApeP";
             this.TxtApeP.PasswordChar = '\0';
             this.TxtApeP.Radius = 10;
@@ -213,7 +217,7 @@
             this.TxtNombreP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.TxtNombreP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombreP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreP.Location = new System.Drawing.Point(219, 18);
+            this.TxtNombreP.Location = new System.Drawing.Point(220, 30);
             this.TxtNombreP.Name = "TxtNombreP";
             this.TxtNombreP.PasswordChar = '\0';
             this.TxtNombreP.Radius = 10;
@@ -221,82 +225,82 @@
             this.TxtNombreP.TabIndex = 7;
             this.TxtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
-            // gunaLabel8
+            // lblPuesto
             // 
-            this.gunaLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel8.Location = new System.Drawing.Point(82, 317);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(58, 20);
-            this.gunaLabel8.TabIndex = 6;
-            this.gunaLabel8.Text = "Puesto";
+            this.lblPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPuesto.AutoSize = true;
+            this.lblPuesto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPuesto.Location = new System.Drawing.Point(79, 361);
+            this.lblPuesto.Name = "lblPuesto";
+            this.lblPuesto.Size = new System.Drawing.Size(58, 20);
+            this.lblPuesto.TabIndex = 6;
+            this.lblPuesto.Text = "Puesto";
             // 
-            // gunaLabel7
+            // lblContraP
             // 
-            this.gunaLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.Location = new System.Drawing.Point(71, 267);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(95, 20);
-            this.gunaLabel7.TabIndex = 5;
-            this.gunaLabel7.Text = "Contraseña";
+            this.lblContraP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblContraP.AutoSize = true;
+            this.lblContraP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraP.Location = new System.Drawing.Point(72, 314);
+            this.lblContraP.Name = "lblContraP";
+            this.lblContraP.Size = new System.Drawing.Size(95, 20);
+            this.lblContraP.TabIndex = 5;
+            this.lblContraP.Text = "Contraseña";
             // 
-            // gunaLabel6
+            // lblCorreoP
             // 
-            this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(89, 221);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(61, 20);
-            this.gunaLabel6.TabIndex = 4;
-            this.gunaLabel6.Text = "Correo";
+            this.lblCorreoP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCorreoP.AutoSize = true;
+            this.lblCorreoP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreoP.Location = new System.Drawing.Point(89, 262);
+            this.lblCorreoP.Name = "lblCorreoP";
+            this.lblCorreoP.Size = new System.Drawing.Size(61, 20);
+            this.lblCorreoP.TabIndex = 4;
+            this.lblCorreoP.Text = "Correo";
             // 
-            // gunaLabel5
+            // lblFechaNac
             // 
-            this.gunaLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(39, 168);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(165, 20);
-            this.gunaLabel5.TabIndex = 3;
-            this.gunaLabel5.Text = "Fecha de nacimiento";
+            this.lblFechaNac.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFechaNac.AutoSize = true;
+            this.lblFechaNac.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaNac.Location = new System.Drawing.Point(31, 171);
+            this.lblFechaNac.Name = "lblFechaNac";
+            this.lblFechaNac.Size = new System.Drawing.Size(165, 20);
+            this.lblFechaNac.TabIndex = 3;
+            this.lblFechaNac.Text = "Fecha de nacimiento";
             // 
-            // gunaLabel4
+            // lblApeM
             // 
-            this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(58, 118);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(135, 20);
-            this.gunaLabel4.TabIndex = 2;
-            this.gunaLabel4.Text = "Apellido materno";
+            this.lblApeM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblApeM.AutoSize = true;
+            this.lblApeM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApeM.Location = new System.Drawing.Point(61, 123);
+            this.lblApeM.Name = "lblApeM";
+            this.lblApeM.Size = new System.Drawing.Size(135, 20);
+            this.lblApeM.TabIndex = 2;
+            this.lblApeM.Text = "Apellido materno";
             // 
-            // gunaLabel3
+            // lblApeP
             // 
-            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(58, 72);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(132, 20);
-            this.gunaLabel3.TabIndex = 1;
-            this.gunaLabel3.Text = "Apellido paterno";
+            this.lblApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblApeP.AutoSize = true;
+            this.lblApeP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApeP.Location = new System.Drawing.Point(61, 78);
+            this.lblApeP.Name = "lblApeP";
+            this.lblApeP.Size = new System.Drawing.Size(132, 20);
+            this.lblApeP.TabIndex = 1;
+            this.lblApeP.Text = "Apellido paterno";
             // 
-            // gunaLabel2
+            // lblNombre
             // 
-            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(82, 18);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(68, 20);
-            this.gunaLabel2.TabIndex = 0;
-            this.gunaLabel2.Text = "Nombre";
+            this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(89, 30);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(68, 20);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre";
             // 
             // BtnGuardar
             // 
@@ -343,6 +347,35 @@
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
             this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
             // 
+            // txtTelefonoPersonal
+            // 
+            this.txtTelefonoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTelefonoPersonal.BackColor = System.Drawing.Color.Transparent;
+            this.txtTelefonoPersonal.BaseColor = System.Drawing.Color.White;
+            this.txtTelefonoPersonal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtTelefonoPersonal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTelefonoPersonal.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtTelefonoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtTelefonoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefonoPersonal.Location = new System.Drawing.Point(220, 217);
+            this.txtTelefonoPersonal.Name = "txtTelefonoPersonal";
+            this.txtTelefonoPersonal.PasswordChar = '\0';
+            this.txtTelefonoPersonal.Radius = 10;
+            this.txtTelefonoPersonal.Size = new System.Drawing.Size(306, 30);
+            this.txtTelefonoPersonal.TabIndex = 14;
+            // 
+            // lblTelefonoPersonal
+            // 
+            this.lblTelefonoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTelefonoPersonal.AutoSize = true;
+            this.lblTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoPersonal.Location = new System.Drawing.Point(79, 217);
+            this.lblTelefonoPersonal.Name = "lblTelefonoPersonal";
+            this.lblTelefonoPersonal.Size = new System.Drawing.Size(71, 20);
+            this.lblTelefonoPersonal.TabIndex = 15;
+            this.lblTelefonoPersonal.Text = "Teléfono";
+            // 
             // FrmAddPersonal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -366,13 +399,13 @@
 
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaLabel gunaLabel8;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lblNombre;
+        private Guna.UI.WinForms.GunaLabel lblPuesto;
+        private Guna.UI.WinForms.GunaLabel lblContraP;
+        private Guna.UI.WinForms.GunaLabel lblCorreoP;
+        private Guna.UI.WinForms.GunaLabel lblFechaNac;
+        private Guna.UI.WinForms.GunaLabel lblApeM;
+        private Guna.UI.WinForms.GunaLabel lblApeP;
         private Guna.UI.WinForms.GunaTextBox TxtPuesto;
         private Guna.UI.WinForms.GunaTextBox TxtContra;
         private Guna.UI.WinForms.GunaTextBox TxtCorreo;
@@ -382,5 +415,7 @@
         private Guna.UI.WinForms.GunaTextBox TxtNombreP;
         private Guna.UI.WinForms.GunaButton BtnGuardar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
+        private Guna.UI.WinForms.GunaLabel lblTelefonoPersonal;
+        private Guna.UI.WinForms.GunaTextBox txtTelefonoPersonal;
     }
 }

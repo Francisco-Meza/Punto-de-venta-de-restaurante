@@ -106,6 +106,12 @@
     <Compile Include="FrmPedidosDomicilio.Designer.cs">
       <DependentUpon>FrmPedidosDomicilio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPerfilPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerfilPersonal.Designer.cs">
+      <DependentUpon>FrmPerfilPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPedidosDomicilio.resx">
       <DependentUpon>FrmPedidosDomicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerfilPersonal.resx">
+      <DependentUpon>FrmPerfilPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPersonal.resx">
       <DependentUpon>FrmPersonal.cs</DependentUpon>
