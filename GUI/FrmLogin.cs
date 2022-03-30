@@ -21,11 +21,12 @@ namespace GUI
 
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit();//se cierra la aplicacion
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+
             if (txtUsuario.Text!="" && txtContrasena.Text!="")// al poner datos en los textbox se habre el menu
             {
                 FrmMenu frm = new FrmMenu();

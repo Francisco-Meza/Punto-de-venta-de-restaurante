@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FrmDetallePedidos : Form
+    public partial class FrmPerfilPersonal : Form
     {
-        public FrmDetallePedidos()
+        public FrmPerfilPersonal()
         {
             InitializeComponent();
         }
-        
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
