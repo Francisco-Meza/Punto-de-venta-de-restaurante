@@ -32,15 +32,29 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonal));
+<<<<<<< HEAD
+            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
+            this.BtnEditar = new Guna.UI.WinForms.GunaButton();
+            this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
+            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+=======
             this.dgvListaPersonal = new Guna.UI.WinForms.GunaDataGridView();
+>>>>>>> 408e822f9ab0a8d1c94e670f847fe281868e0bd6
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNomPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnApeP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnApeM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnFechaN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnaTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnContra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+=======
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.BtnEditar = new Guna.UI.WinForms.GunaButton();
@@ -48,6 +62,7 @@
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPersonal)).BeginInit();
+>>>>>>> 408e822f9ab0a8d1c94e670f847fe281868e0bd6
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +94,7 @@
             this.ColumnApeP,
             this.ColumnApeM,
             this.ColumnFechaN,
+            this.ColumnaTelefono,
             this.ColumnCorreo,
             this.ColumnContra,
             this.ColumnPuesto});
@@ -121,54 +137,6 @@
             this.dgvListaPersonal.ThemeStyle.RowsStyle.Height = 22;
             this.dgvListaPersonal.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             this.dgvListaPersonal.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "ID";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.ReadOnly = true;
-            // 
-            // ColumnNomPersonal
-            // 
-            this.ColumnNomPersonal.HeaderText = "Nombre";
-            this.ColumnNomPersonal.Name = "ColumnNomPersonal";
-            this.ColumnNomPersonal.ReadOnly = true;
-            // 
-            // ColumnApeP
-            // 
-            this.ColumnApeP.HeaderText = "Apellido paterno";
-            this.ColumnApeP.Name = "ColumnApeP";
-            this.ColumnApeP.ReadOnly = true;
-            // 
-            // ColumnApeM
-            // 
-            this.ColumnApeM.HeaderText = "Apellido materno";
-            this.ColumnApeM.Name = "ColumnApeM";
-            this.ColumnApeM.ReadOnly = true;
-            // 
-            // ColumnFechaN
-            // 
-            this.ColumnFechaN.HeaderText = "Fecha de nacimiento";
-            this.ColumnFechaN.Name = "ColumnFechaN";
-            this.ColumnFechaN.ReadOnly = true;
-            // 
-            // ColumnCorreo
-            // 
-            this.ColumnCorreo.HeaderText = "Correo";
-            this.ColumnCorreo.Name = "ColumnCorreo";
-            this.ColumnCorreo.ReadOnly = true;
-            // 
-            // ColumnContra
-            // 
-            this.ColumnContra.HeaderText = "Contraseña";
-            this.ColumnContra.Name = "ColumnContra";
-            this.ColumnContra.ReadOnly = true;
-            // 
-            // ColumnPuesto
-            // 
-            this.ColumnPuesto.HeaderText = "Puesto";
-            this.ColumnPuesto.Name = "ColumnPuesto";
-            this.ColumnPuesto.ReadOnly = true;
             // 
             // gunaLabel1
             // 
@@ -224,7 +192,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(330, 454);
+            this.BtnEditar.Location = new System.Drawing.Point(311, 454);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -297,6 +265,60 @@
             this.gunaPanel1.Size = new System.Drawing.Size(758, 543);
             this.gunaPanel1.TabIndex = 6;
             // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
+            // 
+            // ColumnNomPersonal
+            // 
+            this.ColumnNomPersonal.HeaderText = "Nombre";
+            this.ColumnNomPersonal.Name = "ColumnNomPersonal";
+            this.ColumnNomPersonal.ReadOnly = true;
+            // 
+            // ColumnApeP
+            // 
+            this.ColumnApeP.HeaderText = "Apellido paterno";
+            this.ColumnApeP.Name = "ColumnApeP";
+            this.ColumnApeP.ReadOnly = true;
+            // 
+            // ColumnApeM
+            // 
+            this.ColumnApeM.HeaderText = "Apellido materno";
+            this.ColumnApeM.Name = "ColumnApeM";
+            this.ColumnApeM.ReadOnly = true;
+            // 
+            // ColumnFechaN
+            // 
+            this.ColumnFechaN.HeaderText = "Fecha de nacimiento";
+            this.ColumnFechaN.Name = "ColumnFechaN";
+            this.ColumnFechaN.ReadOnly = true;
+            // 
+            // ColumnaTelefono
+            // 
+            this.ColumnaTelefono.HeaderText = "Teléfono";
+            this.ColumnaTelefono.Name = "ColumnaTelefono";
+            this.ColumnaTelefono.ReadOnly = true;
+            // 
+            // ColumnCorreo
+            // 
+            this.ColumnCorreo.HeaderText = "Correo";
+            this.ColumnCorreo.Name = "ColumnCorreo";
+            this.ColumnCorreo.ReadOnly = true;
+            // 
+            // ColumnContra
+            // 
+            this.ColumnContra.HeaderText = "Contraseña";
+            this.ColumnContra.Name = "ColumnContra";
+            this.ColumnContra.ReadOnly = true;
+            // 
+            // ColumnPuesto
+            // 
+            this.ColumnPuesto.HeaderText = "Puesto";
+            this.ColumnPuesto.Name = "ColumnPuesto";
+            this.ColumnPuesto.ReadOnly = true;
+            // 
             // FrmPersonal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -315,20 +337,25 @@
 
         #endregion
 
-        private Guna.UI.WinForms.GunaDataGridView dgvListaPersonal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNomPersonal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnApeP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnApeM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCorreo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnContra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPuesto;
+<<<<<<< HEAD
+        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaButton BtnAgregar;
         private Guna.UI.WinForms.GunaButton BtnEditar;
         private Guna.UI.WinForms.GunaButton BtnEliminar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
+=======
+        private Guna.UI.WinForms.GunaDataGridView dgvListaPersonal;
+>>>>>>> 408e822f9ab0a8d1c94e670f847fe281868e0bd6
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNomPersonal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnApeP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnApeM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFechaN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnaTelefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCorreo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnContra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPuesto;
     }
 }

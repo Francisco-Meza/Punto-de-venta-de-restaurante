@@ -24,16 +24,19 @@ namespace GUI
         private extern static void RelaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-        //--------------Eventos de minimizar,restaurar,Maximizar y cerrar------//
-        private void IconCerrar_Click(object sender, EventArgs e)
+        private void IconCerrar_Click(object sender, EventArgs e)//----Finaliza el proyecto
         {
             Application.Exit();
         }
-
         int Lx, Ly;
         int sw, sh;
-        private void IconMaximizar_Click(object sender, EventArgs e)
+        private void PanelBarra_MouseDown(object sender, MouseEventArgs e) //---Se llama un  metodo para poder mover el formuario
+        {
+            RelaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+       
+        private void IconMaximizar_Click(object sender, EventArgs e) //-----------Evento de maximizar el formulario -------------
         {
             Lx = this.Location.X;
             Ly = this.Location.Y;
@@ -44,25 +47,24 @@ namespace GUI
             IconMaximizar.Visible = false;
             IconRestaurar.Visible=true;
         }
-
-        
-
-        private void IconMinimizar_Click(object sender, EventArgs e)
+       
+        private void IconMinimizar_Click(object sender, EventArgs e)//------------Evento de minimizar el formulario --------------
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void PanelBarra_MouseDown(object sender, MouseEventArgs e)
+        
+        private void IconRestaurar_Click(object sender, EventArgs e)//-------- Realiza el evento de poner el formulario a su tamaño normal
         {
-            RelaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            this.Size = new Size(sw, sh);
+            this.Size = new Size(950, 600);
+            this.Location = new Point(Lx, Ly);
+            IconRestaurar.Visible = false;
+            IconMaximizar.Visible = true;
         }
-        private void BtnPersonal_Click(object sender, EventArgs e)
+        public void abrirFHijo(object FormHijo) //Metodo que nos ayuda a abrir y llamar los formularios al padre
+
         {
-            abrirFHijo(new FrmPersonal(this));
-        }
-        public void abrirFHijo(object FormHijo)
-        {
-            
+
             if (this.PanelPadre.Controls.Count > 0)
                 this.PanelPadre.Controls.RemoveAt(0);
             Form fh = FormHijo as Form;
@@ -73,36 +75,27 @@ namespace GUI
             this.PanelPadre.Tag = fh;
             fh.Show();
         }
-
+       
+        //---------- Son los botones del menu que cada uno nos muestra un fromulario
+        private void BtnPersonal_Click(object sender, EventArgs e) 
+        {
+            abrirFHijo(new FrmPersonal(this));
+        }
         private void BtnProductos_Click(object sender, EventArgs e)
         {
             abrirFHijo(new FrmProductos(this));
         }
-
         private void BtnPedidoDomi_Click(object sender, EventArgs e)
         {
             abrirFHijo(new FrmPedidosDomicilio(this));
         }
-
-        private void IconRestaurar_Click(object sender, EventArgs e)
-        {
-            this.Size = new Size(sw, sh);
-            this.Size = new Size(950, 600);
-            this.Location = new Point(Lx, Ly);
-            IconRestaurar.Visible = false;
-            IconMaximizar.Visible = true;
-        }
-
         private void BtnCajero_Click(object sender, EventArgs e)
         {
             abrirFHijo(new FrmPedidos(this));
         }
-
-
         private void BtnPedidosLocal_Click(object sender, EventArgs e)
         {
             abrirFHijo(new FrmMesas(this));
         }
-       
     }
 }
