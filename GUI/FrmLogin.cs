@@ -62,6 +62,11 @@ namespace GUI
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            /*if (txtUsuario.Text=="USUARIO"  txtContrasena.Text=="CONTRASEÑA")
+            {
+                MessageBox.Show("Por favor llena los datos");
+                this.Show();               
+            }*/
             FrmMenu frm = new FrmMenu();
             frm.Show();
             this.Hide();
