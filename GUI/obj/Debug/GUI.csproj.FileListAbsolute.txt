@@ -89,3 +89,4 @@ C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI
 C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
 C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
+C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
