@@ -12,6 +12,7 @@ namespace GUI
 {
     public partial class FrmAddProductos : Form
     {
+        String Nombre, Descripcion, Clasificacion, Precio;
         public FrmAddProductos()
         {
             InitializeComponent();
@@ -36,6 +37,13 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+        }
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            Nombre = TxtNombrePro.Text;
+            Descripcion = TxtDescriPro.Text;
+            Clasificacion = TxtClaPro.Text;
+            Precio = TxtPrecioPro.Text;
         }
     }
 }

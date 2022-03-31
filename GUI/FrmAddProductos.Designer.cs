@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddProductos));
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.TxtCorreo = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtApeM = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtApeP = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtNombreP = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtPrecioPro = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtClaPro = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtDescriPro = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtNombrePro = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
@@ -53,10 +53,10 @@
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.LightCyan;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gunaGroupBox1.BorderSize = 1;
-            this.gunaGroupBox1.Controls.Add(this.TxtCorreo);
-            this.gunaGroupBox1.Controls.Add(this.TxtApeM);
-            this.gunaGroupBox1.Controls.Add(this.TxtApeP);
-            this.gunaGroupBox1.Controls.Add(this.TxtNombreP);
+            this.gunaGroupBox1.Controls.Add(this.TxtPrecioPro);
+            this.gunaGroupBox1.Controls.Add(this.TxtClaPro);
+            this.gunaGroupBox1.Controls.Add(this.TxtDescriPro);
+            this.gunaGroupBox1.Controls.Add(this.TxtNombrePro);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel6);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel4);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
@@ -68,81 +68,81 @@
             this.gunaGroupBox1.TabIndex = 2;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // TxtCorreo
+            // TxtPrecioPro
             // 
-            this.TxtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtCorreo.BackColor = System.Drawing.Color.Transparent;
-            this.TxtCorreo.BaseColor = System.Drawing.Color.White;
-            this.TxtCorreo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtCorreo.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TxtCorreo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCorreo.Location = new System.Drawing.Point(219, 220);
-            this.TxtCorreo.Name = "TxtCorreo";
-            this.TxtCorreo.PasswordChar = '\0';
-            this.TxtCorreo.Radius = 10;
-            this.TxtCorreo.Size = new System.Drawing.Size(306, 30);
-            this.TxtCorreo.TabIndex = 11;
-            this.TxtCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCorreo_KeyPress);
+            this.TxtPrecioPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtPrecioPro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtPrecioPro.BaseColor = System.Drawing.Color.White;
+            this.TxtPrecioPro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtPrecioPro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtPrecioPro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtPrecioPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtPrecioPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtPrecioPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPrecioPro.Location = new System.Drawing.Point(219, 220);
+            this.TxtPrecioPro.Name = "TxtPrecioPro";
+            this.TxtPrecioPro.PasswordChar = '\0';
+            this.TxtPrecioPro.Radius = 10;
+            this.TxtPrecioPro.Size = new System.Drawing.Size(306, 30);
+            this.TxtPrecioPro.TabIndex = 11;
+            this.TxtPrecioPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCorreo_KeyPress);
             // 
-            // TxtApeM
+            // TxtClaPro
             // 
-            this.TxtApeM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtApeM.BackColor = System.Drawing.Color.Transparent;
-            this.TxtApeM.BaseColor = System.Drawing.Color.White;
-            this.TxtApeM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtApeM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtApeM.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtApeM.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TxtApeM.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtApeM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApeM.Location = new System.Drawing.Point(219, 142);
-            this.TxtApeM.Name = "TxtApeM";
-            this.TxtApeM.PasswordChar = '\0';
-            this.TxtApeM.Radius = 10;
-            this.TxtApeM.Size = new System.Drawing.Size(306, 30);
-            this.TxtApeM.TabIndex = 9;
-            this.TxtApeM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
+            this.TxtClaPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtClaPro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtClaPro.BaseColor = System.Drawing.Color.White;
+            this.TxtClaPro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtClaPro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtClaPro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtClaPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtClaPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtClaPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtClaPro.Location = new System.Drawing.Point(219, 142);
+            this.TxtClaPro.Name = "TxtClaPro";
+            this.TxtClaPro.PasswordChar = '\0';
+            this.TxtClaPro.Radius = 10;
+            this.TxtClaPro.Size = new System.Drawing.Size(306, 30);
+            this.TxtClaPro.TabIndex = 9;
+            this.TxtClaPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
-            // TxtApeP
+            // TxtDescriPro
             // 
-            this.TxtApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtApeP.BackColor = System.Drawing.Color.Transparent;
-            this.TxtApeP.BaseColor = System.Drawing.Color.White;
-            this.TxtApeP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtApeP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtApeP.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtApeP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TxtApeP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtApeP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApeP.Location = new System.Drawing.Point(219, 72);
-            this.TxtApeP.Name = "TxtApeP";
-            this.TxtApeP.PasswordChar = '\0';
-            this.TxtApeP.Radius = 10;
-            this.TxtApeP.Size = new System.Drawing.Size(306, 30);
-            this.TxtApeP.TabIndex = 8;
-            this.TxtApeP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
+            this.TxtDescriPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtDescriPro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtDescriPro.BaseColor = System.Drawing.Color.White;
+            this.TxtDescriPro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtDescriPro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtDescriPro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtDescriPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtDescriPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtDescriPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDescriPro.Location = new System.Drawing.Point(219, 72);
+            this.TxtDescriPro.Name = "TxtDescriPro";
+            this.TxtDescriPro.PasswordChar = '\0';
+            this.TxtDescriPro.Radius = 10;
+            this.TxtDescriPro.Size = new System.Drawing.Size(306, 30);
+            this.TxtDescriPro.TabIndex = 8;
+            this.TxtDescriPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
-            // TxtNombreP
+            // TxtNombrePro
             // 
-            this.TxtNombreP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtNombreP.BackColor = System.Drawing.Color.Transparent;
-            this.TxtNombreP.BaseColor = System.Drawing.Color.White;
-            this.TxtNombreP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtNombreP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtNombreP.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtNombreP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TxtNombreP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtNombreP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreP.Location = new System.Drawing.Point(219, 18);
-            this.TxtNombreP.Name = "TxtNombreP";
-            this.TxtNombreP.PasswordChar = '\0';
-            this.TxtNombreP.Radius = 10;
-            this.TxtNombreP.Size = new System.Drawing.Size(306, 30);
-            this.TxtNombreP.TabIndex = 7;
-            this.TxtNombreP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
+            this.TxtNombrePro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtNombrePro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtNombrePro.BaseColor = System.Drawing.Color.White;
+            this.TxtNombrePro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtNombrePro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNombrePro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtNombrePro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtNombrePro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtNombrePro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombrePro.Location = new System.Drawing.Point(219, 18);
+            this.TxtNombrePro.Name = "TxtNombrePro";
+            this.TxtNombrePro.PasswordChar = '\0';
+            this.TxtNombrePro.Radius = 10;
+            this.TxtNombrePro.Size = new System.Drawing.Size(306, 30);
+            this.TxtNombrePro.TabIndex = 7;
+            this.TxtNombrePro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApeM_KeyPress);
             // 
             // gunaLabel6
             // 
@@ -225,6 +225,7 @@
             this.BtnGuardar.TabIndex = 8;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnCerrarHijo
             // 
@@ -265,9 +266,9 @@
         #endregion
 
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
-        private Guna.UI.WinForms.GunaTextBox TxtCorreo;
-        private Guna.UI.WinForms.GunaTextBox TxtApeP;
-        private Guna.UI.WinForms.GunaTextBox TxtNombreP;
+        private Guna.UI.WinForms.GunaTextBox TxtPrecioPro;
+        private Guna.UI.WinForms.GunaTextBox TxtDescriPro;
+        private Guna.UI.WinForms.GunaTextBox TxtNombrePro;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
@@ -275,6 +276,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaButton BtnGuardar;
-        private Guna.UI.WinForms.GunaTextBox TxtApeM;
+        private Guna.UI.WinForms.GunaTextBox TxtClaPro;
     }
 }

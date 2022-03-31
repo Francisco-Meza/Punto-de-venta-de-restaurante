@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddPersonal));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.lblTelefonoPersonal = new Guna.UI.WinForms.GunaLabel();
+            this.TxtTelefonoPersonal = new Guna.UI.WinForms.GunaTextBox();
             this.TxtPuesto = new Guna.UI.WinForms.GunaTextBox();
             this.TxtContra = new Guna.UI.WinForms.GunaTextBox();
             this.TxtCorreo = new Guna.UI.WinForms.GunaTextBox();
@@ -47,8 +49,6 @@
             this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.BtnGuardar = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
-            this.txtTelefonoPersonal = new Guna.UI.WinForms.GunaTextBox();
-            this.lblTelefonoPersonal = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gunaGroupBox1.BorderSize = 1;
             this.gunaGroupBox1.Controls.Add(this.lblTelefonoPersonal);
-            this.gunaGroupBox1.Controls.Add(this.txtTelefonoPersonal);
+            this.gunaGroupBox1.Controls.Add(this.TxtTelefonoPersonal);
             this.gunaGroupBox1.Controls.Add(this.TxtPuesto);
             this.gunaGroupBox1.Controls.Add(this.TxtContra);
             this.gunaGroupBox1.Controls.Add(this.TxtCorreo);
@@ -93,6 +93,35 @@
             this.gunaGroupBox1.Size = new System.Drawing.Size(578, 423);
             this.gunaGroupBox1.TabIndex = 1;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // lblTelefonoPersonal
+            // 
+            this.lblTelefonoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTelefonoPersonal.AutoSize = true;
+            this.lblTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoPersonal.Location = new System.Drawing.Point(79, 217);
+            this.lblTelefonoPersonal.Name = "lblTelefonoPersonal";
+            this.lblTelefonoPersonal.Size = new System.Drawing.Size(71, 20);
+            this.lblTelefonoPersonal.TabIndex = 15;
+            this.lblTelefonoPersonal.Text = "Teléfono";
+            // 
+            // TxtTelefonoPersonal
+            // 
+            this.TxtTelefonoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtTelefonoPersonal.BackColor = System.Drawing.Color.Transparent;
+            this.TxtTelefonoPersonal.BaseColor = System.Drawing.Color.White;
+            this.TxtTelefonoPersonal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtTelefonoPersonal.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtTelefonoPersonal.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtTelefonoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtTelefonoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTelefonoPersonal.Location = new System.Drawing.Point(220, 217);
+            this.TxtTelefonoPersonal.Name = "TxtTelefonoPersonal";
+            this.TxtTelefonoPersonal.PasswordChar = '\0';
+            this.TxtTelefonoPersonal.Radius = 10;
+            this.TxtTelefonoPersonal.Size = new System.Drawing.Size(306, 30);
+            this.TxtTelefonoPersonal.TabIndex = 14;
             // 
             // TxtPuesto
             // 
@@ -329,6 +358,7 @@
             this.BtnGuardar.TabIndex = 2;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnCerrarHijo
             // 
@@ -346,35 +376,6 @@
             this.BtnCerrarHijo.TabIndex = 6;
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
             this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
-            // 
-            // txtTelefonoPersonal
-            // 
-            this.txtTelefonoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefonoPersonal.BackColor = System.Drawing.Color.Transparent;
-            this.txtTelefonoPersonal.BaseColor = System.Drawing.Color.White;
-            this.txtTelefonoPersonal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.txtTelefonoPersonal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTelefonoPersonal.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtTelefonoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtTelefonoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoPersonal.Location = new System.Drawing.Point(220, 217);
-            this.txtTelefonoPersonal.Name = "txtTelefonoPersonal";
-            this.txtTelefonoPersonal.PasswordChar = '\0';
-            this.txtTelefonoPersonal.Radius = 10;
-            this.txtTelefonoPersonal.Size = new System.Drawing.Size(306, 30);
-            this.txtTelefonoPersonal.TabIndex = 14;
-            // 
-            // lblTelefonoPersonal
-            // 
-            this.lblTelefonoPersonal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTelefonoPersonal.AutoSize = true;
-            this.lblTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoPersonal.Location = new System.Drawing.Point(79, 217);
-            this.lblTelefonoPersonal.Name = "lblTelefonoPersonal";
-            this.lblTelefonoPersonal.Size = new System.Drawing.Size(71, 20);
-            this.lblTelefonoPersonal.TabIndex = 15;
-            this.lblTelefonoPersonal.Text = "Teléfono";
             // 
             // FrmAddPersonal
             // 
@@ -416,6 +417,6 @@
         private Guna.UI.WinForms.GunaButton BtnGuardar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaLabel lblTelefonoPersonal;
-        private Guna.UI.WinForms.GunaTextBox txtTelefonoPersonal;
+        private Guna.UI.WinForms.GunaTextBox TxtTelefonoPersonal;
     }
 }
