@@ -87,7 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(417, 60);
+            this.label3.Location = new System.Drawing.Point(400, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 9;
@@ -96,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(254, 60);
+            this.label2.Location = new System.Drawing.Point(222, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 8;
@@ -116,7 +116,7 @@
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAgregar.Location = new System.Drawing.Point(99, 476);
+            this.btnAgregar.Location = new System.Drawing.Point(99, 483);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -142,7 +142,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(139, 81);
+            this.btnEditar.Location = new System.Drawing.Point(74, 81);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,7 +187,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(495, 476);
+            this.btnEliminar.Location = new System.Drawing.Point(495, 483);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -214,7 +214,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnGuardar.Location = new System.Drawing.Point(302, 476);
+            this.btnGuardar.Location = new System.Drawing.Point(302, 483);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -263,12 +263,12 @@
             this.dgvProductosPedido.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductosPedido.EnableHeadersVisualStyles = false;
             this.dgvProductosPedido.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvProductosPedido.Location = new System.Drawing.Point(73, 130);
+            this.dgvProductosPedido.Location = new System.Drawing.Point(42, 130);
             this.dgvProductosPedido.Name = "dgvProductosPedido";
             this.dgvProductosPedido.ReadOnly = true;
             this.dgvProductosPedido.RowHeadersVisible = false;
             this.dgvProductosPedido.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProductosPedido.Size = new System.Drawing.Size(604, 284);
+            this.dgvProductosPedido.Size = new System.Drawing.Size(669, 347);
             this.dgvProductosPedido.TabIndex = 2;
             this.dgvProductosPedido.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
             this.dgvProductosPedido.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
@@ -348,7 +348,7 @@
             this.cbProductos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProductos.ForeColor = System.Drawing.Color.Black;
             this.cbProductos.FormattingEnabled = true;
-            this.cbProductos.Location = new System.Drawing.Point(420, 81);
+            this.cbProductos.Location = new System.Drawing.Point(403, 81);
             this.cbProductos.Name = "cbProductos";
             this.cbProductos.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbProductos.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -370,14 +370,13 @@
             this.cbClasificacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbClasificacion.ForeColor = System.Drawing.Color.Black;
             this.cbClasificacion.FormattingEnabled = true;
-            this.cbClasificacion.Location = new System.Drawing.Point(254, 81);
+            this.cbClasificacion.Location = new System.Drawing.Point(222, 81);
             this.cbClasificacion.Name = "cbClasificacion";
             this.cbClasificacion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbClasificacion.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbClasificacion.Radius = 10;
             this.cbClasificacion.Size = new System.Drawing.Size(125, 28);
             this.cbClasificacion.TabIndex = 0;
-
             // 
             // FrmDetallePedidos
             // 
