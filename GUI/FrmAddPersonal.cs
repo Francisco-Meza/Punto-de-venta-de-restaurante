@@ -32,6 +32,7 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+            validar();
         }
 
         private void TxtFechaN_KeyPress(object sender, KeyPressEventArgs e)
@@ -40,6 +41,8 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+            validar();
+  
         }
 
         private void TxtPuesto_KeyPress(object sender, KeyPressEventArgs e)
@@ -48,6 +51,7 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+            validar();
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
@@ -60,10 +64,19 @@ namespace GUI
             Puesto = TxtNombreP.Text;
             Correo = TxtCorreo.Text;
             Telefono = TxtTelefonoPersonal.Text;
-            if(nombre != "" && ApePa != "" && ApeMa != "" && FechaN != "" && Contra != "" && Puesto != "" && Correo != "" && Telefono!= "")
+           
+        }
+        public void validar()
+        {
+            if (TxtNombreP.Text != String.Empty && TxtApeP.Text != String.Empty && TxtApeM.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
             {
-
+                BtnGuardar.Enabled = true;
+            }
+            else
+            {
+                BtnGuardar.Enabled = false;
             }
         }
+
     }
 }
