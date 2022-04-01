@@ -78,7 +78,7 @@
             this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsuario.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtUsuario.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtUsuario.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
@@ -106,7 +106,7 @@
             this.txtContrasena.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.txtContrasena.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtContrasena.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtContrasena.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasena.ForeColor = System.Drawing.Color.DimGray;
@@ -133,7 +133,7 @@
             this.btnAceptar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAceptar.Location = new System.Drawing.Point(336, 227);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAceptar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnAceptar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnAceptar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnAceptar.OnHoverImage = null;
