@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOGICA_DE_NEGOCIOS;
 
 namespace GUI
 {
     public partial class FrmAddPersonal : Form
     {
+        string nombre, ApePa, ApeMa, Correo, Puesto, Contra, Telefono, FechaN;
+        
+        Validaciones val = new Validaciones();
         public FrmAddPersonal()
         {
             InitializeComponent();
@@ -28,6 +32,7 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+            validar();
         }
 
         private void TxtFechaN_KeyPress(object sender, KeyPressEventArgs e)
@@ -36,6 +41,8 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+            validar();
+  
         }
 
         private void TxtPuesto_KeyPress(object sender, KeyPressEventArgs e)
@@ -44,6 +51,32 @@ namespace GUI
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
+            validar();
         }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            nombre = TxtNombreP.Text;
+            ApePa = TxtApeP.Text;
+            ApeMa = TxtApeM.Text;
+            FechaN = TxtFechaN.Text;
+            Contra = TxtContra.Text;
+            Puesto = TxtNombreP.Text;
+            Correo = TxtCorreo.Text;
+            Telefono = TxtTelefonoPersonal.Text;
+           
+        }
+        public void validar()
+        {
+            if (TxtNombreP.Text != String.Empty && TxtApeP.Text != String.Empty && TxtApeM.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
+            {
+                BtnGuardar.Enabled = true;
+            }
+            else
+            {
+                BtnGuardar.Enabled = false;
+            }
+        }
+
     }
 }

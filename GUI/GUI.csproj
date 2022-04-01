@@ -197,5 +197,11 @@
   <ItemGroup>
     <None Include="Resources\Captura_de_pantalla__78_-removebg-preview-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LOGICA DE NEGOCIOS\LOGICA DE NEGOCIOS.csproj">
+      <Project>{74fce611-5be1-421b-a8d5-2215f258182f}</Project>
+      <Name>LOGICA DE NEGOCIOS</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

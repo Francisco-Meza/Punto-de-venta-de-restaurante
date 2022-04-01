@@ -32,17 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonal));
-<<<<<<< HEAD
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
+
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.BtnEditar = new Guna.UI.WinForms.GunaButton();
             this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-=======
+
             this.dgvListaPersonal = new Guna.UI.WinForms.GunaDataGridView();
->>>>>>> 408e822f9ab0a8d1c94e670f847fe281868e0bd6
+
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNomPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnApeP = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,17 +51,9 @@
             this.ColumnCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnContra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
-=======
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
-            this.BtnEditar = new Guna.UI.WinForms.GunaButton();
-            this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
-            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPersonal)).BeginInit();
->>>>>>> 408e822f9ab0a8d1c94e670f847fe281868e0bd6
+
             this.gunaPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -337,7 +328,7 @@
 
         #endregion
 
-<<<<<<< HEAD
+
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaButton BtnAgregar;
@@ -345,9 +336,9 @@
         private Guna.UI.WinForms.GunaButton BtnEliminar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-=======
+
         private Guna.UI.WinForms.GunaDataGridView dgvListaPersonal;
->>>>>>> 408e822f9ab0a8d1c94e670f847fe281868e0bd6
+
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNomPersonal;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnApeP;
