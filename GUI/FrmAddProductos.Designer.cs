@@ -39,7 +39,7 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.BtnGuardar = new Guna.UI.WinForms.GunaButton();
+            this.BtnGuardarPro = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -198,34 +198,34 @@
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "Añadir productos";
             // 
-            // BtnGuardar
+            // BtnGuardarPro
             // 
-            this.BtnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnGuardar.AnimationHoverSpeed = 0.07F;
-            this.BtnGuardar.AnimationSpeed = 0.03F;
-            this.BtnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnGuardar.BorderColor = System.Drawing.Color.Black;
-            this.BtnGuardar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnGuardar.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnGuardar.ForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
-            this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(310, 436);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnGuardar.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnGuardar.OnHoverImage = null;
-            this.BtnGuardar.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnGuardar.Radius = 20;
-            this.BtnGuardar.Size = new System.Drawing.Size(170, 46);
-            this.BtnGuardar.TabIndex = 8;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            this.BtnGuardarPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnGuardarPro.AnimationHoverSpeed = 0.07F;
+            this.BtnGuardarPro.AnimationSpeed = 0.03F;
+            this.BtnGuardarPro.BackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarPro.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnGuardarPro.BorderColor = System.Drawing.Color.Black;
+            this.BtnGuardarPro.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnGuardarPro.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnGuardarPro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnGuardarPro.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarPro.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarPro.Image")));
+            this.BtnGuardarPro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardarPro.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnGuardarPro.Location = new System.Drawing.Point(310, 436);
+            this.BtnGuardarPro.Name = "BtnGuardarPro";
+            this.BtnGuardarPro.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnGuardarPro.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnGuardarPro.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnGuardarPro.OnHoverImage = null;
+            this.BtnGuardarPro.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnGuardarPro.Radius = 20;
+            this.BtnGuardarPro.Size = new System.Drawing.Size(170, 46);
+            this.BtnGuardarPro.TabIndex = 8;
+            this.BtnGuardarPro.Text = "Guardar";
+            this.BtnGuardarPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardarPro.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnCerrarHijo
             // 
@@ -249,7 +249,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(757, 542);
-            this.Controls.Add(this.BtnGuardar);
+            this.Controls.Add(this.BtnGuardarPro);
             this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.gunaGroupBox1);
@@ -275,7 +275,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
-        private Guna.UI.WinForms.GunaButton BtnGuardar;
+        private Guna.UI.WinForms.GunaButton BtnGuardarPro;
         private Guna.UI.WinForms.GunaTextBox TxtClaPro;
     }
 }

@@ -92,6 +92,12 @@ C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
+<<<<<<< HEAD
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
+=======
+C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
+>>>>>>> 8aab4853a1d24f232a9fc42b5af3e8d88d23803b

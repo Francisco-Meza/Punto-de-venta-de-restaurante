@@ -19,6 +19,7 @@ namespace GUI
         public FrmAddPersonal()
         {
             InitializeComponent();
+            BtnGuardar.Enabled = false;
         }
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
@@ -28,30 +29,29 @@ namespace GUI
 
         private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
         {
+            validar();
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
-            validar();
         }
 
         private void TxtFechaN_KeyPress(object sender, KeyPressEventArgs e)
         {
+            validar();
             if ((e.KeyChar >= 32 && e.KeyChar <= 44) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
-            validar();
-  
         }
 
         private void TxtPuesto_KeyPress(object sender, KeyPressEventArgs e)
         {
+            validar();
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
-            validar();
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
@@ -64,7 +64,19 @@ namespace GUI
             Puesto = TxtNombreP.Text;
             Correo = TxtCorreo.Text;
             Telefono = TxtTelefonoPersonal.Text;
-           
+            if (!val.VerificarTelefono(Telefono))
+            {
+                MessageBox.Show("El formato del telefono es incorrecto");
+            }
+            if (!val.VerificarCorreo(Correo))
+            {
+                MessageBox.Show("El formato del correo es incorrecto");
+            }
+            if (!val.VerificarContrasena(Contra))
+            {
+                MessageBox.Show("El formato de la contraseña es incorrecto");
+            }
+
         }
         public void validar()
         {
