@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonal));
 
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.BtnEditar = new Guna.UI.WinForms.GunaButton();
@@ -52,15 +51,7 @@
             this.ColumnCorreo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnContra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
-
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
-            this.BtnEditar = new Guna.UI.WinForms.GunaButton();
-            this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
-            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPersonal)).BeginInit();
 
             this.gunaPanel1.SuspendLayout();
