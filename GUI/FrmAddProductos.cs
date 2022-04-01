@@ -7,15 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOGICA_DE_NEGOCIOS;
 
 namespace GUI
 {
     public partial class FrmAddProductos : Form
     {
         String Nombre, Descripcion, Clasificacion, Precio;
+        
         public FrmAddProductos()
         {
             InitializeComponent();
+            BtnGuardarPro.Enabled = false;
         }
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
@@ -25,6 +28,7 @@ namespace GUI
 
         private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
         {
+            validar();
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -33,6 +37,7 @@ namespace GUI
 
         private void TxtCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
+            validar();
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -44,6 +49,19 @@ namespace GUI
             Descripcion = TxtDescriPro.Text;
             Clasificacion = TxtClaPro.Text;
             Precio = TxtPrecioPro.Text;
+            
+
+        }
+        public void validar()
+        {
+            if (TxtNombrePro.Text != String.Empty && TxtDescriPro.Text != String.Empty && TxtClaPro.Text != String.Empty && TxtPrecioPro.Text != String.Empty)
+            {
+                BtnGuardarPro.Enabled = true;
+            }
+            else
+            {
+                BtnGuardarPro.Enabled = false;
+            }
         }
     }
 }
