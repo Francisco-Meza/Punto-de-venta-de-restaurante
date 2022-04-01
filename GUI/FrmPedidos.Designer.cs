@@ -42,6 +42,7 @@
             this.columnIdPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
             this.SuspendLayout();
@@ -197,7 +198,8 @@
             this.dgvListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdPedido,
             this.columnFecha,
-            this.columnIdPersonal});
+            this.columnIdPersonal,
+            this.columnEstado});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -256,6 +258,12 @@
             this.columnIdPersonal.Name = "columnIdPersonal";
             this.columnIdPersonal.ReadOnly = true;
             // 
+            // columnEstado
+            // 
+            this.columnEstado.HeaderText = "Estado";
+            this.columnEstado.Name = "columnEstado";
+            this.columnEstado.ReadOnly = true;
+            // 
             // FrmPedidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -283,5 +291,6 @@
         private Guna.UI.WinForms.GunaButton btnEditar;
         private Guna.UI.WinForms.GunaButton btnEliminar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnEstado;
     }
 }
