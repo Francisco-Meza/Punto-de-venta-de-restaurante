@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class FrmAddPersonal : Form
     {
-        string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
+        private string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
         readonly Validaciones val = new Validaciones();
         public FrmAddPersonal()
         {

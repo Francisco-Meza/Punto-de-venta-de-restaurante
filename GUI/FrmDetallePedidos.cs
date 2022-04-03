@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class FrmDetallePedidos : Form
     {
-        string clasificacion, producto;
+        private string clasificacion, producto;
         int cantidad;
         public FrmDetallePedidos()
         {

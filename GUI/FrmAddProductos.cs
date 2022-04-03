@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class FrmAddProductos : Form
     {
-        String Nombre, Descripcion, Clasificacion, Precio;
+        private string Nombre, Descripcion, Clasificacion, Precio;
         
         public FrmAddProductos()
         {
