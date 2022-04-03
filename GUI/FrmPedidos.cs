@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class FrmPedidos : Form
     {
-        private FrmMenu padreMenu;
+        private readonly FrmMenu padreMenu;
         public FrmPedidos(FrmMenu padreMenu)
         {
             this.padreMenu = padreMenu;

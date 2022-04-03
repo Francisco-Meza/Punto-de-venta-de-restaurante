@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class FrmPedidosDomicilio : Form
     {
-        private FrmMenu padreMenu;
+        private readonly FrmMenu padreMenu;
         public FrmPedidosDomicilio(FrmMenu padreMenu)
         {
             this.padreMenu = padreMenu;
@@ -24,7 +24,7 @@ namespace GUI
             if (TxtNombreCliente.Text != "" && TxtTelefonoCliente.Text != "" && txtCalleCliente.Text !="" 
                 && txtNumCasaCliente.Text != "" && txtColoniaCliente.Text != "" && txtLocalidadCliente.Text != "")// al poner datos en los textbox se habre el menu
             {
-                padreMenu.abrirFHijo(new FrmDetallePedidos());
+                padreMenu.AbrirFHijo(new FrmDetallePedidos());
             }
             else //si los textbox estan vacios muestra el mensaje
             {
@@ -47,7 +47,7 @@ namespace GUI
             }
         }
 
-        private void txtCalleCliente_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtCalleCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
@@ -55,7 +55,7 @@ namespace GUI
             }
         }
 
-        private void txtColoniaCliente_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtColoniaCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
@@ -63,7 +63,7 @@ namespace GUI
             }
         }
 
-        private void txtLocalidadCliente_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtLocalidadCliente_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {

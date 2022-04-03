@@ -143,7 +143,7 @@
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            this.btnAceptar.Click += new System.EventHandler(this.VtnAceptar_Click);
             // 
             // iconPictureBox1
             // 

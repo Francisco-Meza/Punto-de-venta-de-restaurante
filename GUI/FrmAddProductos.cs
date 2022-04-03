@@ -28,7 +28,7 @@ namespace GUI
 
         private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validar();
+            Validar();
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -37,7 +37,7 @@ namespace GUI
 
         private void TxtCorreo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validar();
+            Validar();
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -52,7 +52,7 @@ namespace GUI
             
 
         }
-        public void validar()
+        public void Validar()
         {
             if (TxtNombrePro.Text != String.Empty && TxtDescriPro.Text != String.Empty && TxtClaPro.Text != String.Empty && TxtPrecioPro.Text != String.Empty)
             {
