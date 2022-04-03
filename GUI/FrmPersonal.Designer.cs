@@ -324,7 +324,7 @@
         #endregion
 
 
-        //private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
+        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaButton BtnAgregar;
         private Guna.UI.WinForms.GunaButton BtnEditar;
