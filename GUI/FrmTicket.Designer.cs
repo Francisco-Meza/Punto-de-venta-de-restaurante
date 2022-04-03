@@ -113,7 +113,7 @@
             this.btnImprimir.AnimationHoverSpeed = 0.07F;
             this.btnImprimir.AnimationSpeed = 0.03F;
             this.btnImprimir.BackColor = System.Drawing.Color.Transparent;
-            this.btnImprimir.BaseColor = System.Drawing.Color.LightSeaGreen;
+            this.btnImprimir.BaseColor = System.Drawing.Color.MediumTurquoise;
             this.btnImprimir.BorderColor = System.Drawing.Color.Black;
             this.btnImprimir.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnImprimir.FocusedColor = System.Drawing.Color.Empty;
@@ -124,7 +124,7 @@
             this.btnImprimir.ImageSize = new System.Drawing.Size(20, 20);
             this.btnImprimir.Location = new System.Drawing.Point(263, 415);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnImprimir.OnHoverBaseColor = System.Drawing.Color.LightSeaGreen;
             this.btnImprimir.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnImprimir.OnHoverForeColor = System.Drawing.Color.White;
             this.btnImprimir.OnHoverImage = null;
@@ -151,7 +151,7 @@
             this.btnCerrar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnCerrar.Location = new System.Drawing.Point(390, 415);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnCerrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnCerrar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnCerrar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnCerrar.OnHoverImage = null;
