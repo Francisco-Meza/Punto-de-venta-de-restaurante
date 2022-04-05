@@ -103,7 +103,7 @@
             this.txtLocalidadCliente.Radius = 10;
             this.txtLocalidadCliente.Size = new System.Drawing.Size(300, 30);
             this.txtLocalidadCliente.TabIndex = 11;
-            this.txtLocalidadCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocalidadCliente_KeyPress);
+            this.txtLocalidadCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLocalidadCliente_KeyPress);
             // 
             // gunaLabel7
             // 
@@ -133,7 +133,7 @@
             this.txtColoniaCliente.Radius = 10;
             this.txtColoniaCliente.Size = new System.Drawing.Size(300, 30);
             this.txtColoniaCliente.TabIndex = 9;
-            this.txtColoniaCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtColoniaCliente_KeyPress);
+            this.txtColoniaCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtColoniaCliente_KeyPress);
             // 
             // gunaLabel6
             // 
@@ -192,7 +192,7 @@
             this.txtCalleCliente.Radius = 10;
             this.txtCalleCliente.Size = new System.Drawing.Size(300, 30);
             this.txtCalleCliente.TabIndex = 5;
-            this.txtCalleCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCalleCliente_KeyPress);
+            this.txtCalleCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCalleCliente_KeyPress);
             // 
             // TxtTelefonoCliente
             // 

@@ -10,3 +10,8 @@ C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CoreCompileInputs.cache
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\bin\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\bin\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CoreCompileInputs.cache
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.pdb

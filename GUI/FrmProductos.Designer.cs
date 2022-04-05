@@ -202,7 +202,7 @@
             this.btnEditar.TabIndex = 13;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // btnAgregar
             // 
@@ -231,7 +231,7 @@
             this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnCerrar
             // 

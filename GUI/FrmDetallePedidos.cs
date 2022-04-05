@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class FrmDetallePedidos : Form
     {
-        string clasificacion, producto;
+        private string clasificacion, producto;
         int cantidad;
         public FrmDetallePedidos()
         {
@@ -24,15 +24,15 @@ namespace GUI
             btnAgregar.KeyDown += new KeyEventHandler(Control_KeyDown);
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void BtnAgregar_Click(object sender, EventArgs e)
         {
             clasificacion = cbClasificacion.Text;
             producto = cbProductos.Text;
             cantidad = int.Parse(NumCantidad.Text);
-            validar();
+            Validar();
         }
 
-        public void validar()
+        public void Validar()
         {
             if (cbClasificacion.Text != String.Empty && cbProductos.Text != String.Empty && NumCantidad.Text != String.Empty )
             {

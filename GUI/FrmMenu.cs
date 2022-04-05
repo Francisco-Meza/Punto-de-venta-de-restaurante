@@ -61,7 +61,7 @@ namespace GUI
             IconRestaurar.Visible = false;
             IconMaximizar.Visible = true;
         }
-        public void abrirFHijo(object FormHijo) //Metodo que nos ayuda a abrir y llamar los formularios al padre
+        public void AbrirFHijo(object FormHijo) //Metodo que nos ayuda a abrir y llamar los formularios al padre
 
         {
 
@@ -79,23 +79,23 @@ namespace GUI
         //---------- Son los botones del menu que cada uno nos muestra un fromulario
         private void BtnPersonal_Click(object sender, EventArgs e) 
         {
-            abrirFHijo(new FrmPersonal(this));
+            AbrirFHijo(new FrmPersonal(this));
         }
         private void BtnProductos_Click(object sender, EventArgs e)
         {
-            abrirFHijo(new FrmProductos(this));
+            AbrirFHijo(new FrmProductos(this));
         }
         private void BtnPedidoDomi_Click(object sender, EventArgs e)
         {
-            abrirFHijo(new FrmPedidosDomicilio(this));
+            AbrirFHijo(new FrmPedidosDomicilio(this));
         }
         private void BtnCajero_Click(object sender, EventArgs e)
         {
-            abrirFHijo(new FrmPedidos(this));
+            AbrirFHijo(new FrmPedidos(this));
         }
         private void BtnPedidosLocal_Click(object sender, EventArgs e)
         {
-            abrirFHijo(new FrmMesas(this));
+            AbrirFHijo(new FrmMesas(this));
         }
     }
 }

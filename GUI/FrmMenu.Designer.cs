@@ -81,7 +81,7 @@
             this.gunaPanel4.Controls.Add(this.BtnPerfil);
             this.gunaPanel4.Location = new System.Drawing.Point(0, 365);
             this.gunaPanel4.Name = "gunaPanel4";
-            this.gunaPanel4.Size = new System.Drawing.Size(193, 100);
+            this.gunaPanel4.Size = new System.Drawing.Size(187, 100);
             this.gunaPanel4.TabIndex = 3;
             // 
             // BtnPedidosLocal
@@ -130,7 +130,7 @@
             this.BtnPerfil.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPerfil.OnHoverImage = null;
             this.BtnPerfil.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPerfil.Size = new System.Drawing.Size(193, 42);
+            this.BtnPerfil.Size = new System.Drawing.Size(187, 42);
             this.BtnPerfil.TabIndex = 0;
             this.BtnPerfil.Text = "Perfil";
             // 
@@ -140,7 +140,7 @@
             this.gunaPanel2.Controls.Add(this.BtnPersonal);
             this.gunaPanel2.Location = new System.Drawing.Point(0, 173);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(195, 98);
+            this.gunaPanel2.Size = new System.Drawing.Size(190, 98);
             this.gunaPanel2.TabIndex = 1;
             // 
             // BtnProductos
@@ -189,7 +189,7 @@
             this.BtnPersonal.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPersonal.OnHoverImage = null;
             this.BtnPersonal.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPersonal.Size = new System.Drawing.Size(195, 42);
+            this.BtnPersonal.Size = new System.Drawing.Size(190, 42);
             this.BtnPersonal.TabIndex = 0;
             this.BtnPersonal.Text = "Personal";
             this.BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
@@ -200,7 +200,7 @@
             this.gunaPanel3.Controls.Add(this.BtnCajero);
             this.gunaPanel3.Location = new System.Drawing.Point(3, 269);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(190, 98);
+            this.gunaPanel3.Size = new System.Drawing.Size(187, 98);
             this.gunaPanel3.TabIndex = 2;
             // 
             // BtnPedidoDomi
@@ -249,7 +249,7 @@
             this.BtnCajero.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnCajero.OnHoverImage = null;
             this.BtnCajero.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnCajero.Size = new System.Drawing.Size(190, 42);
+            this.BtnCajero.Size = new System.Drawing.Size(187, 42);
             this.BtnCajero.TabIndex = 0;
             this.BtnCajero.Text = "Cajero";
             this.BtnCajero.Click += new System.EventHandler(this.BtnCajero_Click);
@@ -261,7 +261,7 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(195, 167);
+            this.gunaPanel1.Size = new System.Drawing.Size(193, 167);
             this.gunaPanel1.TabIndex = 0;
             // 
             // PanelBarra

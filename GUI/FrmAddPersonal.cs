@@ -13,9 +13,8 @@ namespace GUI
 {
     public partial class FrmAddPersonal : Form
     {
-        string nombre, ApePa, ApeMa, Correo, Puesto, Contra, Telefono, FechaN;
-        
-        Validaciones val = new Validaciones();
+        private string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
+        readonly Validaciones val = new Validaciones();
         public FrmAddPersonal()
         {
             InitializeComponent();
@@ -29,7 +28,7 @@ namespace GUI
 
         private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validar();
+            Validar();
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -38,7 +37,7 @@ namespace GUI
 
         private void TxtFechaN_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validar();
+            Validar();
             if ((e.KeyChar >= 32 && e.KeyChar <= 44) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -47,7 +46,7 @@ namespace GUI
 
         private void TxtPuesto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validar();
+            Validar();
             if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
             {
                 e.Handled = true;//-- Decimos que si se controlo el evento
@@ -57,28 +56,32 @@ namespace GUI
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             nombre = TxtNombreP.Text;
-            ApePa = TxtApeP.Text;
-            ApeMa = TxtApeM.Text;
-            FechaN = TxtFechaN.Text;
-            Contra = TxtContra.Text;
-            Puesto = TxtNombreP.Text;
-            Correo = TxtCorreo.Text;
-            Telefono = TxtTelefonoPersonal.Text;
-            if (!val.VerificarTelefono(Telefono))
+            apePa = TxtApeP.Text;
+            apeMa = TxtApeM.Text;
+            fechaN = TxtFechaN.Text;
+            contra = TxtContra.Text;
+            puesto = TxtNombreP.Text;
+            correo = TxtCorreo.Text;
+            telefono = TxtTelefonoPersonal.Text;
+            if (!val.VerificarTelefono(telefono))
             {
                 MessageBox.Show("El formato del telefono es incorrecto");
             }
-            if (!val.VerificarCorreo(Correo))
+            if (!val.VerificarCorreo(correo))
             {
                 MessageBox.Show("El formato del correo es incorrecto");
             }
-            if (!val.VerificarContrasena(Contra))
+            if (contra.Length >= 6)
             {
-                MessageBox.Show("El formato de la contraseña es incorrecto");
+                if (!val.VerificarContrasena(contra))
+                {
+                    MessageBox.Show("La contraseña debe llevar por lo menos un numero y un caracter especial");
+                }
             }
+            else MessageBox.Show("La contraseña debe llevar por lo menos 6 caracteres");
 
         }
-        public void validar()
+        public void Validar()
         {
             if (TxtNombreP.Text != String.Empty && TxtApeP.Text != String.Empty && TxtApeM.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
             {
