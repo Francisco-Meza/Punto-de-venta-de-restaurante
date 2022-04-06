@@ -41,17 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clasificacion.cs" />
-    <Compile Include="Cuentas.cs" />
-    <Compile Include="DetallePedidoProductos.cs" />
-    <Compile Include="Domicilio.cs" />
-    <Compile Include="Mesa.cs" />
-    <Compile Include="Pedido.cs" />
-    <Compile Include="PedidoDomicilio.cs" />
-    <Compile Include="PedidoLocal.cs" />
-    <Compile Include="Personal.cs" />
-    <Compile Include="Productos.cs" />
-    <Compile Include="TipoPuesto.cs" />
     <Compile Include="Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
