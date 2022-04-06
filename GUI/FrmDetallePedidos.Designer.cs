@@ -118,7 +118,7 @@
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAgregar.Location = new System.Drawing.Point(99, 483);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnAgregar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnAgregar.OnHoverImage = null;
@@ -128,7 +128,7 @@
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // btnEditar
             // 
@@ -145,7 +145,7 @@
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEditar.Location = new System.Drawing.Point(74, 81);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEditar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEditar.OnHoverImage = null;
@@ -190,7 +190,7 @@
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEliminar.Location = new System.Drawing.Point(495, 483);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEliminar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEliminar.OnHoverImage = null;
@@ -217,7 +217,7 @@
             this.btnGuardar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnGuardar.Location = new System.Drawing.Point(302, 483);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnGuardar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnGuardar.OnHoverImage = null;
@@ -351,7 +351,7 @@
             this.cbProductos.FormattingEnabled = true;
             this.cbProductos.Location = new System.Drawing.Point(403, 81);
             this.cbProductos.Name = "cbProductos";
-            this.cbProductos.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbProductos.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.cbProductos.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbProductos.Radius = 10;
             this.cbProductos.Size = new System.Drawing.Size(125, 28);
@@ -373,7 +373,7 @@
             this.cbClasificacion.FormattingEnabled = true;
             this.cbClasificacion.Location = new System.Drawing.Point(222, 81);
             this.cbClasificacion.Name = "cbClasificacion";
-            this.cbClasificacion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbClasificacion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.cbClasificacion.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cbClasificacion.Radius = 10;
             this.cbClasificacion.Size = new System.Drawing.Size(125, 28);

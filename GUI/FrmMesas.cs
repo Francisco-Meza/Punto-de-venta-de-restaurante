@@ -12,7 +12,7 @@ namespace GUI
 {
     public partial class FrmMesas : Form
     {
-        private FrmMenu padreMenu;
+        private readonly FrmMenu padreMenu;
         public FrmMesas(FrmMenu padreMenu)
         {
             this.padreMenu = padreMenu;
@@ -21,27 +21,27 @@ namespace GUI
 
         private void BtnMesa1_Click(object sender, EventArgs e)
         {
-            padreMenu.abrirFHijo(new FrmDetallePedidos());
+            padreMenu.AbrirFHijo(new FrmDetallePedidos());
         }
 
         private void BtnMesa2_Click(object sender, EventArgs e)
         {
-            padreMenu.abrirFHijo(new FrmDetallePedidos());
+            padreMenu.AbrirFHijo(new FrmDetallePedidos());
         }
 
         private void BtnMesa3_Click(object sender, EventArgs e)
         {
-            padreMenu.abrirFHijo(new FrmDetallePedidos());
+            padreMenu.AbrirFHijo(new FrmDetallePedidos());
         }
 
         private void BtnMesa4_Click(object sender, EventArgs e)
         {
-            padreMenu.abrirFHijo(new FrmDetallePedidos());
+            padreMenu.AbrirFHijo(new FrmDetallePedidos());
         }
 
         private void BtnMesa5_Click(object sender, EventArgs e)
         {
-            padreMenu.abrirFHijo(new FrmDetallePedidos());
+            padreMenu.AbrirFHijo(new FrmDetallePedidos());
         }
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)

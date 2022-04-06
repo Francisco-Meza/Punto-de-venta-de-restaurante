@@ -53,7 +53,7 @@
             this.BtnMesa1.ImageSize = new System.Drawing.Size(52, 52);
             this.BtnMesa1.Location = new System.Drawing.Point(52, 101);
             this.BtnMesa1.Name = "BtnMesa1";
-            this.BtnMesa1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnMesa1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnMesa1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnMesa1.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnMesa1.OnHoverImage = null;
@@ -79,7 +79,7 @@
             this.BtnMesa2.ImageSize = new System.Drawing.Size(52, 52);
             this.BtnMesa2.Location = new System.Drawing.Point(285, 101);
             this.BtnMesa2.Name = "BtnMesa2";
-            this.BtnMesa2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnMesa2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnMesa2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnMesa2.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnMesa2.OnHoverImage = null;
@@ -105,7 +105,7 @@
             this.BtnMesa3.ImageSize = new System.Drawing.Size(52, 52);
             this.BtnMesa3.Location = new System.Drawing.Point(535, 101);
             this.BtnMesa3.Name = "BtnMesa3";
-            this.BtnMesa3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnMesa3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnMesa3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnMesa3.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnMesa3.OnHoverImage = null;
@@ -141,7 +141,7 @@
             this.BtnMesa4.ImageSize = new System.Drawing.Size(52, 52);
             this.BtnMesa4.Location = new System.Drawing.Point(160, 326);
             this.BtnMesa4.Name = "BtnMesa4";
-            this.BtnMesa4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnMesa4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnMesa4.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnMesa4.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnMesa4.OnHoverImage = null;
@@ -167,7 +167,7 @@
             this.BtnMesa5.ImageSize = new System.Drawing.Size(52, 52);
             this.BtnMesa5.Location = new System.Drawing.Point(433, 326);
             this.BtnMesa5.Name = "BtnMesa5";
-            this.BtnMesa5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnMesa5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnMesa5.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnMesa5.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnMesa5.OnHoverImage = null;

@@ -10,7 +10,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Archivos varios",
       "ColorIndex": -1
+    },
+    "74fce611-5be1-421b-a8d5-2215f258182f": {
+      "ProjectGuid": "74fce611-5be1-421b-a8d5-2215f258182f",
+      "DisplayName": "LOGICA DE NEGOCIOS",
+      "ColorIndex": 1
+    },
+    "c4e043fd-f8b2-4359-b195-6a1d58bc39aa": {
+      "ProjectGuid": "c4e043fd-f8b2-4359-b195-6a1d58bc39aa",
+      "DisplayName": "ACCESO A DATOS",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }
