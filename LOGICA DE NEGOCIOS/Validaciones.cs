@@ -25,7 +25,7 @@ namespace LOGICA_DE_NEGOCIOS
         public bool VerificarTelefono(string telefono)
         {
             Regex rgx = new Regex(@"^\d{3}(-\d{3})(-\d{4})$");
-            return rgx.IsMatch(telefono) ? true : false;
+            return rgx.IsMatch(telefono);
         }
 
         public bool VerificarContrasena(string contrasena)

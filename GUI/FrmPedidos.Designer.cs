@@ -96,7 +96,7 @@
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEliminar.Location = new System.Drawing.Point(322, 450);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEliminar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEliminar.OnHoverImage = null;
@@ -124,7 +124,7 @@
             this.btnFinalizar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnFinalizar.Location = new System.Drawing.Point(504, 450);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnFinalizar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnFinalizar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnFinalizar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnFinalizar.OnHoverImage = null;
@@ -152,7 +152,7 @@
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEditar.Location = new System.Drawing.Point(124, 450);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnEditar.OnHoverForeColor = System.Drawing.Color.White;
             this.btnEditar.OnHoverImage = null;

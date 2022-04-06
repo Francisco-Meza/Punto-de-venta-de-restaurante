@@ -12,6 +12,8 @@ namespace GUI
 {
     public partial class FrmDetallePedidos : Form
     {
+        private string clasificacion, producto;
+        int cantidad;
         public FrmDetallePedidos()
         {
             InitializeComponent();
@@ -20,6 +22,26 @@ namespace GUI
             cbProductos.KeyDown += new KeyEventHandler(Control_KeyDown);
             NumCantidad.KeyDown += new KeyEventHandler(Control_KeyDown);
             btnAgregar.KeyDown += new KeyEventHandler(Control_KeyDown);
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            clasificacion = cbClasificacion.Text;
+            producto = cbProductos.Text;
+            cantidad = int.Parse(NumCantidad.Text);
+            Validar();
+        }
+
+        public void Validar()
+        {
+            if (cbClasificacion.Text != String.Empty && cbProductos.Text != String.Empty && NumCantidad.Text != String.Empty )
+            {
+                btnAgregar.Enabled = true;
+            }
+            else
+            {
+                btnAgregar.Enabled = false;
+            }
         }
 
         public void Control_KeyDown(object sender, KeyEventArgs e)

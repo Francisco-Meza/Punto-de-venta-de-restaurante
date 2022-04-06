@@ -113,7 +113,7 @@
             this.TxtTelefonoPersonal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtTelefonoPersonal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtTelefonoPersonal.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtTelefonoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtTelefonoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtTelefonoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefonoPersonal.Location = new System.Drawing.Point(220, 217);
@@ -131,7 +131,7 @@
             this.TxtPuesto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtPuesto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtPuesto.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtPuesto.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtPuesto.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtPuesto.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtPuesto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPuesto.Location = new System.Drawing.Point(220, 361);
@@ -150,7 +150,7 @@
             this.TxtContra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtContra.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtContra.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtContra.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtContra.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtContra.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtContra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtContra.Location = new System.Drawing.Point(219, 314);
@@ -168,7 +168,7 @@
             this.TxtCorreo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtCorreo.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtCorreo.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCorreo.Location = new System.Drawing.Point(220, 262);
@@ -186,7 +186,7 @@
             this.TxtFechaN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtFechaN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtFechaN.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtFechaN.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtFechaN.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtFechaN.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtFechaN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFechaN.Location = new System.Drawing.Point(220, 171);
@@ -205,7 +205,7 @@
             this.TxtApeM.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtApeM.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtApeM.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtApeM.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtApeM.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtApeM.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtApeM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApeM.Location = new System.Drawing.Point(219, 123);
@@ -224,7 +224,7 @@
             this.TxtApeP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtApeP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtApeP.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtApeP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtApeP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtApeP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtApeP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApeP.Location = new System.Drawing.Point(220, 78);
@@ -243,7 +243,7 @@
             this.TxtNombreP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtNombreP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtNombreP.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtNombreP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TxtNombreP.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombreP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombreP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombreP.Location = new System.Drawing.Point(220, 30);
@@ -337,7 +337,7 @@
             this.BtnGuardar.AnimationHoverSpeed = 0.07F;
             this.BtnGuardar.AnimationSpeed = 0.03F;
             this.BtnGuardar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnGuardar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnGuardar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.BtnGuardar.BorderColor = System.Drawing.Color.Black;
             this.BtnGuardar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.BtnGuardar.FocusedColor = System.Drawing.Color.Empty;
@@ -346,9 +346,9 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(562, 477);
+            this.BtnGuardar.Location = new System.Drawing.Point(249, 477);
             this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.BtnGuardar.OnHoverForeColor = System.Drawing.Color.White;
             this.BtnGuardar.OnHoverImage = null;
