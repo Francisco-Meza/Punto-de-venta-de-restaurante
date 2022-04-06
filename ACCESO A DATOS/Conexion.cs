@@ -7,9 +7,10 @@ using System.Data.SqlClient;
 
 namespace ACCESO_A_DATOS
 {
-    class Conexion
+    public class Conexion
     {
-        string cadenaConexion = "Data Source=DESKTOP-4MR4OFL\\MSSQLSERVER00;Initial Catalog=Restaurante;User ID=Maestro;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        //-------------------- Cambien su conexion-----------------//
+        string cadenaConexion = "Data Source=DESKTOP-4MR4OFL\\MSSQLSERVER00;User ID=Master;Password=MAFRAD2;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         SqlConnection connection = new SqlConnection();
         
         public Conexion()
