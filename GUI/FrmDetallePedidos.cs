@@ -55,3 +55,4 @@ namespace GUI
         }
     }
 }
+//Data Source=DANNY;Initial Catalog=Restaurante;User ID=MaestroCatalogo;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
