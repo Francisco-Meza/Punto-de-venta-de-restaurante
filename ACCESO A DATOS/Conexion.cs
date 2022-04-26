@@ -9,8 +9,10 @@ namespace ACCESO_A_DATOS
 {
     public class Conexion
     {
+        string francisco = "Data Source=DESKTOP-4MR4OFL\\MSSQLSERVER00;User ID=Master;Password=MAFRAD2;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        
         //-------------------- Cambien su conexion-----------------//
-        string cadenaConexion = "Data Source=DESKTOP-4MR4OFL\\MSSQLSERVER00;User ID=Master;Password=MAFRAD2;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string cadenaConexion = "";
         SqlConnection connection = new SqlConnection();
         
         public Conexion()
