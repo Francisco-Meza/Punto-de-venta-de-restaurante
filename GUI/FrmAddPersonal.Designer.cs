@@ -388,7 +388,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAddPersonal";
-            this.Text = "Frm";
+            this.Text = resources.GetString("$this.Text");
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
             this.ResumeLayout(false);
