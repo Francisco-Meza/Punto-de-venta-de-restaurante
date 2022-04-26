@@ -15,3 +15,4 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CoreCompileInputs.cache
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.dll
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csprojAssemblyReference.cache
