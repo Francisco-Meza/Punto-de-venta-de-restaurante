@@ -10,14 +10,12 @@ namespace ACCESO_A_DATOS
     public class Conexion
     {
         string francisco = "Data Source=DESKTOP-4MR4OFL\\MSSQLSERVER00;User ID=Master;Password=MAFRAD2;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        
-        //-------------------- Cambien su conexion-----------------//
-        string cadenaConexion = "Data Source=DESKTOP-4MR4OFL\\MSSQLSERVER00;User ID=Master;Password=MAFRAD2;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string marlene = "Data Source=DESKTOP-D8E6BU1;User ID=Master Mayi;Password=MAFRAD2;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         SqlConnection connection = new SqlConnection();
-        
+        //-------------------- Cambien su conexion-----------------//
         public Conexion()
         {
-            connection.ConnectionString = cadenaConexion;
+            connection.ConnectionString = marlene;
         }
 
         public void Conectar()
