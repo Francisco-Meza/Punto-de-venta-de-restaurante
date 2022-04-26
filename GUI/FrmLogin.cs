@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ACCESO_A_DATOS;
 
 namespace GUI
 {
@@ -38,6 +39,11 @@ namespace GUI
                 MessageBox.Show("Por favor llena los datos");
                 this.Show();
             }
+        }
+
+        private void gunaPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
