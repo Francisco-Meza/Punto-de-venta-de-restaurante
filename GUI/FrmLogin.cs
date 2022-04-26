@@ -40,5 +40,10 @@ namespace GUI
                 this.Show();
             }
         }
+
+        private void gunaPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -54,7 +54,7 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(32, 19);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(139, 21);
+            this.gunaLabel1.Size = new System.Drawing.Size(174, 23);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Envio a domicilio";
             // 
@@ -82,7 +82,7 @@
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox1.Location = new System.Drawing.Point(98, 79);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(531, 388);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(612, 491);
             this.gunaGroupBox1.TabIndex = 1;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -97,11 +97,11 @@
             this.txtLocalidadCliente.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtLocalidadCliente.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtLocalidadCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocalidadCliente.Location = new System.Drawing.Point(202, 321);
+            this.txtLocalidadCliente.Location = new System.Drawing.Point(247, 372);
             this.txtLocalidadCliente.Name = "txtLocalidadCliente";
             this.txtLocalidadCliente.PasswordChar = '\0';
             this.txtLocalidadCliente.Radius = 10;
-            this.txtLocalidadCliente.Size = new System.Drawing.Size(300, 30);
+            this.txtLocalidadCliente.Size = new System.Drawing.Size(336, 30);
             this.txtLocalidadCliente.TabIndex = 11;
             this.txtLocalidadCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLocalidadCliente_KeyPress);
             // 
@@ -110,9 +110,9 @@
             this.gunaLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.Location = new System.Drawing.Point(60, 330);
+            this.gunaLabel7.Location = new System.Drawing.Point(60, 381);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(87, 21);
+            this.gunaLabel7.Size = new System.Drawing.Size(109, 23);
             this.gunaLabel7.TabIndex = 10;
             this.gunaLabel7.Text = "Localidad";
             // 
@@ -127,11 +127,11 @@
             this.txtColoniaCliente.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtColoniaCliente.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtColoniaCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColoniaCliente.Location = new System.Drawing.Point(202, 261);
+            this.txtColoniaCliente.Location = new System.Drawing.Point(247, 312);
             this.txtColoniaCliente.Name = "txtColoniaCliente";
             this.txtColoniaCliente.PasswordChar = '\0';
             this.txtColoniaCliente.Radius = 10;
-            this.txtColoniaCliente.Size = new System.Drawing.Size(300, 30);
+            this.txtColoniaCliente.Size = new System.Drawing.Size(336, 30);
             this.txtColoniaCliente.TabIndex = 9;
             this.txtColoniaCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtColoniaCliente_KeyPress);
             // 
@@ -140,9 +140,9 @@
             this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(71, 270);
+            this.gunaLabel6.Location = new System.Drawing.Point(71, 321);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(70, 21);
+            this.gunaLabel6.Size = new System.Drawing.Size(86, 23);
             this.gunaLabel6.TabIndex = 8;
             this.gunaLabel6.Text = "Colonia";
             // 
@@ -157,11 +157,11 @@
             this.txtNumCasaCliente.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtNumCasaCliente.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNumCasaCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumCasaCliente.Location = new System.Drawing.Point(202, 203);
+            this.txtNumCasaCliente.Location = new System.Drawing.Point(247, 254);
             this.txtNumCasaCliente.Name = "txtNumCasaCliente";
             this.txtNumCasaCliente.PasswordChar = '\0';
             this.txtNumCasaCliente.Radius = 10;
-            this.txtNumCasaCliente.Size = new System.Drawing.Size(300, 30);
+            this.txtNumCasaCliente.Size = new System.Drawing.Size(336, 30);
             this.txtNumCasaCliente.TabIndex = 7;
             // 
             // gunaLabel5
@@ -169,9 +169,9 @@
             this.gunaLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(34, 212);
+            this.gunaLabel5.Location = new System.Drawing.Point(34, 263);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(139, 21);
+            this.gunaLabel5.Size = new System.Drawing.Size(176, 23);
             this.gunaLabel5.TabIndex = 6;
             this.gunaLabel5.Text = "Numero de casa";
             // 
@@ -186,11 +186,11 @@
             this.txtCalleCliente.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtCalleCliente.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCalleCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCalleCliente.Location = new System.Drawing.Point(202, 143);
+            this.txtCalleCliente.Location = new System.Drawing.Point(247, 194);
             this.txtCalleCliente.Name = "txtCalleCliente";
             this.txtCalleCliente.PasswordChar = '\0';
             this.txtCalleCliente.Radius = 10;
-            this.txtCalleCliente.Size = new System.Drawing.Size(300, 30);
+            this.txtCalleCliente.Size = new System.Drawing.Size(336, 30);
             this.txtCalleCliente.TabIndex = 5;
             this.txtCalleCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCalleCliente_KeyPress);
             // 
@@ -205,12 +205,12 @@
             this.TxtTelefonoCliente.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtTelefonoCliente.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtTelefonoCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTelefonoCliente.Location = new System.Drawing.Point(202, 83);
+            this.TxtTelefonoCliente.Location = new System.Drawing.Point(247, 134);
             this.TxtTelefonoCliente.MaxLength = 10;
             this.TxtTelefonoCliente.Name = "TxtTelefonoCliente";
             this.TxtTelefonoCliente.PasswordChar = '\0';
             this.TxtTelefonoCliente.Radius = 10;
-            this.TxtTelefonoCliente.Size = new System.Drawing.Size(300, 30);
+            this.TxtTelefonoCliente.Size = new System.Drawing.Size(336, 30);
             this.TxtTelefonoCliente.TabIndex = 4;
             this.TxtTelefonoCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefonoCliente_KeyPress);
             // 
@@ -225,11 +225,11 @@
             this.TxtNombreCliente.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombreCliente.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombreCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreCliente.Location = new System.Drawing.Point(202, 26);
+            this.TxtNombreCliente.Location = new System.Drawing.Point(247, 77);
             this.TxtNombreCliente.Name = "TxtNombreCliente";
             this.TxtNombreCliente.PasswordChar = '\0';
             this.TxtNombreCliente.Radius = 10;
-            this.TxtNombreCliente.Size = new System.Drawing.Size(300, 30);
+            this.TxtNombreCliente.Size = new System.Drawing.Size(336, 30);
             this.TxtNombreCliente.TabIndex = 3;
             this.TxtNombreCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombreCliente_KeyPress);
             // 
@@ -238,9 +238,9 @@
             this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(80, 152);
+            this.gunaLabel4.Location = new System.Drawing.Point(80, 203);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(50, 21);
+            this.gunaLabel4.Size = new System.Drawing.Size(63, 23);
             this.gunaLabel4.TabIndex = 2;
             this.gunaLabel4.Text = "Calle";
             // 
@@ -249,9 +249,9 @@
             this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(71, 83);
+            this.gunaLabel3.Location = new System.Drawing.Point(71, 134);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(76, 21);
+            this.gunaLabel3.Size = new System.Drawing.Size(93, 23);
             this.gunaLabel3.TabIndex = 1;
             this.gunaLabel3.Text = "Teléfono";
             // 
@@ -260,9 +260,9 @@
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(24, 26);
+            this.gunaLabel2.Location = new System.Drawing.Point(24, 77);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(158, 21);
+            this.gunaLabel2.Size = new System.Drawing.Size(200, 23);
             this.gunaLabel2.TabIndex = 0;
             this.gunaLabel2.Text = "Nombre del cliente";
             // 
@@ -281,7 +281,7 @@
             this.BtnAceptarDomicilio.Image = ((System.Drawing.Image)(resources.GetObject("BtnAceptarDomicilio.Image")));
             this.BtnAceptarDomicilio.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnAceptarDomicilio.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAceptarDomicilio.Location = new System.Drawing.Point(290, 473);
+            this.BtnAceptarDomicilio.Location = new System.Drawing.Point(331, 576);
             this.BtnAceptarDomicilio.Name = "BtnAceptarDomicilio";
             this.BtnAceptarDomicilio.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnAceptarDomicilio.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -305,7 +305,7 @@
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
             this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(699, 12);
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(780, 12);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 7;
@@ -316,7 +316,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(757, 542);
+            this.ClientSize = new System.Drawing.Size(838, 645);
             this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.BtnAceptarDomicilio);
             this.Controls.Add(this.gunaGroupBox1);
