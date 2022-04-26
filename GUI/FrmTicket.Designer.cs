@@ -69,7 +69,7 @@
             // 
             this.lblPersonal.AutoSize = true;
             this.lblPersonal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonal.Location = new System.Drawing.Point(532, 22);
+            this.lblPersonal.Location = new System.Drawing.Point(542, 9);
             this.lblPersonal.Name = "lblPersonal";
             this.lblPersonal.Size = new System.Drawing.Size(175, 21);
             this.lblPersonal.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(346, 22);
+            this.lblFecha.Location = new System.Drawing.Point(324, 9);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(59, 21);
             this.lblFecha.TabIndex = 1;
@@ -89,11 +89,11 @@
             // 
             this.lblPedido.AutoSize = true;
             this.lblPedido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPedido.Location = new System.Drawing.Point(40, 22);
+            this.lblPedido.Location = new System.Drawing.Point(25, 9);
             this.lblPedido.Name = "lblPedido";
             this.lblPedido.Size = new System.Drawing.Size(132, 21);
             this.lblPedido.TabIndex = 0;
-            this.lblPedido.Text = "Pedido numero ";
+            this.lblPedido.Text = "Pedido número ";
             // 
             // gunaPanel2
             // 

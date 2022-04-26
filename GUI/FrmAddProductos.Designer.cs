@@ -145,7 +145,7 @@
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(103, 20);
             this.gunaLabel4.TabIndex = 2;
-            this.gunaLabel4.Text = "Clasificacion";
+            this.gunaLabel4.Text = "Clasificación";
             // 
             // gunaLabel3
             // 
@@ -156,7 +156,7 @@
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(96, 20);
             this.gunaLabel3.TabIndex = 1;
-            this.gunaLabel3.Text = "Descripcion";
+            this.gunaLabel3.Text = "Descripción";
             // 
             // gunaLabel2
             // 
