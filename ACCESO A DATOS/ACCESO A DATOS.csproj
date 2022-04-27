@@ -55,6 +55,7 @@
     <Compile Include="Entidades\Productos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entidades\TipoPuesto.cs" />
+    <Compile Include="Usuarios\ClsUsuarioLN.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
