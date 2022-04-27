@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACCESO_A_DATOS
+namespace LOGICA_DE_NEGOCIOS
 {
-    internal class Domicilio
+    public class DomicilioClient
     {
-      private string calle, numeroCasa, colonia, localidad;
-
+        public string 
     }
 }
