@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
     <Compile Include="Personal\ClsPersonal.cs" />
-=======
+
     <Compile Include="Personal\ClsPersonalLn.cs" />
->>>>>>> e992e9348cd2e7d01c4bf28aa82ea31701d1c2fe
+
     <Compile Include="Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
