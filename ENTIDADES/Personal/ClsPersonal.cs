@@ -1,14 +1,13 @@
 ﻿using System;
-<<<<<<< HEAD
-=======
+
 using System.Data;
 
->>>>>>> e992e9348cd2e7d01c4bf28aa82ea31701d1c2fe
+
 namespace ENTIDADES.Personal
 {
     public class ClsPersonal
     {
-<<<<<<< HEAD
+
         #region Atributos Privados
         private byte _idPersonal;
         private string _nombrePersona, _apel_mat, _apel_pat;
@@ -18,7 +17,7 @@ namespace ENTIDADES.Personal
         #region
 
         #endregion Atributos Publicos
-=======
+
         #region Atributos privados 
 
         private byte _idPersonal;
@@ -45,6 +44,6 @@ namespace ENTIDADES.Personal
 
 
         #endregion
->>>>>>> e992e9348cd2e7d01c4bf28aa82ea31701d1c2fe
+
     }
 }
