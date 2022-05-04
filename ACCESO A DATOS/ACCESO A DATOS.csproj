@@ -62,7 +62,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Utilidades\Constantes.cs" />
+    <Compile Include="Constantes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
