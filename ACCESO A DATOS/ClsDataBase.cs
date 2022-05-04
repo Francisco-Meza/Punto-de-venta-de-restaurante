@@ -54,7 +54,7 @@ namespace ACCESO_A_DATOS
                         }
                         if (parametro.Direccion == ParameterDirection.Output)
                         {
-                            cmd.Parameters.Add(parametro.Nombre,parametro.TipoDato,parametro.Tamanio).Direction = ParameterDirection.Output;
+                            cmd.Parameters.Add(parametro.Nombre, parametro.TipoDato, parametro.Tamanio).Direction = ParameterDirection.Output;
                         }
                     }
                     cmd.ExecuteNonQuery();
@@ -86,7 +86,7 @@ namespace ACCESO_A_DATOS
                 {
                     foreach (var parametro in parametros)
                     {
-                        daAdapter.SelectCommand.Parameters.AddWithValue(parametro.Nombre,parametro.Valor);
+                        daAdapter.SelectCommand.Parameters.AddWithValue(parametro.Nombre, parametro.Valor);
                     }
                 }
                 daAdapter.Fill(dtLista);
@@ -97,7 +97,7 @@ namespace ACCESO_A_DATOS
             }
             return dtLista;
         }
-       
+
 
         #endregion
     }
