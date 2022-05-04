@@ -30,18 +30,16 @@ namespace LOGICA_DE_NEGOCIOS
                 CombinacionList.Add(new ClsParametros("@id_clasificacion", id_clasificacion));
                 CombinacionList.Add(new ClsParametros("@precio", precio));
 
-                CombinacionList.Add(new ClsParametros("@Mensaje", SqlDbType.VarChar, 100));
-
                 Combinacion.EjecutarSP("SP_AGREGAR_PRODUCTO", CombinacionList);
             }
             catch(Exception ex)
             {
                 throw ex;
             }
-            
-
             return Msj;
         }
+        //Mostrar
+        
 
     }
 }

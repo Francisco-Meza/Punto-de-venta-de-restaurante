@@ -47,13 +47,14 @@ namespace GUI
         {
             Nombre = TxtNombrePro.Text;
             Descripcion = TxtDescriPro.Text;
+            Clasificacion = TxtClaPro.Text;
             Precio = TxtPrecioPro.Text;
             
 
         }
         public void Validar()
         {
-            if (TxtNombrePro.Text != String.Empty && TxtDescriPro.Text != String.Empty  && TxtPrecioPro.Text != String.Empty)
+            if (TxtNombrePro.Text != String.Empty && TxtDescriPro.Text != String.Empty && TxtClaPro.Text != String.Empty && TxtPrecioPro.Text != String.Empty)
             {
                 BtnGuardarPro.Enabled = true;
             }
