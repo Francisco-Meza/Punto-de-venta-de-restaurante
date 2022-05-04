@@ -36,10 +36,10 @@ namespace LOGICA_DE_NEGOCIOS
             {
                 throw ex;
             }
-            
-
             return Msj;
         }
+        //Mostrar
+        
 
     }
 }
