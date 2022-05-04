@@ -41,7 +41,7 @@ namespace LOGICA_DE_NEGOCIOS
         //Mostrar
         public  DataTable ListaProductos()
         {
-
+            return Combinacion.Ejecutar 
         }
     }
 }
