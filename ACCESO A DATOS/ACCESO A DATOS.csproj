@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion.cs" />
+    <Compile Include="ClsDataBase.cs" />
+    <Compile Include="ClsParametros.cs" />
+    <Compile Include="Constantes.cs" />
     <Compile Include="Entidades\Clasificacion.cs" />
     <Compile Include="Entidades\Cuentas.cs" />
     <Compile Include="Entidades\DetallePedidoProductos.cs" />
