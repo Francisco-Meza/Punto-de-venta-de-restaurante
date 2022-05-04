@@ -17,9 +17,9 @@ namespace LOGICA_DE_NEGOCIOS
         public int precio { get; set; }
 
         ClsDataBase Combinacion = new ClsDataBase(Constantes.marlene);
-        
+
         //Registrar
-        public string resgistro_Productos()
+        public string Registro_Productos()
         {
             string Msj = "";
             List<ClsParametros> CombinacionList = new List<ClsParametros>();
@@ -30,18 +30,18 @@ namespace LOGICA_DE_NEGOCIOS
                 CombinacionList.Add(new ClsParametros("@id_clasificacion", id_clasificacion));
                 CombinacionList.Add(new ClsParametros("@precio", precio));
 
-                CombinacionList.Add(new ClsParametros("@Mensaje", SqlDbType.VarChar, 100));
-
                 Combinacion.EjecutarSP("SP_AGREGAR_PRODUCTO", CombinacionList);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
-            
-
             return Msj;
         }
-
+        //Mostrar
+        public DataTable ListaProductos()
+        {
+            return Combinacion.Ejecutar
+        }
     }
 }

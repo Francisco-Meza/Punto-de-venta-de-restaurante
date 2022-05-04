@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 
 namespace ACCESO_A_DATOS
-{
+{//
     public class ClsDataBase
     {
         #region Variables privadas
@@ -54,7 +54,7 @@ namespace ACCESO_A_DATOS
                         }
                         if (parametro.Direccion == ParameterDirection.Output)
                         {
-                            cmd.Parameters.Add(parametro.Nombre,parametro.TipoDato,parametro.Tamanio).Direction = ParameterDirection.Output;
+                            cmd.Parameters.Add(parametro.Nombre, parametro.TipoDato, parametro.Tamanio).Direction = ParameterDirection.Output;
                         }
                     }
                     cmd.ExecuteNonQuery();
@@ -74,8 +74,30 @@ namespace ACCESO_A_DATOS
             }
             DesconectarDB();
         }
+        public DataTable Ejecutar_Lectura(string nombreSP, List<ClsParametros> parametros)
+        {
+            DataTable dtLista = new DataTable();
+            SqlDataAdapter daAdapter;
+            try
+            {
+                daAdapter = new SqlDataAdapter(nombreSP, conexion);
+                daAdapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+                if (parametros != null)
+                {
+                    foreach (var parametro in parametros)
+                    {
+                        daAdapter.SelectCommand.Parameters.AddWithValue(parametro.Nombre, parametro.Valor);
+                    }
+                }
+                daAdapter.Fill(dtLista);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            return dtLista;
+        }
 
-       
 
         #endregion
     }

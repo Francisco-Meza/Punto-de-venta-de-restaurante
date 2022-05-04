@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
-namespace LOGICA_DE_NEGOCIOS
+namespace LOGICA_DE_NEGOCIO
 {
     public class Validaciones
     {
