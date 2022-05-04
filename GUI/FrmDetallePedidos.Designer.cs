@@ -42,14 +42,14 @@
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnGuardar = new Guna.UI.WinForms.GunaButton();
             this.dgvProductosPedido = new Guna.UI.WinForms.GunaDataGridView();
-            this.columnIdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnIdPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.cbProductos = new Guna.UI.WinForms.GunaComboBox();
             this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
+            this.columnIdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosPedido)).BeginInit();
             this.SuspendLayout();
@@ -250,7 +250,7 @@
             this.dgvProductosPedido.ColumnHeadersHeight = 40;
             this.dgvProductosPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdDetalle,
-            this.columnIdPedido,
+            this.NombreProd,
             this.columnIdProducto,
             this.columnCantidad,
             this.columnPrecio});
@@ -293,36 +293,6 @@
             this.dgvProductosPedido.ThemeStyle.RowsStyle.Height = 22;
             this.dgvProductosPedido.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             this.dgvProductosPedido.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // columnIdDetalle
-            // 
-            this.columnIdDetalle.HeaderText = "No.-";
-            this.columnIdDetalle.Name = "columnIdDetalle";
-            this.columnIdDetalle.ReadOnly = true;
-            // 
-            // columnIdPedido
-            // 
-            this.columnIdPedido.HeaderText = "No.- Pedido";
-            this.columnIdPedido.Name = "columnIdPedido";
-            this.columnIdPedido.ReadOnly = true;
-            // 
-            // columnIdProducto
-            // 
-            this.columnIdProducto.HeaderText = "Clave Producto";
-            this.columnIdProducto.Name = "columnIdProducto";
-            this.columnIdProducto.ReadOnly = true;
-            // 
-            // columnCantidad
-            // 
-            this.columnCantidad.HeaderText = "Cantidad";
-            this.columnCantidad.Name = "columnCantidad";
-            this.columnCantidad.ReadOnly = true;
-            // 
-            // columnPrecio
-            // 
-            this.columnPrecio.HeaderText = "Precio unitario";
-            this.columnPrecio.Name = "columnPrecio";
-            this.columnPrecio.ReadOnly = true;
             // 
             // label1
             // 
@@ -379,6 +349,36 @@
             this.cbClasificacion.Size = new System.Drawing.Size(125, 28);
             this.cbClasificacion.TabIndex = 0;
             // 
+            // columnIdDetalle
+            // 
+            this.columnIdDetalle.HeaderText = "No.-";
+            this.columnIdDetalle.Name = "columnIdDetalle";
+            this.columnIdDetalle.ReadOnly = true;
+            // 
+            // NombreProd
+            // 
+            this.NombreProd.HeaderText = "Nombre";
+            this.NombreProd.Name = "NombreProd";
+            this.NombreProd.ReadOnly = true;
+            // 
+            // columnIdProducto
+            // 
+            this.columnIdProducto.HeaderText = "Clave Producto";
+            this.columnIdProducto.Name = "columnIdProducto";
+            this.columnIdProducto.ReadOnly = true;
+            // 
+            // columnCantidad
+            // 
+            this.columnCantidad.HeaderText = "Cantidad";
+            this.columnCantidad.Name = "columnCantidad";
+            this.columnCantidad.ReadOnly = true;
+            // 
+            // columnPrecio
+            // 
+            this.columnPrecio.HeaderText = "Precio unitario";
+            this.columnPrecio.Name = "columnPrecio";
+            this.columnPrecio.ReadOnly = true;
+            // 
             // FrmDetallePedidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -402,11 +402,6 @@
         private Guna.UI.WinForms.GunaButton btnEliminar;
         private Guna.UI.WinForms.GunaButton btnGuardar;
         private Guna.UI.WinForms.GunaDataGridView dgvProductosPedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdDetalle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdPedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecio;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaComboBox cbProductos;
         private Guna.UI.WinForms.GunaButton btnEditar;
@@ -414,5 +409,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdDetalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreProd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecio;
     }
 }
