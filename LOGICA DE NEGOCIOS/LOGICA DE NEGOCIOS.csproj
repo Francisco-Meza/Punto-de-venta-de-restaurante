@@ -41,21 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsProducto.cs" />
-    <Compile Include="Personal\ClsPersonal.cs" />
-    <Compile Include="Personal\ClsPersonalLn.cs" />
     <Compile Include="Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ACCESO A DATOS\ACCESO A DATOS.csproj">
-      <Project>{c4e043fd-f8b2-4359-b195-6a1d58bc39aa}</Project>
-      <Name>ACCESO A DATOS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ENTIDADES\ENTIDADES.csproj">
-      <Project>{029472b2-3956-41b0-943f-8c07631ebb12}</Project>
-      <Name>ENTIDADES</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
