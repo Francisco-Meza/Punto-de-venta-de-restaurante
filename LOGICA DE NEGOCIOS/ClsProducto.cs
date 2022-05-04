@@ -19,7 +19,7 @@ namespace LOGICA_DE_NEGOCIOS
         ClsDataBase Combinacion = new ClsDataBase(Constantes.marlene);
 
         //Registrar
-        public string resgistro_Productos()
+        public string Registro_Productos()
         {
             string Msj = "";
             List<ClsParametros> CombinacionList = new List<ClsParametros>();
