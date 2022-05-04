@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 
 namespace ACCESO_A_DATOS
-{
+{//
     public class ClsDataBase
     {
         #region Variables privadas

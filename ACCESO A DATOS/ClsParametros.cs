@@ -1,7 +1,7 @@
 ﻿using System.Data;
 
 namespace ACCESO_A_DATOS
-{
+{//
     public class ClsParametros
     {
         #region Variables privadas
