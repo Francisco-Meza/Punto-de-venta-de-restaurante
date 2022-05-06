@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsDataBase.cs" />
+    <Compile Include="ClsDomicilio.cs" />
     <Compile Include="ClsParametros.cs" />
     <Compile Include="Constantes.cs" />
     <Compile Include="Entidades\Clasificacion.cs" />
