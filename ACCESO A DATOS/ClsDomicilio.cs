@@ -9,29 +9,34 @@ namespace ACCESO_A_DATOS
 {
     public class ClsDomicilio
     {
+        private string _calle, _colonia, _localidad;
+        private int _numeroCasa;
         //Atributos
-        public string calle { get; set; }
-
-        public string colonia { get; set; }
-
-        public string localidad { get; set; }
-
-        public int numeroCasa { get; set; }
+        
 
         ClsDataBase M = new ClsDataBase(Constantes.david);
 
+        public string Calle { get => _calle; set => _calle = value; }
+        public string Colonia { get => _colonia; set => _colonia = value; }
+        public string Localidad { get => _localidad; set => _localidad = value; }
+        public int NumeroCasa { get => _numeroCasa; set => _numeroCasa = value; }
+
         //Create 
 
-        public string AGREGAR_DOMICILIO()
+        public string AgregarDomicilio(string calle, string colonia, string localidad, int numeroCasa)
         {
+            Calle = calle;
+            Colonia = colonia;
+            Localidad = localidad;
+            NumeroCasa = numeroCasa;
             string msj = "";
             List<ClsParametros> List = new List<ClsParametros>();
             try
             {
-                List.Add(new ClsParametros("@calle", calle));
-                List.Add(new ClsParametros("@colonia", colonia));
-                List.Add(new ClsParametros("@localidad", localidad));
-                List.Add(new ClsParametros("@numeroCasa", numeroCasa));
+                List.Add(new ClsParametros("@calle", Calle));
+                List.Add(new ClsParametros("@colonia", Colonia));
+                List.Add(new ClsParametros("@localidad", Localidad));
+                List.Add(new ClsParametros("@numeroCasa", NumeroCasa));
 
                 M.EjecutarSP("SP_AGREGAR_DOMICILIO", List);
 
