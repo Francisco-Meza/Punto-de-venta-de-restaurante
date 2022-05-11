@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsClasificacion_D.cs" />
     <Compile Include="ClsCuentas_D.cs" />
     <Compile Include="ClsDataBase.cs" />
     <Compile Include="ClsDomicilio.cs" />
