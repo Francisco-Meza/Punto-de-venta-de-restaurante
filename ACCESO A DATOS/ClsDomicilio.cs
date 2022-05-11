@@ -187,10 +187,37 @@ namespace ACCESO_A_DATOS
 
             return msj;
         }
-        // public bool Read()
-        //{
+        public bool Read(int idDomicilio)
+        {
+            bool retornar;
+            try
+            {
+                List<ClsParametros> parametros = new List<ClsParametros>();
+                parametros.Add(new ClsParametros("@idPuesto", idDomicilio));
+                DataTable dtTable = M.Ejecutar_Lectura("SP_READ_CUENTA_TIPO_PUESTO", parametros);
+                foreach (DataRow row in dtTable.Rows)
+                {
+                    Id = Convert.ToInt32(row["idDomicilio"]);
+                    Calle = row["calle"].ToString();
+                    Colonia = row["colonia"].ToString();
+                    Localidad = row["descrip"].ToString();
+                    //NumeroCasa = row["descripcion"].ToString();
+                }
+               // Console.WriteLine(Nombre); ¿Por que?
+                retornar = true;
+            }
+            catch (Exception)
+            {
+                retornar = false;
+                throw;
+            }
+            return retornar;
+        }
 
-        //}
+        public DataTable Read()
+        {
+            return M.Ejecutar_Lectura("SP_READ_TIPO_PUESTO", null);
+        }
 
 
 
