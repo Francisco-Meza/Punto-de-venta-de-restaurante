@@ -19,7 +19,7 @@ namespace LOGICA_DE_NEGOCIOS
         ClsDataBase Combinacion = new ClsDataBase(Constantes.marlene);
 
         //Registrar
-        public string resgistro_Productos()
+        public string Registro_Productos()
         {
             string Msj = "";
             List<ClsParametros> CombinacionList = new List<ClsParametros>();
@@ -39,9 +39,15 @@ namespace LOGICA_DE_NEGOCIOS
             return Msj;
         }
         //Mostrar
+        /*
         public DataTable ListaProductos()
         {
+<<<<<<< HEAD
             return Combinacion.Ejecutar_Lectura("SP_MOSTRAR_PRODUCTO", null);
         }
+=======
+            return Combinacion.Ejecutar;
+        }*/
+>>>>>>> af58cd1b6a5e4b65ea8e2dc4a80b9ff84e74792a
     }
 }

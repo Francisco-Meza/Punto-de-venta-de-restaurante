@@ -14,7 +14,7 @@ namespace GUI
     public partial class FrmAddPersonal : Form
     {
         private string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
-        readonly Validaciones val = new Validaciones();
+        readonly LOGICA_DE_NEGOCIO.Validaciones val = new LOGICA_DE_NEGOCIO.Validaciones();
         public FrmAddPersonal()
         {
             InitializeComponent();
