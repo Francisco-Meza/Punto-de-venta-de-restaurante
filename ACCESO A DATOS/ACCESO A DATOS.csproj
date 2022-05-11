@@ -45,9 +45,11 @@
     <Compile Include="ClsCuentas_D.cs" />
     <Compile Include="ClsDataBase.cs" />
     <Compile Include="ClsDomicilio.cs" />
+    <Compile Include="ClsMesa_D.cs" />
     <Compile Include="ClsModulo_D.cs" />
     <Compile Include="ClsOperacion_D.cs" />
     <Compile Include="ClsParametros.cs" />
+    <Compile Include="ClsPedidoLocal_D.cs" />
     <Compile Include="ClsPersonal_D.cs" />
     <Compile Include="ClsPuestoOperacion_D.cs" />
     <Compile Include="ClsTipoPuesto_D.cs" />
