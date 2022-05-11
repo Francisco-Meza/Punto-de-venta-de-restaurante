@@ -39,9 +39,10 @@ namespace LOGICA_DE_NEGOCIOS
             return Msj;
         }
         //Mostrar
+        /*
         public DataTable ListaProductos()
         {
-            return Combinacion.Ejecutar
-        }
+            return Combinacion.Ejecutar;
+        }*/
     }
 }
