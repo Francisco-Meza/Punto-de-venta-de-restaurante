@@ -8,5 +8,10 @@ namespace ACCESO_A_DATOS
 {
     class ClsPedidoLocal_D
     {
+        #region Variables privadas
+        
+        private ClsDataBase m;
+        #endregion
+
     }
 }
