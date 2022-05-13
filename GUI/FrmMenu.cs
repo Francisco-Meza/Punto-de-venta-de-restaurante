@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using GUI.ADMINISTRACION;
 
 namespace GUI
 {
@@ -89,6 +90,12 @@ namespace GUI
         {
             AbrirFHijo(new FrmPedidosDomicilio(this));
         }
+
+        private void BtnPuesto_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmPuesto(this));
+        }
+
         private void BtnCajero_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmPedidos(this));
