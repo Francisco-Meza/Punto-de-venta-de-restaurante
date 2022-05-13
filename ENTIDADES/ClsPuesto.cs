@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENTIDADES
 {
-    public class Puesto
+    public class ClsPuesto
     {
         private int _id;
         private string _nombre;

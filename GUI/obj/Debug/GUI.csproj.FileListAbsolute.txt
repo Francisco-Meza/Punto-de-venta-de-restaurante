@@ -1,111 +1,32 @@
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\GUI.exe.config
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\GUI.exe
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\GUI.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\Guna.UI.dll
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.dll
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ENTIDADES.dll
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.dll.config
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ENTIDADES.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmAddPersonal.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmAddProductos.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddPuesto.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.ADMINISTRACION.FrmPuesto.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmLogin.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmMenu.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmMesas.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPedidos.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPersonal.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmProductos.resources
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmTicket.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.Properties.Resources.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.exe
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.pdb
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe.config
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.pdb
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmLogin.resources
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.Properties.Resources.resources
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
-C:\Users\52333\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddPersonal.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddProductos.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPersonal.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmProductos.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmTicket.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMesas.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe.config
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.pdb
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddPersonal.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddProductos.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmLogin.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMesas.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPersonal.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmProductos.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmTicket.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.Properties.Resources.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmAddPersonal.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmAddProductos.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmMenu.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmMesas.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPedidos.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPersonal.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmProductos.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmTicket.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe.config
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.pdb
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddPersonal.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddProductos.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmLogin.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMesas.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPersonal.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmProductos.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmTicket.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.Properties.Resources.resources
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
-C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
-<<<<<<< HEAD
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
-=======
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
-C:\Users\CR LENOVO\Source\Repos\Francisco-Meza\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
->>>>>>> 8aab4853a1d24f232a9fc42b5af3e8d88d23803b
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.dll
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.pdb
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.dll
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.pdb
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.dll.config

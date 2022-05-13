@@ -55,5 +55,6 @@ namespace ACCESO_A_DATOS
                 con = new ClsConexion();
             }
             return con;
+        }
     }
 }

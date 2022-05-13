@@ -9,7 +9,7 @@ using ENTIDADES;
 
 namespace ACCESO_A_DATOS
 {
-    class ClsPuesto_D
+    public class ClsPuesto_D
     {
         public DataTable Read()
         {
@@ -70,7 +70,7 @@ namespace ACCESO_A_DATOS
             }
         }
 
-        public string Create(Puesto obj)
+        public string Create(ClsPuesto obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
@@ -99,7 +99,7 @@ namespace ACCESO_A_DATOS
             return msj;
         }
 
-        public string Update(Puesto obj)
+        public string Update(ClsPuesto obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();

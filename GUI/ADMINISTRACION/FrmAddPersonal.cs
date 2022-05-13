@@ -55,12 +55,12 @@ namespace GUI
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            nombre = TxtNombreP.Text;
-            apePa = TxtApeP.Text;
-            apeMa = TxtApeM.Text;
+            nombre = TxtNombre.Text;
+            apePa = TxtApelPat.Text;
+            apeMa = TxtApelMat.Text;
             fechaN = TxtFechaN.Text;
             contra = TxtContra.Text;
-            puesto = TxtNombreP.Text;
+            puesto = TxtNombre.Text;
             correo = TxtCorreo.Text;
             telefono = TxtTelefonoPersonal.Text;
             if (!val.VerificarTelefono(telefono))
@@ -83,7 +83,7 @@ namespace GUI
         }
         public void Validar()
         {
-            if (TxtNombreP.Text != String.Empty && TxtApeP.Text != String.Empty && TxtApeM.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
+            if (TxtNombre.Text != String.Empty && TxtApelPat.Text != String.Empty && TxtApelMat.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
             {
                 BtnGuardar.Enabled = true;
             }

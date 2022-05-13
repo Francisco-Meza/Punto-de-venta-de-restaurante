@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsProducto.cs" />
+    <Compile Include="ClsPuesto_N.cs" />
     <Compile Include="Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -49,6 +50,10 @@
     <ProjectReference Include="..\ACCESO A DATOS\ACCESO A DATOS.csproj">
       <Project>{c4e043fd-f8b2-4359-b195-6a1d58bc39aa}</Project>
       <Name>ACCESO A DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ENTIDADES\ENTIDADES.csproj">
+      <Project>{4e6e18c2-664b-486f-8b55-d08e30dbac73}</Project>
+      <Name>ENTIDADES</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

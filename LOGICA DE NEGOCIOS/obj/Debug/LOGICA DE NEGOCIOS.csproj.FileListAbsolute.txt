@@ -20,3 +20,5 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.pdb
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll.config
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CopyComplete
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.dll
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.pdb

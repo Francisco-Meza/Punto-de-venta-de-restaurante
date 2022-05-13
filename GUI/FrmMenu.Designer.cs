@@ -49,6 +49,7 @@
             this.IconCerrar = new FontAwesome.Sharp.IconButton();
             this.PanelBarraInferior = new Guna.UI.WinForms.GunaPanel();
             this.PanelPadre = new Guna.UI.WinForms.GunaPanel();
+            this.BtnPuesto = new Guna.UI.WinForms.GunaButton();
             this.PanelMenu.SuspendLayout();
             this.gunaPanel4.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             this.PanelMenu.AutoScroll = true;
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.PanelMenu.Controls.Add(this.BtnPuesto);
             this.PanelMenu.Controls.Add(this.gunaPanel4);
             this.PanelMenu.Controls.Add(this.gunaPanel2);
             this.PanelMenu.Controls.Add(this.gunaPanel3);
@@ -363,6 +365,31 @@
             this.PanelPadre.Size = new System.Drawing.Size(754, 543);
             this.PanelPadre.TabIndex = 3;
             // 
+            // BtnPuesto
+            // 
+            this.BtnPuesto.AnimationHoverSpeed = 0.07F;
+            this.BtnPuesto.AnimationSpeed = 0.03F;
+            this.BtnPuesto.BaseColor = System.Drawing.Color.Empty;
+            this.BtnPuesto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnPuesto.BorderSize = 1;
+            this.BtnPuesto.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnPuesto.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnPuesto.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.BtnPuesto.ForeColor = System.Drawing.Color.Black;
+            this.BtnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("BtnPuesto.Image")));
+            this.BtnPuesto.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnPuesto.Location = new System.Drawing.Point(0, 461);
+            this.BtnPuesto.Name = "BtnPuesto";
+            this.BtnPuesto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtnPuesto.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnPuesto.OnHoverForeColor = System.Drawing.Color.Black;
+            this.BtnPuesto.OnHoverImage = null;
+            this.BtnPuesto.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnPuesto.Size = new System.Drawing.Size(193, 42);
+            this.BtnPuesto.TabIndex = 2;
+            this.BtnPuesto.Text = "Puestos";
+            this.BtnPuesto.Click += new System.EventHandler(this.BtnPuesto_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,5 +433,6 @@
         private FontAwesome.Sharp.IconButton IconRestaurar;
         private FontAwesome.Sharp.IconButton IconMinimizar;
         private FontAwesome.Sharp.IconButton IconCerrar;
+        private Guna.UI.WinForms.GunaButton BtnPuesto;
     }
 }
