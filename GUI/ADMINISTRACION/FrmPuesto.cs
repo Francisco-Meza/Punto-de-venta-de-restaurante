@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOGICA_DE_NEGOCIOS;
 
 namespace GUI.ADMINISTRACION
 {
@@ -17,8 +18,19 @@ namespace GUI.ADMINISTRACION
         {
             this.padreMenu = padreMenu;
             InitializeComponent();
+            Read();
         }
-
+        public void Read()
+        {
+            try
+            {
+                dgvListaPuestos.DataSource = ClsPuesto_N.Read();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message + e.StackTrace);
+            }
+        }
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
             padreMenu.AbrirFHijo(new FrmAddPuesto());
