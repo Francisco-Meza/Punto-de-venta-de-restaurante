@@ -79,9 +79,9 @@ namespace ACCESO_A_DATOS
                 SqlCommand cmd = new SqlCommand("SP_CREATE_MESA", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@numeroMesa", SqlDbType.VarChar).Value = obj.NumeroMesa;
+                cmd.Parameters.Add("@numeroMesa", SqlDbType.Int).Value = obj.NumeroMesa;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
-                cmd.Parameters.Add("@numeroComenzales", SqlDbType.VarChar).Value = obj.NumeroComenzales;
+                cmd.Parameters.Add("@numeroComensales", SqlDbType.Int).Value = obj.NumeroComensales;
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la mesa";
             }
@@ -109,9 +109,9 @@ namespace ACCESO_A_DATOS
                 SqlCommand cmd = new SqlCommand("SP_UPDATE_MESA", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@numeroMesa", SqlDbType.VarChar).Value = obj.NumeroMesa;
+                cmd.Parameters.Add("@numeroMesa", SqlDbType.Int).Value = obj.NumeroMesa;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
-                cmd.Parameters.Add("@numeroComenzales", SqlDbType.VarChar).Value = obj.NumeroComenzales;
+                cmd.Parameters.Add("@numeroComensales", SqlDbType.Int).Value = obj.NumeroComensales;
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar la mesa";
             }
