@@ -52,7 +52,7 @@
             this.gunaPanel1.Controls.Add(this.dgvListaPuestos);
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(758, 543);
+            this.gunaPanel1.Size = new System.Drawing.Size(754, 543);
             this.gunaPanel1.TabIndex = 0;
             // 
             // gunaLabel1
@@ -109,7 +109,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(550, 454);
+            this.BtnEliminar.Location = new System.Drawing.Point(546, 454);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -137,7 +137,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(311, 454);
+            this.BtnEditar.Location = new System.Drawing.Point(309, 454);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -160,6 +160,7 @@
             this.dgvListaPuestos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListaPuestos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvListaPuestos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListaPuestos.BackgroundColor = System.Drawing.Color.White;
             this.dgvListaPuestos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListaPuestos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -188,7 +189,7 @@
             this.dgvListaPuestos.ReadOnly = true;
             this.dgvListaPuestos.RowHeadersVisible = false;
             this.dgvListaPuestos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListaPuestos.Size = new System.Drawing.Size(734, 320);
+            this.dgvListaPuestos.Size = new System.Drawing.Size(730, 320);
             this.dgvListaPuestos.TabIndex = 1;
             this.dgvListaPuestos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
             this.dgvListaPuestos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
