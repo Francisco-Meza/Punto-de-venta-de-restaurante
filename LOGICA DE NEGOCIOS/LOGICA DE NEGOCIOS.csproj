@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsClasificacion_N.cs" />
     <Compile Include="ClsProducto_N.cs" />
     <Compile Include="ClsPuesto_N.cs" />
     <Compile Include="Validaciones.cs" />

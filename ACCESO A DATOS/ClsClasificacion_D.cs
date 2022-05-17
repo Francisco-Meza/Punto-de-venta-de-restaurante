@@ -1,63 +1,158 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ENTIDADES;
 
 namespace ACCESO_A_DATOS
 {
     public class ClsClasificacion_D
     {
-        #region Variables privadas
-        private int _id;
-        private ClsDataBase m;
-        private string _nombre,_descripcion;
-        #endregion
-
-        #region Constructor
-        public  ClsClasificacion_D()
-        {
-            m = new ClsDataBase(Constantes.marlene);
-        }
-        #endregion
-
-        #region Varaibles Publicas
-        public int Id{ get => _id; set => _id = value;}
-        public string Nombre { get => _nombre; set => _nombre = value; }
-        public string Descripcion { get => _descripcion; set => _descripcion = value; }
-        #endregion
-
-        #region Metodo Publico
-        public string Cread()
-        {
-            string Msj = "";
-            List<ClsParametros> CombinacionList = new List<ClsParametros>();
-            try
-            {
-                CombinacionList.Add(new ClsParametros("@nombre", Nombre));
-                CombinacionList.Add(new ClsParametros("@descripcion", Descripcion));
-                CombinacionList.Add(new ClsParametros("@id_clasificacion", Id));
-                CombinacionList.Add(new ClsParametros("@Mensaje", System.Data.SqlDbType.VarChar, 100));
-                m.EjecutarSP("SP_AGREGAR_CLASIFICACION", CombinacionList);
-                Msj = CombinacionList[3].Valor.ToString();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return Msj;
-        }
         public DataTable Read()
         {
-            return m.Ejecutar_Lectura("SP_MOSTRAR_CLASIFICACION", null);   
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_PUESTO", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
         }
-        public void Update()
+
+        public DataTable Read(string valor)
         {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_PUESTO", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
 
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
         }
-        
-        #endregion
 
+        public string Create(ClsClasificacion obj)
+        {
+            string msj = "";
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_CREATE_CLASIFICACION", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
+                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
+                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                sqlCon.Open();
+                //mensaje
+            }
+            catch (Exception e)
+            {
+                msj = e.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+            return msj;
+        }
+
+        public string Update(ClsClasificacion obj)
+        {
+            string msj = "";
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_UPDATE_CLASIFICACION", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
+                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
+                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                sqlCon.Open();
+                //mensaje
+            }
+            catch (Exception e)
+            {
+                msj = e.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+            return msj;
+        }
+
+        public string Delete(int id)
+        {
+            string msj = "";
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_DELETE_CLASIFICACION", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                sqlCon.Open();
+               //mensaje
+            }
+            catch (Exception e)
+            {
+                msj = e.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+            return msj;
+        }
     }
 }

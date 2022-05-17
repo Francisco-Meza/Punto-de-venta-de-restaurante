@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsClasificacion.cs" />
     <Compile Include="ClsProducto.cs" />
     <Compile Include="ClsPuesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
