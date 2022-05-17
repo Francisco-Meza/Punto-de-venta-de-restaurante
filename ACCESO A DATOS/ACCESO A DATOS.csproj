@@ -44,6 +44,7 @@
     <Compile Include="ClsClasificacion_D.cs" />
     <Compile Include="ClsConexion.cs" />
     <Compile Include="ClsDomicilio_D.cs" />
+    <Compile Include="ClsMesa_D.cs" />
     <Compile Include="ClsModulo_D.cs" />
     <Compile Include="ClsOperacion_D.cs" />
     <Compile Include="ClsParametros.cs" />
