@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-namespace LOGICA_DE_NEGOCIO
+namespace LOGICA_DE_NEGOCIOS
 {
     public class Validaciones
     {
-        public bool VerificarCorreo(string correo)
+        public static bool VerificarCorreo(string correo)
         {
             try
             {
@@ -21,13 +21,13 @@ namespace LOGICA_DE_NEGOCIO
             }
         }
 
-        public bool VerificarTelefono(string telefono)
+        public static bool VerificarTelefono(string telefono)
         {
             Regex rgx = new Regex(@"^\d{3}(-\d{3})(-\d{4})$");
             return rgx.IsMatch(telefono);
         }
 
-        public bool VerificarContrasena(string contrasena)
+        public static bool VerificarContrasena(string contrasena)
         {
             //letras de la A a la Z, mayusculas y minusculas
             Regex letras = new Regex(@"[a-zA-z]");
@@ -55,6 +55,21 @@ namespace LOGICA_DE_NEGOCIO
 
             //si cumple con todo, regresa true
             return true;
+        }
+        public static bool WithForCompareAsciiValue(string stringToVerify)
+        {
+            for (int i = 0; i < stringToVerify.Length; i++)
+            {
+                //A=65 Z=90 and a=97 z=122
+                if ((int)stringToVerify[i] < 65 || ((int)stringToVerify[i] > 90
+                    && (int)stringToVerify[i] < 97) || (int)stringToVerify[i] > 122)
+                    return false;
+            }
+            return true;
+        }
+        public static bool SoloNumero(string cadena)
+        {
+            return cadena.All(char.IsDigit);
         }
     }
 }
