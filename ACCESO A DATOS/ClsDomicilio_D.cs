@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using ENTIDADES;
+using System.Data.SqlClient;
 
 namespace ACCESO_A_DATOS
 {
-    public class ClsClasificacion_D
+    public class ClsDomicilio_D
     {
         public DataTable Read()
         {
@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_LISTAR_PUESTO", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
@@ -48,7 +48,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_READ_PUESTO", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_READ_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
                 sqlCon.Open();
@@ -70,20 +70,22 @@ namespace ACCESO_A_DATOS
             }
         }
 
-        public string Create(ClsClasificacion obj)
+        public string Create(ClsDomicilio obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CREATE_CLASIFICACION", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_CREATE_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
-                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                cmd.Parameters.Add("@calle", SqlDbType.VarChar).Value = obj.Calle;
+                cmd.Parameters.Add("@colonia", SqlDbType.VarChar).Value = obj.Colonia;
+                cmd.Parameters.Add("@localidad", SqlDbType.VarChar).Value = obj.Localidad;
+                cmd.Parameters.Add("numeroCasa", SqlDbType.VarChar).Value = obj.NumeroCasa;
                 sqlCon.Open();
-                //mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el puesto";
             }
             catch (Exception e)
             {
@@ -99,20 +101,22 @@ namespace ACCESO_A_DATOS
             return msj;
         }
 
-        public string Update(ClsClasificacion obj)
+        public string Update(ClsDomicilio obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_UPDATE_CLASIFICACION", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_UPDATE_PUESTO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
-                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                cmd.Parameters.Add("@calle", SqlDbType.VarChar).Value = obj.Calle;
+                cmd.Parameters.Add("@colonia", SqlDbType.VarChar).Value = obj.Colonia;
+                cmd.Parameters.Add("@localidad", SqlDbType.VarChar).Value = obj.Localidad;
+                cmd.Parameters.Add("numeroCasa", SqlDbType.VarChar).Value = obj.NumeroCasa;
                 sqlCon.Open();
-                //mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el domicilio";
             }
             catch (Exception e)
             {
@@ -135,11 +139,11 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_CLASIFICACION", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_DELETE_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-               //mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el puesto";
             }
             catch (Exception e)
             {
@@ -154,5 +158,7 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
+
+
     }
 }

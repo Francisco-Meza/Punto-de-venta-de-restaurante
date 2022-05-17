@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class FrmAddProductos : Form
     {
-        private string Nombre, Descripcion, Clasificacion, Precio;
+        private string _idProd, _idCla, _precio, _descrip, _nombre;
         
         public FrmAddProductos()
         {
@@ -45,11 +45,7 @@ namespace GUI
         }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            Nombre = TxtNombrePro.Text;
-            Descripcion = TxtDescriPro.Text;
-            Clasificacion = TxtClaPro.Text;
-            Precio = TxtPrecioPro.Text;
-            
+            //falta
 
         }
         public void Validar()

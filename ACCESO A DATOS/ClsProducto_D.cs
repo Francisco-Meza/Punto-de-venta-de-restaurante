@@ -9,7 +9,7 @@ using ENTIDADES;
 
 namespace ACCESO_A_DATOS
 {
-    public class ClsClasificacion_D
+    public class ClsProducto_D
     {
         public DataTable Read()
         {
@@ -19,28 +19,26 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_LISTAR_PUESTO", sqlCon);
-                cmd.CommandType = CommandType.StoredProcedure;
+                SqlCommand cdm = new SqlCommand("SP_LISTAR_PRODUCTO", sqlCon);
+                cdm.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
-                resultado = cmd.ExecuteReader();
+                resultado = cdm.ExecuteReader();
                 tabla.Load(resultado);
                 return tabla;
             }
-            catch (Exception e)
+            catch(Exception e)
             {
-
                 throw;
             }
             finally
             {
-                if (sqlCon.State == ConnectionState.Open)
+                if(sqlCon.State == ConnectionState.Open)
                 {
                     sqlCon.Close();
                 }
             }
         }
-
-        public DataTable Read(string valor)
+        public DataTable Read(string Valor)
         {
             SqlDataReader resultado;
             DataTable tabla = new DataTable();
@@ -48,17 +46,16 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_READ_PUESTO", sqlCon);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
+                SqlCommand cdm = new SqlCommand("SP_READ_PRODUCTO", sqlCon);
+                cdm.CommandType = CommandType.StoredProcedure;
+                cdm.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor;
                 sqlCon.Open();
-                resultado = cmd.ExecuteReader();
+                resultado = cdm.ExecuteReader();
                 tabla.Load(resultado);
                 return tabla;
             }
             catch (Exception e)
             {
-
                 throw;
             }
             finally
@@ -68,22 +65,25 @@ namespace ACCESO_A_DATOS
                     sqlCon.Close();
                 }
             }
-        }
 
-        public string Create(ClsClasificacion obj)
+
+        }
+        public string Create(ClsProducto obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CREATE_CLASIFICACION", sqlCon);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
-                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                SqlCommand cdm = new SqlCommand("SP_CREATE_PRODUCTO", sqlCon);
+                cdm.CommandType = CommandType.StoredProcedure;
+                cdm.Parameters.Add("idProducto", SqlDbType.Int).Value = obj.IdProducto;
+                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
+                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
+                cdm.Parameters.Add("nombre", SqlDbType.VarChar).Value = obj.Nombre;
+                cdm.Parameters.Add("descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();
-                //mensaje
+               //MENSAJE//
             }
             catch (Exception e)
             {
@@ -98,21 +98,22 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
-
-        public string Update(ClsClasificacion obj)
+        public string Update(ClsProducto obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_UPDATE_CLASIFICACION", sqlCon);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
-                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                SqlCommand cdm = new SqlCommand("SP_UPDATE_PRODUCTO", sqlCon);
+                cdm.CommandType = CommandType.StoredProcedure;
+                cdm.Parameters.Add("idProducto", SqlDbType.Int).Value = obj.IdProducto;
+                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
+                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
+                cdm.Parameters.Add("nombre", SqlDbType.VarChar).Value = obj.Nombre;
+                cdm.Parameters.Add("descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();
-                //mensaje
+                msj = (cdm.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el producto";
             }
             catch (Exception e)
             {
@@ -127,7 +128,6 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
-
         public string Delete(int id)
         {
             string msj = "";
@@ -135,11 +135,11 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_CLASIFICACION", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_DELETE_PRODUCTO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-               //mensaje
+                //Mensaje
             }
             catch (Exception e)
             {
@@ -155,4 +155,6 @@ namespace ACCESO_A_DATOS
             return msj;
         }
     }
+
 }
+

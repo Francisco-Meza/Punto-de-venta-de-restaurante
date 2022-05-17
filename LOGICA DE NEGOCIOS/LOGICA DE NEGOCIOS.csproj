@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsProducto.cs" />
+    <Compile Include="ClsClasificacion_N.cs" />
+    <Compile Include="ClsDomicilio_N.cs" />
+    <Compile Include="ClsProducto_N.cs" />
     <Compile Include="ClsPuesto_N.cs" />
     <Compile Include="Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
