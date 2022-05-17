@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cdm = new SqlCommand("SP_LISTAR_PRODUCTO", sqlCon);
+                SqlCommand cdm = new SqlCommand("SP_READ_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cdm.ExecuteReader();
@@ -46,7 +46,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cdm = new SqlCommand("SP_READ_PRODUCTO", sqlCon);
+                SqlCommand cdm = new SqlCommand("SP_BUSCAR_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
                 cdm.Parameters.Add("@valor", SqlDbType.VarChar).Value = Valor;
                 sqlCon.Open();
@@ -78,10 +78,12 @@ namespace ACCESO_A_DATOS
                 SqlCommand cdm = new SqlCommand("SP_CREATE_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
                 cdm.Parameters.Add("idProducto", SqlDbType.Int).Value = obj.IdProducto;
-                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
-                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
                 cdm.Parameters.Add("nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 cdm.Parameters.Add("descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
+                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
+                
+                
                 sqlCon.Open();
                //MENSAJE//
             }
@@ -108,12 +110,13 @@ namespace ACCESO_A_DATOS
                 SqlCommand cdm = new SqlCommand("SP_UPDATE_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
                 cdm.Parameters.Add("idProducto", SqlDbType.Int).Value = obj.IdProducto;
-                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
-                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
                 cdm.Parameters.Add("nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 cdm.Parameters.Add("descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
+                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
+               
                 sqlCon.Open();
-                msj = (cdm.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el producto";
+                //mensaje
             }
             catch (Exception e)
             {
