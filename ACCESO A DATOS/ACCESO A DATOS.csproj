@@ -52,6 +52,7 @@
     <Compile Include="ClsParametros.cs" />
     <Compile Include="ClsPedidoLocal_D.cs" />
     <Compile Include="ClsPersonal_D.cs" />
+    <Compile Include="ClsProducto_D.cs" />
     <Compile Include="ClsPuestoOperacion_D.cs" />
     <Compile Include="ClsPuesto_D.cs" />
     <Compile Include="ClsTipoPuesto_D.cs" />
