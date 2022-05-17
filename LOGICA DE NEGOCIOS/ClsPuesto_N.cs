@@ -51,7 +51,7 @@ namespace LOGICA_DE_NEGOCIOS
         {
             ClsPuesto_D Datos = new ClsPuesto_D();
             if (Validaciones.SoloNumero(id)) return Datos.Delete(int.Parse(id));
-            else return null;
+            else return "El formato del id es incorrecto";
         }
     }
 }

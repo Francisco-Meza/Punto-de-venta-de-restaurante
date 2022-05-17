@@ -14,7 +14,6 @@ namespace GUI
     public partial class FrmAddPersonal : Form
     {
         private string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
-        readonly LOGICA_DE_NEGOCIO.Validaciones val = new LOGICA_DE_NEGOCIO.Validaciones();
         public FrmAddPersonal()
         {
             InitializeComponent();
@@ -63,22 +62,7 @@ namespace GUI
             puesto = TxtNombre.Text;
             correo = TxtCorreo.Text;
             telefono = TxtTelefonoPersonal.Text;
-            if (!val.VerificarTelefono(telefono))
-            {
-                MessageBox.Show("El formato del telefono es incorrecto");
-            }
-            if (!val.VerificarCorreo(correo))
-            {
-                MessageBox.Show("El formato del correo es incorrecto");
-            }
-            if (contra.Length >= 6)
-            {
-                if (!val.VerificarContrasena(contra))
-                {
-                    MessageBox.Show("La contraseña debe llevar por lo menos un numero y un caracter especial");
-                }
-            }
-            else MessageBox.Show("La contraseña debe llevar por lo menos 6 caracteres");
+            /**/
 
         }
         public void Validar()
