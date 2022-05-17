@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using ENTIDADES;
+using System.Data.SqlClient;
 
 namespace ACCESO_A_DATOS
 {
-    class ClsMesa_D
+    public class ClsDomicilio_D
     {
         public DataTable Read()
         {
@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_LISTAR_MESAS", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
@@ -48,7 +48,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_READ_MESA", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_READ_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
                 sqlCon.Open();
@@ -69,21 +69,23 @@ namespace ACCESO_A_DATOS
                 }
             }
         }
-        public string Create(ClsMesa obj)
+
+        public string Create(ClsDomicilio obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CREATE_MESA", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_CREATE_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@numeroMesa", SqlDbType.Int).Value = obj.NumeroMesa;
-                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
-                cmd.Parameters.Add("@numeroComensales", SqlDbType.Int).Value = obj.NumeroComensales;
+                cmd.Parameters.Add("@calle", SqlDbType.VarChar).Value = obj.Calle;
+                cmd.Parameters.Add("@colonia", SqlDbType.VarChar).Value = obj.Colonia;
+                cmd.Parameters.Add("@localidad", SqlDbType.VarChar).Value = obj.Localidad;
+                cmd.Parameters.Add("numeroCasa", SqlDbType.VarChar).Value = obj.NumeroCasa;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la mesa";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el puesto";
             }
             catch (Exception e)
             {
@@ -99,21 +101,22 @@ namespace ACCESO_A_DATOS
             return msj;
         }
 
-        public string Update(ClsMesa obj)
+        public string Update(ClsDomicilio obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_UPDATE_MESA", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_UPDATE_PUESTO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@numeroMesa", SqlDbType.Int).Value = obj.NumeroMesa;
-                cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
-                cmd.Parameters.Add("@numeroComensales", SqlDbType.Int).Value = obj.NumeroComensales;
+                cmd.Parameters.Add("@calle", SqlDbType.VarChar).Value = obj.Calle;
+                cmd.Parameters.Add("@colonia", SqlDbType.VarChar).Value = obj.Colonia;
+                cmd.Parameters.Add("@localidad", SqlDbType.VarChar).Value = obj.Localidad;
+                cmd.Parameters.Add("numeroCasa", SqlDbType.VarChar).Value = obj.NumeroCasa;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar la mesa";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el domicilio";
             }
             catch (Exception e)
             {
@@ -136,11 +139,11 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_MESA", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_DELETE_DOMICILIO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la mesa";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el puesto";
             }
             catch (Exception e)
             {
@@ -155,5 +158,7 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
+
+
     }
 }
