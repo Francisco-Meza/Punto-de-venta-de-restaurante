@@ -42,10 +42,14 @@ namespace LOGICA_DE_NEGOCIOS
             ClsProducto_D Datos = new ClsProducto_D();
             ClsProducto obj = new ClsProducto();
             obj.IdProducto = int.Parse(idProduc);
-            obj.Nombre = nombre;
-            obj.Descripcion = descrip;
-            obj.IdClasificacion = int.Parse(idClas);
-            obj.Precio = int.Parse(precio);
+            if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
+            else return "El nombre no tiene un formato correcto, intente no usar caracterese especiales";
+            if (Validaciones.WithForCompareAsciiValue(descrip)) obj.Descripcion = descrip;
+            else return "Intente no usar caracterese especiales, solo letras";
+            if (Validaciones.SoloNumero(idClas)) obj.IdClasificacion = int.Parse(idClas);
+            else return "El ID ingresado no es valido";
+            if (Validaciones.SoloNumero(precio)) obj.Precio = int.Parse(precio);
+            else return "Solo numeros";
             return Datos.Update(obj);
         }
         public static string Delete(int id)
