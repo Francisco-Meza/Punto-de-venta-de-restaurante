@@ -58,7 +58,7 @@ namespace ACCESO_A_DATOS
             }
             catch (Exception e)
             {
-
+                return null;
                 throw;
             }
             finally
