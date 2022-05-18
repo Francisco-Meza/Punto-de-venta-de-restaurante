@@ -9,7 +9,7 @@ using ENTIDADES;
 
 namespace ACCESO_A_DATOS
 {
-    class ClsMesa_D
+    public class ClsMesa_D
     {
         public DataTable Read()
         {
