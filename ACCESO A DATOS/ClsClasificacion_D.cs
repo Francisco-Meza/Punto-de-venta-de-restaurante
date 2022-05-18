@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_LISTAR_PUESTO", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_READ_CLASIFICACION", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
@@ -48,7 +48,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_READ_PUESTO", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_BUSCAR_CLASIFICACION", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
                 sqlCon.Open();
@@ -83,7 +83,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();
-                //mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "Completo" : "No se acompleto el proceso";
             }
             catch (Exception e)
             {
@@ -112,7 +112,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();
-                //mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "Completo" : "No se acompleto el proceso";
             }
             catch (Exception e)
             {
@@ -139,7 +139,7 @@ namespace ACCESO_A_DATOS
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-               //mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "Completo" : "No se acompleto el proceso";
             }
             catch (Exception e)
             {
