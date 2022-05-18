@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LOGICA_DE_NEGOCIOS;
+using ACCESO_A_DATOS;
 
 namespace GUI
 {
@@ -50,13 +51,25 @@ namespace GUI
         }
         public void Validar()
         {
-            if (TxtNombrePro.Text != String.Empty && TxtDescriPro.Text != String.Empty && TxtClaPro.Text != String.Empty && TxtPrecioPro.Text != String.Empty)
+            if (TxtNombrePro.Text != String.Empty && TxtDescriPro.Text != String.Empty &&  TxtPrecioPro.Text != String.Empty)
             {
                 BtnGuardarPro.Enabled = true;
             }
             else
             {
                 BtnGuardarPro.Enabled = false;
+            }
+        }
+        
+        private void Clasificacion()
+        {
+            try
+            {
+                ComboBoxClasi.DataSource = ClsClasificacion_N.Read(); 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
     }
