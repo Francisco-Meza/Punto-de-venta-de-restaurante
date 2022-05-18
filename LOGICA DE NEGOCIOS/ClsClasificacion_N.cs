@@ -16,10 +16,15 @@ namespace LOGICA_DE_NEGOCIOS
             ClsClasificacion_D Datos = new ClsClasificacion_D();
             return Datos.Read();
         }
+        public static DataTable Buscar(string valor)
+        {
+            ClsClasificacion_D Datos = new ClsClasificacion_D();
+            return Datos.BUSCAR(valor);
+        }
         public static DataTable Read(string valor)
         {
             ClsClasificacion_D Datos = new ClsClasificacion_D();
-            return Datos.Read(valor);
+            return Datos.SELECT();
         }
         public static string Create(string id, string nombre, string descripcion)
         {
