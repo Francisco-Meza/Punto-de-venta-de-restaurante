@@ -48,6 +48,7 @@
     <Compile Include="ClsModulo_D.cs" />
     <Compile Include="ClsOperacion_D.cs" />
     <Compile Include="ClsParametros.cs" />
+    <Compile Include="ClsPedidoDomicilio_D.cs" />
     <Compile Include="ClsPersonal_D.cs" />
     <Compile Include="ClsProducto_D.cs" />
     <Compile Include="ClsPuestoOperacion_D.cs" />
