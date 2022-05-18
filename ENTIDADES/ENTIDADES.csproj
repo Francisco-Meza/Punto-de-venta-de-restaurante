@@ -43,7 +43,11 @@
   <ItemGroup>
     <Compile Include="ClsClasificacion.cs" />
     <Compile Include="ClsDomicilio.cs" />
+<<<<<<< HEAD
     <Compile Include="ClsMesa.cs" />
+=======
+    <Compile Include="ClsPedidoDomicilio.cs" />
+>>>>>>> Clase PedidoDomicilio
     <Compile Include="ClsProducto.cs" />
     <Compile Include="ClsPuesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
