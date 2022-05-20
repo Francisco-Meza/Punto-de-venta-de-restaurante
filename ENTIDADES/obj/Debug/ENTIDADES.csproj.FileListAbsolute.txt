@@ -10,3 +10,9 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\EN
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.dll
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\bin\Debug\ENTIDADES.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\bin\Debug\ENTIDADES.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csprojAssemblyReference.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.pdb
