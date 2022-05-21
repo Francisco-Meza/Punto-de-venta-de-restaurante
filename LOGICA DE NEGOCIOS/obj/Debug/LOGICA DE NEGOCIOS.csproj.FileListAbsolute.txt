@@ -28,9 +28,24 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll.config
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.pdb
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.pdb
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll.config
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.pdb
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CopyComplete
+=======
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll.config
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csprojAssemblyReference.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CoreCompileInputs.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CopyComplete
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.pdb
+>>>>>>> aae2e54a42830fa1beb8d89778ae5b33d56a3831
