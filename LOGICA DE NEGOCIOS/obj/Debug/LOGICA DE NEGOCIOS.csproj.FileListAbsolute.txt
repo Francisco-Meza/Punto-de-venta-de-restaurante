@@ -28,3 +28,9 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll.config
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.pdb
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CopyComplete
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ACCESO A DATOS.dll.config
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\bin\Debug\ENTIDADES.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\LOGICA DE NEGOCIOS\obj\Debug\LOGICA DE NEGOCIOS.csproj.CopyComplete

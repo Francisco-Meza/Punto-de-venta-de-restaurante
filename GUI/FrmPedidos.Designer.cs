@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedidos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedidos));
             this.PanelPrincipal = new Guna.UI.WinForms.GunaPanel();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
@@ -43,6 +43,7 @@
             this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // PanelPrincipal
             // 
             this.PanelPrincipal.BackColor = System.Drawing.Color.LightCyan;
+            this.PanelPrincipal.Controls.Add(this.BtnAgregar);
             this.PanelPrincipal.Controls.Add(this.BtnCerrarHijo);
             this.PanelPrincipal.Controls.Add(this.btnEliminar);
             this.PanelPrincipal.Controls.Add(this.btnFinalizar);
@@ -94,7 +96,7 @@
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(322, 450);
+            this.btnEliminar.Location = new System.Drawing.Point(280, 382);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -122,7 +124,7 @@
             this.btnFinalizar.Image = ((System.Drawing.Image)(resources.GetObject("btnFinalizar.Image")));
             this.btnFinalizar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnFinalizar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnFinalizar.Location = new System.Drawing.Point(504, 450);
+            this.btnFinalizar.Location = new System.Drawing.Point(585, 490);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnFinalizar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -150,7 +152,7 @@
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(124, 450);
+            this.btnEditar.Location = new System.Drawing.Point(479, 382);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -264,6 +266,34 @@
             this.columnEstado.Name = "columnEstado";
             this.columnEstado.ReadOnly = true;
             // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAgregar.AnimationHoverSpeed = 0.07F;
+            this.BtnAgregar.AnimationSpeed = 0.03F;
+            this.BtnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.BtnAgregar.BorderColor = System.Drawing.Color.Black;
+            this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAgregar.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
+            this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAgregar.Location = new System.Drawing.Point(65, 382);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAgregar.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.OnHoverImage = null;
+            this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAgregar.Radius = 20;
+            this.BtnAgregar.Size = new System.Drawing.Size(145, 40);
+            this.BtnAgregar.TabIndex = 8;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FrmPedidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -292,5 +322,6 @@
         private Guna.UI.WinForms.GunaButton btnEliminar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnEstado;
+        private Guna.UI.WinForms.GunaButton BtnAgregar;
     }
 }
