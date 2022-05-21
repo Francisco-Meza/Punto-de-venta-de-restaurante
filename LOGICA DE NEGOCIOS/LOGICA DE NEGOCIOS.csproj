@@ -45,6 +45,7 @@
     <Compile Include="ClsDomicilio_N.cs" />
     <Compile Include="ClsMesa_N.cs" />
     <Compile Include="ClsPedidoDomicilio_N.cs" />
+    <Compile Include="ClsPedidoLocal_N.cs" />
     <Compile Include="ClsProducto_N.cs" />
     <Compile Include="ClsPuesto_N.cs" />
     <Compile Include="Validaciones.cs" />

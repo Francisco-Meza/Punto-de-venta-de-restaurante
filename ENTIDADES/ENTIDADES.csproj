@@ -44,6 +44,7 @@
     <Compile Include="ClsClasificacion.cs" />
     <Compile Include="ClsDomicilio.cs" />
     <Compile Include="ClsMesa.cs" />
+    <Compile Include="ClsPedidoLocal.cs" />
     <Compile Include="ClsPedidoDomicilio.cs" />
     <Compile Include="ClsProducto.cs" />
     <Compile Include="ClsPuesto.cs" />
