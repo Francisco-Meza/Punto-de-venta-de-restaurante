@@ -48,6 +48,7 @@
     <Compile Include="ClsPedidoDomicilio.cs" />
     <Compile Include="ClsProducto.cs" />
     <Compile Include="ClsPuesto.cs" />
+    <Compile Include="ClsTipoPuesto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

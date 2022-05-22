@@ -48,6 +48,7 @@
     <Compile Include="ClsPedidoLocal_N.cs" />
     <Compile Include="ClsProducto_N.cs" />
     <Compile Include="ClsPuesto_N.cs" />
+    <Compile Include="ClsTipoPuesto_N.cs" />
     <Compile Include="Validaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
