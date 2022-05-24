@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsClasificacion_N.cs" />
+    <Compile Include="ClsCuentas_N.cs" />
     <Compile Include="ClsDomicilio_N.cs" />
     <Compile Include="ClsMesa_N.cs" />
     <Compile Include="ClsPedidoDomicilio_N.cs" />
