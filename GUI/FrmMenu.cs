@@ -96,6 +96,11 @@ namespace GUI
             AbrirFHijo(new FrmPuesto(this));
         }
 
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmMesas(this));
+        }
+
         private void BtnCajero_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmPedidos(this));

@@ -34,3 +34,38 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.exe
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.pdb
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.ADMINISTRACION.FrmMesas.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe.config
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ENTIDADES.dll
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.dll.config
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ENTIDADES.pdb
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddClasificacion.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddMesas.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddPersonal.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAddProductos.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddPuesto.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmClasificacion.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmPuesto.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmMesas.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmLogin.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPersonal.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmProductos.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmTicket.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
+C:\Users\CR LENOVO\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
