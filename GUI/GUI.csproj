@@ -64,12 +64,6 @@
     <Compile Include="ADMINISTRACION\FrmAddClasificacion.Designer.cs">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADMINISTRACION\FrmAddMesa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADMINISTRACION\FrmAddMesa.Designer.cs">
-      <DependentUpon>FrmAddMesa.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADMINISTRACION\FrmAddPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,9 +159,6 @@
     <EmbeddedResource Include="ADMINISTRACION\FrmAddClasificacion.resx">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADMINISTRACION\FrmAddMesa.resx">
-      <DependentUpon>FrmAddMesa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmAddPersonal.resx">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,15 +243,10 @@
     <None Include="Resources\Captura_de_pantalla__78_-removebg-preview-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ACCESO A DATOS\ACCESO A DATOS.csproj">
-      <Project>{c4e043fd-f8b2-4359-b195-6a1d58bc39aa}</Project>
-      <Name>ACCESO A DATOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LOGICA DE NEGOCIOS\LOGICA DE NEGOCIOS.csproj">
       <Project>{74fce611-5be1-421b-a8d5-2215f258182f}</Project>
       <Name>LOGICA DE NEGOCIOS</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

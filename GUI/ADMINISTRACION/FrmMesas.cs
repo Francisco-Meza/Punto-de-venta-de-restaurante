@@ -34,7 +34,7 @@ namespace GUI.ADMINISTRACION
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            padreMenu.AbrirFHijo(new FrmAddMesa());
+           // padreMenu.AbrirFHijo(new FrmAddMesa());
         }
     }
 }

@@ -33,3 +33,4 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.exe
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.ADMINISTRACION.FrmMesas.resources

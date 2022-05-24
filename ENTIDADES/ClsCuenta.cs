@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ENTIDADES
 {
-    class ClsCuenta
+    public class ClsCuenta
     {
         private string _nombrePersona;
         private string _apelPat;

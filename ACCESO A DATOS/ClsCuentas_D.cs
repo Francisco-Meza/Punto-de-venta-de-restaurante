@@ -84,7 +84,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@correo", SqlDbType.VarChar).Value = obj.Correo;
                 cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.Contrasena;
                 cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.IdPersonal;
-            sqlCon.Open();
+                sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la cuenta";
             }
             catch (Exception e)

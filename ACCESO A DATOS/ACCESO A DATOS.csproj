@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ClsClasificacion_D.cs" />
     <Compile Include="ClsConexion.cs" />
+    <Compile Include="ClsCuentas_D.cs" />
     <Compile Include="ClsCuenta_D.cs" />
     <Compile Include="ClsDomicilio_D.cs" />
     <Compile Include="ClsMesa_D.cs" />
