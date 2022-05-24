@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPuesto));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPuesto));
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.dgvListaPuestos = new Guna.UI.WinForms.GunaDataGridView();
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
             this.BtnEditar = new Guna.UI.WinForms.GunaButton();
-            this.dgvListaPuestos = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPuestos)).BeginInit();
             this.SuspendLayout();
@@ -64,91 +64,6 @@
             this.gunaLabel1.Size = new System.Drawing.Size(133, 21);
             this.gunaLabel1.TabIndex = 42;
             this.gunaLabel1.Text = "Lista de puestos";
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnAgregar.AnimationHoverSpeed = 1F;
-            this.BtnAgregar.AnimationSpeed = 1F;
-            this.BtnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnAgregar.BorderColor = System.Drawing.Color.Black;
-            this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnAgregar.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
-            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
-            this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(92, 454);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnAgregar.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnAgregar.OnHoverImage = null;
-            this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnAgregar.Radius = 20;
-            this.BtnAgregar.Size = new System.Drawing.Size(144, 40);
-            this.BtnAgregar.TabIndex = 39;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnEliminar.AnimationHoverSpeed = 1F;
-            this.BtnEliminar.AnimationSpeed = 1F;
-            this.BtnEliminar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnEliminar.BaseColor = System.Drawing.Color.Red;
-            this.BtnEliminar.BorderColor = System.Drawing.Color.Black;
-            this.BtnEliminar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnEliminar.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
-            this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(546, 454);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
-            this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnEliminar.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnEliminar.OnHoverImage = null;
-            this.BtnEliminar.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnEliminar.Radius = 20;
-            this.BtnEliminar.Size = new System.Drawing.Size(152, 40);
-            this.BtnEliminar.TabIndex = 40;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // BtnEditar
-            // 
-            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnEditar.AnimationHoverSpeed = 1F;
-            this.BtnEditar.AnimationSpeed = 1F;
-            this.BtnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnEditar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnEditar.BorderColor = System.Drawing.Color.Black;
-            this.BtnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnEditar.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnEditar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditar.ForeColor = System.Drawing.Color.White;
-            this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
-            this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(309, 454);
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnEditar.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnEditar.OnHoverImage = null;
-            this.BtnEditar.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnEditar.Radius = 20;
-            this.BtnEditar.Size = new System.Drawing.Size(167, 40);
-            this.BtnEditar.TabIndex = 41;
-            this.BtnEditar.Text = "Editar";
-            this.BtnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dgvListaPuestos
             // 
@@ -214,11 +129,96 @@
             this.dgvListaPuestos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             this.dgvListaPuestos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAgregar.AnimationHoverSpeed = 1F;
+            this.BtnAgregar.AnimationSpeed = 1F;
+            this.BtnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.BtnAgregar.BorderColor = System.Drawing.Color.Black;
+            this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAgregar.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
+            this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAgregar.Location = new System.Drawing.Point(82, 454);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAgregar.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.OnHoverImage = null;
+            this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAgregar.Radius = 20;
+            this.BtnAgregar.Size = new System.Drawing.Size(144, 40);
+            this.BtnAgregar.TabIndex = 41;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnEliminar.AnimationHoverSpeed = 1F;
+            this.BtnEliminar.AnimationSpeed = 1F;
+            this.BtnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEliminar.BaseColor = System.Drawing.Color.Red;
+            this.BtnEliminar.BorderColor = System.Drawing.Color.Black;
+            this.BtnEliminar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnEliminar.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.ForeColor = System.Drawing.Color.White;
+            this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
+            this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnEliminar.Location = new System.Drawing.Point(538, 454);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
+            this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnEliminar.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnEliminar.OnHoverImage = null;
+            this.BtnEliminar.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnEliminar.Radius = 20;
+            this.BtnEliminar.Size = new System.Drawing.Size(144, 40);
+            this.BtnEliminar.TabIndex = 41;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnEditar.AnimationHoverSpeed = 1F;
+            this.BtnEditar.AnimationSpeed = 1F;
+            this.BtnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnEditar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.BtnEditar.BorderColor = System.Drawing.Color.Black;
+            this.BtnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnEditar.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnEditar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.ForeColor = System.Drawing.Color.White;
+            this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
+            this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnEditar.Location = new System.Drawing.Point(310, 454);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnEditar.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnEditar.OnHoverImage = null;
+            this.BtnEditar.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnEditar.Radius = 20;
+            this.BtnEditar.Size = new System.Drawing.Size(144, 40);
+            this.BtnEditar.TabIndex = 41;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FrmPuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 543);
+            this.ClientSize = new System.Drawing.Size(754, 543);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPuesto";

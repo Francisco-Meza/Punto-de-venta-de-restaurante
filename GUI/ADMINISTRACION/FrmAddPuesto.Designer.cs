@@ -68,7 +68,7 @@
             this.BtnCerrarHijo.Location = new System.Drawing.Point(708, 3);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
-            this.BtnCerrarHijo.TabIndex = 10;
+            this.BtnCerrarHijo.TabIndex = 11;
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
             // 
             // BtnGuardar
@@ -132,7 +132,7 @@
             this.gunaGroupBox1.Location = new System.Drawing.Point(89, 191);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
             this.gunaGroupBox1.Size = new System.Drawing.Size(578, 161);
-            this.gunaGroupBox1.TabIndex = 12;
+            this.gunaGroupBox1.TabIndex = 11;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
             // TxtDescripcion
@@ -207,7 +207,7 @@
             this.lblApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApeP.AutoSize = true;
             this.lblApeP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApeP.Location = new System.Drawing.Point(61, 67);
+            this.lblApeP.Location = new System.Drawing.Point(62, 67);
             this.lblApeP.Name = "lblApeP";
             this.lblApeP.Size = new System.Drawing.Size(68, 20);
             this.lblApeP.TabIndex = 1;
@@ -218,7 +218,7 @@
             this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(89, 19);
+            this.lblNombre.Location = new System.Drawing.Point(62, 22);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(25, 20);
             this.lblNombre.TabIndex = 0;

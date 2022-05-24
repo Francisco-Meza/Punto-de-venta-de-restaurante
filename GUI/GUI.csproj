@@ -64,6 +64,12 @@
     <Compile Include="ADMINISTRACION\FrmAddClasificacion.Designer.cs">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMINISTRACION\FrmAddMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmAddMesa.Designer.cs">
+      <DependentUpon>FrmAddMesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMINISTRACION\FrmAddPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,12 @@
     </Compile>
     <Compile Include="ADMINISTRACION\FrmPuesto.Designer.cs">
       <DependentUpon>FrmPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmMesas.Designer.cs">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </Compile>
     <Compile Include="SALON\FrmDetallePedidos.cs">
       <SubType>Form</SubType>
@@ -153,6 +165,9 @@
     <EmbeddedResource Include="ADMINISTRACION\FrmAddClasificacion.resx">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\FrmAddMesa.resx">
+      <DependentUpon>FrmAddMesa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmAddPersonal.resx">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmPuesto.resx">
       <DependentUpon>FrmPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\FrmMesas.resx">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>

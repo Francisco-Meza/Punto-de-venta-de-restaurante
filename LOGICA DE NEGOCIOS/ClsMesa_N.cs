@@ -9,7 +9,7 @@ using ENTIDADES;
 
 namespace LOGICA_DE_NEGOCIOS
 {
-    class ClsMesa_N
+    public class ClsMesa_N
     {
         public static DataTable Read()
         {
