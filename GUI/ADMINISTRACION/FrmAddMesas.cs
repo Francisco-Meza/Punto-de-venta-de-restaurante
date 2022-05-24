@@ -22,7 +22,7 @@ namespace GUI.ADMINISTRACION
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 44) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
             {
-                //Validar();
+                Validar();
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
         }
@@ -30,7 +30,7 @@ namespace GUI.ADMINISTRACION
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 44) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
             {
-                //Validar();
+                Validar();
                 e.Handled = true;//-- Decimos que si se controlo el evento
             }
         }
@@ -48,12 +48,29 @@ namespace GUI.ADMINISTRACION
             else
             {
                 MessageBox.Show("Es obligatorio llenar la descripcion");
-                //Limpiar();
+                Limpiar();
             }
         }
 
+        private void Validar()
+        {
+            if (TxtID.Text != "" && TxtNumeroMesa.Text != "")
+            {
+                BtnGuardar.Enabled = true;
+            }
+            else
+            {
+                BtnGuardar.Enabled = false;
+            }
+        }
+        private void Limpiar()
+        {
+            TxtID.Text = "";
+            TxtNumeroMesa.Text = "";
+            txtDesc.Text = "";
+            TxtNumCom.Text = "";
+        }
 
-        
 
     }
 }
