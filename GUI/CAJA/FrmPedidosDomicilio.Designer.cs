@@ -54,7 +54,7 @@
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(32, 19);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(174, 23);
+            this.gunaLabel1.Size = new System.Drawing.Size(139, 21);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "Envio a domicilio";
             // 
@@ -112,7 +112,7 @@
             this.gunaLabel7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.Location = new System.Drawing.Point(60, 381);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(109, 23);
+            this.gunaLabel7.Size = new System.Drawing.Size(87, 21);
             this.gunaLabel7.TabIndex = 10;
             this.gunaLabel7.Text = "Localidad";
             // 
@@ -142,7 +142,7 @@
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.Location = new System.Drawing.Point(71, 321);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(86, 23);
+            this.gunaLabel6.Size = new System.Drawing.Size(70, 21);
             this.gunaLabel6.TabIndex = 8;
             this.gunaLabel6.Text = "Colonia";
             // 
@@ -171,7 +171,7 @@
             this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.Location = new System.Drawing.Point(34, 263);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(176, 23);
+            this.gunaLabel5.Size = new System.Drawing.Size(139, 21);
             this.gunaLabel5.TabIndex = 6;
             this.gunaLabel5.Text = "Numero de casa";
             // 
@@ -240,7 +240,7 @@
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.Location = new System.Drawing.Point(80, 203);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(63, 23);
+            this.gunaLabel4.Size = new System.Drawing.Size(50, 21);
             this.gunaLabel4.TabIndex = 2;
             this.gunaLabel4.Text = "Calle";
             // 
@@ -251,7 +251,7 @@
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(71, 134);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(93, 23);
+            this.gunaLabel3.Size = new System.Drawing.Size(76, 21);
             this.gunaLabel3.TabIndex = 1;
             this.gunaLabel3.Text = "Teléfono";
             // 
@@ -262,7 +262,7 @@
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(24, 77);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(200, 23);
+            this.gunaLabel2.Size = new System.Drawing.Size(158, 21);
             this.gunaLabel2.TabIndex = 0;
             this.gunaLabel2.Text = "Nombre del cliente";
             // 
