@@ -85,7 +85,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@localidad", SqlDbType.VarChar).Value = obj.Localidad;
                 cmd.Parameters.Add("numeroCasa", SqlDbType.VarChar).Value = obj.NumeroCasa;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el puesto";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el domicilio";
             }
             catch (Exception e)
             {

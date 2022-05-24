@@ -39,34 +39,6 @@ namespace ACCESO_A_DATOS
                 }
             }
         }
-        public DataTable SELECT()
-        {
-            SqlDataReader resultado;
-            DataTable tabla = new DataTable();
-            SqlConnection sqlCon = new SqlConnection();
-            try
-            {
-                sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CLASIFICACION", sqlCon);
-                cmd.CommandType = CommandType.StoredProcedure;
-                sqlCon.Open();
-                resultado = cmd.ExecuteReader();
-                tabla.Load(resultado);
-                return tabla;
-            }
-            catch (Exception e)
-            {
-
-                throw;
-            }
-            finally
-            {
-                if (sqlCon.State == ConnectionState.Open)
-                {
-                    sqlCon.Close();
-                }
-            }
-        }
         public DataTable BUSCAR(string valor)
         {
             SqlDataReader resultado;

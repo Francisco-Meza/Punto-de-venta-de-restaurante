@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace ACCESO_A_DATOS
 {
-    public class ClsPersonal_D
+    public class ClsPedidoLocal_D
     {
         public DataTable Read()
         {
@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_LISTAR_PERSONAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_PEDIDO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
@@ -39,7 +39,6 @@ namespace ACCESO_A_DATOS
                 }
             }
         }
-
         public DataTable Read(string valor)
         {
             SqlDataReader resultado;
@@ -48,7 +47,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_READ_PERSONAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_READ_PEDIDO_LOCAL", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@valor", SqlDbType.VarChar).Value = valor;
                 sqlCon.Open();
@@ -69,23 +68,21 @@ namespace ACCESO_A_DATOS
                 }
             }
         }
-
-        public string Create(ClsPersonal obj)
+        public string Create(ClsPedidoLocal obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CREATE_PERSONAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_CREATE_PEDIDO_LOCAL", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@nombrePerdona", SqlDbType.VarChar).Value = obj.NombrePersona;
-                cmd.Parameters.Add("@apel_Pat", SqlDbType.VarChar).Value = obj.ApelPat;
-                cmd.Parameters.Add("@apel_Mat", SqlDbType.VarChar).Value = obj.ApelMat;
-                cmd.Parameters.Add("@fechaNacimiento", SqlDbType.VarChar).Value = obj.FechaNacimiento;
+                cmd.Parameters.Add("@fecha", SqlDbType.VarChar).Value = obj.Fecha;
+                cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = obj.Estado;
+                cmd.Parameters.Add("@idCuenta", SqlDbType.VarChar).Value = obj.IdCuenta;
+                cmd.Parameters.Add("@idMesa", SqlDbType.VarChar).Value = obj.IdMesa;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el Personal";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el pedido local";
             }
             catch (Exception e)
             {
@@ -100,23 +97,21 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
-
-        public string Update(ClsPersonal obj)
+        public string Update(ClsPedidoLocal obj)
         {
             string msj = "";
             SqlConnection sqlCon = new SqlConnection();
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_UPDATE_PERSONAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_UPDATE_PEDIDO_LOCAL", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@nombrePerdona", SqlDbType.VarChar).Value = obj.NombrePersona;
-                cmd.Parameters.Add("@apel_Pat", SqlDbType.VarChar).Value = obj.ApelPat;
-                cmd.Parameters.Add("@apel_Mat", SqlDbType.VarChar).Value = obj.ApelMat;
-                cmd.Parameters.Add("@fechaNacimiento", SqlDbType.VarChar).Value = obj.FechaNacimiento;
+                cmd.Parameters.Add("@fecha", SqlDbType.VarChar).Value = obj.Fecha;
+                cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = obj.Estado;
+                cmd.Parameters.Add("@idCuenta", SqlDbType.VarChar).Value = obj.IdCuenta;
+                cmd.Parameters.Add("@idMesa", SqlDbType.VarChar).Value = obj.IdMesa;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el personal";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el pedido local";
             }
             catch (Exception e)
             {
@@ -131,7 +126,6 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
-
         public string Delete(int id)
         {
             string msj = "";
@@ -139,11 +133,11 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_PERSONAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_DELETE_PEDIDO_LOCAL", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el personal";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el pedido local";
             }
             catch (Exception e)
             {

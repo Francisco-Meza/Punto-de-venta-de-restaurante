@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
         private ClsConexion()
         {
             this._base = "Restaurante";
-            this._servidor = "DESKTOP-4MR4OFL\\MSSQLSERVER00";
+            this._servidor = "DESKTOP-D8E6BU1";
             this._usuario = "Master";
             this._clave = "MAFRAD2";
             this._seguridad = true;
