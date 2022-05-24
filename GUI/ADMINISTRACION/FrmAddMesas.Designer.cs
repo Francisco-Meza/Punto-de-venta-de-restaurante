@@ -117,6 +117,7 @@
             this.TxtNumeroMesa.Radius = 10;
             this.TxtNumeroMesa.Size = new System.Drawing.Size(306, 30);
             this.TxtNumeroMesa.TabIndex = 8;
+            this.TxtNumeroMesa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNumeroMesa_KeyPress);
             // 
             // TxtID
             // 
@@ -135,6 +136,7 @@
             this.TxtID.Radius = 10;
             this.TxtID.Size = new System.Drawing.Size(306, 30);
             this.TxtID.TabIndex = 7;
+            this.TxtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtID_KeyPress);
             // 
             // lblApeM
             // 
@@ -175,9 +177,9 @@
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(87, 122);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(142, 21);
+            this.gunaLabel2.Size = new System.Drawing.Size(145, 21);
             this.gunaLabel2.TabIndex = 13;
-            this.gunaLabel2.Text = "Datos del puesto";
+            this.gunaLabel2.Text = "Datos de la Mesa";
             // 
             // BtnGuardar
             // 
