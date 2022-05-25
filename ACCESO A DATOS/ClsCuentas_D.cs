@@ -158,5 +158,36 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
+
+        public DataTable Login(string correo, string clave)
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_LOGIN_CUENTAS", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@correo", SqlDbType.VarChar).Value = correo;
+                cmd.Parameters.Add("@clave", SqlDbType.VarChar).Value = clave;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
     }
 }

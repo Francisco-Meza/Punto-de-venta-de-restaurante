@@ -9,3 +9,4 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\EN
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.dll
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\ENTIDADES\obj\Debug\ENTIDADES.csprojAssemblyReference.cache

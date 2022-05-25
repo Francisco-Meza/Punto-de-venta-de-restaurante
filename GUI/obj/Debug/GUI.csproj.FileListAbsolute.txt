@@ -20,7 +20,6 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmLogin.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmMenu.resources
-C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmMesas.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPedidos.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
 C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
@@ -70,3 +69,4 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.cspr
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
+C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAURANTE\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddMesas.resources
