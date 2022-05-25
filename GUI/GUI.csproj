@@ -64,6 +64,12 @@
     <Compile Include="ADMINISTRACION\FrmAddClasificacion.Designer.cs">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMINISTRACION\FrmAddMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmAddMesas.Designer.cs">
+      <DependentUpon>FrmAddMesas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMINISTRACION\FrmAddPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ADMINISTRACION\FrmAddClasificacion.resx">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\FrmAddMesas.resx">
+      <DependentUpon>FrmAddMesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmAddPersonal.resx">
       <DependentUpon>FrmAddPersonal.cs</DependentUpon>

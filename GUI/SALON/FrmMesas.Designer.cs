@@ -28,92 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnMesa1 = new Guna.UI.WinForms.GunaCircleButton();
-            this.BtnMesa2 = new Guna.UI.WinForms.GunaCircleButton();
-            this.BtnMesa3 = new Guna.UI.WinForms.GunaCircleButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesas));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.BtnMesa4 = new Guna.UI.WinForms.GunaCircleButton();
-            this.BtnMesa5 = new Guna.UI.WinForms.GunaCircleButton();
+            this.dgvMesas = new Guna.UI.WinForms.GunaDataGridView();
+            this.btnEliminar = new Guna.UI.WinForms.GunaButton();
+            this.btnEditar = new Guna.UI.WinForms.GunaButton();
+            this.btnAgregar = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMesas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnMesa1
-            // 
-            this.BtnMesa1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMesa1.AnimationHoverSpeed = 0.07F;
-            this.BtnMesa1.AnimationSpeed = 0.03F;
-            this.BtnMesa1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnMesa1.BorderColor = System.Drawing.Color.Black;
-            this.BtnMesa1.BorderSize = 1;
-            this.BtnMesa1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesa1.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnMesa1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesa1.ForeColor = System.Drawing.Color.White;
-            this.BtnMesa1.Image = null;
-            this.BtnMesa1.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa1.Location = new System.Drawing.Point(52, 101);
-            this.BtnMesa1.Name = "BtnMesa1";
-            this.BtnMesa1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnMesa1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnMesa1.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnMesa1.OnHoverImage = null;
-            this.BtnMesa1.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa1.Size = new System.Drawing.Size(190, 177);
-            this.BtnMesa1.TabIndex = 0;
-            this.BtnMesa1.Text = "Mesa 1";
-            this.BtnMesa1.Click += new System.EventHandler(this.BtnMesa1_Click);
-            // 
-            // BtnMesa2
-            // 
-            this.BtnMesa2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMesa2.AnimationHoverSpeed = 0.07F;
-            this.BtnMesa2.AnimationSpeed = 0.03F;
-            this.BtnMesa2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnMesa2.BorderColor = System.Drawing.Color.Black;
-            this.BtnMesa2.BorderSize = 1;
-            this.BtnMesa2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesa2.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnMesa2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesa2.ForeColor = System.Drawing.Color.White;
-            this.BtnMesa2.Image = null;
-            this.BtnMesa2.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa2.Location = new System.Drawing.Point(285, 101);
-            this.BtnMesa2.Name = "BtnMesa2";
-            this.BtnMesa2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnMesa2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnMesa2.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnMesa2.OnHoverImage = null;
-            this.BtnMesa2.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa2.Size = new System.Drawing.Size(196, 177);
-            this.BtnMesa2.TabIndex = 1;
-            this.BtnMesa2.Text = "Mesa 2";
-            this.BtnMesa2.Click += new System.EventHandler(this.BtnMesa2_Click);
-            // 
-            // BtnMesa3
-            // 
-            this.BtnMesa3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMesa3.AnimationHoverSpeed = 0.07F;
-            this.BtnMesa3.AnimationSpeed = 0.03F;
-            this.BtnMesa3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnMesa3.BorderColor = System.Drawing.Color.Black;
-            this.BtnMesa3.BorderSize = 1;
-            this.BtnMesa3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesa3.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnMesa3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesa3.ForeColor = System.Drawing.Color.White;
-            this.BtnMesa3.Image = null;
-            this.BtnMesa3.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa3.Location = new System.Drawing.Point(535, 101);
-            this.BtnMesa3.Name = "BtnMesa3";
-            this.BtnMesa3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnMesa3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnMesa3.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnMesa3.OnHoverImage = null;
-            this.BtnMesa3.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa3.Size = new System.Drawing.Size(188, 177);
-            this.BtnMesa3.TabIndex = 2;
-            this.BtnMesa3.Text = "Mesa 3";
-            this.BtnMesa3.Click += new System.EventHandler(this.BtnMesa3_Click);
             // 
             // gunaLabel1
             // 
@@ -125,57 +51,155 @@
             this.gunaLabel1.TabIndex = 3;
             this.gunaLabel1.Text = "Mesas del local";
             // 
-            // BtnMesa4
+            // dgvMesas
             // 
-            this.BtnMesa4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMesa4.AnimationHoverSpeed = 0.07F;
-            this.BtnMesa4.AnimationSpeed = 0.03F;
-            this.BtnMesa4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnMesa4.BorderColor = System.Drawing.Color.Black;
-            this.BtnMesa4.BorderSize = 1;
-            this.BtnMesa4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesa4.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnMesa4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesa4.ForeColor = System.Drawing.Color.White;
-            this.BtnMesa4.Image = null;
-            this.BtnMesa4.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa4.Location = new System.Drawing.Point(160, 326);
-            this.BtnMesa4.Name = "BtnMesa4";
-            this.BtnMesa4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnMesa4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnMesa4.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnMesa4.OnHoverImage = null;
-            this.BtnMesa4.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa4.Size = new System.Drawing.Size(206, 159);
-            this.BtnMesa4.TabIndex = 4;
-            this.BtnMesa4.Text = "Mesa 4";
-            this.BtnMesa4.Click += new System.EventHandler(this.BtnMesa4_Click);
+            this.dgvMesas.AllowUserToAddRows = false;
+            this.dgvMesas.AllowUserToDeleteRows = false;
+            this.dgvMesas.AllowUserToResizeColumns = false;
+            this.dgvMesas.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvMesas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMesas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMesas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMesas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMesas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMesas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvMesas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMesas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMesas.ColumnHeadersHeight = 40;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMesas.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMesas.EnableHeadersVisualStyles = false;
+            this.dgvMesas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.dgvMesas.Location = new System.Drawing.Point(12, 73);
+            this.dgvMesas.Name = "dgvMesas";
+            this.dgvMesas.ReadOnly = true;
+            this.dgvMesas.RowHeadersVisible = false;
+            this.dgvMesas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMesas.Size = new System.Drawing.Size(730, 320);
+            this.dgvMesas.TabIndex = 19;
+            this.dgvMesas.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
+            this.dgvMesas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvMesas.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvMesas.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvMesas.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvMesas.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvMesas.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvMesas.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.dgvMesas.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.dgvMesas.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvMesas.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvMesas.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvMesas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvMesas.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgvMesas.ThemeStyle.ReadOnly = true;
+            this.dgvMesas.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            this.dgvMesas.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvMesas.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvMesas.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvMesas.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvMesas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            this.dgvMesas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // BtnMesa5
+            // btnEliminar
             // 
-            this.BtnMesa5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnMesa5.AnimationHoverSpeed = 0.07F;
-            this.BtnMesa5.AnimationSpeed = 0.03F;
-            this.BtnMesa5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnMesa5.BorderColor = System.Drawing.Color.Black;
-            this.BtnMesa5.BorderSize = 1;
-            this.BtnMesa5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesa5.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnMesa5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMesa5.ForeColor = System.Drawing.Color.White;
-            this.BtnMesa5.Image = null;
-            this.BtnMesa5.ImageSize = new System.Drawing.Size(52, 52);
-            this.BtnMesa5.Location = new System.Drawing.Point(433, 326);
-            this.BtnMesa5.Name = "BtnMesa5";
-            this.BtnMesa5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnMesa5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnMesa5.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnMesa5.OnHoverImage = null;
-            this.BtnMesa5.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa5.Size = new System.Drawing.Size(184, 159);
-            this.BtnMesa5.TabIndex = 5;
-            this.BtnMesa5.Text = "Mesa 5";
-            this.BtnMesa5.Click += new System.EventHandler(this.BtnMesa5_Click);
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEliminar.AnimationHoverSpeed = 0.07F;
+            this.btnEliminar.AnimationSpeed = 0.03F;
+            this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.BaseColor = System.Drawing.Color.Red;
+            this.btnEliminar.BorderColor = System.Drawing.Color.Black;
+            this.btnEliminar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEliminar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEliminar.Location = new System.Drawing.Point(571, 450);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
+            this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEliminar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEliminar.OnHoverImage = null;
+            this.btnEliminar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEliminar.Radius = 20;
+            this.btnEliminar.Size = new System.Drawing.Size(120, 40);
+            this.btnEliminar.TabIndex = 18;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnEditar.AnimationHoverSpeed = 0.07F;
+            this.btnEditar.AnimationSpeed = 0.03F;
+            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.btnEditar.BorderColor = System.Drawing.Color.Black;
+            this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEditar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEditar.Location = new System.Drawing.Point(323, 450);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEditar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEditar.OnHoverImage = null;
+            this.btnEditar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEditar.Radius = 20;
+            this.btnEditar.Size = new System.Drawing.Size(120, 40);
+            this.btnEditar.TabIndex = 17;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAgregar.AnimationHoverSpeed = 0.07F;
+            this.btnAgregar.AnimationSpeed = 0.03F;
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.btnAgregar.BorderColor = System.Drawing.Color.Black;
+            this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAgregar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAgregar.Location = new System.Drawing.Point(51, 450);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAgregar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAgregar.OnHoverImage = null;
+            this.btnAgregar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAgregar.Radius = 20;
+            this.btnAgregar.Size = new System.Drawing.Size(120, 40);
+            this.btnAgregar.TabIndex = 16;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // BtnCerrarHijo
             // 
@@ -199,29 +223,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(757, 542);
+            this.Controls.Add(this.dgvMesas);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.BtnCerrarHijo);
-            this.Controls.Add(this.BtnMesa5);
-            this.Controls.Add(this.BtnMesa4);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.BtnMesa3);
-            this.Controls.Add(this.BtnMesa2);
-            this.Controls.Add(this.BtnMesa1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMesas";
             this.Text = "FrmMesas";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMesas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaCircleButton BtnMesa1;
-        private Guna.UI.WinForms.GunaCircleButton BtnMesa2;
-        private Guna.UI.WinForms.GunaCircleButton BtnMesa3;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaCircleButton BtnMesa4;
-        private Guna.UI.WinForms.GunaCircleButton BtnMesa5;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
+        private Guna.UI.WinForms.GunaButton btnEliminar;
+        private Guna.UI.WinForms.GunaButton btnEditar;
+        private Guna.UI.WinForms.GunaButton btnAgregar;
+        private Guna.UI.WinForms.GunaDataGridView dgvMesas;
     }
 }

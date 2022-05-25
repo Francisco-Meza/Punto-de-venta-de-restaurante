@@ -12,9 +12,26 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmClasificacion : Form
     {
-        public FrmClasificacion()
+        private readonly FrmMenu padreMenu;
+        public FrmClasificacion(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAgregarCla_Click(object sender, EventArgs e)
+        {
+            padreMenu.AbrirFHijo(new FrmAddClasificacion());
+        }
+
+        private void btnEditarC_Click(object sender, EventArgs e)
+        {
+            padreMenu.AbrirFHijo(new FrmAddClasificacion());
         }
     }
 }

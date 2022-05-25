@@ -19,34 +19,21 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void BtnMesa1_Click(object sender, EventArgs e)
-        {
-            padreMenu.AbrirFHijo(new FrmDetallePedidos());
-        }
-
-        private void BtnMesa2_Click(object sender, EventArgs e)
-        {
-            padreMenu.AbrirFHijo(new FrmDetallePedidos());
-        }
-
-        private void BtnMesa3_Click(object sender, EventArgs e)
-        {
-            padreMenu.AbrirFHijo(new FrmDetallePedidos());
-        }
-
-        private void BtnMesa4_Click(object sender, EventArgs e)
-        {
-            padreMenu.AbrirFHijo(new FrmDetallePedidos());
-        }
-
-        private void BtnMesa5_Click(object sender, EventArgs e)
-        {
-            padreMenu.AbrirFHijo(new FrmDetallePedidos());
-        }
+       // padreMenu.AbrirFHijo(new FrmDetallePedidos());
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            padreMenu.AbrirFHijo(new FrmAddMesas());
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            padreMenu.AbrirFHijo(new FrmAddMesas());
         }
     }
 }
