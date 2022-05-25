@@ -25,7 +25,6 @@ namespace GUI
             _nombrePersona = datos.Rows[0][3].ToString();
             this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
             this.DoubleBuffered = true;
-<<<<<<< HEAD
             ocultar();
         }
         //Ocultar paneles--------------------
@@ -54,7 +53,6 @@ namespace GUI
             }
             else
                 subMenu.Visible = false;
-=======
             IniciarDatos();
         }
         private void IniciarDatos()//Verifica si que tipo de usuario entro
@@ -87,7 +85,6 @@ namespace GUI
                 default:
                     break;
             }
->>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
         }
         //---------------Metodo para arrastrar en form-----------------//
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -200,17 +197,18 @@ namespace GUI
             AbrirFHijo(new FrmPedidos(this));
         }
 
-<<<<<<< HEAD
+
         //Mesero-----------
         private void btnAdmMesero_Click(object sender, EventArgs e)
-=======
+        {
+
+        }
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmMesas(this));
         }
 
         private void BtnCajero_Click(object sender, EventArgs e)
->>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
         {
             showHideMenu(panelAdmMesero);
         }
