@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddProductos));
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.ComboBoxClasi = new Guna.UI.WinForms.GunaComboBox();
             this.TxtPrecioPro = new Guna.UI.WinForms.GunaTextBox();
             this.TxtDescriPro = new Guna.UI.WinForms.GunaTextBox();
             this.TxtNombrePro = new Guna.UI.WinForms.GunaTextBox();
@@ -40,7 +41,6 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.BtnGuardarPro = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
-            this.ComboBoxClasi = new Guna.UI.WinForms.GunaComboBox();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,26 @@
             this.gunaGroupBox1.Size = new System.Drawing.Size(680, 307);
             this.gunaGroupBox1.TabIndex = 2;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // ComboBoxClasi
+            // 
+            this.ComboBoxClasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComboBoxClasi.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxClasi.BaseColor = System.Drawing.Color.White;
+            this.ComboBoxClasi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ComboBoxClasi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxClasi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxClasi.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.ComboBoxClasi.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBoxClasi.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxClasi.FormattingEnabled = true;
+            this.ComboBoxClasi.Location = new System.Drawing.Point(219, 144);
+            this.ComboBoxClasi.Name = "ComboBoxClasi";
+            this.ComboBoxClasi.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.ComboBoxClasi.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.ComboBoxClasi.Radius = 10;
+            this.ComboBoxClasi.Size = new System.Drawing.Size(306, 26);
+            this.ComboBoxClasi.TabIndex = 12;
             // 
             // TxtPrecioPro
             // 
@@ -224,25 +244,6 @@
             this.BtnCerrarHijo.TabIndex = 7;
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
             this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
-            // 
-            // ComboBoxClasi
-            // 
-            this.ComboBoxClasi.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxClasi.BaseColor = System.Drawing.Color.White;
-            this.ComboBoxClasi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ComboBoxClasi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxClasi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxClasi.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.ComboBoxClasi.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxClasi.ForeColor = System.Drawing.Color.Black;
-            this.ComboBoxClasi.FormattingEnabled = true;
-            this.ComboBoxClasi.Location = new System.Drawing.Point(219, 144);
-            this.ComboBoxClasi.Name = "ComboBoxClasi";
-            this.ComboBoxClasi.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.ComboBoxClasi.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.ComboBoxClasi.Radius = 10;
-            this.ComboBoxClasi.Size = new System.Drawing.Size(306, 26);
-            this.ComboBoxClasi.TabIndex = 12;
             // 
             // FrmAddProductos
             // 

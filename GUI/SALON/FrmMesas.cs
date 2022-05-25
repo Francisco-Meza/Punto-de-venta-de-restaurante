@@ -8,30 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.ADMINISTRACION
+namespace GUI
 {
-    public partial class FrmClasificacion : Form
+    public partial class FrmMesas : Form
     {
         private readonly FrmMenu padreMenu;
-        public FrmClasificacion(FrmMenu padreMenu)
+        public FrmMesas(FrmMenu padreMenu)
         {
             this.padreMenu = padreMenu;
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+       // padreMenu.AbrirFHijo(new FrmDetallePedidos());
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnAgregarCla_Click(object sender, EventArgs e)
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
-            padreMenu.AbrirFHijo(new FrmAddClasificacion());
+            padreMenu.AbrirFHijo(new FrmAddMesas());
         }
 
-        private void btnEditarC_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
         {
-            padreMenu.AbrirFHijo(new FrmAddClasificacion());
+            padreMenu.AbrirFHijo(new FrmAddMesas());
         }
     }
 }

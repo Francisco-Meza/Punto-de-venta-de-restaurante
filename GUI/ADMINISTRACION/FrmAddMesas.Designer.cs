@@ -29,6 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddMesas));
+<<<<<<< HEAD
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.TxtPrecioPro = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtDescriPro = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtNombrePro = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.BtnGuardarPro = new Guna.UI.WinForms.GunaButton();
+            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
+            this.gunaGroupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(26, 19);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(115, 21);
+            this.gunaLabel1.TabIndex = 10;
+            this.gunaLabel1.Text = "Añadir Mesas";
+=======
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.TxtNumCom = new Guna.UI.WinForms.GunaTextBox();
@@ -57,6 +81,7 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(757, 542);
             this.gunaPanel1.TabIndex = 0;
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
             // 
             // gunaGroupBox1
             // 
@@ -67,6 +92,135 @@
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.LightCyan;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gunaGroupBox1.BorderSize = 1;
+<<<<<<< HEAD
+            this.gunaGroupBox1.Controls.Add(this.TxtPrecioPro);
+            this.gunaGroupBox1.Controls.Add(this.TxtDescriPro);
+            this.gunaGroupBox1.Controls.Add(this.TxtNombrePro);
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel6);
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
+            this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
+            this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
+            this.gunaGroupBox1.Location = new System.Drawing.Point(37, 120);
+            this.gunaGroupBox1.Name = "gunaGroupBox1";
+            this.gunaGroupBox1.Size = new System.Drawing.Size(680, 307);
+            this.gunaGroupBox1.TabIndex = 9;
+            this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // TxtPrecioPro
+            // 
+            this.TxtPrecioPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtPrecioPro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtPrecioPro.BaseColor = System.Drawing.Color.White;
+            this.TxtPrecioPro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtPrecioPro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtPrecioPro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtPrecioPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.TxtPrecioPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtPrecioPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPrecioPro.Location = new System.Drawing.Point(219, 206);
+            this.TxtPrecioPro.Name = "TxtPrecioPro";
+            this.TxtPrecioPro.PasswordChar = '\0';
+            this.TxtPrecioPro.Radius = 10;
+            this.TxtPrecioPro.Size = new System.Drawing.Size(306, 30);
+            this.TxtPrecioPro.TabIndex = 11;
+            // 
+            // TxtDescriPro
+            // 
+            this.TxtDescriPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtDescriPro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtDescriPro.BaseColor = System.Drawing.Color.White;
+            this.TxtDescriPro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtDescriPro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtDescriPro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtDescriPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.TxtDescriPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtDescriPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDescriPro.Location = new System.Drawing.Point(219, 124);
+            this.TxtDescriPro.Name = "TxtDescriPro";
+            this.TxtDescriPro.PasswordChar = '\0';
+            this.TxtDescriPro.Radius = 10;
+            this.TxtDescriPro.Size = new System.Drawing.Size(306, 30);
+            this.TxtDescriPro.TabIndex = 8;
+            // 
+            // TxtNombrePro
+            // 
+            this.TxtNombrePro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtNombrePro.BackColor = System.Drawing.Color.Transparent;
+            this.TxtNombrePro.BaseColor = System.Drawing.Color.White;
+            this.TxtNombrePro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtNombrePro.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNombrePro.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtNombrePro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.TxtNombrePro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtNombrePro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombrePro.Location = new System.Drawing.Point(219, 18);
+            this.TxtNombrePro.Name = "TxtNombrePro";
+            this.TxtNombrePro.PasswordChar = '\0';
+            this.TxtNombrePro.Radius = 10;
+            this.TxtNombrePro.Size = new System.Drawing.Size(306, 30);
+            this.TxtNombrePro.TabIndex = 7;
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.Location = new System.Drawing.Point(22, 216);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(182, 20);
+            this.gunaLabel6.TabIndex = 4;
+            this.gunaLabel6.Text = "Número de comensales";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(67, 124);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(96, 20);
+            this.gunaLabel3.TabIndex = 1;
+            this.gunaLabel3.Text = "Descripcion";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(49, 18);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(140, 20);
+            this.gunaLabel2.TabIndex = 0;
+            this.gunaLabel2.Text = "Número de mesas";
+            // 
+            // BtnGuardarPro
+            // 
+            this.BtnGuardarPro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnGuardarPro.AnimationHoverSpeed = 0.07F;
+            this.BtnGuardarPro.AnimationSpeed = 0.03F;
+            this.BtnGuardarPro.BackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarPro.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.BtnGuardarPro.BorderColor = System.Drawing.Color.Black;
+            this.BtnGuardarPro.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnGuardarPro.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnGuardarPro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnGuardarPro.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarPro.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarPro.Image")));
+            this.BtnGuardarPro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardarPro.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnGuardarPro.Location = new System.Drawing.Point(301, 463);
+            this.BtnGuardarPro.Name = "BtnGuardarPro";
+            this.BtnGuardarPro.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnGuardarPro.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnGuardarPro.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnGuardarPro.OnHoverImage = null;
+            this.BtnGuardarPro.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnGuardarPro.Radius = 20;
+            this.BtnGuardarPro.Size = new System.Drawing.Size(170, 46);
+            this.BtnGuardarPro.TabIndex = 12;
+            this.BtnGuardarPro.Text = "Guardar";
+            this.BtnGuardarPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+=======
             this.gunaGroupBox1.Controls.Add(this.txtDesc);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel1);
             this.gunaGroupBox1.Controls.Add(this.TxtNumCom);
@@ -209,6 +363,7 @@
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click_1);
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
             // 
             // BtnCerrarHijo
             // 
@@ -220,6 +375,14 @@
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
             this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+<<<<<<< HEAD
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(687, 12);
+            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
+            this.BtnCerrarHijo.Size = new System.Drawing.Size(45, 39);
+            this.BtnCerrarHijo.TabIndex = 11;
+            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            // 
+=======
             this.BtnCerrarHijo.Location = new System.Drawing.Point(711, 3);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
@@ -255,10 +418,26 @@
             this.txtDesc.Size = new System.Drawing.Size(306, 30);
             this.txtDesc.TabIndex = 11;
             // 
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
             // FrmAddMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(757, 542);
+            this.Controls.Add(this.BtnGuardarPro);
+            this.Controls.Add(this.BtnCerrarHijo);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.gunaGroupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmAddMesas";
+            this.Text = "FrmAddMesas";
+            this.gunaGroupBox1.ResumeLayout(false);
+            this.gunaGroupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+=======
             this.ClientSize = new System.Drawing.Size(757, 542);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -269,11 +448,24 @@
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
             this.ResumeLayout(false);
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
 
         }
 
         #endregion
 
+<<<<<<< HEAD
+        private Guna.UI.WinForms.GunaButton BtnGuardarPro;
+        private FontAwesome.Sharp.IconButton BtnCerrarHijo;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
+        private Guna.UI.WinForms.GunaTextBox TxtPrecioPro;
+        private Guna.UI.WinForms.GunaTextBox TxtDescriPro;
+        private Guna.UI.WinForms.GunaTextBox TxtNombrePro;
+        private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+=======
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private Guna.UI.WinForms.GunaTextBox TxtNumCom;
@@ -287,5 +479,6 @@
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaTextBox txtDesc;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
     }
 }

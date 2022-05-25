@@ -25,6 +25,34 @@ namespace GUI
             _nombrePersona = datos.Rows[0][3].ToString();
             this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
             this.DoubleBuffered = true;
+            ocultar();
+        }
+        //Ocultar paneles--------------------
+        private void ocultar()
+        {
+            panelAdmCajero.Visible = false;
+            panelAdmi.Visible = false;
+            panelAdmMesero.Visible = false;
+        }
+        private void hideMenu()
+        {
+            if (panelAdmi.Visible == true)
+                panelAdmi.Visible = false;
+            if(panelAdmCajero .Visible == true)
+                panelAdmCajero.Visible = false;
+            if(panelAdmMesero.Visible == true)
+                panelAdmCajero.Visible = false;
+
+        }
+        private void showHideMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
             IniciarDatos();
         }
         private void IniciarDatos()//Verifica si que tipo de usuario entro
@@ -119,26 +147,62 @@ namespace GUI
             this.PanelPadre.Tag = fh;
             fh.Show();
         }
-       
+
         //---------- Son los botones del menu que cada uno nos muestra un fromulario
+        //Administrador-----
+        private void btnAdmi_Click(object sender, EventArgs e)
+        {
+            showHideMenu(panelAdmi);
+        }
         private void BtnPersonal_Click(object sender, EventArgs e) 
         {
             AbrirFHijo(new FrmPersonal(this));
+            hideMenu();
         }
         private void BtnProductos_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmProductos(this));
+            hideMenu();
         }
+        private void BtnPuesto_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmPuesto(this));
+            hideMenu();
+        }
+        private void BtnClasificacion_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmClasificacion(this));
+        }
+        private void BtnMesas_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmMesas(this));
+        }
+
+        //Cajero-----------------------------
+        private void btnAdmCajero_Click(object sender, EventArgs e)
+        {
+            showHideMenu(panelAdmCajero);
+        }
+       
+
         private void BtnPedidoDomi_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmPedidosDomicilio(this));
         }
 
-        private void BtnPuesto_Click(object sender, EventArgs e)
+
+        private void BtnPedidosG_Click(object sender, EventArgs e)
         {
-            AbrirFHijo(new FrmPuesto(this));
+
+            AbrirFHijo(new FrmPedidos(this));
         }
 
+
+        //Mesero-----------
+        private void btnAdmMesero_Click(object sender, EventArgs e)
+        {
+
+        }
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmMesas(this));
@@ -146,8 +210,9 @@ namespace GUI
 
         private void BtnCajero_Click(object sender, EventArgs e)
         {
-            AbrirFHijo(new FrmPedidos(this));
+            showHideMenu(panelAdmMesero);
         }
+
         private void BtnPedidosLocal_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmMesas(this));

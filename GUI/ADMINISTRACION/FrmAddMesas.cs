@@ -7,17 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
+=======
 using LOGICA_DE_NEGOCIOS;
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
 
 namespace GUI.ADMINISTRACION
 {
     public partial class FrmAddMesas : Form
     {
+<<<<<<< HEAD
+=======
         private string _id, _numeroMesa, _numeroComensales, _descripcion;
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
         public FrmAddMesas()
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
         private void TxtNumeroMesa_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 44) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
@@ -72,5 +80,6 @@ namespace GUI.ADMINISTRACION
         }
 
 
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
     }
 }
