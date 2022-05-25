@@ -197,6 +197,8 @@ namespace GUI
             AbrirFHijo(new FrmPedidos(this));
         }
 
+        
+
 
         //Mesero-----------
         private void btnAdmMesero_Click(object sender, EventArgs e)
