@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 using GUI.ADMINISTRACION;
 
 namespace GUI
-{
+{//
     public partial class FrmMenu : Form
     {
         private int _idCuenta, _idPuesto;
