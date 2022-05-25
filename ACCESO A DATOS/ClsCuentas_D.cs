@@ -84,6 +84,12 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@correo", SqlDbType.VarChar).Value = obj.Correo;
                 cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.Contrasena;
                 cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.IdPersonal;
+                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePuesto;
+                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.Descripcion;
+                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePersona;
+                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.ApelPat;
+                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.ApelMat;
+                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.FechaNacimiento;
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la cuenta";
             }
@@ -115,6 +121,12 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@correo", SqlDbType.VarChar).Value = obj.Correo;
                 cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.Contrasena;
                 cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.IdPersonal;
+                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePuesto;
+                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.Descripcion;
+                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePersona;
+                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.ApelPat;
+                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.ApelMat;
+                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.FechaNacimiento;
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar la cuenta";
             }

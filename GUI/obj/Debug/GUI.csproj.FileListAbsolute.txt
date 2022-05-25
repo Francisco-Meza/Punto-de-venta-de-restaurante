@@ -57,7 +57,6 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMI
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmLogin.resources
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
-C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMesas.resources
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
@@ -70,3 +69,5 @@ C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.cspr
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
+C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddMesas.resources
+C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmCuentas.resources
