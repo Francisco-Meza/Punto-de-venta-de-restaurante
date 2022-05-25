@@ -14,11 +14,18 @@ namespace GUI
 {
     public partial class FrmMenu : Form
     {
-        public FrmMenu()
+        private int _idCuenta, _idPuesto;
+        private string _nombrePuesto, _nombrePersona;
+        public FrmMenu(DataTable datos)
         {
             InitializeComponent();
+            _idCuenta = Convert.ToInt32(datos.Rows[0][0]);
+            _idPuesto = Convert.ToInt32(datos.Rows[0][1]);
+            _nombrePuesto = datos.Rows[0][2].ToString();
+            _nombrePersona = datos.Rows[0][3].ToString();
             this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
             this.DoubleBuffered = true;
+<<<<<<< HEAD
             ocultar();
         }
         //Ocultar paneles--------------------
@@ -47,6 +54,40 @@ namespace GUI
             }
             else
                 subMenu.Visible = false;
+=======
+            IniciarDatos();
+        }
+        private void IniciarDatos()//Verifica si que tipo de usuario entro
+        {
+            lblNombrePersona.Text = "Bienvenido "+_nombrePersona;
+            switch (_idPuesto)
+            {
+                case 1://Para administrador
+                    {
+                        BtnPersonal.Enabled = true;
+                        BtnPersonal.Visible = true;
+                        BtnProductos.Enabled = true;
+                        BtnProductos.Visible = true;
+                        BtnPedidos.Enabled = true;
+                        BtnPedidos.Visible = true;
+                        BtnPuesto.Enabled = true;
+                        BtnPuesto.Visible = true;
+                        BtnMesa.Enabled = true;
+                        BtnMesa.Visible = true;
+                        break;
+                    }
+                case 2://Para Cajero
+                    {
+                        break;
+                    }
+                case 3://Para Mesero
+                    {
+                        break;
+                    }
+                default:
+                    break;
+            }
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
         }
         //---------------Metodo para arrastrar en form-----------------//
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -55,7 +96,12 @@ namespace GUI
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         private void IconCerrar_Click(object sender, EventArgs e)//----Finaliza el proyecto
         {
-            Application.Exit();
+            DialogResult res;
+            res = MessageBox.Show("¿Seguro que quieres salir de la aplicacion?","SALIR",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            if(res == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
         int Lx, Ly;
         int sw, sh;
@@ -154,8 +200,17 @@ namespace GUI
             AbrirFHijo(new FrmPedidos(this));
         }
 
+<<<<<<< HEAD
         //Mesero-----------
         private void btnAdmMesero_Click(object sender, EventArgs e)
+=======
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmMesas(this));
+        }
+
+        private void BtnCajero_Click(object sender, EventArgs e)
+>>>>>>> 42fcb316eff604bf2573bfce97cf8a06b3ddbf26
         {
             showHideMenu(panelAdmMesero);
         }

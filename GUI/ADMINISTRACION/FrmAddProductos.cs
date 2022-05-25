@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LOGICA_DE_NEGOCIOS;
-using ACCESO_A_DATOS;
 
 namespace GUI
 {

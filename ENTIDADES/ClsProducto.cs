@@ -10,11 +10,14 @@ namespace ENTIDADES
     {
         private int _idProducto,_idClasificacion,_precio;
         private string _nombreProducto, _descripcion;
+        string _nombre, descripcionClasificacion;
 
         public int IdProducto { get => _idProducto; set => _idProducto = value; }
         public int IdClasificacion { get => _idClasificacion; set => _idClasificacion = value; }
         public int Precio { get => _precio; set => _precio = value; }
         public string Nombre { get => _nombreProducto; set => _nombreProducto = value; }
         public string Descripcion { get => _descripcion; set => _descripcion = value; }
+        public string Nombre1 { get => _nombre; set => _nombre = value; }
+        public string DescripcionClasificacion { get => descripcionClasificacion; set => descripcionClasificacion = value; }
     }
 }

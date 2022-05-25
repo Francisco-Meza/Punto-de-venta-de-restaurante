@@ -94,11 +94,23 @@
     <Compile Include="ADMINISTRACION\FrmClasificacion.Designer.cs">
       <DependentUpon>FrmClasificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMINISTRACION\FrmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmCuentas.Designer.cs">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMINISTRACION\FrmPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ADMINISTRACION\FrmPuesto.Designer.cs">
       <DependentUpon>FrmPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmMesas.Designer.cs">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </Compile>
     <Compile Include="SALON\FrmDetallePedidos.cs">
       <SubType>Form</SubType>
@@ -117,12 +129,6 @@
     </Compile>
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SALON\FrmMesas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SALON\FrmMesas.Designer.cs">
-      <DependentUpon>FrmMesas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPedidos.cs">
       <SubType>Form</SubType>
@@ -182,8 +188,14 @@
     <EmbeddedResource Include="ADMINISTRACION\FrmClasificacion.resx">
       <DependentUpon>FrmClasificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\FrmCuentas.resx">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmPuesto.resx">
       <DependentUpon>FrmPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\FrmMesas.resx">
+      <DependentUpon>FrmMesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
@@ -193,9 +205,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SALON\FrmMesas.resx">
-      <DependentUpon>FrmMesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPedidos.resx">
       <DependentUpon>FrmPedidos.cs</DependentUpon>
@@ -243,15 +252,10 @@
     <None Include="Resources\Captura_de_pantalla__78_-removebg-preview-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ACCESO A DATOS\ACCESO A DATOS.csproj">
-      <Project>{c4e043fd-f8b2-4359-b195-6a1d58bc39aa}</Project>
-      <Name>ACCESO A DATOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LOGICA DE NEGOCIOS\LOGICA DE NEGOCIOS.csproj">
       <Project>{74fce611-5be1-421b-a8d5-2215f258182f}</Project>
       <Name>LOGICA DE NEGOCIOS</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
