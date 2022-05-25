@@ -94,6 +94,12 @@
     <Compile Include="ADMINISTRACION\FrmClasificacion.Designer.cs">
       <DependentUpon>FrmClasificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMINISTRACION\FrmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmCuentas.Designer.cs">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMINISTRACION\FrmPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmClasificacion.resx">
       <DependentUpon>FrmClasificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINISTRACION\FrmCuentas.resx">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmPuesto.resx">
       <DependentUpon>FrmPuesto.cs</DependentUpon>
