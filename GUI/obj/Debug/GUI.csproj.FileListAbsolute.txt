@@ -93,3 +93,17 @@ C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.cspr
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmMenu.resources
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe.config
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.exe
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\GUI.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ENTIDADES.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ACCESO A DATOS.dll.config
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\ENTIDADES.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddMesas.resources
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
