@@ -32,23 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.PanelMenu = new Guna.UI.WinForms.GunaPanel();
-            this.panelAdmMesero = new Guna.UI.WinForms.GunaPanel();
+            this.lblMesero = new Guna.UI.WinForms.GunaLabel();
+            this.lblAdministrador = new Guna.UI.WinForms.GunaLabel();
+            this.lblCajero = new Guna.UI.WinForms.GunaLabel();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.BtnPedidosLocal = new Guna.UI.WinForms.GunaButton();
-            this.BtnPerfil = new Guna.UI.WinForms.GunaButton();
-            this.panelAdmi = new Guna.UI.WinForms.GunaPanel();
-            this.btnPuestos = new Guna.UI.WinForms.GunaButton();
             this.BtnProductos = new Guna.UI.WinForms.GunaButton();
-            this.BtnClasificacion = new Guna.UI.WinForms.GunaButton();
             this.BtnMesas = new Guna.UI.WinForms.GunaButton();
             this.BtnPersonal = new Guna.UI.WinForms.GunaButton();
-            this.BtnMesa = new Guna.UI.WinForms.GunaButton();
             this.BtnPuesto = new Guna.UI.WinForms.GunaButton();
-            this.btnAdmMesero = new Guna.UI.WinForms.GunaButton();
-            this.panelAdmCajero = new Guna.UI.WinForms.GunaPanel();
             this.BtnPedidosG = new Guna.UI.WinForms.GunaButton();
-            this.btnAdmCajero = new Guna.UI.WinForms.GunaButton();
-            this.btnAdmi = new Guna.UI.WinForms.GunaButton();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.BtnPedidoDomi = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.BtnPedidos = new Guna.UI.WinForms.GunaButton();
@@ -60,10 +53,10 @@
             this.IconCerrar = new FontAwesome.Sharp.IconButton();
             this.PanelBarraInferior = new Guna.UI.WinForms.GunaPanel();
             this.PanelPadre = new Guna.UI.WinForms.GunaPanel();
+            this.BtnCuentas = new Guna.UI.WinForms.GunaButton();
+            this.BtnPerfil = new Guna.UI.WinForms.GunaButton();
+            this.BtnClasificacion = new Guna.UI.WinForms.GunaButton();
             this.PanelMenu.SuspendLayout();
-            this.panelAdmMesero.SuspendLayout();
-            this.panelAdmi.SuspendLayout();
-            this.panelAdmCajero.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.PanelBarra.SuspendLayout();
             this.PanelPadre.SuspendLayout();
@@ -78,8 +71,6 @@
             // 
             this.PanelMenu.AutoScroll = true;
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.PanelMenu.Controls.Add(this.panelAdmi);
-            this.PanelMenu.Controls.Add(this.btnAdmi);
             this.PanelMenu.Controls.Add(this.gunaPanel1);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
@@ -87,14 +78,45 @@
             this.PanelMenu.Size = new System.Drawing.Size(193, 685);
             this.PanelMenu.TabIndex = 0;
             // 
-            // panelAdmMesero
+            // lblMesero
             // 
-            this.panelAdmMesero.Controls.Add(this.BtnPedidosLocal);
-            this.panelAdmMesero.Controls.Add(this.BtnPerfil);
-            this.panelAdmMesero.Location = new System.Drawing.Point(173, 343);
-            this.panelAdmMesero.Name = "panelAdmMesero";
-            this.panelAdmMesero.Size = new System.Drawing.Size(193, 87);
-            this.panelAdmMesero.TabIndex = 3;
+            this.lblMesero.AutoSize = true;
+            this.lblMesero.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.lblMesero.Location = new System.Drawing.Point(311, 34);
+            this.lblMesero.Name = "lblMesero";
+            this.lblMesero.Size = new System.Drawing.Size(66, 21);
+            this.lblMesero.TabIndex = 5;
+            this.lblMesero.Text = "Mesero";
+            // 
+            // lblAdministrador
+            // 
+            this.lblAdministrador.AutoSize = true;
+            this.lblAdministrador.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.lblAdministrador.Location = new System.Drawing.Point(44, 34);
+            this.lblAdministrador.Name = "lblAdministrador";
+            this.lblAdministrador.Size = new System.Drawing.Size(120, 21);
+            this.lblAdministrador.TabIndex = 6;
+            this.lblAdministrador.Text = "Administrador";
+            // 
+            // lblCajero
+            // 
+            this.lblCajero.AutoSize = true;
+            this.lblCajero.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.lblCajero.Location = new System.Drawing.Point(505, 34);
+            this.lblCajero.Name = "lblCajero";
+            this.lblCajero.Size = new System.Drawing.Size(62, 21);
+            this.lblCajero.TabIndex = 4;
+            this.lblCajero.Text = "Cajero";
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.gunaPanel1.BackgroundImage = global::GUI.Properties.Resources.Captura_de_pantalla__78__removebg_preview_removebg_preview;
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 501);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(193, 184);
+            this.gunaPanel1.TabIndex = 0;
             // 
             // BtnPedidosLocal
             // 
@@ -104,93 +126,24 @@
             this.BtnPedidosLocal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnPedidosLocal.BorderSize = 1;
             this.BtnPedidosLocal.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnPedidosLocal.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPedidosLocal.Enabled = false;
             this.BtnPedidosLocal.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPedidosLocal.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnPedidosLocal.ForeColor = System.Drawing.Color.Black;
             this.BtnPedidosLocal.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidosLocal.Image")));
             this.BtnPedidosLocal.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPedidosLocal.Location = new System.Drawing.Point(0, 42);
+            this.BtnPedidosLocal.Location = new System.Drawing.Point(254, 67);
             this.BtnPedidosLocal.Name = "BtnPedidosLocal";
             this.BtnPedidosLocal.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BtnPedidosLocal.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BtnPedidosLocal.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPedidosLocal.OnHoverImage = null;
             this.BtnPedidosLocal.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPedidosLocal.Size = new System.Drawing.Size(193, 32);
+            this.BtnPedidosLocal.Size = new System.Drawing.Size(193, 42);
             this.BtnPedidosLocal.TabIndex = 1;
             this.BtnPedidosLocal.Text = "Pedidos Local";
             this.BtnPedidosLocal.Visible = false;
             this.BtnPedidosLocal.Click += new System.EventHandler(this.BtnPedidosLocal_Click);
-            // 
-            // BtnPerfil
-            // 
-            this.BtnPerfil.AnimationHoverSpeed = 0.07F;
-            this.BtnPerfil.AnimationSpeed = 0.03F;
-            this.BtnPerfil.BaseColor = System.Drawing.Color.Empty;
-            this.BtnPerfil.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnPerfil.BorderSize = 1;
-            this.BtnPerfil.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnPerfil.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnPerfil.Enabled = false;
-            this.BtnPerfil.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnPerfil.ForeColor = System.Drawing.Color.Black;
-            this.BtnPerfil.Image = null;
-            this.BtnPerfil.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPerfil.Location = new System.Drawing.Point(0, 0);
-            this.BtnPerfil.Name = "BtnPerfil";
-            this.BtnPerfil.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnPerfil.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnPerfil.OnHoverForeColor = System.Drawing.Color.Black;
-            this.BtnPerfil.OnHoverImage = null;
-            this.BtnPerfil.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPerfil.Size = new System.Drawing.Size(193, 42);
-            this.BtnPerfil.TabIndex = 0;
-            this.BtnPerfil.Text = "Perfil";
-            this.BtnPerfil.Visible = false;
-            // 
-            // panelAdmi
-            // 
-            this.panelAdmi.Controls.Add(this.btnPuestos);
-            this.panelAdmi.Controls.Add(this.BtnProductos);
-            this.panelAdmi.Controls.Add(this.BtnClasificacion);
-            this.panelAdmi.Controls.Add(this.BtnMesas);
-            this.panelAdmi.Controls.Add(this.BtnPersonal);
-            this.panelAdmi.Controls.Add(this.BtnMesa);
-            this.panelAdmi.Controls.Add(this.BtnPuesto);
-            this.panelAdmi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelAdmi.Location = new System.Drawing.Point(0, 42);
-            this.panelAdmi.Name = "panelAdmi";
-            this.panelAdmi.Size = new System.Drawing.Size(193, 213);
-            this.panelAdmi.TabIndex = 1;
-            // 
-            // btnPuestos
-            // 
-            this.btnPuestos.AnimationHoverSpeed = 0.07F;
-            this.btnPuestos.AnimationSpeed = 0.03F;
-            this.btnPuestos.BaseColor = System.Drawing.Color.Transparent;
-            this.btnPuestos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnPuestos.BorderSize = 1;
-            this.btnPuestos.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPuestos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPuestos.FocusedColor = System.Drawing.Color.Empty;
-            this.btnPuestos.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btnPuestos.ForeColor = System.Drawing.Color.Black;
-            this.btnPuestos.Image = ((System.Drawing.Image)(resources.GetObject("btnPuestos.Image")));
-            this.btnPuestos.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPuestos.Location = new System.Drawing.Point(0, 168);
-            this.btnPuestos.Name = "btnPuestos";
-            this.btnPuestos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnPuestos.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnPuestos.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnPuestos.OnHoverImage = null;
-            this.btnPuestos.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPuestos.Size = new System.Drawing.Size(193, 25);
-            this.btnPuestos.TabIndex = 5;
-            this.btnPuestos.Text = "Puestos";
-            this.btnPuestos.Visible = false;
             // 
             // BtnProductos
             // 
@@ -200,13 +153,12 @@
             this.BtnProductos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnProductos.BorderSize = 1;
             this.BtnProductos.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnProductos.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnProductos.FocusedColor = System.Drawing.Color.Empty;
             this.BtnProductos.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnProductos.ForeColor = System.Drawing.Color.Black;
             this.BtnProductos.Image = ((System.Drawing.Image)(resources.GetObject("BtnProductos.Image")));
             this.BtnProductos.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnProductos.Location = new System.Drawing.Point(0, 126);
+            this.BtnProductos.Location = new System.Drawing.Point(18, 223);
             this.BtnProductos.Name = "BtnProductos";
             this.BtnProductos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BtnProductos.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -220,32 +172,6 @@
             this.BtnProductos.Visible = false;
             this.BtnProductos.Click += new System.EventHandler(this.BtnProductos_Click);
             // 
-            // BtnClasificacion
-            // 
-            this.BtnClasificacion.AnimationHoverSpeed = 0.07F;
-            this.BtnClasificacion.AnimationSpeed = 0.03F;
-            this.BtnClasificacion.BaseColor = System.Drawing.Color.Empty;
-            this.BtnClasificacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnClasificacion.BorderSize = 1;
-            this.BtnClasificacion.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnClasificacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnClasificacion.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnClasificacion.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnClasificacion.ForeColor = System.Drawing.Color.Black;
-            this.BtnClasificacion.Image = null;
-            this.BtnClasificacion.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnClasificacion.Location = new System.Drawing.Point(0, 84);
-            this.BtnClasificacion.Name = "BtnClasificacion";
-            this.BtnClasificacion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnClasificacion.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnClasificacion.OnHoverForeColor = System.Drawing.Color.Black;
-            this.BtnClasificacion.OnHoverImage = null;
-            this.BtnClasificacion.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnClasificacion.Size = new System.Drawing.Size(193, 42);
-            this.BtnClasificacion.TabIndex = 3;
-            this.BtnClasificacion.Text = "Clasificación de Productos";
-            this.BtnClasificacion.Click += new System.EventHandler(this.BtnClasificacion_Click);
-            // 
             // BtnMesas
             // 
             this.BtnMesas.AnimationHoverSpeed = 0.07F;
@@ -254,13 +180,12 @@
             this.BtnMesas.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnMesas.BorderSize = 1;
             this.BtnMesas.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesas.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnMesas.FocusedColor = System.Drawing.Color.Empty;
             this.BtnMesas.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnMesas.ForeColor = System.Drawing.Color.Black;
             this.BtnMesas.Image = ((System.Drawing.Image)(resources.GetObject("BtnMesas.Image")));
             this.BtnMesas.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnMesas.Location = new System.Drawing.Point(0, 42);
+            this.BtnMesas.Location = new System.Drawing.Point(18, 341);
             this.BtnMesas.Name = "BtnMesas";
             this.BtnMesas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BtnMesas.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -280,14 +205,13 @@
             this.BtnPersonal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnPersonal.BorderSize = 1;
             this.BtnPersonal.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPersonal.Enabled = false;
             this.BtnPersonal.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPersonal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPersonal.ForeColor = System.Drawing.Color.Black;
             this.BtnPersonal.Image = ((System.Drawing.Image)(resources.GetObject("BtnPersonal.Image")));
             this.BtnPersonal.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPersonal.Location = new System.Drawing.Point(0, 0);
+            this.BtnPersonal.Location = new System.Drawing.Point(18, 67);
             this.BtnPersonal.Name = "BtnPersonal";
             this.BtnPersonal.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BtnPersonal.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -299,33 +223,6 @@
             this.BtnPersonal.Text = "Personal";
             this.BtnPersonal.Visible = false;
             this.BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
-            // 
-            // BtnMesa
-            // 
-            this.BtnMesa.AnimationHoverSpeed = 0.07F;
-            this.BtnMesa.AnimationSpeed = 0.03F;
-            this.BtnMesa.BaseColor = System.Drawing.Color.Empty;
-            this.BtnMesa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnMesa.BorderSize = 1;
-            this.BtnMesa.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnMesa.Enabled = false;
-            this.BtnMesa.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnMesa.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnMesa.ForeColor = System.Drawing.Color.Black;
-            this.BtnMesa.Image = ((System.Drawing.Image)(resources.GetObject("BtnMesa.Image")));
-            this.BtnMesa.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnMesa.Location = new System.Drawing.Point(0, 71);
-            this.BtnMesa.Name = "BtnMesa";
-            this.BtnMesa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.BtnMesa.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BtnMesa.OnHoverForeColor = System.Drawing.Color.Black;
-            this.BtnMesa.OnHoverImage = null;
-            this.BtnMesa.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnMesa.Size = new System.Drawing.Size(193, 10);
-            this.BtnMesa.TabIndex = 4;
-            this.BtnMesa.Text = "Mesas";
-            this.BtnMesa.Visible = false;
-            this.BtnMesa.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // BtnPuesto
             // 
@@ -341,52 +238,18 @@
             this.BtnPuesto.ForeColor = System.Drawing.Color.Black;
             this.BtnPuesto.Image = ((System.Drawing.Image)(resources.GetObject("BtnPuesto.Image")));
             this.BtnPuesto.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPuesto.Location = new System.Drawing.Point(0, 0);
+            this.BtnPuesto.Location = new System.Drawing.Point(18, 115);
             this.BtnPuesto.Name = "BtnPuesto";
             this.BtnPuesto.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BtnPuesto.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BtnPuesto.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPuesto.OnHoverImage = null;
             this.BtnPuesto.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPuesto.Size = new System.Drawing.Size(193, 39);
+            this.BtnPuesto.Size = new System.Drawing.Size(193, 42);
             this.BtnPuesto.TabIndex = 2;
             this.BtnPuesto.Text = "Puestos";
             this.BtnPuesto.Visible = false;
             this.BtnPuesto.Click += new System.EventHandler(this.BtnPuesto_Click);
-            // 
-            // btnAdmMesero
-            // 
-            this.btnAdmMesero.AnimationHoverSpeed = 0.07F;
-            this.btnAdmMesero.AnimationSpeed = 0.03F;
-            this.btnAdmMesero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdmMesero.BaseColor = System.Drawing.Color.Empty;
-            this.btnAdmMesero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdmMesero.BorderSize = 1;
-            this.btnAdmMesero.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdmMesero.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAdmMesero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmMesero.ForeColor = System.Drawing.Color.Black;
-            this.btnAdmMesero.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmMesero.Image")));
-            this.btnAdmMesero.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAdmMesero.Location = new System.Drawing.Point(161, 277);
-            this.btnAdmMesero.Name = "btnAdmMesero";
-            this.btnAdmMesero.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAdmMesero.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAdmMesero.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnAdmMesero.OnHoverImage = null;
-            this.btnAdmMesero.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAdmMesero.Size = new System.Drawing.Size(193, 42);
-            this.btnAdmMesero.TabIndex = 5;
-            this.btnAdmMesero.Text = "Mesero";
-            this.btnAdmMesero.Click += new System.EventHandler(this.btnAdmMesero_Click);
-            // 
-            // panelAdmCajero
-            // 
-            this.panelAdmCajero.Controls.Add(this.BtnPedidosG);
-            this.panelAdmCajero.Location = new System.Drawing.Point(145, 153);
-            this.panelAdmCajero.Name = "panelAdmCajero";
-            this.panelAdmCajero.Size = new System.Drawing.Size(193, 46);
-            this.panelAdmCajero.TabIndex = 2;
             // 
             // BtnPedidosG
             // 
@@ -396,88 +259,22 @@
             this.BtnPedidosG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnPedidosG.BorderSize = 1;
             this.BtnPedidosG.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnPedidosG.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnPedidosG.FocusedColor = System.Drawing.Color.Empty;
             this.BtnPedidosG.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.BtnPedidosG.ForeColor = System.Drawing.Color.Black;
             this.BtnPedidosG.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidosG.Image")));
             this.BtnPedidosG.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPedidosG.Location = new System.Drawing.Point(0, 0);
+            this.BtnPedidosG.Location = new System.Drawing.Point(465, 67);
             this.BtnPedidosG.Name = "BtnPedidosG";
             this.BtnPedidosG.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BtnPedidosG.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BtnPedidosG.OnHoverForeColor = System.Drawing.Color.Black;
             this.BtnPedidosG.OnHoverImage = null;
             this.BtnPedidosG.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPedidosG.Size = new System.Drawing.Size(193, 43);
+            this.BtnPedidosG.Size = new System.Drawing.Size(193, 42);
             this.BtnPedidosG.TabIndex = 0;
             this.BtnPedidosG.Text = "Pedido en general";
             this.BtnPedidosG.Click += new System.EventHandler(this.BtnPedidosG_Click);
-            // 
-            // btnAdmCajero
-            // 
-            this.btnAdmCajero.AnimationHoverSpeed = 0.07F;
-            this.btnAdmCajero.AnimationSpeed = 0.03F;
-            this.btnAdmCajero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdmCajero.BaseColor = System.Drawing.Color.Empty;
-            this.btnAdmCajero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdmCajero.BorderSize = 1;
-            this.btnAdmCajero.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdmCajero.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAdmCajero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmCajero.ForeColor = System.Drawing.Color.Black;
-            this.btnAdmCajero.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmCajero.Image")));
-            this.btnAdmCajero.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAdmCajero.Location = new System.Drawing.Point(92, 74);
-            this.btnAdmCajero.Name = "btnAdmCajero";
-            this.btnAdmCajero.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAdmCajero.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAdmCajero.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnAdmCajero.OnHoverImage = null;
-            this.btnAdmCajero.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAdmCajero.Size = new System.Drawing.Size(193, 42);
-            this.btnAdmCajero.TabIndex = 4;
-            this.btnAdmCajero.Text = "Cajero";
-            this.btnAdmCajero.Click += new System.EventHandler(this.btnAdmCajero_Click);
-            // 
-            // btnAdmi
-            // 
-            this.btnAdmi.AnimationHoverSpeed = 0.07F;
-            this.btnAdmi.AnimationSpeed = 0.03F;
-            this.btnAdmi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdmi.BaseColor = System.Drawing.Color.Empty;
-            this.btnAdmi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdmi.BorderSize = 1;
-            this.btnAdmi.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdmi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdmi.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAdmi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmi.ForeColor = System.Drawing.Color.Black;
-            this.btnAdmi.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmi.Image")));
-            this.btnAdmi.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAdmi.Location = new System.Drawing.Point(0, 0);
-            this.btnAdmi.Name = "btnAdmi";
-            this.btnAdmi.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAdmi.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAdmi.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnAdmi.OnHoverImage = null;
-            this.btnAdmi.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAdmi.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnAdmi.Size = new System.Drawing.Size(193, 42);
-            this.btnAdmi.TabIndex = 5;
-            this.btnAdmi.TabStop = false;
-            this.btnAdmi.Text = "Administación";
-            this.btnAdmi.Click += new System.EventHandler(this.btnAdmi_Click);
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.gunaPanel1.BackgroundImage = global::GUI.Properties.Resources.Captura_de_pantalla__78__removebg_preview_removebg_preview;
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 501);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(193, 184);
-            this.gunaPanel1.TabIndex = 0;
             // 
             // BtnPedidoDomi
             // 
@@ -542,7 +339,6 @@
             this.BtnPedidos.TabIndex = 0;
             this.BtnPedidos.Text = "Cajero";
             this.BtnPedidos.Visible = false;
-            this.BtnPedidos.Click += new System.EventHandler(this.BtnCajero_Click);
             // 
             // PanelBarra
             // 
@@ -645,10 +441,18 @@
             // PanelPadre
             // 
             this.PanelPadre.BackColor = System.Drawing.Color.LightCyan;
-            this.PanelPadre.Controls.Add(this.panelAdmMesero);
-            this.PanelPadre.Controls.Add(this.btnAdmCajero);
-            this.PanelPadre.Controls.Add(this.panelAdmCajero);
-            this.PanelPadre.Controls.Add(this.btnAdmMesero);
+            this.PanelPadre.Controls.Add(this.BtnClasificacion);
+            this.PanelPadre.Controls.Add(this.lblMesero);
+            this.PanelPadre.Controls.Add(this.BtnPerfil);
+            this.PanelPadre.Controls.Add(this.lblAdministrador);
+            this.PanelPadre.Controls.Add(this.BtnCuentas);
+            this.PanelPadre.Controls.Add(this.lblCajero);
+            this.PanelPadre.Controls.Add(this.BtnPedidosLocal);
+            this.PanelPadre.Controls.Add(this.BtnPedidosG);
+            this.PanelPadre.Controls.Add(this.BtnPuesto);
+            this.PanelPadre.Controls.Add(this.BtnPersonal);
+            this.PanelPadre.Controls.Add(this.BtnMesas);
+            this.PanelPadre.Controls.Add(this.BtnProductos);
             this.PanelPadre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPadre.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.PanelPadre.Location = new System.Drawing.Point(193, 39);
@@ -656,6 +460,78 @@
             this.PanelPadre.Size = new System.Drawing.Size(757, 646);
             this.PanelPadre.TabIndex = 3;
             this.PanelPadre.TabStop = true;
+            // 
+            // BtnCuentas
+            // 
+            this.BtnCuentas.AnimationHoverSpeed = 0.07F;
+            this.BtnCuentas.AnimationSpeed = 0.03F;
+            this.BtnCuentas.BaseColor = System.Drawing.Color.Transparent;
+            this.BtnCuentas.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnCuentas.BorderSize = 1;
+            this.BtnCuentas.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnCuentas.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnCuentas.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.BtnCuentas.ForeColor = System.Drawing.Color.Black;
+            this.BtnCuentas.Image = ((System.Drawing.Image)(resources.GetObject("BtnCuentas.Image")));
+            this.BtnCuentas.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnCuentas.Location = new System.Drawing.Point(18, 163);
+            this.BtnCuentas.Name = "BtnCuentas";
+            this.BtnCuentas.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtnCuentas.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnCuentas.OnHoverForeColor = System.Drawing.Color.Black;
+            this.BtnCuentas.OnHoverImage = null;
+            this.BtnCuentas.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnCuentas.Size = new System.Drawing.Size(193, 42);
+            this.BtnCuentas.TabIndex = 6;
+            this.BtnCuentas.Text = "Cuentas";
+            // 
+            // BtnPerfil
+            // 
+            this.BtnPerfil.AnimationHoverSpeed = 0.07F;
+            this.BtnPerfil.AnimationSpeed = 0.03F;
+            this.BtnPerfil.BaseColor = System.Drawing.Color.Transparent;
+            this.BtnPerfil.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnPerfil.BorderSize = 1;
+            this.BtnPerfil.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnPerfil.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.BtnPerfil.ForeColor = System.Drawing.Color.Black;
+            this.BtnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("BtnPerfil.Image")));
+            this.BtnPerfil.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnPerfil.Location = new System.Drawing.Point(254, 115);
+            this.BtnPerfil.Name = "BtnPerfil";
+            this.BtnPerfil.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnPerfil.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnPerfil.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnPerfil.OnHoverImage = null;
+            this.BtnPerfil.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnPerfil.Size = new System.Drawing.Size(193, 42);
+            this.BtnPerfil.TabIndex = 7;
+            this.BtnPerfil.Text = "Perfil";
+            // 
+            // BtnClasificacion
+            // 
+            this.BtnClasificacion.AnimationHoverSpeed = 0.07F;
+            this.BtnClasificacion.AnimationSpeed = 0.03F;
+            this.BtnClasificacion.BaseColor = System.Drawing.Color.Transparent;
+            this.BtnClasificacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnClasificacion.BorderSize = 1;
+            this.BtnClasificacion.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnClasificacion.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnClasificacion.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.BtnClasificacion.ForeColor = System.Drawing.Color.Black;
+            this.BtnClasificacion.Image = ((System.Drawing.Image)(resources.GetObject("BtnClasificacion.Image")));
+            this.BtnClasificacion.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnClasificacion.Location = new System.Drawing.Point(18, 284);
+            this.BtnClasificacion.Name = "BtnClasificacion";
+            this.BtnClasificacion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BtnClasificacion.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BtnClasificacion.OnHoverForeColor = System.Drawing.Color.Black;
+            this.BtnClasificacion.OnHoverImage = null;
+            this.BtnClasificacion.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnClasificacion.Size = new System.Drawing.Size(193, 42);
+            this.BtnClasificacion.TabIndex = 8;
+            this.BtnClasificacion.Text = "Clasificación - Prod";
             // 
             // FrmMenu
             // 
@@ -672,13 +548,11 @@
             this.Name = "FrmMenu";
             this.Text = "FrmMenu";
             this.PanelMenu.ResumeLayout(false);
-            this.panelAdmMesero.ResumeLayout(false);
-            this.panelAdmi.ResumeLayout(false);
-            this.panelAdmCajero.ResumeLayout(false);
             this.gunaPanel3.ResumeLayout(false);
             this.PanelBarra.ResumeLayout(false);
             this.PanelBarra.PerformLayout();
             this.PanelPadre.ResumeLayout(false);
+            this.PanelPadre.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -690,14 +564,10 @@
         private Guna.UI.WinForms.GunaPanel PanelBarraInferior;
         private Guna.UI.WinForms.GunaPanel PanelBarra;
         private Guna.UI.WinForms.GunaPanel PanelMenu;
-        private Guna.UI.WinForms.GunaPanel panelAdmMesero;
         private Guna.UI.WinForms.GunaButton BtnPedidosLocal;
-        private Guna.UI.WinForms.GunaButton BtnPerfil;
-        private Guna.UI.WinForms.GunaPanel panelAdmCajero;
         private Guna.UI.WinForms.GunaButton BtnPedidoDomi;
 
         private Guna.UI.WinForms.GunaButton BtnPedidosG;
-        private Guna.UI.WinForms.GunaPanel panelAdmi;
 
         private Guna.UI.WinForms.GunaButton BtnPedidos;
 
@@ -711,14 +581,13 @@
         private Guna.UI.WinForms.GunaButton BtnPuesto;
 
         private Guna.UI.WinForms.GunaButton BtnMesas;
-        private Guna.UI.WinForms.GunaButton BtnClasificacion;
-        private Guna.UI.WinForms.GunaButton btnAdmi;
-        private Guna.UI.WinForms.GunaButton btnAdmMesero;
-        private Guna.UI.WinForms.GunaButton btnAdmCajero;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
-
-        private Guna.UI.WinForms.GunaButton BtnMesa;
         private System.Windows.Forms.Label lblNombrePersona;
-        private Guna.UI.WinForms.GunaButton btnPuestos;
+        private Guna.UI.WinForms.GunaLabel lblMesero;
+        private Guna.UI.WinForms.GunaLabel lblAdministrador;
+        private Guna.UI.WinForms.GunaLabel lblCajero;
+        private Guna.UI.WinForms.GunaButton BtnCuentas;
+        private Guna.UI.WinForms.GunaButton BtnPerfil;
+        private Guna.UI.WinForms.GunaButton BtnClasificacion;
     }
 }
