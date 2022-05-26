@@ -48,12 +48,16 @@ namespace GUI
                         BtnPersonal.Visible = true;
                         BtnProductos.Enabled = true;
                         BtnProductos.Visible = true;
-                        BtnPedidos.Enabled = true;
-                        BtnPedidos.Visible = true;
+                        BtnPedidosG.Enabled = true;
+                        BtnPedidosG.Visible = true;
                         BtnPuesto.Enabled = true;
                         BtnPuesto.Visible = true;
                         BtnMesas.Enabled = true;
                         BtnMesas.Visible = true;
+                        BtnClasificacion.Enabled = true;
+                        BtnClasificacion.Visible = true;
+                        BtnCuentas.Enabled = true;
+                        BtnCuentas.Visible = true;
                         break;
                     }
                 case 2://Para Cajero
