@@ -64,23 +64,17 @@
     <Compile Include="ADMINISTRACION\FrmAddClasificacion.Designer.cs">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADMINISTRACION\FrmAddCuentas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADMINISTRACION\FrmAddCuentas.Designer.cs">
-      <DependentUpon>FrmAddCuentas.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADMINISTRACION\FrmAddMesas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ADMINISTRACION\FrmAddMesas.Designer.cs">
       <DependentUpon>FrmAddMesas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADMINISTRACION\FrmAddPersonal.cs">
+    <Compile Include="ADMINISTRACION\FrmAddCuentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ADMINISTRACION\FrmAddPersonal.Designer.cs">
-      <DependentUpon>FrmAddPersonal.cs</DependentUpon>
+    <Compile Include="ADMINISTRACION\FrmAddCuentas.Designer.cs">
+      <DependentUpon>FrmAddCuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="ADMINISTRACION\FrmAddProductos.cs">
       <SubType>Form</SubType>
@@ -154,12 +148,6 @@
     <Compile Include="ADMINISTRACION\FrmPerfilPersonal.Designer.cs">
       <DependentUpon>FrmPerfilPersonal.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADMINISTRACION\FrmPersonal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADMINISTRACION\FrmPersonal.Designer.cs">
-      <DependentUpon>FrmPersonal.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADMINISTRACION\FrmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,8 +162,8 @@
     <EmbeddedResource Include="ADMINISTRACION\FrmAddMesas.resx">
       <DependentUpon>FrmAddMesas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADMINISTRACION\FrmAddPersonal.resx">
-      <DependentUpon>FrmAddPersonal.cs</DependentUpon>
+    <EmbeddedResource Include="ADMINISTRACION\FrmAddCuentas.resx">
+      <DependentUpon>FrmAddCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="SALON\FrmTicket.cs">
       <SubType>Form</SubType>
@@ -221,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmPerfilPersonal.resx">
       <DependentUpon>FrmPerfilPersonal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ADMINISTRACION\FrmPersonal.resx">
-      <DependentUpon>FrmPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>

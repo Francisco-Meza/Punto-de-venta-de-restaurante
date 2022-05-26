@@ -7,14 +7,75 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOGICA_DE_NEGOCIOS;
 
-namespace GUI.ADMINISTRACION
+namespace GUI
 {
-    public partial class FrmAddCuentas : Form
+    public partial class FrmAddPersonal : Form
     {
-        public FrmAddCuentas()
+        private string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
+        public FrmAddPersonal()
         {
             InitializeComponent();
+            BtnGuardar.Enabled = false;
         }
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar();
+            if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
+            {
+                e.Handled = true;//-- Decimos que si se controlo el evento
+            }
+        }
+
+        private void TxtFechaN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar();
+            if ((e.KeyChar >= 32 && e.KeyChar <= 44) || (e.KeyChar >= 58 && e.KeyChar <= 255))//--Es la validacion para solo insertar  numeros
+            {
+                e.Handled = true;//-- Decimos que si se controlo el evento
+            }
+        }
+
+        private void TxtPuesto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar();
+            if (e.KeyChar > 47 && e.KeyChar < 58)//--Es la validacion para solo insertar  letras
+            {
+                e.Handled = true;//-- Decimos que si se controlo el evento
+            }
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            nombre = TxtNombre.Text;
+            apePa = TxtApelPat.Text;
+            apeMa = TxtApelMat.Text;
+            fechaN = TxtFechaN.Text;
+            contra = TxtContra.Text;
+            puesto = TxtNombre.Text;
+            correo = TxtCorreo.Text;
+            telefono = TxtTelefonoPersonal.Text;
+            /**/
+
+        }
+        public void Validar()
+        {
+            if (TxtNombre.Text != String.Empty && TxtApelPat.Text != String.Empty && TxtApelMat.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
+            {
+                BtnGuardar.Enabled = true;
+            }
+            else
+            {
+                BtnGuardar.Enabled = false;
+            }
+        }
+
     }
 }
