@@ -30,16 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCuentas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
             this.BtnEditar = new Guna.UI.WinForms.GunaButton();
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
-            this.dgvClasificacion = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClasificacion)).BeginInit();
+            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
+            this.dgvListaPedidos = new Guna.UI.WinForms.GunaDataGridView();
+            this.columnIdPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnIdPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -61,7 +65,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(651, 467);
+            this.BtnEliminar.Location = new System.Drawing.Point(687, 467);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
@@ -90,7 +94,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(349, 467);
+            this.BtnEditar.Location = new System.Drawing.Point(385, 467);
             this.BtnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
@@ -119,7 +123,7 @@
             this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
             this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(69, 467);
+            this.BtnAgregar.Location = new System.Drawing.Point(105, 467);
             this.BtnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
@@ -133,71 +137,6 @@
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dgvClasificacion
-            // 
-            this.dgvClasificacion.AllowUserToAddRows = false;
-            this.dgvClasificacion.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            this.dgvClasificacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvClasificacion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvClasificacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvClasificacion.BackgroundColor = System.Drawing.Color.White;
-            this.dgvClasificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvClasificacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvClasificacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvClasificacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvClasificacion.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClasificacion.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvClasificacion.EnableHeadersVisualStyles = false;
-            this.dgvClasificacion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvClasificacion.Location = new System.Drawing.Point(48, 109);
-            this.dgvClasificacion.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvClasificacion.Name = "dgvClasificacion";
-            this.dgvClasificacion.ReadOnly = true;
-            this.dgvClasificacion.RowHeadersVisible = false;
-            this.dgvClasificacion.RowHeadersWidth = 51;
-            this.dgvClasificacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClasificacion.Size = new System.Drawing.Size(885, 318);
-            this.dgvClasificacion.TabIndex = 47;
-            this.dgvClasificacion.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
-            this.dgvClasificacion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            this.dgvClasificacion.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvClasificacion.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvClasificacion.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvClasificacion.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvClasificacion.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvClasificacion.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.Height = 21;
-            this.dgvClasificacion.ThemeStyle.ReadOnly = true;
-            this.dgvClasificacion.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
-            this.dgvClasificacion.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvClasificacion.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvClasificacion.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvClasificacion.ThemeStyle.RowsStyle.Height = 22;
-            this.dgvClasificacion.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
-            this.dgvClasificacion.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
@@ -209,21 +148,127 @@
             this.gunaLabel1.TabIndex = 48;
             this.gunaLabel1.Text = "Cuentas";
             // 
+            // BtnCerrarHijo
+            // 
+            this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
+            this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCerrarHijo.IconSize = 40;
+            this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(933, 12);
+            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
+            this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
+            this.BtnCerrarHijo.TabIndex = 49;
+            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
+            // 
+            // dgvListaPedidos
+            // 
+            this.dgvListaPedidos.AllowUserToAddRows = false;
+            this.dgvListaPedidos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvListaPedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListaPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvListaPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListaPedidos.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListaPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListaPedidos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvListaPedidos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvListaPedidos.ColumnHeadersHeight = 21;
+            this.dgvListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnIdPedido,
+            this.columnFecha,
+            this.columnIdPersonal});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvListaPedidos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvListaPedidos.EnableHeadersVisualStyles = false;
+            this.dgvListaPedidos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.dgvListaPedidos.Location = new System.Drawing.Point(69, 85);
+            this.dgvListaPedidos.Name = "dgvListaPedidos";
+            this.dgvListaPedidos.ReadOnly = true;
+            this.dgvListaPedidos.RowHeadersVisible = false;
+            this.dgvListaPedidos.RowHeadersWidth = 51;
+            this.dgvListaPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaPedidos.Size = new System.Drawing.Size(847, 306);
+            this.dgvListaPedidos.TabIndex = 50;
+            this.dgvListaPedidos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
+            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvListaPedidos.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvListaPedidos.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.Height = 21;
+            this.dgvListaPedidos.ThemeStyle.ReadOnly = true;
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            this.dgvListaPedidos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // columnIdPedido
+            // 
+            this.columnIdPedido.HeaderText = "ID Cuenta";
+            this.columnIdPedido.MinimumWidth = 6;
+            this.columnIdPedido.Name = "columnIdPedido";
+            this.columnIdPedido.ReadOnly = true;
+            // 
+            // columnFecha
+            // 
+            this.columnFecha.HeaderText = "correo";
+            this.columnFecha.MinimumWidth = 6;
+            this.columnFecha.Name = "columnFecha";
+            this.columnFecha.ReadOnly = true;
+            // 
+            // columnIdPersonal
+            // 
+            this.columnIdPersonal.HeaderText = "Contraseña";
+            this.columnIdPersonal.MinimumWidth = 6;
+            this.columnIdPersonal.Name = "columnIdPersonal";
+            this.columnIdPersonal.ReadOnly = true;
+            // 
             // FrmCuentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(991, 563);
+            this.Controls.Add(this.dgvListaPedidos);
+            this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.dgvClasificacion);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnAgregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCuentas";
             this.Text = "FrmCuentas";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClasificacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,7 +280,11 @@
         private Guna.UI.WinForms.GunaButton BtnEliminar;
         private Guna.UI.WinForms.GunaButton BtnEditar;
         private Guna.UI.WinForms.GunaButton BtnAgregar;
-        private Guna.UI.WinForms.GunaDataGridView dgvClasificacion;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private FontAwesome.Sharp.IconButton BtnCerrarHijo;
+        private Guna.UI.WinForms.GunaDataGridView dgvListaPedidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdPedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdPersonal;
     }
 }

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace GUI.ADMINISTRACION
 {
-    public partial class FrmCuentas : Form
+    public partial class FrmCuentas : Form        
     {
-        public FrmCuentas()
+    private readonly FrmMenu padreMenu;
+        public FrmCuentas(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
+        }
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
