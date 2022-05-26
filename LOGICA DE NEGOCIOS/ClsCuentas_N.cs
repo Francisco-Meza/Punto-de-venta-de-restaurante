@@ -13,18 +13,17 @@ namespace LOGICA_DE_NEGOCIOS
     {
         ClsCuentas_D Datos;
         ClsCuentas obj;
-        public ClsCuentas_N()
+        
+        public static DataTable Read()
         {
-            Datos = new ClsCuentas_D();
-            obj = new ClsCuentas();
-        }
-        public DataTable Read()
-        {
+            ClsCuentas_D Datos = new ClsCuentas_D();
             return Datos.Read();
         }
         public DataTable Read(string valor)
         {
-            return Datos.Read(valor);
+            ClsCuentas_D Datos = new ClsCuentas_D();
+            if (Validaciones.WithForCompareAsciiValue(valor)) return Datos.Read(valor);
+            else return null;
         }
         public  string Create(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena, string nombrePuesto, string descripcion,string nombrePersona,string apelPat,string apelMat,DateTime fechaNacimiento)
         {

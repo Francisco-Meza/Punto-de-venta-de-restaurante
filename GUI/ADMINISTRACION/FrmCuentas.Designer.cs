@@ -39,11 +39,11 @@
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
-            this.dgvListaPedidos = new Guna.UI.WinForms.GunaDataGridView();
+            this.dgvListaCuentas = new Guna.UI.WinForms.GunaDataGridView();
             this.columnIdPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaCuentas)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -136,6 +136,7 @@
             this.BtnAgregar.TabIndex = 44;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // gunaLabel1
             // 
@@ -165,19 +166,19 @@
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
             this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
             // 
-            // dgvListaPedidos
+            // dgvListaCuentas
             // 
-            this.dgvListaPedidos.AllowUserToAddRows = false;
-            this.dgvListaPedidos.AllowUserToDeleteRows = false;
+            this.dgvListaCuentas.AllowUserToAddRows = false;
+            this.dgvListaCuentas.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            this.dgvListaPedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvListaPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvListaCuentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListaCuentas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvListaPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvListaPedidos.BackgroundColor = System.Drawing.Color.White;
-            this.dgvListaPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvListaPedidos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvListaPedidos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvListaCuentas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListaCuentas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListaCuentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvListaCuentas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvListaCuentas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -185,9 +186,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvListaPedidos.ColumnHeadersHeight = 21;
-            this.dgvListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListaCuentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvListaCuentas.ColumnHeadersHeight = 21;
+            this.dgvListaCuentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdPedido,
             this.columnFecha,
             this.columnIdPersonal});
@@ -198,39 +199,39 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListaPedidos.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvListaPedidos.EnableHeadersVisualStyles = false;
-            this.dgvListaPedidos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvListaPedidos.Location = new System.Drawing.Point(69, 85);
-            this.dgvListaPedidos.Name = "dgvListaPedidos";
-            this.dgvListaPedidos.ReadOnly = true;
-            this.dgvListaPedidos.RowHeadersVisible = false;
-            this.dgvListaPedidos.RowHeadersWidth = 51;
-            this.dgvListaPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListaPedidos.Size = new System.Drawing.Size(847, 306);
-            this.dgvListaPedidos.TabIndex = 50;
-            this.dgvListaPedidos.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
-            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvListaPedidos.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvListaPedidos.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvListaPedidos.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.Height = 21;
-            this.dgvListaPedidos.ThemeStyle.ReadOnly = true;
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.Height = 22;
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
-            this.dgvListaPedidos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvListaCuentas.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvListaCuentas.EnableHeadersVisualStyles = false;
+            this.dgvListaCuentas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.dgvListaCuentas.Location = new System.Drawing.Point(69, 85);
+            this.dgvListaCuentas.Name = "dgvListaCuentas";
+            this.dgvListaCuentas.ReadOnly = true;
+            this.dgvListaCuentas.RowHeadersVisible = false;
+            this.dgvListaCuentas.RowHeadersWidth = 51;
+            this.dgvListaCuentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaCuentas.Size = new System.Drawing.Size(847, 306);
+            this.dgvListaCuentas.TabIndex = 50;
+            this.dgvListaCuentas.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
+            this.dgvListaCuentas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvListaCuentas.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvListaCuentas.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvListaCuentas.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvListaCuentas.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvListaCuentas.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvListaCuentas.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
+            this.dgvListaCuentas.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.dgvListaCuentas.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvListaCuentas.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvListaCuentas.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvListaCuentas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvListaCuentas.ThemeStyle.HeaderStyle.Height = 21;
+            this.dgvListaCuentas.ThemeStyle.ReadOnly = true;
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            this.dgvListaCuentas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // columnIdPedido
             // 
@@ -259,7 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(991, 563);
-            this.Controls.Add(this.dgvListaPedidos);
+            this.Controls.Add(this.dgvListaCuentas);
             this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.BtnEliminar);
@@ -268,7 +269,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCuentas";
             this.Text = "FrmCuentas";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaCuentas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,7 +283,7 @@
         private Guna.UI.WinForms.GunaButton BtnAgregar;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
-        private Guna.UI.WinForms.GunaDataGridView dgvListaPedidos;
+        private Guna.UI.WinForms.GunaDataGridView dgvListaCuentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnIdPedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnIdPersonal;
