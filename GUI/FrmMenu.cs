@@ -58,7 +58,7 @@ namespace GUI
                     }
                 case 2://Para Cajero
                     {
-                        lblCajero.Location = new Point(0, 0);
+                        lblCajero.Location = new Point(0,0);
                         BtnPedidosG.Location = new Point(0, lblCajero.Height);
                         BtnPedidosG.Enabled = true;
                         BtnPedidosG.Visible = true;
@@ -67,7 +67,7 @@ namespace GUI
                 case 3://Para Mesero
                     {
                         lblMesero.Location = new Point(0, 0);
-                        BtnPedidosLocal.Location = new Point(0, lblMesero.Height);
+                        BtnPedidosLocal.Location = new Point(0,lblMesero.Height);
                         BtnPerfil.Location = new Point(0, BtnPedidosLocal.Height);
                         BtnPedidosLocal.Enabled = true;
                         BtnPerfil.Visible = true;
