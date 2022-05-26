@@ -42,5 +42,10 @@ namespace GUI.ADMINISTRACION
         {
             padreMenu.AbrirFHijo(new FrmAddCuentas());
         }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            padreMenu.AbrirFHijo(new FrmAddCuentas());
+        }
     }
 }
