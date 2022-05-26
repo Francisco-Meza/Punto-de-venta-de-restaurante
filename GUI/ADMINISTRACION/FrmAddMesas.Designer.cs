@@ -31,14 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddMesas));
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.txtId = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtNumero = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtDescripcion = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtNumComensales = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.TxtNumComensales = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtDescripcion = new Guna.UI.WinForms.GunaTextBox();
+            this.TxtNumero = new Guna.UI.WinForms.GunaTextBox();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.BtnGuardar = new Guna.UI.WinForms.GunaButton();
             this.gunaGroupBox1.SuspendLayout();
@@ -66,11 +64,9 @@
             this.gunaGroupBox1.Controls.Add(this.gunaLabel5);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel4);
             this.gunaGroupBox1.Controls.Add(this.gunaLabel3);
-            this.gunaGroupBox1.Controls.Add(this.gunaLabel2);
             this.gunaGroupBox1.Controls.Add(this.TxtNumComensales);
             this.gunaGroupBox1.Controls.Add(this.TxtDescripcion);
             this.gunaGroupBox1.Controls.Add(this.TxtNumero);
-            this.gunaGroupBox1.Controls.Add(this.txtId);
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.Location = new System.Drawing.Point(75, 136);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
@@ -78,56 +74,39 @@
             this.gunaGroupBox1.TabIndex = 1;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // txtId
+            // gunaLabel5
             // 
-            this.txtId.BaseColor = System.Drawing.Color.White;
-            this.txtId.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.txtId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtId.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtId.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.txtId.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtId.Location = new System.Drawing.Point(278, 19);
-            this.txtId.Name = "txtId";
-            this.txtId.PasswordChar = '\0';
-            this.txtId.Radius = 10;
-            this.txtId.Size = new System.Drawing.Size(306, 30);
-            this.txtId.TabIndex = 0;
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.gunaLabel5.Location = new System.Drawing.Point(67, 166);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(182, 20);
+            this.gunaLabel5.TabIndex = 7;
+            this.gunaLabel5.Text = "Número de comensales";
             // 
-            // TxtNumero
+            // gunaLabel4
             // 
-            this.TxtNumero.BaseColor = System.Drawing.Color.White;
-            this.TxtNumero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtNumero.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtNumero.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtNumero.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.TxtNumero.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtNumero.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TxtNumero.Location = new System.Drawing.Point(278, 72);
-            this.TxtNumero.Name = "TxtNumero";
-            this.TxtNumero.PasswordChar = '\0';
-            this.TxtNumero.Radius = 10;
-            this.TxtNumero.Size = new System.Drawing.Size(306, 30);
-            this.TxtNumero.TabIndex = 1;
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.gunaLabel4.Location = new System.Drawing.Point(67, 109);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(96, 20);
+            this.gunaLabel4.TabIndex = 6;
+            this.gunaLabel4.Text = "Descripción";
             // 
-            // TxtDescripcion
+            // gunaLabel3
             // 
-            this.TxtDescripcion.BaseColor = System.Drawing.Color.White;
-            this.TxtDescripcion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtDescripcion.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtDescripcion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.TxtDescripcion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TxtDescripcion.Location = new System.Drawing.Point(278, 126);
-            this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.PasswordChar = '\0';
-            this.TxtDescripcion.Radius = 10;
-            this.TxtDescripcion.Size = new System.Drawing.Size(306, 30);
-            this.TxtDescripcion.TabIndex = 2;
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.gunaLabel3.Location = new System.Drawing.Point(67, 60);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(134, 20);
+            this.gunaLabel3.TabIndex = 5;
+            this.gunaLabel3.Text = "Número de mesa";
             // 
             // TxtNumComensales
             // 
+            this.TxtNumComensales.BackColor = System.Drawing.Color.Transparent;
             this.TxtNumComensales.BaseColor = System.Drawing.Color.White;
             this.TxtNumComensales.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TxtNumComensales.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -135,52 +114,46 @@
             this.TxtNumComensales.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNumComensales.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNumComensales.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TxtNumComensales.Location = new System.Drawing.Point(278, 183);
+            this.TxtNumComensales.Location = new System.Drawing.Point(267, 156);
             this.TxtNumComensales.Name = "TxtNumComensales";
             this.TxtNumComensales.PasswordChar = '\0';
             this.TxtNumComensales.Radius = 10;
             this.TxtNumComensales.Size = new System.Drawing.Size(306, 30);
             this.TxtNumComensales.TabIndex = 3;
             // 
-            // gunaLabel2
+            // TxtDescripcion
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.gunaLabel2.Location = new System.Drawing.Point(108, 29);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(25, 20);
-            this.gunaLabel2.TabIndex = 4;
-            this.gunaLabel2.Text = "ID";
+            this.TxtDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.TxtDescripcion.BaseColor = System.Drawing.Color.White;
+            this.TxtDescripcion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtDescripcion.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtDescripcion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.TxtDescripcion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TxtDescripcion.Location = new System.Drawing.Point(267, 99);
+            this.TxtDescripcion.Name = "TxtDescripcion";
+            this.TxtDescripcion.PasswordChar = '\0';
+            this.TxtDescripcion.Radius = 10;
+            this.TxtDescripcion.Size = new System.Drawing.Size(306, 30);
+            this.TxtDescripcion.TabIndex = 2;
             // 
-            // gunaLabel3
+            // TxtNumero
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.gunaLabel3.Location = new System.Drawing.Point(78, 87);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(134, 20);
-            this.gunaLabel3.TabIndex = 5;
-            this.gunaLabel3.Text = "Número de mesa";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.gunaLabel4.Location = new System.Drawing.Point(78, 136);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(96, 20);
-            this.gunaLabel4.TabIndex = 6;
-            this.gunaLabel4.Text = "Descripción";
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.gunaLabel5.Location = new System.Drawing.Point(78, 193);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(182, 20);
-            this.gunaLabel5.TabIndex = 7;
-            this.gunaLabel5.Text = "Número de comensales";
+            this.TxtNumero.BackColor = System.Drawing.Color.Transparent;
+            this.TxtNumero.BaseColor = System.Drawing.Color.White;
+            this.TxtNumero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.TxtNumero.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtNumero.FocusedBaseColor = System.Drawing.Color.White;
+            this.TxtNumero.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.TxtNumero.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TxtNumero.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TxtNumero.Location = new System.Drawing.Point(267, 45);
+            this.TxtNumero.Name = "TxtNumero";
+            this.TxtNumero.PasswordChar = '\0';
+            this.TxtNumero.Radius = 10;
+            this.TxtNumero.Size = new System.Drawing.Size(306, 30);
+            this.TxtNumero.TabIndex = 1;
             // 
             // BtnCerrarHijo
             // 
@@ -253,11 +226,9 @@
         private Guna.UI.WinForms.GunaTextBox TxtNumComensales;
         private Guna.UI.WinForms.GunaTextBox TxtDescripcion;
         private Guna.UI.WinForms.GunaTextBox TxtNumero;
-        private Guna.UI.WinForms.GunaTextBox txtId;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaButton BtnGuardar;
     }
