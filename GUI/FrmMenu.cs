@@ -36,14 +36,6 @@ namespace GUI
             {
                 case 1://Para administrador
                     {
-                        lblAdministrador.Location = new Point(0,0);
-                        BtnPersonal.Location = new Point(0, lblAdministrador.Height);
-                        BtnCuentas.Location = new Point(0, BtnPersonal.Height);
-                        BtnPuesto.Location = new Point(0, BtnCuentas.Height);
-                        BtnProductos.Location = new Point(0, BtnPuesto.Height);
-                        BtnClasificacion.Location = new Point(0, BtnProductos.Height);
-                        BtnMesas.Location = new Point(0, BtnClasificacion.Height);
-                        BtnPedidosG.Location = new Point(0, BtnMesas.Height);
                         BtnPersonal.Enabled = true;
                         BtnPersonal.Visible = true;
                         BtnProductos.Enabled = true;
@@ -58,6 +50,16 @@ namespace GUI
                         BtnClasificacion.Visible = true;
                         BtnCuentas.Enabled = true;
                         BtnCuentas.Visible = true;
+                        lblAdministrador.Enabled = true;
+                        lblAdministrador.Visible = true;
+                       /* lblAdministrador.Location = new Point(0,0);
+                        BtnPersonal.Location = new Point(0, lblAdministrador.Width);
+                        BtnCuentas.Location = new Point(0, BtnPersonal.Width);
+                        BtnPuesto.Location = new Point(0, BtnCuentas.Width);
+                        BtnProductos.Location = new Point(0, BtnPuesto.Width);
+                        BtnClasificacion.Location = new Point(0, BtnProductos.Width);
+                        BtnMesas.Location = new Point(0, BtnClasificacion.Width);
+                        BtnPedidosG.Location = new Point(0, BtnMesas.Width);*/
                         break;
                     }
                 case 2://Para Cajero

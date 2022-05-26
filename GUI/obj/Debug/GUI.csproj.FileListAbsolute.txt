@@ -33,3 +33,4 @@ C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.cspr
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
