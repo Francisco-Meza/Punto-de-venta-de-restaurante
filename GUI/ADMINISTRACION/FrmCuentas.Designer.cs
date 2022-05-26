@@ -65,7 +65,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(687, 467);
+            this.BtnEliminar.Location = new System.Drawing.Point(670, 467);
             this.BtnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
