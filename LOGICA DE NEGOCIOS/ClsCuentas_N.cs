@@ -26,10 +26,8 @@ namespace LOGICA_DE_NEGOCIOS
         {
             return Datos.Read(valor);
         }
-        public static string Create(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena)
+        public  string Create(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena)
         {
-            ClsCuentas_D Datos = new ClsCuentas_D();
-            ClsCuentas obj = new ClsCuentas();
             if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
             else return "El ID ingresado no es valido";
             if (Validaciones.SoloNumero(idTipoPuesto)) obj.IdTipoPuesto = int.Parse(idTipoPuesto);
@@ -54,7 +52,7 @@ namespace LOGICA_DE_NEGOCIOS
             else return "La fecha de nacimiento no tiene un formato correcto, intente no usar caracteres especiales";
             return Datos.Create(obj);
         }
-        public static string Update(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena)
+        public string Update(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena)
         {
             if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
             else return "El ID ingresado no es valido";

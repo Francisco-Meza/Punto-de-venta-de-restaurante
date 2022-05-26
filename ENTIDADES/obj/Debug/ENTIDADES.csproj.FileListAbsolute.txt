@@ -16,3 +16,9 @@ C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\EN
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.pdb
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\bin\Debug\ENTIDADES.dll
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\bin\Debug\ENTIDADES.pdb
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csprojAssemblyReference.cache
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.dll
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.pdb
