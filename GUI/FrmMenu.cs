@@ -26,35 +26,9 @@ namespace GUI
             IniciarDatos();
             this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
             this.DoubleBuffered = true;
-            ocultar();
+            
         }
-        //Ocultar paneles--------------------
-        private void ocultar()
-        {
-            panelAdmCajero.Visible = false;
-            panelAdmi.Visible = false;
-            panelAdmMesero.Visible = false;
-        }
-        private void hideMenu()
-        {
-            if (panelAdmi.Visible == true)
-                panelAdmi.Visible = false;
-            if(panelAdmCajero .Visible == true)
-                panelAdmCajero.Visible = false;
-            if(panelAdmMesero.Visible == true)
-                panelAdmCajero.Visible = false;
-
-        }
-        private void showHideMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
-        }
+        
         private void IniciarDatos()//Verifica si que tipo de usuario entro
         {
             lblNombrePersona.Text = "Bienvenido "+_nombrePersona;
@@ -62,6 +36,14 @@ namespace GUI
             {
                 case 1://Para administrador
                     {
+                        lblAdministrador.Location = new Point(0,0);
+                        BtnPersonal.Location = new Point(0, lblAdministrador.Height);
+                        BtnCuentas.Location = new Point(0, BtnPersonal.Height);
+                        BtnPuesto.Location = new Point(0, BtnCuentas.Height);
+                        BtnProductos.Location = new Point(0, BtnPuesto.Height);
+                        BtnClasificacion.Location = new Point(0, BtnProductos.Height);
+                        BtnMesas.Location = new Point(0, BtnClasificacion.Height);
+                        BtnPedidosG.Location = new Point(0, BtnMesas.Height);
                         BtnPersonal.Enabled = true;
                         BtnPersonal.Visible = true;
                         BtnProductos.Enabled = true;
@@ -70,16 +52,25 @@ namespace GUI
                         BtnPedidos.Visible = true;
                         BtnPuesto.Enabled = true;
                         BtnPuesto.Visible = true;
-                        BtnMesa.Enabled = true;
-                        BtnMesa.Visible = true;
+                        BtnMesas.Enabled = true;
+                        BtnMesas.Visible = true;
                         break;
                     }
                 case 2://Para Cajero
                     {
+                        lblCajero.Location = new Point(0, 0);
+                        BtnPedidosG.Location = new Point(0, lblCajero.Height);
+                        BtnPedidosG.Enabled = true;
+                        BtnPedidosG.Visible = true;
                         break;
                     }
                 case 3://Para Mesero
                     {
+                        lblMesero.Location = new Point(0, 0);
+                        BtnPedidosLocal.Location = new Point(0, lblMesero.Height);
+                        BtnPerfil.Location = new Point(0, BtnPedidosLocal.Height);
+                        BtnPedidosLocal.Enabled = true;
+                        BtnPerfil.Visible = true;
                         break;
                     }
                 default:
@@ -150,70 +141,38 @@ namespace GUI
 
         //---------- Son los botones del menu que cada uno nos muestra un fromulario
         //Administrador-----
-        private void btnAdmi_Click(object sender, EventArgs e)
-        {
-            showHideMenu(panelAdmi);
-        }
+        
         private void BtnPersonal_Click(object sender, EventArgs e) 
         {
             AbrirFHijo(new FrmPersonal(this));
-            hideMenu();
+            
         }
         private void BtnProductos_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmProductos(this));
-            hideMenu();
+            
         }
         private void BtnPuesto_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmPuesto(this));
-            hideMenu();
+            
         }
-        private void BtnClasificacion_Click(object sender, EventArgs e)
-        {
-            AbrirFHijo(new FrmClasificacion(this));
-        }
+        
         private void BtnMesas_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmMesas(this));
         }
-
         //Cajero-----------------------------
-        private void btnAdmCajero_Click(object sender, EventArgs e)
-        {
-            showHideMenu(panelAdmCajero);
-        }
-       
-
         private void BtnPedidoDomi_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmPedidosDomicilio(this));
         }
-
-
         private void BtnPedidosG_Click(object sender, EventArgs e)
         {
 
             AbrirFHijo(new FrmPedidos(this));
         }
-
-        
-
-
         //Mesero-----------
-        private void btnAdmMesero_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
-            AbrirFHijo(new FrmMesas(this));
-        }
-
-        private void BtnCajero_Click(object sender, EventArgs e)
-        {
-            showHideMenu(panelAdmMesero);
-        }
 
         private void BtnPedidosLocal_Click(object sender, EventArgs e)
         {
