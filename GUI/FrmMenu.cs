@@ -23,6 +23,7 @@ namespace GUI
             _idPuesto = Convert.ToInt32(datos.Rows[0][1]);
             _nombrePuesto = datos.Rows[0][2].ToString();
             _nombrePersona = datos.Rows[0][3].ToString();
+            IniciarDatos();
             this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
             this.DoubleBuffered = true;
             ocultar();
@@ -53,7 +54,6 @@ namespace GUI
             }
             else
                 subMenu.Visible = false;
-            IniciarDatos();
         }
         private void IniciarDatos()//Verifica si que tipo de usuario entro
         {

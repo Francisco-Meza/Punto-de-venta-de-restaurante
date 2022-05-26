@@ -56,7 +56,7 @@ namespace GUI
             {
                 DataTable datos = new DataTable();
                 datos = cuenta.Login(correo,clave);
-                if(datos.Rows.Count <= 0)
+                if(datos.Rows.Count <= 0 || datos == null)
                 {
                     MessageBox.Show("No existe el usuario","ACCESO AL SISTEMA",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
