@@ -26,7 +26,7 @@ namespace LOGICA_DE_NEGOCIOS
         {
             return Datos.Read(valor);
         }
-        public  string Create(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena)
+        public  string Create(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena, string nombrePuesto, string descripcion,string nombrePersona,string apelPat,string apelMat,DateTime fechaNacimiento)
         {
             if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
             else return "El ID ingresado no es valido";
@@ -48,11 +48,10 @@ namespace LOGICA_DE_NEGOCIOS
             else return "El apellido paterno no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(apelMat)) obj.ApelMat = apelMat;
             else return "El apellido materno no tiene un formato correcto, intente no usar caracteres especiales";
-            if (Validaciones.WithForCompareAsciiValue(fechaNacimiento)) obj.FechaNacimiento = DateTime.Parse(fechaNacimiento);
-            else return "La fecha de nacimiento no tiene un formato correcto, intente no usar caracteres especiales";
+            obj.FechaNacimiento = fechaNacimiento;
             return Datos.Create(obj);
         }
-        public string Update(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena)
+        public string Update(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena, string nombrePuesto, string descripcion, string nombrePersona, string apelPat, string apelMat, DateTime fechaNacimiento)
         {
             if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
             else return "El ID ingresado no es valido";
@@ -74,8 +73,7 @@ namespace LOGICA_DE_NEGOCIOS
             else return "El apellido paterno no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(apelMat)) obj.ApelMat = apelMat;
             else return "El apellido materno no tiene un formato correcto, intente no usar caracteres especiales";
-            if (Validaciones.WithForCompareAsciiValue(fechaNacimiento)) obj.FechaNacimiento = DateTime.Parse(fechaNacimiento);
-            else return "La fecha de nacimiento no tiene un formato correcto, intente no usar caracteres especiales";
+            obj.FechaNacimiento = fechaNacimiento;
             return Datos.Update(obj);
         }
         public string Delete(string id)
