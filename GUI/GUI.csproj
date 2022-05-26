@@ -64,6 +64,12 @@
     <Compile Include="ADMINISTRACION\FrmAddClasificacion.Designer.cs">
       <DependentUpon>FrmAddClasificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADMINISTRACION\FrmAddCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINISTRACION\FrmAddCuentas.Designer.cs">
+      <DependentUpon>FrmAddCuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADMINISTRACION\FrmAddMesas.cs">
       <SubType>Form</SubType>
     </Compile>
