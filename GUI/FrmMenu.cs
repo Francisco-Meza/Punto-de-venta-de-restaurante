@@ -173,8 +173,7 @@ namespace GUI
             AbrirFHijo(new FrmPedidos(this));
         }
         //Mesero-----------
-        
-        
+
         private void BtnPedidosLocal_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmMesas(this));
