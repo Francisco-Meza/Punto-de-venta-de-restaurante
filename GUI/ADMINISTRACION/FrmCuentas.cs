@@ -45,7 +45,17 @@ namespace GUI.ADMINISTRACION
                 throw;
             }
         }
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
         private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            menu.AbrirFHijo(new FrmAddPersonal());
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
         {
             menu.AbrirFHijo(new FrmAddPersonal());
         }

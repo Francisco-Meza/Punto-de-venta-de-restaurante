@@ -13,15 +13,18 @@ namespace LOGICA_DE_NEGOCIOS
     {
         ClsCuentas_D Datos;
         ClsCuentas obj;
-        
-        public static DataTable Read()
+        public ClsCuentas_N()
         {
-            ClsCuentas_D Datos = new ClsCuentas_D();
+            Datos = new ClsCuentas_D();
+            obj = new ClsCuentas();
+        }
+        
+        public DataTable Read()
+        {
             return Datos.Read();
         }
         public DataTable Read(string valor)
         {
-            ClsCuentas_D Datos = new ClsCuentas_D();
             if (Validaciones.WithForCompareAsciiValue(valor)) return Datos.Read(valor);
             else return null;
         }
