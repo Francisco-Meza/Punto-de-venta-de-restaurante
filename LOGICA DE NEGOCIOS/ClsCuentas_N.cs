@@ -85,5 +85,13 @@ namespace LOGICA_DE_NEGOCIOS
         {
             return Datos.Login(correo,clave);
         }
+        public DataTable ReadPuesto()
+        {
+            return Datos.ReadPuesto();
+        }
+        public DataTable Read(int id)
+        {
+            return Datos.Read(id);
+        }
     }
 }

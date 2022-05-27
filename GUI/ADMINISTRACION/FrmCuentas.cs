@@ -7,14 +7,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOGICA_DE_NEGOCIOS;
 
 namespace GUI.ADMINISTRACION
 {
     public partial class FrmCuentas : Form
     {
-        public FrmCuentas()
+        private FrmMenu menu;
+        private DataTable datos;
+        private ClsCuentas_N cuenta;
+        private int id;
+        public FrmCuentas(FrmMenu menu)
         {
             InitializeComponent();
+            this.menu = menu;
+            datos = new DataTable();
+            cuenta = new ClsCuentas_N();
+            IniciarDatos();
+        }
+        private void IniciarDatos()
+        {
+            try
+            {
+                datos = cuenta.Read();
+                if(datos != null)
+                {
+                    dgvCuentas.DataSource = datos;
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo cargar la informacion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error contactarse con el administrador detalle del error:\n"+e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            menu.AbrirFHijo(new FrmAddPersonal());
         }
     }
 }

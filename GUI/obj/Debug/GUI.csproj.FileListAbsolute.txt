@@ -24,7 +24,6 @@ C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmM
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidos.resources
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
-C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmPersonal.resources
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmProductos.resources
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmTicket.resources
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.Properties.Resources.resources

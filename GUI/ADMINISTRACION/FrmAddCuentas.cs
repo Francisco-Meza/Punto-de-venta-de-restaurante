@@ -13,11 +13,68 @@ namespace GUI
 {
     public partial class FrmAddPersonal : Form
     {
-        private string nombre, apePa, apeMa, correo, puesto, contra, telefono, fechaN;
+        ClsCuentas_N cuenta;
+        private string nombre, apePa, apeMa, correo, clave, telefono, fechaN;
+        private int puesto;
         public FrmAddPersonal()
         {
             InitializeComponent();
             BtnGuardar.Enabled = false;
+            cuenta = new ClsCuentas_N();
+            IniciarDatos();
+        }
+        public FrmAddPersonal(int id)
+        {
+            InitializeComponent();
+            BtnGuardar.Enabled = false;
+            cuenta = new ClsCuentas_N();
+            IniciarDatos(id);
+        }
+        private void IniciarDatos()
+        {
+            try
+            {
+                cmbPuesto.DataSource = cuenta.ReadPuesto();
+                cmbPuesto.DisplayMember = "NOMBRE";
+                cmbPuesto.ValueMember = "ID";
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error contactarse con el administrador", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+        private void IniciarDatos(int id)
+        {
+            try
+            {
+                cmbPuesto.DataSource = cuenta.ReadPuesto();
+                cmbPuesto.DisplayMember = "NOMBRE";
+                cmbPuesto.ValueMember = "ID";
+                DataTable datos = new DataTable();
+                datos = cuenta.Read(id);
+                nombre = datos.Rows[0][0].ToString();
+                apePa = datos.Rows[0][1].ToString();
+                apeMa = datos.Rows[0][2].ToString();
+                fechaN = datos.Rows[0][3].ToString();
+                telefono = datos.Rows[0][4].ToString();
+                correo = datos.Rows[0][5].ToString();
+                clave = datos.Rows[0][6].ToString();
+                puesto = Convert.ToInt32(datos.Rows[0][7]);
+                TxtNombre.Text = nombre;
+                TxtApelPat.Text = apePa;
+                TxtApelMat.Text = apeMa;
+                //fecha
+                TxtTelefonoPersonal.Text = telefono;
+                TxtCorreo.Text = correo;
+                TxtContra.Text = clave;
+                cmbPuesto.SelectedValue = puesto;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error contactarse con el administrador", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
         }
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
@@ -58,8 +115,8 @@ namespace GUI
             apePa = TxtApelPat.Text;
             apeMa = TxtApelMat.Text;
             fechaN = TxtFechaN.Text;
-            contra = TxtContra.Text;
-            puesto = TxtNombre.Text;
+            clave = TxtContra.Text;
+            puesto = int.Parse(TxtNombre.Text);
             correo = TxtCorreo.Text;
             telefono = TxtTelefonoPersonal.Text;
             /**/
@@ -67,7 +124,7 @@ namespace GUI
         }
         public void Validar()
         {
-            if (TxtNombre.Text != String.Empty && TxtApelPat.Text != String.Empty && TxtApelMat.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty && TxtPuesto.Text != String.Empty)
+            if (TxtNombre.Text != String.Empty && TxtApelPat.Text != String.Empty && TxtApelMat.Text != String.Empty && TxtFechaN.Text != String.Empty && TxtTelefonoPersonal.Text != String.Empty && TxtCorreo.Text != String.Empty && TxtContra.Text != String.Empty)
             {
                 BtnGuardar.Enabled = true;
             }

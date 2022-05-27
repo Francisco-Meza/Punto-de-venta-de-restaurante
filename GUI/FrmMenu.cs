@@ -36,8 +36,6 @@ namespace GUI
             {
                 case 1://Para administrador
                     {
-                        BtnPersonal.Enabled = true;
-                        BtnPersonal.Visible = true;
                         BtnProductos.Enabled = true;
                         BtnProductos.Visible = true;
                         BtnPedidosG.Enabled = true;
@@ -148,11 +146,6 @@ namespace GUI
         //---------- Son los botones del menu que cada uno nos muestra un fromulario
         //Administrador-----
         
-        private void BtnPersonal_Click(object sender, EventArgs e) 
-        {
-            AbrirFHijo(new FrmPersonal(this));
-            
-        }
         private void BtnProductos_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmProductos(this));
@@ -163,7 +156,12 @@ namespace GUI
             AbrirFHijo(new FrmPuesto(this));
             
         }
-        
+
+        private void BtnCuentas_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmCuentas(this));
+        }
+
         private void BtnMesas_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmMesas(this));
