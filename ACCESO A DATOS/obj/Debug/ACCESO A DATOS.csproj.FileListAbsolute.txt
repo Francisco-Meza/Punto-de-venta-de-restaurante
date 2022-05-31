@@ -16,7 +16,7 @@ C:\Users\balaz\Documents\ITSN\4to Semestre\Programacion II\PUNTO DE VENTA RESTAU
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ENTIDADES.dll
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ENTIDADES.pdb
 C:\Users\Jdavi\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CopyComplete
-<<<<<<< HEAD
+
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ACCESO A DATOS.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ACCESO A DATOS.pdb
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ENTIDADES.dll

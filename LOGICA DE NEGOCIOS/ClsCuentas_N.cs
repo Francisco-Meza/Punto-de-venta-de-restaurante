@@ -18,13 +18,15 @@ namespace LOGICA_DE_NEGOCIOS
             Datos = new ClsCuentas_D();
             obj = new ClsCuentas();
         }
+        
         public DataTable Read()
         {
             return Datos.Read();
         }
         public DataTable Read(string valor)
         {
-            return Datos.Read(valor);
+            if (Validaciones.WithForCompareAsciiValue(valor)) return Datos.Read(valor);
+            else return null;
         }
         public  string Create(string id, string idTipoPuesto, string idPersonal, string correo, string contrasena, string nombrePuesto, string descripcion,string nombrePersona,string apelPat,string apelMat,DateTime fechaNacimiento)
         {
@@ -84,6 +86,14 @@ namespace LOGICA_DE_NEGOCIOS
         public DataTable Login(string correo,string clave)
         {
             return Datos.Login(correo,clave);
+        }
+        public DataTable ReadPuesto()
+        {
+            return Datos.ReadPuesto();
+        }
+        public DataTable Read(int id)
+        {
+            return Datos.Read(id);
         }
     }
 }
