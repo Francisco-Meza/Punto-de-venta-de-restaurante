@@ -60,7 +60,7 @@
             this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
             this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.Reply;
             this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
@@ -86,7 +86,7 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(284, 403);
+            this.BtnGuardar.Location = new System.Drawing.Point(276, 430);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -129,9 +129,9 @@
             this.gunaGroupBox1.Controls.Add(this.lblApeP);
             this.gunaGroupBox1.Controls.Add(this.lblNombre);
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(89, 191);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(42, 127);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(578, 161);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(657, 251);
             this.gunaGroupBox1.TabIndex = 11;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -146,11 +146,11 @@
             this.TxtDescripcion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtDescripcion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcion.Location = new System.Drawing.Point(219, 112);
+            this.TxtDescripcion.Location = new System.Drawing.Point(219, 157);
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.PasswordChar = '\0';
             this.TxtDescripcion.Radius = 10;
-            this.TxtDescripcion.Size = new System.Drawing.Size(306, 30);
+            this.TxtDescripcion.Size = new System.Drawing.Size(385, 30);
             this.TxtDescripcion.TabIndex = 9;
             // 
             // TxtNombre
@@ -164,11 +164,11 @@
             this.TxtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombre.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombre.Location = new System.Drawing.Point(220, 67);
+            this.TxtNombre.Location = new System.Drawing.Point(220, 112);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.PasswordChar = '\0';
             this.TxtNombre.Radius = 10;
-            this.TxtNombre.Size = new System.Drawing.Size(306, 30);
+            this.TxtNombre.Size = new System.Drawing.Size(385, 30);
             this.TxtNombre.TabIndex = 8;
             this.TxtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombre_KeyPress);
             // 
@@ -183,11 +183,11 @@
             this.TxtID.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtID.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtID.Location = new System.Drawing.Point(220, 19);
+            this.TxtID.Location = new System.Drawing.Point(220, 64);
             this.TxtID.Name = "TxtID";
             this.TxtID.PasswordChar = '\0';
             this.TxtID.Radius = 10;
-            this.TxtID.Size = new System.Drawing.Size(306, 30);
+            this.TxtID.Size = new System.Drawing.Size(385, 30);
             this.TxtID.TabIndex = 7;
             this.TxtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtID_KeyPress);
             // 
@@ -196,7 +196,7 @@
             this.lblApeM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApeM.AutoSize = true;
             this.lblApeM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApeM.Location = new System.Drawing.Point(61, 112);
+            this.lblApeM.Location = new System.Drawing.Point(61, 157);
             this.lblApeM.Name = "lblApeM";
             this.lblApeM.Size = new System.Drawing.Size(96, 20);
             this.lblApeM.TabIndex = 2;
@@ -207,7 +207,7 @@
             this.lblApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApeP.AutoSize = true;
             this.lblApeP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApeP.Location = new System.Drawing.Point(62, 67);
+            this.lblApeP.Location = new System.Drawing.Point(62, 112);
             this.lblApeP.Name = "lblApeP";
             this.lblApeP.Size = new System.Drawing.Size(68, 20);
             this.lblApeP.TabIndex = 1;
@@ -218,7 +218,7 @@
             this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(62, 22);
+            this.lblNombre.Location = new System.Drawing.Point(62, 67);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(25, 20);
             this.lblNombre.TabIndex = 0;
@@ -228,7 +228,7 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(85, 147);
+            this.gunaLabel2.Location = new System.Drawing.Point(30, 21);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(142, 21);
             this.gunaLabel2.TabIndex = 11;
