@@ -39,6 +39,8 @@
             this.lblApeM = new Guna.UI.WinForms.GunaLabel();
             this.lblApeP = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.TxtID = new Guna.UI.WinForms.GunaTextBox();
+            this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -281,5 +283,7 @@
         private Guna.UI.WinForms.GunaTextBox TxtNombre;
         private Guna.UI.WinForms.GunaLabel lblApeM;
         private Guna.UI.WinForms.GunaLabel lblApeP;
+        private Guna.UI.WinForms.GunaTextBox TxtID;
+        private Guna.UI.WinForms.GunaLabel lblNombre;
     }
 }
