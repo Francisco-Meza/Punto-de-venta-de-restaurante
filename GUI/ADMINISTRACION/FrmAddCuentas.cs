@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LOGICA_DE_NEGOCIOS;
+using GUI.ADMINISTRACION;
 
 namespace GUI
 {
@@ -18,22 +19,25 @@ namespace GUI
         private DateTime fechaN;
         private int puesto;
         private int id;
-        public FrmAddPersonal()
+        private FrmMenu menu;
+        public FrmAddPersonal(FrmMenu menu)
         {
             InitializeComponent();
+            this.menu = menu;
             BtnGuardar.Enabled = false;
             cuenta = new ClsCuentas_N();
             fechaN = new DateTime();
             id = 0;
             IniciarDatos();
         }
-        public FrmAddPersonal(int id)
+        public FrmAddPersonal(int id, FrmMenu menu)
         {
             InitializeComponent();
             BtnGuardar.Enabled = true;
             cuenta = new ClsCuentas_N();
             fechaN = new DateTime();
             IniciarDatos(id);
+            this.menu = menu;
         }
         private void IniciarDatos()
         {
@@ -87,7 +91,8 @@ namespace GUI
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {
-            this.Close();
+            menu.AbrirFHijo(new FrmCuentas(menu));
+            this.Dispose();
         }
 
         private void BtnGuardar_Click(object sender, EventArgs e)
