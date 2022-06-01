@@ -50,9 +50,10 @@
             this.gunaPanel1.Controls.Add(this.btnEditar);
             this.gunaPanel1.Controls.Add(this.btnAgregar);
             this.gunaPanel1.Controls.Add(this.dgvListaMesas);
-            this.gunaPanel1.Location = new System.Drawing.Point(-1, 0);
+            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(754, 543);
+            this.gunaPanel1.Size = new System.Drawing.Size(757, 646);
             this.gunaPanel1.TabIndex = 0;
             // 
             // gunaLabel1
@@ -79,7 +80,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(528, 454);
+            this.btnEliminar.Location = new System.Drawing.Point(518, 508);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -106,7 +107,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(294, 454);
+            this.btnEditar.Location = new System.Drawing.Point(289, 508);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -133,7 +134,7 @@
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAgregar.Location = new System.Drawing.Point(71, 454);
+            this.btnAgregar.Location = new System.Drawing.Point(70, 508);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -180,13 +181,13 @@
             this.dgvListaMesas.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListaMesas.EnableHeadersVisualStyles = false;
             this.dgvListaMesas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvListaMesas.Location = new System.Drawing.Point(11, 64);
+            this.dgvListaMesas.Location = new System.Drawing.Point(11, 116);
             this.dgvListaMesas.Name = "dgvListaMesas";
             this.dgvListaMesas.ReadOnly = true;
             this.dgvListaMesas.RowHeadersVisible = false;
             this.dgvListaMesas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvListaMesas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListaMesas.Size = new System.Drawing.Size(730, 320);
+            this.dgvListaMesas.Size = new System.Drawing.Size(733, 320);
             this.dgvListaMesas.TabIndex = 0;
             this.dgvListaMesas.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgvListaMesas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -215,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 543);
+            this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMesas";

@@ -77,7 +77,11 @@ namespace GUI
                         lblMesero.Location = new Point(0, 0);
                         BtnPedidosLocal.Location = new Point(0,lblMesero.Height);
                         BtnPerfil.Location = new Point(0, BtnPedidosLocal.Height);
+                        BtnMesas.Enabled = true;
+                        BtnMesas.Visible = true;
                         BtnPedidosLocal.Enabled = true;
+                        BtnPedidosLocal.Visible = true;
+                        BtnPerfil.Enabled = true;
                         BtnPerfil.Visible = true;
                         break;
                     }
