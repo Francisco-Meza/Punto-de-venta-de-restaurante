@@ -58,7 +58,7 @@
             this.NomPD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.NomPD.AutoSize = true;
             this.NomPD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomPD.Location = new System.Drawing.Point(32, 18);
+            this.NomPD.Location = new System.Drawing.Point(32, 70);
             this.NomPD.Name = "NomPD";
             this.NomPD.Size = new System.Drawing.Size(68, 20);
             this.NomPD.TabIndex = 0;
@@ -69,7 +69,7 @@
             this.LblApellidoPD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblApellidoPD.AutoSize = true;
             this.LblApellidoPD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblApellidoPD.Location = new System.Drawing.Point(32, 62);
+            this.LblApellidoPD.Location = new System.Drawing.Point(32, 114);
             this.LblApellidoPD.Name = "LblApellidoPD";
             this.LblApellidoPD.Size = new System.Drawing.Size(131, 20);
             this.LblApellidoPD.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.LblApellidoMD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblApellidoMD.AutoSize = true;
             this.LblApellidoMD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblApellidoMD.Location = new System.Drawing.Point(32, 116);
+            this.LblApellidoMD.Location = new System.Drawing.Point(32, 168);
             this.LblApellidoMD.Name = "LblApellidoMD";
             this.LblApellidoMD.Size = new System.Drawing.Size(137, 20);
             this.LblApellidoMD.TabIndex = 2;
@@ -91,7 +91,7 @@
             this.LblTelefonoD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblTelefonoD.AutoSize = true;
             this.LblTelefonoD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTelefonoD.Location = new System.Drawing.Point(42, 221);
+            this.LblTelefonoD.Location = new System.Drawing.Point(42, 273);
             this.LblTelefonoD.Name = "LblTelefonoD";
             this.LblTelefonoD.Size = new System.Drawing.Size(71, 20);
             this.LblTelefonoD.TabIndex = 3;
@@ -102,7 +102,7 @@
             this.LblCorreoD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblCorreoD.AutoSize = true;
             this.LblCorreoD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCorreoD.Location = new System.Drawing.Point(42, 272);
+            this.LblCorreoD.Location = new System.Drawing.Point(42, 324);
             this.LblCorreoD.Name = "LblCorreoD";
             this.LblCorreoD.Size = new System.Drawing.Size(61, 20);
             this.LblCorreoD.TabIndex = 4;
@@ -113,7 +113,7 @@
             this.LblContraD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblContraD.AutoSize = true;
             this.LblContraD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContraD.Location = new System.Drawing.Point(42, 319);
+            this.LblContraD.Location = new System.Drawing.Point(42, 371);
             this.LblContraD.Name = "LblContraD";
             this.LblContraD.Size = new System.Drawing.Size(95, 20);
             this.LblContraD.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.LblFechaND.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblFechaND.AutoSize = true;
             this.LblFechaND.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFechaND.Location = new System.Drawing.Point(32, 171);
+            this.LblFechaND.Location = new System.Drawing.Point(32, 223);
             this.LblFechaND.Name = "LblFechaND";
             this.LblFechaND.Size = new System.Drawing.Size(167, 20);
             this.LblFechaND.TabIndex = 6;
@@ -158,7 +158,7 @@
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.Location = new System.Drawing.Point(107, 26);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(522, 409);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(522, 513);
             this.gunaGroupBox1.TabIndex = 7;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -173,7 +173,7 @@
             this.txtPuestoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtPuestoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtPuestoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPuestoPersonal.Location = new System.Drawing.Point(205, 362);
+            this.txtPuestoPersonal.Location = new System.Drawing.Point(205, 414);
             this.txtPuestoPersonal.Name = "txtPuestoPersonal";
             this.txtPuestoPersonal.PasswordChar = '\0';
             this.txtPuestoPersonal.Radius = 10;
@@ -191,7 +191,7 @@
             this.txtContrasenaPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtContrasenaPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtContrasenaPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasenaPersonal.Location = new System.Drawing.Point(205, 319);
+            this.txtContrasenaPersonal.Location = new System.Drawing.Point(205, 371);
             this.txtContrasenaPersonal.Name = "txtContrasenaPersonal";
             this.txtContrasenaPersonal.PasswordChar = '\0';
             this.txtContrasenaPersonal.Radius = 10;
@@ -209,7 +209,7 @@
             this.txtCorreoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtCorreoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCorreoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreoPersonal.Location = new System.Drawing.Point(205, 272);
+            this.txtCorreoPersonal.Location = new System.Drawing.Point(205, 324);
             this.txtCorreoPersonal.Name = "txtCorreoPersonal";
             this.txtCorreoPersonal.PasswordChar = '\0';
             this.txtCorreoPersonal.Radius = 10;
@@ -227,7 +227,7 @@
             this.txtTelefonoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtTelefonoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtTelefonoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoPersonal.Location = new System.Drawing.Point(205, 221);
+            this.txtTelefonoPersonal.Location = new System.Drawing.Point(205, 273);
             this.txtTelefonoPersonal.Name = "txtTelefonoPersonal";
             this.txtTelefonoPersonal.PasswordChar = '\0';
             this.txtTelefonoPersonal.Radius = 10;
@@ -245,7 +245,7 @@
             this.txtFechaNacPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtFechaNacPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtFechaNacPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFechaNacPersonal.Location = new System.Drawing.Point(205, 171);
+            this.txtFechaNacPersonal.Location = new System.Drawing.Point(205, 223);
             this.txtFechaNacPersonal.Name = "txtFechaNacPersonal";
             this.txtFechaNacPersonal.PasswordChar = '\0';
             this.txtFechaNacPersonal.Radius = 10;
@@ -263,7 +263,7 @@
             this.txtApMaternoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtApMaternoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtApMaternoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApMaternoPersonal.Location = new System.Drawing.Point(205, 116);
+            this.txtApMaternoPersonal.Location = new System.Drawing.Point(205, 168);
             this.txtApMaternoPersonal.Name = "txtApMaternoPersonal";
             this.txtApMaternoPersonal.PasswordChar = '\0';
             this.txtApMaternoPersonal.Radius = 10;
@@ -281,7 +281,7 @@
             this.TxtApPaternoPersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtApPaternoPersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtApPaternoPersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApPaternoPersonal.Location = new System.Drawing.Point(205, 62);
+            this.TxtApPaternoPersonal.Location = new System.Drawing.Point(205, 114);
             this.TxtApPaternoPersonal.MaxLength = 10;
             this.TxtApPaternoPersonal.Name = "TxtApPaternoPersonal";
             this.TxtApPaternoPersonal.PasswordChar = '\0';
@@ -300,7 +300,7 @@
             this.TxtNombrePersonal.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombrePersonal.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombrePersonal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombrePersonal.Location = new System.Drawing.Point(205, 18);
+            this.TxtNombrePersonal.Location = new System.Drawing.Point(205, 70);
             this.TxtNombrePersonal.Name = "TxtNombrePersonal";
             this.TxtNombrePersonal.PasswordChar = '\0';
             this.TxtNombrePersonal.Radius = 10;
@@ -312,7 +312,7 @@
             this.LblPuestoD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblPuestoD.AutoSize = true;
             this.LblPuestoD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPuestoD.Location = new System.Drawing.Point(42, 362);
+            this.LblPuestoD.Location = new System.Drawing.Point(42, 414);
             this.LblPuestoD.Name = "LblPuestoD";
             this.LblPuestoD.Size = new System.Drawing.Size(58, 20);
             this.LblPuestoD.TabIndex = 7;
@@ -349,7 +349,7 @@
             this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
             this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(68, 463);
+            this.BtnAgregar.Location = new System.Drawing.Point(68, 567);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -377,7 +377,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(526, 463);
+            this.BtnEliminar.Location = new System.Drawing.Point(526, 567);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -405,7 +405,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(287, 463);
+            this.BtnEditar.Location = new System.Drawing.Point(287, 567);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -423,7 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(757, 542);
+            this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnEditar);

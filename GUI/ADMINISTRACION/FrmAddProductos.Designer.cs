@@ -64,7 +64,7 @@
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox1.Location = new System.Drawing.Point(46, 93);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(680, 307);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(680, 411);
             this.gunaGroupBox1.TabIndex = 2;
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -80,7 +80,7 @@
             this.ComboBoxClasi.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ComboBoxClasi.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxClasi.FormattingEnabled = true;
-            this.ComboBoxClasi.Location = new System.Drawing.Point(219, 144);
+            this.ComboBoxClasi.Location = new System.Drawing.Point(219, 196);
             this.ComboBoxClasi.Name = "ComboBoxClasi";
             this.ComboBoxClasi.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.ComboBoxClasi.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -99,7 +99,7 @@
             this.TxtPrecioPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtPrecioPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtPrecioPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrecioPro.Location = new System.Drawing.Point(219, 206);
+            this.TxtPrecioPro.Location = new System.Drawing.Point(219, 258);
             this.TxtPrecioPro.Name = "TxtPrecioPro";
             this.TxtPrecioPro.PasswordChar = '\0';
             this.TxtPrecioPro.Radius = 10;
@@ -118,7 +118,7 @@
             this.TxtDescriPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtDescriPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtDescriPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescriPro.Location = new System.Drawing.Point(219, 77);
+            this.TxtDescriPro.Location = new System.Drawing.Point(219, 129);
             this.TxtDescriPro.Name = "TxtDescriPro";
             this.TxtDescriPro.PasswordChar = '\0';
             this.TxtDescriPro.Radius = 10;
@@ -137,7 +137,7 @@
             this.TxtNombrePro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombrePro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombrePro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombrePro.Location = new System.Drawing.Point(219, 18);
+            this.TxtNombrePro.Location = new System.Drawing.Point(219, 70);
             this.TxtNombrePro.Name = "TxtNombrePro";
             this.TxtNombrePro.PasswordChar = '\0';
             this.TxtNombrePro.Radius = 10;
@@ -150,7 +150,7 @@
             this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(80, 216);
+            this.gunaLabel6.Location = new System.Drawing.Point(80, 268);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(56, 20);
             this.gunaLabel6.TabIndex = 4;
@@ -161,7 +161,7 @@
             this.gunaLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(68, 145);
+            this.gunaLabel4.Location = new System.Drawing.Point(68, 197);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(103, 20);
             this.gunaLabel4.TabIndex = 2;
@@ -172,7 +172,7 @@
             this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(68, 77);
+            this.gunaLabel3.Location = new System.Drawing.Point(68, 129);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(96, 20);
             this.gunaLabel3.TabIndex = 1;
@@ -183,7 +183,7 @@
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(68, 18);
+            this.gunaLabel2.Location = new System.Drawing.Point(68, 70);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(68, 20);
             this.gunaLabel2.TabIndex = 0;
@@ -214,7 +214,7 @@
             this.BtnGuardarPro.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarPro.Image")));
             this.BtnGuardarPro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardarPro.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardarPro.Location = new System.Drawing.Point(310, 436);
+            this.BtnGuardarPro.Location = new System.Drawing.Point(310, 540);
             this.BtnGuardarPro.Name = "BtnGuardarPro";
             this.BtnGuardarPro.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardarPro.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -249,7 +249,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(757, 542);
+            this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.BtnGuardarPro);
             this.Controls.Add(this.BtnCerrarHijo);
             this.Controls.Add(this.gunaLabel1);
