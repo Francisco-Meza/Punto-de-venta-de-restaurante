@@ -80,7 +80,7 @@
             this.dgvClasificacion.ReadOnly = true;
             this.dgvClasificacion.RowHeadersVisible = false;
             this.dgvClasificacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClasificacion.Size = new System.Drawing.Size(668, 291);
+            this.dgvClasificacion.Size = new System.Drawing.Size(667, 291);
             this.dgvClasificacion.TabIndex = 0;
             this.dgvClasificacion.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
             this.dgvClasificacion.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
@@ -116,7 +116,7 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(758, 543);
+            this.gunaPanel1.Size = new System.Drawing.Size(757, 646);
             this.gunaPanel1.TabIndex = 44;
             // 
             // btnElimiCla
@@ -133,7 +133,7 @@
             this.btnElimiCla.ForeColor = System.Drawing.Color.White;
             this.btnElimiCla.Image = ((System.Drawing.Image)(resources.GetObject("btnElimiCla.Image")));
             this.btnElimiCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnElimiCla.Location = new System.Drawing.Point(503, 428);
+            this.btnElimiCla.Location = new System.Drawing.Point(502, 531);
             this.btnElimiCla.Name = "btnElimiCla";
             this.btnElimiCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnElimiCla.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -159,7 +159,7 @@
             this.btnEditarC.ForeColor = System.Drawing.Color.White;
             this.btnEditarC.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarC.Image")));
             this.btnEditarC.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditarC.Location = new System.Drawing.Point(277, 428);
+            this.btnEditarC.Location = new System.Drawing.Point(276, 531);
             this.btnEditarC.Name = "btnEditarC";
             this.btnEditarC.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnEditarC.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -186,7 +186,7 @@
             this.btnAgregarCla.ForeColor = System.Drawing.Color.White;
             this.btnAgregarCla.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCla.Image")));
             this.btnAgregarCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAgregarCla.Location = new System.Drawing.Point(45, 428);
+            this.btnAgregarCla.Location = new System.Drawing.Point(45, 531);
             this.btnAgregarCla.Name = "btnAgregarCla";
             this.btnAgregarCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnAgregarCla.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -209,7 +209,7 @@
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 40;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.Location = new System.Drawing.Point(709, 3);
+            this.btnClose.Location = new System.Drawing.Point(708, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(46, 39);
             this.btnClose.TabIndex = 14;
@@ -230,7 +230,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(758, 543);
+            this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmClasificacion";

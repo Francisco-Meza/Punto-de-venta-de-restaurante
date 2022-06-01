@@ -160,12 +160,12 @@
             this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
             this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.Reply;
             this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
             this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnCerrarHijo.Location = new System.Drawing.Point(711, 0);
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(710, 0);
             this.BtnCerrarHijo.Name = "BtnCerrarHijo";
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 12;
@@ -186,7 +186,7 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(300, 414);
+            this.BtnGuardar.Location = new System.Drawing.Point(283, 431);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -194,7 +194,7 @@
             this.BtnGuardar.OnHoverImage = null;
             this.BtnGuardar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnGuardar.Radius = 20;
-            this.BtnGuardar.Size = new System.Drawing.Size(160, 42);
+            this.BtnGuardar.Size = new System.Drawing.Size(144, 40);
             this.BtnGuardar.TabIndex = 13;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

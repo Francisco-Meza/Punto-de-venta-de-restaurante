@@ -65,7 +65,7 @@
             this.BtnGuardarCla.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarCla.Image")));
             this.BtnGuardarCla.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardarCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardarCla.Location = new System.Drawing.Point(272, 407);
+            this.BtnGuardarCla.Location = new System.Drawing.Point(272, 459);
             this.BtnGuardarCla.Name = "BtnGuardarCla";
             this.BtnGuardarCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardarCla.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -111,7 +111,7 @@
             this.GrupClasificacion.LineColor = System.Drawing.Color.Empty;
             this.GrupClasificacion.Location = new System.Drawing.Point(16, 112);
             this.GrupClasificacion.Name = "GrupClasificacion";
-            this.GrupClasificacion.Size = new System.Drawing.Size(709, 241);
+            this.GrupClasificacion.Size = new System.Drawing.Size(709, 345);
             this.GrupClasificacion.TabIndex = 10;
             this.GrupClasificacion.TextLocation = new System.Drawing.Point(10, 8);
             // 
@@ -120,7 +120,7 @@
             this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(40, 135);
+            this.gunaLabel3.Location = new System.Drawing.Point(40, 219);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(96, 20);
             this.gunaLabel3.TabIndex = 1;
@@ -131,7 +131,7 @@
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(40, 48);
+            this.gunaLabel2.Location = new System.Drawing.Point(40, 100);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(68, 20);
             this.gunaLabel2.TabIndex = 0;
@@ -148,7 +148,7 @@
             this.TxtDescripcionClas.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtDescripcionClas.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtDescripcionClas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcionClas.Location = new System.Drawing.Point(170, 125);
+            this.TxtDescripcionClas.Location = new System.Drawing.Point(170, 209);
             this.TxtDescripcionClas.Name = "TxtDescripcionClas";
             this.TxtDescripcionClas.PasswordChar = '\0';
             this.TxtDescripcionClas.Radius = 10;
@@ -166,7 +166,7 @@
             this.TxtNombreClasificacion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombreClasificacion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombreClasificacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreClasificacion.Location = new System.Drawing.Point(170, 48);
+            this.TxtNombreClasificacion.Location = new System.Drawing.Point(170, 100);
             this.TxtNombreClasificacion.Name = "TxtNombreClasificacion";
             this.TxtNombreClasificacion.PasswordChar = '\0';
             this.TxtNombreClasificacion.Radius = 10;
@@ -178,7 +178,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(757, 542);
+            this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.BtnGuardarCla);
             this.Controls.Add(this.GrupClasificacion);
             this.Controls.Add(this.BtnCerrarHijo);
