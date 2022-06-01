@@ -52,12 +52,7 @@ namespace GUI.ADMINISTRACION
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            menu.AbrirFHijo(new FrmAddPersonal());
-        }
-
-        private void BtnEditar_Click(object sender, EventArgs e)
-        {
-            menu.AbrirFHijo(new FrmAddPersonal());
+            menu.AbrirFHijo(new FrmAddPersonal(menu));
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
@@ -80,7 +75,7 @@ namespace GUI.ADMINISTRACION
         {
             int row = dgvCuentas.CurrentRow.Index;
             id = Convert.ToInt32(dgvCuentas.Rows[row].Cells[0].Value);
-            menu.AbrirFHijo(new FrmAddPersonal(id));
+            menu.AbrirFHijo(new FrmAddPersonal(id,menu));
         }
     }
 }
