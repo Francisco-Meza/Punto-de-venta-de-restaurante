@@ -33,7 +33,6 @@
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.BtnGuardar = new Guna.UI.WinForms.GunaButton();
             this.lblFechaNac = new Guna.UI.WinForms.GunaLabel();
-            this.TxtFechaN = new Guna.UI.WinForms.GunaTextBox();
             this.TxtCorreo = new Guna.UI.WinForms.GunaTextBox();
             this.lblCorreoP = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
@@ -48,9 +47,10 @@
             this.TxtTelefonoPersonal = new Guna.UI.WinForms.GunaTextBox();
             this.lblTelefonoPersonal = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
-            this.cmbPuesto = new Guna.UI.WinForms.GunaComboBox();
+            this.DtpFecha = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtConfirContra = new Guna.UI.WinForms.GunaTextBox();
+            this.cmbPuesto = new Guna.UI.WinForms.GunaComboBox();
             this.gunaGroupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,24 +121,6 @@
             this.lblFechaNac.Size = new System.Drawing.Size(165, 20);
             this.lblFechaNac.TabIndex = 3;
             this.lblFechaNac.Text = "Fecha de nacimiento";
-            // 
-            // TxtFechaN
-            // 
-            this.TxtFechaN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtFechaN.BackColor = System.Drawing.Color.Transparent;
-            this.TxtFechaN.BaseColor = System.Drawing.Color.White;
-            this.TxtFechaN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TxtFechaN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtFechaN.FocusedBaseColor = System.Drawing.Color.White;
-            this.TxtFechaN.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.TxtFechaN.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtFechaN.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFechaN.Location = new System.Drawing.Point(226, 154);
-            this.TxtFechaN.Name = "TxtFechaN";
-            this.TxtFechaN.PasswordChar = '\0';
-            this.TxtFechaN.Radius = 10;
-            this.TxtFechaN.Size = new System.Drawing.Size(309, 30);
-            this.TxtFechaN.TabIndex = 10;
             // 
             // TxtCorreo
             // 
@@ -334,6 +316,7 @@
             this.gunaGroupBox2.BaseColor = System.Drawing.Color.LightCyan;
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.gunaGroupBox2.BorderSize = 1;
+            this.gunaGroupBox2.Controls.Add(this.DtpFecha);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel2);
             this.gunaGroupBox2.Controls.Add(this.txtConfirContra);
             this.gunaGroupBox2.Controls.Add(this.cmbPuesto);
@@ -350,7 +333,6 @@
             this.gunaGroupBox2.Controls.Add(this.gunaLabel5);
             this.gunaGroupBox2.Controls.Add(this.lblCorreoP);
             this.gunaGroupBox2.Controls.Add(this.TxtCorreo);
-            this.gunaGroupBox2.Controls.Add(this.TxtFechaN);
             this.gunaGroupBox2.Controls.Add(this.lblFechaNac);
             this.gunaGroupBox2.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox2.Location = new System.Drawing.Point(90, 37);
@@ -359,24 +341,27 @@
             this.gunaGroupBox2.TabIndex = 12;
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // cmbPuesto
+            // DtpFecha
             // 
-            this.cmbPuesto.BackColor = System.Drawing.Color.Transparent;
-            this.cmbPuesto.BaseColor = System.Drawing.Color.White;
-            this.cmbPuesto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.cmbPuesto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPuesto.FocusedColor = System.Drawing.Color.Empty;
-            this.cmbPuesto.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbPuesto.ForeColor = System.Drawing.Color.Black;
-            this.cmbPuesto.FormattingEnabled = true;
-            this.cmbPuesto.Location = new System.Drawing.Point(226, 375);
-            this.cmbPuesto.Name = "cmbPuesto";
-            this.cmbPuesto.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.cmbPuesto.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbPuesto.Radius = 10;
-            this.cmbPuesto.Size = new System.Drawing.Size(309, 26);
-            this.cmbPuesto.TabIndex = 16;
+            this.DtpFecha.BaseColor = System.Drawing.Color.White;
+            this.DtpFecha.BorderColor = System.Drawing.Color.Silver;
+            this.DtpFecha.CustomFormat = null;
+            this.DtpFecha.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DtpFecha.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.DtpFecha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DtpFecha.ForeColor = System.Drawing.Color.Black;
+            this.DtpFecha.Location = new System.Drawing.Point(226, 154);
+            this.DtpFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DtpFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DtpFecha.Name = "DtpFecha";
+            this.DtpFecha.OnHoverBaseColor = System.Drawing.Color.White;
+            this.DtpFecha.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.DtpFecha.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.DtpFecha.OnPressedColor = System.Drawing.Color.Black;
+            this.DtpFecha.Size = new System.Drawing.Size(309, 30);
+            this.DtpFecha.TabIndex = 19;
+            this.DtpFecha.Text = "martes, 31 de mayo de 2022";
+            this.DtpFecha.Value = new System.DateTime(2022, 5, 31, 9, 42, 29, 173);
             // 
             // gunaLabel2
             // 
@@ -407,6 +392,25 @@
             this.txtConfirContra.Size = new System.Drawing.Size(309, 30);
             this.txtConfirContra.TabIndex = 18;
             // 
+            // cmbPuesto
+            // 
+            this.cmbPuesto.BackColor = System.Drawing.Color.Transparent;
+            this.cmbPuesto.BaseColor = System.Drawing.Color.White;
+            this.cmbPuesto.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmbPuesto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPuesto.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbPuesto.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbPuesto.ForeColor = System.Drawing.Color.Black;
+            this.cmbPuesto.FormattingEnabled = true;
+            this.cmbPuesto.Location = new System.Drawing.Point(226, 375);
+            this.cmbPuesto.Name = "cmbPuesto";
+            this.cmbPuesto.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.cmbPuesto.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbPuesto.Radius = 10;
+            this.cmbPuesto.Size = new System.Drawing.Size(309, 26);
+            this.cmbPuesto.TabIndex = 16;
+            // 
             // FrmAddPersonal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -431,7 +435,6 @@
         private Guna.UI.WinForms.GunaButton BtnGuardar;
         private FontAwesome.Sharp.IconButton BtnCerrarHijo;
         private Guna.UI.WinForms.GunaLabel lblFechaNac;
-        private Guna.UI.WinForms.GunaTextBox TxtFechaN;
         private Guna.UI.WinForms.GunaTextBox TxtCorreo;
         private Guna.UI.WinForms.GunaLabel lblCorreoP;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
@@ -449,5 +452,6 @@
         private Guna.UI.WinForms.GunaComboBox cmbPuesto;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaTextBox txtConfirContra;
+        private Guna.UI.WinForms.GunaDateTimePicker DtpFecha;
     }
 }

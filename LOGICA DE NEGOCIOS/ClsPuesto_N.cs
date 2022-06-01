@@ -23,12 +23,10 @@ namespace LOGICA_DE_NEGOCIOS
             if (Validaciones.WithForCompareAsciiValue(valor)) return Datos.Read(valor);
             else return null;
         }
-        public static string Create(string id,string nombre,string descripcion)
+        public static string Create(string nombre,string descripcion)
         {
             ClsPuesto_D Datos = new ClsPuesto_D();
             ClsPuesto obj = new ClsPuesto();
-            if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
-            else return "El id ingresado no es valido";
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
             else return "El nombre no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(descripcion)) obj.Descripcion = descripcion;

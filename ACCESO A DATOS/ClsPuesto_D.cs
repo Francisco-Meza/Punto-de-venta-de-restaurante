@@ -79,7 +79,6 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_CREATE_PUESTO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id",SqlDbType.Int).Value = obj.Id;
                 cmd.Parameters.Add("@nombre",SqlDbType.VarChar).Value = obj.Nombre;
                 cmd.Parameters.Add("@descripcion",SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();

@@ -79,19 +79,15 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_CREATE_CUENTAS", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@idTipoPuesto", SqlDbType.VarChar).Value = obj.IdTipoPuesto;
+                cmd.Parameters.Add("@idPuesto", SqlDbType.VarChar).Value = obj.IdTipoPuesto;
                 cmd.Parameters.Add("@correo", SqlDbType.VarChar).Value = obj.Correo;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.Contrasena;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.IdPersonal;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePuesto;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.Descripcion;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePersona;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.ApelPat;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.ApelMat;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.FechaNacimiento;
+                cmd.Parameters.Add("@clave", SqlDbType.VarChar).Value = obj.Contrasena;
+                cmd.Parameters.Add("@nombrePersona", SqlDbType.VarChar).Value = obj.NombrePersona;
+                cmd.Parameters.Add("@apelPat", SqlDbType.VarChar).Value = obj.ApelPat;
+                cmd.Parameters.Add("@apelMat", SqlDbType.VarChar).Value = obj.ApelMat;
+                cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = obj.FechaNacimiento;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la cuenta";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "No se pudo insertar la cuenta";
             }
             catch (Exception e)
             {
@@ -116,19 +112,17 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_UPDATE_CUENTAS", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
-                cmd.Parameters.Add("@idTipoPuesto", SqlDbType.VarChar).Value = obj.IdTipoPuesto;
+                cmd.Parameters.Add("@idCuenta", SqlDbType.Int).Value = obj.Id;
+                cmd.Parameters.Add("@idPuesto", SqlDbType.VarChar).Value = obj.IdTipoPuesto;
                 cmd.Parameters.Add("@correo", SqlDbType.VarChar).Value = obj.Correo;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.Contrasena;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.IdPersonal;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePuesto;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.Descripcion;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.NombrePersona;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.ApelPat;
-                cmd.Parameters.Add("@contrasena", SqlDbType.VarChar).Value = obj.ApelMat;
-                cmd.Parameters.Add("@idPersonal", SqlDbType.VarChar).Value = obj.FechaNacimiento;
+                cmd.Parameters.Add("@clave", SqlDbType.VarChar).Value = obj.Contrasena;
+                cmd.Parameters.Add("@nombrePersona", SqlDbType.VarChar).Value = obj.NombrePersona;
+                cmd.Parameters.Add("@apelPat", SqlDbType.VarChar).Value = obj.ApelPat;
+                cmd.Parameters.Add("@apelMat", SqlDbType.VarChar).Value = obj.ApelMat;
+                cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = obj.FechaNacimiento;
+                cmd.Parameters.Add("@telefono", SqlDbType.VarChar).Value = obj.Telefono;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar la cuenta";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "No se pudo actualizar la cuenta";
             }
             catch (Exception e)
             {
@@ -153,9 +147,9 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_DELETE_CUENTAS", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                cmd.Parameters.Add("@idCuenta", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar la cuenta";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "No se pudo insertar la cuenta";
             }
             catch (Exception e)
             {
