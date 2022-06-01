@@ -12,17 +12,18 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmAddClasificacion : Form
     {
+        private readonly FrmMenu padreMenu;
         private FrmMenu frmMenu;
-
-        public FrmAddClasificacion()
+        public FrmAddClasificacion(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
         }
 
-        public FrmAddClasificacion(FrmMenu frmMenu)
+       /* public FrmAddClasificacion(FrmMenu frmMenu)
         {
             this.frmMenu = frmMenu;
-        }
+        }*/
         public void Validar()
         {
             if (TxtNombreClasificacion.Text != String.Empty && TxtDescripcionClas.Text != String.Empty)
@@ -44,14 +45,11 @@ namespace GUI.ADMINISTRACION
             }
         }
 
-        private void GrupClasificacion_Click(object sender, EventArgs e)
+        
+
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
+            padreMenu.AbrirFHijo(new FrmClasificacion(padreMenu));
         }
     }
 }

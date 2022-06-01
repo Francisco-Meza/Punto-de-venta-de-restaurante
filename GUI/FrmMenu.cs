@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 using GUI.ADMINISTRACION;
 
 namespace GUI
-{//
+{
     public partial class FrmMenu : Form
     {
         private int _idCuenta, _idPuesto;
@@ -50,14 +50,18 @@ namespace GUI
                         BtnCuentas.Visible = true;
                         lblAdministrador.Enabled = true;
                         lblAdministrador.Visible = true;
-                       /* lblAdministrador.Location = new Point(0,0);
-                        BtnPersonal.Location = new Point(0, lblAdministrador.Width);
-                        BtnCuentas.Location = new Point(0, BtnPersonal.Width);
-                        BtnPuesto.Location = new Point(0, BtnCuentas.Width);
-                        BtnProductos.Location = new Point(0, BtnPuesto.Width);
-                        BtnClasificacion.Location = new Point(0, BtnProductos.Width);
-                        BtnMesas.Location = new Point(0, BtnClasificacion.Width);
-                        BtnPedidosG.Location = new Point(0, BtnMesas.Width);*/
+                         /*lblAdministrador.Location = new Point(this.Top);
+                         BtnPersonal.Location = new Point(0, lblAdministrador.Width);
+                         BtnCuentas.Location = new Point(0, BtnPersonal.Width);
+                         BtnPuesto.Location = new Point(0, BtnCuentas.Width);
+                         BtnProductos.Location = new Point(0, BtnPuesto.Width);
+                         BtnClasificacion.Location = new Point(0, BtnProductos.Width);
+                         BtnMesas.Location = new Point(0, BtnClasificacion.Width);
+                         BtnPedidosG.Location = new Point(0, BtnMesas.Width);*/
+                      
+                            
+
+
                         break;
                     }
                 case 2://Para Cajero

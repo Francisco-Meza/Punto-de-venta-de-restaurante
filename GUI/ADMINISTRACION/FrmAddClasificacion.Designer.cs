@@ -44,12 +44,11 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(12, 19);
+            this.gunaLabel1.Location = new System.Drawing.Point(32, 19);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(178, 21);
             this.gunaLabel1.TabIndex = 4;
             this.gunaLabel1.Text = "Agregar Clasificación";
-            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // BtnGuardarCla
             // 
@@ -66,7 +65,7 @@
             this.BtnGuardarCla.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarCla.Image")));
             this.BtnGuardarCla.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardarCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardarCla.Location = new System.Drawing.Point(281, 442);
+            this.BtnGuardarCla.Location = new System.Drawing.Point(272, 407);
             this.BtnGuardarCla.Name = "BtnGuardarCla";
             this.BtnGuardarCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardarCla.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -84,7 +83,7 @@
             this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
             this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.Reply;
             this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
             this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnCerrarHijo.IconSize = 40;
@@ -94,6 +93,7 @@
             this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
             this.BtnCerrarHijo.TabIndex = 8;
             this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
             // 
             // GrupClasificacion
             // 
@@ -109,19 +109,18 @@
             this.GrupClasificacion.Controls.Add(this.TxtDescripcionClas);
             this.GrupClasificacion.Controls.Add(this.TxtNombreClasificacion);
             this.GrupClasificacion.LineColor = System.Drawing.Color.Empty;
-            this.GrupClasificacion.Location = new System.Drawing.Point(33, 109);
+            this.GrupClasificacion.Location = new System.Drawing.Point(16, 112);
             this.GrupClasificacion.Name = "GrupClasificacion";
-            this.GrupClasificacion.Size = new System.Drawing.Size(653, 217);
+            this.GrupClasificacion.Size = new System.Drawing.Size(709, 241);
             this.GrupClasificacion.TabIndex = 10;
             this.GrupClasificacion.TextLocation = new System.Drawing.Point(10, 8);
-            this.GrupClasificacion.Click += new System.EventHandler(this.GrupClasificacion_Click);
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(68, 111);
+            this.gunaLabel3.Location = new System.Drawing.Point(40, 167);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(96, 20);
             this.gunaLabel3.TabIndex = 1;
@@ -132,7 +131,7 @@
             this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(68, 36);
+            this.gunaLabel2.Location = new System.Drawing.Point(40, 48);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(68, 20);
             this.gunaLabel2.TabIndex = 0;
@@ -149,11 +148,11 @@
             this.TxtDescripcionClas.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtDescripcionClas.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtDescripcionClas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDescripcionClas.Location = new System.Drawing.Point(219, 111);
+            this.TxtDescripcionClas.Location = new System.Drawing.Point(170, 157);
             this.TxtDescripcionClas.Name = "TxtDescripcionClas";
             this.TxtDescripcionClas.PasswordChar = '\0';
             this.TxtDescripcionClas.Radius = 10;
-            this.TxtDescripcionClas.Size = new System.Drawing.Size(391, 30);
+            this.TxtDescripcionClas.Size = new System.Drawing.Size(518, 30);
             this.TxtDescripcionClas.TabIndex = 8;
             // 
             // TxtNombreClasificacion
@@ -167,11 +166,11 @@
             this.TxtNombreClasificacion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombreClasificacion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombreClasificacion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreClasificacion.Location = new System.Drawing.Point(219, 36);
+            this.TxtNombreClasificacion.Location = new System.Drawing.Point(170, 48);
             this.TxtNombreClasificacion.Name = "TxtNombreClasificacion";
             this.TxtNombreClasificacion.PasswordChar = '\0';
             this.TxtNombreClasificacion.Radius = 10;
-            this.TxtNombreClasificacion.Size = new System.Drawing.Size(391, 30);
+            this.TxtNombreClasificacion.Size = new System.Drawing.Size(518, 30);
             this.TxtNombreClasificacion.TabIndex = 7;
             // 
             // FrmAddClasificacion

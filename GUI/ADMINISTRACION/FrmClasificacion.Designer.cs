@@ -75,7 +75,7 @@
             this.dgvClasificacion.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvClasificacion.EnableHeadersVisualStyles = false;
             this.dgvClasificacion.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvClasificacion.Location = new System.Drawing.Point(29, 50);
+            this.dgvClasificacion.Location = new System.Drawing.Point(45, 48);
             this.dgvClasificacion.Name = "dgvClasificacion";
             this.dgvClasificacion.ReadOnly = true;
             this.dgvClasificacion.RowHeadersVisible = false;
@@ -133,7 +133,7 @@
             this.btnElimiCla.ForeColor = System.Drawing.Color.White;
             this.btnElimiCla.Image = ((System.Drawing.Image)(resources.GetObject("btnElimiCla.Image")));
             this.btnElimiCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnElimiCla.Location = new System.Drawing.Point(521, 472);
+            this.btnElimiCla.Location = new System.Drawing.Point(503, 428);
             this.btnElimiCla.Name = "btnElimiCla";
             this.btnElimiCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnElimiCla.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -142,7 +142,7 @@
             this.btnElimiCla.OnPressedColor = System.Drawing.Color.Black;
             this.btnElimiCla.Radius = 20;
             this.btnElimiCla.Size = new System.Drawing.Size(144, 40);
-            this.btnElimiCla.TabIndex = 17;
+            this.btnElimiCla.TabIndex = 15;
             this.btnElimiCla.Text = "Eliminar";
             // 
             // btnEditarC
@@ -159,7 +159,7 @@
             this.btnEditarC.ForeColor = System.Drawing.Color.White;
             this.btnEditarC.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarC.Image")));
             this.btnEditarC.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditarC.Location = new System.Drawing.Point(263, 472);
+            this.btnEditarC.Location = new System.Drawing.Point(277, 428);
             this.btnEditarC.Name = "btnEditarC";
             this.btnEditarC.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnEditarC.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -168,7 +168,7 @@
             this.btnEditarC.OnPressedColor = System.Drawing.Color.Black;
             this.btnEditarC.Radius = 20;
             this.btnEditarC.Size = new System.Drawing.Size(144, 40);
-            this.btnEditarC.TabIndex = 16;
+            this.btnEditarC.TabIndex = 15;
             this.btnEditarC.Text = "Editar";
             this.btnEditarC.Click += new System.EventHandler(this.btnEditarC_Click);
             // 
@@ -186,7 +186,7 @@
             this.btnAgregarCla.ForeColor = System.Drawing.Color.White;
             this.btnAgregarCla.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCla.Image")));
             this.btnAgregarCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAgregarCla.Location = new System.Drawing.Point(41, 472);
+            this.btnAgregarCla.Location = new System.Drawing.Point(45, 428);
             this.btnAgregarCla.Name = "btnAgregarCla";
             this.btnAgregarCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnAgregarCla.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -204,7 +204,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Reply;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 40;
