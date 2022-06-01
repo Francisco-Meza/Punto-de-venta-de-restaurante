@@ -13,7 +13,7 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmAddPuesto : Form
     {//Falta agregar para que actualicen
-        private string _id, _nombre, _descripcion;
+        private string _nombre, _descripcion;
 
         public FrmAddPuesto()
         {
@@ -21,11 +21,10 @@ namespace GUI.ADMINISTRACION
         }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            if(TxtID.Text != "" && TxtNombre.Text != "" && TxtDescripcion.Text != ""){
-                _id = TxtID.Text;
+            if(TxtNombre.Text != "" && TxtDescripcion.Text != ""){
                 _nombre = TxtNombre.Text;
                 _descripcion = TxtDescripcion.Text;
-                ClsPuesto_N.Create(_id,_nombre,_descripcion);
+                ClsPuesto_N.Create(_nombre,_descripcion);
             }
             else
             {
@@ -54,7 +53,7 @@ namespace GUI.ADMINISTRACION
 
         private void Validar()
         {
-            if (TxtID.Text != "" && TxtNombre.Text != "")
+            if (TxtDescripcion.Text != "" && TxtNombre.Text != "")
             {
                 BtnGuardar.Enabled = true;
             }
@@ -65,7 +64,6 @@ namespace GUI.ADMINISTRACION
         }
         private void Limpiar()
         {
-            TxtID.Text = "";
             TxtNombre.Text = "";
             TxtDescripcion.Text = "";
         }

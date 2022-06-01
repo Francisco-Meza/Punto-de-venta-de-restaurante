@@ -36,10 +36,8 @@
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.TxtDescripcion = new Guna.UI.WinForms.GunaTextBox();
             this.TxtNombre = new Guna.UI.WinForms.GunaTextBox();
-            this.TxtID = new Guna.UI.WinForms.GunaTextBox();
             this.lblApeM = new Guna.UI.WinForms.GunaLabel();
             this.lblApeP = new Guna.UI.WinForms.GunaLabel();
-            this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
@@ -124,10 +122,8 @@
             this.gunaGroupBox1.BorderSize = 1;
             this.gunaGroupBox1.Controls.Add(this.TxtDescripcion);
             this.gunaGroupBox1.Controls.Add(this.TxtNombre);
-            this.gunaGroupBox1.Controls.Add(this.TxtID);
             this.gunaGroupBox1.Controls.Add(this.lblApeM);
             this.gunaGroupBox1.Controls.Add(this.lblApeP);
-            this.gunaGroupBox1.Controls.Add(this.lblNombre);
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Empty;
             this.gunaGroupBox1.Location = new System.Drawing.Point(42, 127);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
@@ -146,7 +142,11 @@
             this.TxtDescripcion.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtDescripcion.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.TxtDescripcion.Location = new System.Drawing.Point(219, 157);
+=======
+            this.TxtDescripcion.Location = new System.Drawing.Point(219, 92);
+>>>>>>> 660a79a567282c668ed766865220195e413424d9
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.PasswordChar = '\0';
             this.TxtDescripcion.Radius = 10;
@@ -164,7 +164,11 @@
             this.TxtNombre.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtNombre.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.TxtNombre.Location = new System.Drawing.Point(220, 112);
+=======
+            this.TxtNombre.Location = new System.Drawing.Point(220, 47);
+>>>>>>> 660a79a567282c668ed766865220195e413424d9
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.PasswordChar = '\0';
             this.TxtNombre.Radius = 10;
@@ -172,6 +176,7 @@
             this.TxtNombre.TabIndex = 8;
             this.TxtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombre_KeyPress);
             // 
+<<<<<<< HEAD
             // TxtID
             // 
             this.TxtID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -191,12 +196,18 @@
             this.TxtID.TabIndex = 7;
             this.TxtID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtID_KeyPress);
             // 
+=======
+>>>>>>> 660a79a567282c668ed766865220195e413424d9
             // lblApeM
             // 
             this.lblApeM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApeM.AutoSize = true;
             this.lblApeM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblApeM.Location = new System.Drawing.Point(61, 157);
+=======
+            this.lblApeM.Location = new System.Drawing.Point(61, 92);
+>>>>>>> 660a79a567282c668ed766865220195e413424d9
             this.lblApeM.Name = "lblApeM";
             this.lblApeM.Size = new System.Drawing.Size(96, 20);
             this.lblApeM.TabIndex = 2;
@@ -207,12 +218,17 @@
             this.lblApeP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApeP.AutoSize = true;
             this.lblApeP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblApeP.Location = new System.Drawing.Point(62, 112);
+=======
+            this.lblApeP.Location = new System.Drawing.Point(62, 47);
+>>>>>>> 660a79a567282c668ed766865220195e413424d9
             this.lblApeP.Name = "lblApeP";
             this.lblApeP.Size = new System.Drawing.Size(68, 20);
             this.lblApeP.TabIndex = 1;
             this.lblApeP.Text = "Nombre";
             // 
+<<<<<<< HEAD
             // lblNombre
             // 
             this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -224,6 +240,8 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "ID";
             // 
+=======
+>>>>>>> 660a79a567282c668ed766865220195e413424d9
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
@@ -263,9 +281,7 @@
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox1;
         private Guna.UI.WinForms.GunaTextBox TxtDescripcion;
         private Guna.UI.WinForms.GunaTextBox TxtNombre;
-        private Guna.UI.WinForms.GunaTextBox TxtID;
         private Guna.UI.WinForms.GunaLabel lblApeM;
         private Guna.UI.WinForms.GunaLabel lblApeP;
-        private Guna.UI.WinForms.GunaLabel lblNombre;
     }
 }
