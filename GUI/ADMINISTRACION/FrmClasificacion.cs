@@ -26,12 +26,12 @@ namespace GUI.ADMINISTRACION
 
         private void btnAgregarCla_Click(object sender, EventArgs e)
         {
-            padreMenu.AbrirFHijo(new FrmAddClasificacion());
+            padreMenu.AbrirFHijo(new FrmAddClasificacion(padreMenu));
         }
 
         private void btnEditarC_Click(object sender, EventArgs e)
         {
-            padreMenu.AbrirFHijo(new FrmAddClasificacion());
+            padreMenu.AbrirFHijo(new FrmAddClasificacion(padreMenu));
         }
     }
 }
