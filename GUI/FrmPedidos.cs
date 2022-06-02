@@ -23,5 +23,10 @@ namespace GUI
         {
             this.Dispose();
         }
+
+        private void FrmPedidos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
