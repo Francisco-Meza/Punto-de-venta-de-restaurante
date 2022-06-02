@@ -12,9 +12,11 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmAddMesas : Form
     {
+        private string numeroMesa, descripcion, numeroComensales;
         public FrmAddMesas(FrmMenu menu)
         {
             InitializeComponent();
+
         }
 
         public FrmAddMesas(FrmMenu menu, int id)
