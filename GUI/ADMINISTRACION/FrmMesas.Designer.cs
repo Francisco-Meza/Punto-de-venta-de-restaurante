@@ -92,6 +92,7 @@
             this.btnEliminar.TabIndex = 41;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -119,6 +120,7 @@
             this.btnEditar.TabIndex = 41;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnAgregar
             // 

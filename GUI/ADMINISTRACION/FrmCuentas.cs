@@ -33,6 +33,7 @@ namespace GUI.ADMINISTRACION
                 if(datos != null)
                 {
                     dgvCuentas.DataSource = datos;
+                    dgvCuentas.Columns[0].Visible = false;
                 }
                 else
                 {
