@@ -49,12 +49,13 @@
             // 
             this.dgvListaPedidos.AllowUserToAddRows = false;
             this.dgvListaPedidos.AllowUserToDeleteRows = false;
+            this.dgvListaPedidos.AllowUserToResizeColumns = false;
+            this.dgvListaPedidos.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.dgvListaPedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListaPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvListaPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListaPedidos.BackgroundColor = System.Drawing.Color.White;
             this.dgvListaPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListaPedidos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -68,6 +69,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListaPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListaPedidos.ColumnHeadersHeight = 21;
+            this.dgvListaPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdProducto,
             this.columnDescripcion,
@@ -87,6 +89,7 @@
             this.dgvListaPedidos.Name = "dgvListaPedidos";
             this.dgvListaPedidos.ReadOnly = true;
             this.dgvListaPedidos.RowHeadersVisible = false;
+            this.dgvListaPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvListaPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaPedidos.Size = new System.Drawing.Size(710, 467);
             this.dgvListaPedidos.TabIndex = 10;
@@ -102,7 +105,7 @@
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.Height = 21;
             this.dgvListaPedidos.ThemeStyle.ReadOnly = true;
             this.dgvListaPedidos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
@@ -118,24 +121,28 @@
             this.columnIdProducto.HeaderText = "Producto";
             this.columnIdProducto.Name = "columnIdProducto";
             this.columnIdProducto.ReadOnly = true;
+            this.columnIdProducto.Width = 178;
             // 
             // columnDescripcion
             // 
             this.columnDescripcion.HeaderText = "Descripcion";
             this.columnDescripcion.Name = "columnDescripcion";
             this.columnDescripcion.ReadOnly = true;
+            this.columnDescripcion.Width = 177;
             // 
             // columnIdClasificacion
             // 
             this.columnIdClasificacion.HeaderText = "Clasificacion";
             this.columnIdClasificacion.Name = "columnIdClasificacion";
             this.columnIdClasificacion.ReadOnly = true;
+            this.columnIdClasificacion.Width = 178;
             // 
             // ColumnPrecio
             // 
             this.ColumnPrecio.HeaderText = "Precio";
             this.ColumnPrecio.Name = "ColumnPrecio";
             this.ColumnPrecio.ReadOnly = true;
+            this.ColumnPrecio.Width = 177;
             // 
             // label1
             // 

@@ -207,6 +207,8 @@
             // 
             this.dgvListaPedidos.AllowUserToAddRows = false;
             this.dgvListaPedidos.AllowUserToDeleteRows = false;
+            this.dgvListaPedidos.AllowUserToResizeColumns = false;
+            this.dgvListaPedidos.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.dgvListaPedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListaPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -225,6 +227,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvListaPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListaPedidos.ColumnHeadersHeight = 21;
+            this.dgvListaPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdPedido,
             this.columnFecha,
@@ -244,6 +247,7 @@
             this.dgvListaPedidos.Name = "dgvListaPedidos";
             this.dgvListaPedidos.ReadOnly = true;
             this.dgvListaPedidos.RowHeadersVisible = false;
+            this.dgvListaPedidos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvListaPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaPedidos.Size = new System.Drawing.Size(668, 271);
             this.dgvListaPedidos.TabIndex = 0;
@@ -259,7 +263,7 @@
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvListaPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvListaPedidos.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvListaPedidos.ThemeStyle.HeaderStyle.Height = 21;
             this.dgvListaPedidos.ThemeStyle.ReadOnly = true;
             this.dgvListaPedidos.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));

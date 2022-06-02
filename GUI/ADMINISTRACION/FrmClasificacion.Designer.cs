@@ -47,11 +47,12 @@
             // 
             this.dgvClasificacion.AllowUserToAddRows = false;
             this.dgvClasificacion.AllowUserToDeleteRows = false;
+            this.dgvClasificacion.AllowUserToResizeColumns = false;
+            this.dgvClasificacion.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.dgvClasificacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvClasificacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvClasificacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClasificacion.BackgroundColor = System.Drawing.Color.White;
             this.dgvClasificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvClasificacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -65,6 +66,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvClasificacion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvClasificacion.ColumnHeadersHeight = 40;
+            this.dgvClasificacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -79,6 +81,7 @@
             this.dgvClasificacion.Name = "dgvClasificacion";
             this.dgvClasificacion.ReadOnly = true;
             this.dgvClasificacion.RowHeadersVisible = false;
+            this.dgvClasificacion.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvClasificacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClasificacion.Size = new System.Drawing.Size(667, 291);
             this.dgvClasificacion.TabIndex = 0;
@@ -94,7 +97,7 @@
             this.dgvClasificacion.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvClasificacion.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvClasificacion.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvClasificacion.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvClasificacion.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvClasificacion.ThemeStyle.HeaderStyle.Height = 40;
             this.dgvClasificacion.ThemeStyle.ReadOnly = true;
             this.dgvClasificacion.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));

@@ -205,9 +205,10 @@
             // 
             this.dgvTiket.AllowUserToAddRows = false;
             this.dgvTiket.AllowUserToDeleteRows = false;
+            this.dgvTiket.AllowUserToResizeColumns = false;
+            this.dgvTiket.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvTiket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTiket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTiket.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dgvTiket.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTiket.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -221,6 +222,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTiket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTiket.ColumnHeadersHeight = 40;
+            this.dgvTiket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvTiket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdDetalle,
             this.columnNombreProducto,
@@ -240,6 +242,7 @@
             this.dgvTiket.Name = "dgvTiket";
             this.dgvTiket.ReadOnly = true;
             this.dgvTiket.RowHeadersVisible = false;
+            this.dgvTiket.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvTiket.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTiket.Size = new System.Drawing.Size(548, 240);
             this.dgvTiket.TabIndex = 0;
@@ -255,7 +258,7 @@
             this.dgvTiket.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvTiket.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvTiket.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvTiket.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvTiket.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvTiket.ThemeStyle.HeaderStyle.Height = 40;
             this.dgvTiket.ThemeStyle.ReadOnly = true;
             this.dgvTiket.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -271,24 +274,28 @@
             this.columnIdDetalle.HeaderText = "No.-";
             this.columnIdDetalle.Name = "columnIdDetalle";
             this.columnIdDetalle.ReadOnly = true;
+            this.columnIdDetalle.Width = 137;
             // 
             // columnNombreProducto
             // 
             this.columnNombreProducto.HeaderText = "Nombre del producto";
             this.columnNombreProducto.Name = "columnNombreProducto";
             this.columnNombreProducto.ReadOnly = true;
+            this.columnNombreProducto.Width = 137;
             // 
             // columnCantidad
             // 
             this.columnCantidad.HeaderText = "Cantidad";
             this.columnCantidad.Name = "columnCantidad";
             this.columnCantidad.ReadOnly = true;
+            this.columnCantidad.Width = 137;
             // 
             // columnPrecio
             // 
             this.columnPrecio.HeaderText = "Precio unitario";
             this.columnPrecio.Name = "columnPrecio";
             this.columnPrecio.ReadOnly = true;
+            this.columnPrecio.Width = 137;
             // 
             // FrmTicket
             // 
