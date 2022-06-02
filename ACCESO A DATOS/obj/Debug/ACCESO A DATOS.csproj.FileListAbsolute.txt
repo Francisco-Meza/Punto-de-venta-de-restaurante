@@ -7,3 +7,12 @@ C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Deb
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CopyComplete
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.dll
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ACCESO A DATOS.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ACCESO A DATOS.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ENTIDADES.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\bin\Debug\ENTIDADES.pdb
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.AssemblyReference.cache
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CoreCompileInputs.cache
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CopyComplete
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.dll
+C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.pdb

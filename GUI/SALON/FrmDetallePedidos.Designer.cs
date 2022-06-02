@@ -42,14 +42,14 @@
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnGuardar = new Guna.UI.WinForms.GunaButton();
             this.dgvProductosPedido = new Guna.UI.WinForms.GunaDataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbProductos = new Guna.UI.WinForms.GunaComboBox();
-            this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
             this.columnIdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbProductos = new Guna.UI.WinForms.GunaComboBox();
+            this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosPedido)).BeginInit();
             this.SuspendLayout();
@@ -232,9 +232,10 @@
             // 
             this.dgvProductosPedido.AllowUserToAddRows = false;
             this.dgvProductosPedido.AllowUserToDeleteRows = false;
+            this.dgvProductosPedido.AllowUserToResizeColumns = false;
+            this.dgvProductosPedido.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.dgvProductosPedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvProductosPedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProductosPedido.BackgroundColor = System.Drawing.Color.White;
             this.dgvProductosPedido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProductosPedido.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -248,6 +249,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProductosPedido.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProductosPedido.ColumnHeadersHeight = 40;
+            this.dgvProductosPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProductosPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnIdDetalle,
             this.NombreProd,
@@ -268,6 +270,7 @@
             this.dgvProductosPedido.Name = "dgvProductosPedido";
             this.dgvProductosPedido.ReadOnly = true;
             this.dgvProductosPedido.RowHeadersVisible = false;
+            this.dgvProductosPedido.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvProductosPedido.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProductosPedido.Size = new System.Drawing.Size(669, 347);
             this.dgvProductosPedido.TabIndex = 2;
@@ -283,7 +286,7 @@
             this.dgvProductosPedido.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvProductosPedido.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvProductosPedido.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvProductosPedido.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvProductosPedido.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProductosPedido.ThemeStyle.HeaderStyle.Height = 40;
             this.dgvProductosPedido.ThemeStyle.ReadOnly = true;
             this.dgvProductosPedido.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
@@ -293,6 +296,41 @@
             this.dgvProductosPedido.ThemeStyle.RowsStyle.Height = 22;
             this.dgvProductosPedido.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             this.dgvProductosPedido.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // columnIdDetalle
+            // 
+            this.columnIdDetalle.HeaderText = "No.-";
+            this.columnIdDetalle.Name = "columnIdDetalle";
+            this.columnIdDetalle.ReadOnly = true;
+            this.columnIdDetalle.Width = 134;
+            // 
+            // NombreProd
+            // 
+            this.NombreProd.HeaderText = "Nombre";
+            this.NombreProd.Name = "NombreProd";
+            this.NombreProd.ReadOnly = true;
+            this.NombreProd.Width = 134;
+            // 
+            // columnIdProducto
+            // 
+            this.columnIdProducto.HeaderText = "Clave Producto";
+            this.columnIdProducto.Name = "columnIdProducto";
+            this.columnIdProducto.ReadOnly = true;
+            this.columnIdProducto.Width = 133;
+            // 
+            // columnCantidad
+            // 
+            this.columnCantidad.HeaderText = "Cantidad";
+            this.columnCantidad.Name = "columnCantidad";
+            this.columnCantidad.ReadOnly = true;
+            this.columnCantidad.Width = 134;
+            // 
+            // columnPrecio
+            // 
+            this.columnPrecio.HeaderText = "Precio unitario";
+            this.columnPrecio.Name = "columnPrecio";
+            this.columnPrecio.ReadOnly = true;
+            this.columnPrecio.Width = 134;
             // 
             // label1
             // 
@@ -348,36 +386,6 @@
             this.cbClasificacion.Radius = 10;
             this.cbClasificacion.Size = new System.Drawing.Size(125, 28);
             this.cbClasificacion.TabIndex = 0;
-            // 
-            // columnIdDetalle
-            // 
-            this.columnIdDetalle.HeaderText = "No.-";
-            this.columnIdDetalle.Name = "columnIdDetalle";
-            this.columnIdDetalle.ReadOnly = true;
-            // 
-            // NombreProd
-            // 
-            this.NombreProd.HeaderText = "Nombre";
-            this.NombreProd.Name = "NombreProd";
-            this.NombreProd.ReadOnly = true;
-            // 
-            // columnIdProducto
-            // 
-            this.columnIdProducto.HeaderText = "Clave Producto";
-            this.columnIdProducto.Name = "columnIdProducto";
-            this.columnIdProducto.ReadOnly = true;
-            // 
-            // columnCantidad
-            // 
-            this.columnCantidad.HeaderText = "Cantidad";
-            this.columnCantidad.Name = "columnCantidad";
-            this.columnCantidad.ReadOnly = true;
-            // 
-            // columnPrecio
-            // 
-            this.columnPrecio.HeaderText = "Precio unitario";
-            this.columnPrecio.Name = "columnPrecio";
-            this.columnPrecio.ReadOnly = true;
             // 
             // FrmDetallePedidos
             // 

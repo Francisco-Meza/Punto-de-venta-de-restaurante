@@ -153,7 +153,6 @@ namespace GUI
             IconMaximizar.Visible = true;
         }
         public void AbrirFHijo(object FormHijo) //Metodo que nos ayuda a abrir y llamar los formularios al padre
-
         {
 
             if (this.PanelPadre.Controls.Count > 0)
