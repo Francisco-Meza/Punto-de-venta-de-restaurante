@@ -173,6 +173,7 @@
             this.BtnPerfil.TabIndex = 7;
             this.BtnPerfil.Text = "Perfil";
             this.BtnPerfil.Visible = false;
+            this.BtnPerfil.Click += new System.EventHandler(this.BtnPerfil_Click);
             // 
             // BtnPuesto
             // 
@@ -320,6 +321,7 @@
             this.BtnClasificacion.TabIndex = 8;
             this.BtnClasificacion.Text = "Clasificación - Prod";
             this.BtnClasificacion.Visible = false;
+            this.BtnClasificacion.Click += new System.EventHandler(this.BtnClasificacion_Click);
             // 
             // BtnMesas
             // 

@@ -66,10 +66,28 @@ namespace GUI
                     }
                 case 2://Para Cajero
                     {
-                        lblCajero.Location = new Point(0,0);
-                        BtnPedidosG.Location = new Point(0, lblCajero.Height);
+                      
                         BtnPedidosG.Enabled = true;
                         BtnPedidosG.Visible = true;
+                        //Prube
+                        BtnProductos.Enabled = true;
+                        BtnProductos.Visible = true;
+                        BtnPedidosG.Enabled = true;
+                        BtnPedidosG.Visible = true;
+                        BtnPuesto.Enabled = true;
+                        BtnPuesto.Visible = true;
+                        BtnMesas.Enabled = true;
+                        BtnMesas.Visible = true;
+                        BtnClasificacion.Enabled = true;
+                        BtnClasificacion.Visible = true;
+                        BtnCuentas.Enabled = true;
+                        BtnCuentas.Visible = true;
+                        lblAdministrador.Enabled = true;
+                        lblAdministrador.Visible = true;
+                        BtnPedidosLocal.Enabled = true;
+                        BtnPedidosLocal.Visible = true;
+                        BtnPerfil.Enabled = true;
+                        BtnPerfil.Visible = true;
                         break;
                     }
                 case 3://Para Mesero
@@ -77,12 +95,11 @@ namespace GUI
                         lblMesero.Location = new Point(0, 0);
                         BtnPedidosLocal.Location = new Point(0,lblMesero.Height);
                         BtnPerfil.Location = new Point(0, BtnPedidosLocal.Height);
-                        BtnMesas.Enabled = true;
-                        BtnMesas.Visible = true;
                         BtnPedidosLocal.Enabled = true;
                         BtnPedidosLocal.Visible = true;
                         BtnPerfil.Enabled = true;
                         BtnPerfil.Visible = true;
+
                         break;
                     }
                 default:
@@ -168,6 +185,16 @@ namespace GUI
         private void BtnCuentas_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmCuentas(this));
+        }
+
+        private void BtnClasificacion_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmClasificacion(this));
+        }
+
+        private void BtnPerfil_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmPerfilPersonal(this));
         }
 
         private void BtnMesas_Click(object sender, EventArgs e)

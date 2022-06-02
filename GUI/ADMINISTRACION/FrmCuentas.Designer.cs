@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCuentas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnEliminar = new Guna.UI.WinForms.GunaButton();
             this.BtnEditar = new Guna.UI.WinForms.GunaButton();
             this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
@@ -41,10 +39,6 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.TargetControl = this;
             // 
             // BtnEliminar
             // 
@@ -61,7 +55,7 @@
             this.BtnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminar.Image")));
             this.BtnEliminar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEliminar.Location = new System.Drawing.Point(502, 372);
+            this.BtnEliminar.Location = new System.Drawing.Point(505, 495);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.BtnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -69,7 +63,7 @@
             this.BtnEliminar.OnHoverImage = null;
             this.BtnEliminar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnEliminar.Radius = 20;
-            this.BtnEliminar.Size = new System.Drawing.Size(152, 40);
+            this.BtnEliminar.Size = new System.Drawing.Size(160, 42);
             this.BtnEliminar.TabIndex = 46;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -90,7 +84,7 @@
             this.BtnEditar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditar.Image")));
             this.BtnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnEditar.Location = new System.Drawing.Point(269, 372);
+            this.BtnEditar.Location = new System.Drawing.Point(271, 495);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -98,7 +92,7 @@
             this.BtnEditar.OnHoverImage = null;
             this.BtnEditar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnEditar.Radius = 20;
-            this.BtnEditar.Size = new System.Drawing.Size(155, 40);
+            this.BtnEditar.Size = new System.Drawing.Size(160, 42);
             this.BtnEditar.TabIndex = 45;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -119,7 +113,7 @@
             this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
             this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(52, 372);
+            this.BtnAgregar.Location = new System.Drawing.Point(56, 495);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -127,7 +121,7 @@
             this.BtnAgregar.OnHoverImage = null;
             this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnAgregar.Radius = 20;
-            this.BtnAgregar.Size = new System.Drawing.Size(144, 40);
+            this.BtnAgregar.Size = new System.Drawing.Size(160, 42);
             this.BtnAgregar.TabIndex = 44;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -137,8 +131,8 @@
             // 
             this.dgvCuentas.AllowUserToAddRows = false;
             this.dgvCuentas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            this.dgvCuentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvCuentas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCuentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -147,23 +141,23 @@
             this.dgvCuentas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvCuentas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvCuentas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCuentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCuentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCuentas.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCuentas.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCuentas.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCuentas.EnableHeadersVisualStyles = false;
             this.dgvCuentas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
             this.dgvCuentas.Location = new System.Drawing.Point(36, 89);
@@ -172,7 +166,7 @@
             this.dgvCuentas.RowHeadersVisible = false;
             this.dgvCuentas.RowHeadersWidth = 51;
             this.dgvCuentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCuentas.Size = new System.Drawing.Size(678, 188);
+            this.dgvCuentas.Size = new System.Drawing.Size(678, 268);
             this.dgvCuentas.TabIndex = 47;
             this.dgvCuentas.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Green;
             this.dgvCuentas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
@@ -209,10 +203,9 @@
             // 
             // FrmCuentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(757, 450);
+            this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.dgvCuentas);
             this.Controls.Add(this.BtnEliminar);
@@ -229,8 +222,6 @@
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaButton BtnEliminar;
         private Guna.UI.WinForms.GunaButton BtnEditar;
         private Guna.UI.WinForms.GunaButton BtnAgregar;

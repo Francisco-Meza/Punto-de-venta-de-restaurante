@@ -29,38 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMesas));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnEditar = new Guna.UI.WinForms.GunaButton();
             this.btnAgregar = new Guna.UI.WinForms.GunaButton();
             this.dgvListaMesas = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaMesas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.LightCyan;
-            this.gunaPanel1.Controls.Add(this.gunaLabel1);
-            this.gunaPanel1.Controls.Add(this.btnEliminar);
-            this.gunaPanel1.Controls.Add(this.btnEditar);
-            this.gunaPanel1.Controls.Add(this.btnAgregar);
-            this.gunaPanel1.Controls.Add(this.dgvListaMesas);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(757, 646);
-            this.gunaPanel1.TabIndex = 0;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.gunaLabel1.Location = new System.Drawing.Point(33, 21);
+            this.gunaLabel1.Location = new System.Drawing.Point(29, 26);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(96, 21);
             this.gunaLabel1.TabIndex = 42;
@@ -80,7 +64,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(518, 508);
+            this.btnEliminar.Location = new System.Drawing.Point(527, 495);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -88,7 +72,7 @@
             this.btnEliminar.OnHoverImage = null;
             this.btnEliminar.OnPressedColor = System.Drawing.Color.Black;
             this.btnEliminar.Radius = 20;
-            this.btnEliminar.Size = new System.Drawing.Size(144, 40);
+            this.btnEliminar.Size = new System.Drawing.Size(160, 42);
             this.btnEliminar.TabIndex = 41;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -108,7 +92,7 @@
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(289, 508);
+            this.btnEditar.Location = new System.Drawing.Point(288, 495);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -116,7 +100,7 @@
             this.btnEditar.OnHoverImage = null;
             this.btnEditar.OnPressedColor = System.Drawing.Color.Black;
             this.btnEditar.Radius = 20;
-            this.btnEditar.Size = new System.Drawing.Size(144, 40);
+            this.btnEditar.Size = new System.Drawing.Size(160, 42);
             this.btnEditar.TabIndex = 41;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -136,7 +120,7 @@
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAgregar.Location = new System.Drawing.Point(70, 508);
+            this.btnAgregar.Location = new System.Drawing.Point(50, 495);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -144,7 +128,7 @@
             this.btnAgregar.OnHoverImage = null;
             this.btnAgregar.OnPressedColor = System.Drawing.Color.Black;
             this.btnAgregar.Radius = 20;
-            this.btnAgregar.Size = new System.Drawing.Size(144, 40);
+            this.btnAgregar.Size = new System.Drawing.Size(160, 42);
             this.btnAgregar.TabIndex = 41;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -156,34 +140,34 @@
             this.dgvListaMesas.AllowUserToDeleteRows = false;
             this.dgvListaMesas.AllowUserToResizeColumns = false;
             this.dgvListaMesas.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvListaMesas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvListaMesas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvListaMesas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvListaMesas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListaMesas.BackgroundColor = System.Drawing.Color.White;
             this.dgvListaMesas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListaMesas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvListaMesas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaMesas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaMesas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvListaMesas.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListaMesas.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvListaMesas.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvListaMesas.EnableHeadersVisualStyles = false;
             this.dgvListaMesas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvListaMesas.Location = new System.Drawing.Point(11, 116);
+            this.dgvListaMesas.Location = new System.Drawing.Point(21, 50);
             this.dgvListaMesas.Name = "dgvListaMesas";
             this.dgvListaMesas.ReadOnly = true;
             this.dgvListaMesas.RowHeadersVisible = false;
@@ -216,23 +200,24 @@
             // 
             // FrmMesas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(757, 646);
-            this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.dgvListaMesas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMesas";
             this.Text = "Mesas";
-            this.gunaPanel1.ResumeLayout(false);
-            this.gunaPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaMesas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaDataGridView dgvListaMesas;
         private Guna.UI.WinForms.GunaButton btnEliminar;
         private Guna.UI.WinForms.GunaButton btnEditar;

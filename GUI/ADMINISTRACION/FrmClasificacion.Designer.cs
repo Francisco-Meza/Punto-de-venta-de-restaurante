@@ -141,9 +141,10 @@
             this.btnElimiCla.OnHoverImage = null;
             this.btnElimiCla.OnPressedColor = System.Drawing.Color.Black;
             this.btnElimiCla.Radius = 20;
-            this.btnElimiCla.Size = new System.Drawing.Size(144, 40);
+            this.btnElimiCla.Size = new System.Drawing.Size(160, 42);
             this.btnElimiCla.TabIndex = 15;
             this.btnElimiCla.Text = "Eliminar";
+            this.btnElimiCla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnEditarC
             // 
@@ -167,9 +168,10 @@
             this.btnEditarC.OnHoverImage = null;
             this.btnEditarC.OnPressedColor = System.Drawing.Color.Black;
             this.btnEditarC.Radius = 20;
-            this.btnEditarC.Size = new System.Drawing.Size(144, 40);
+            this.btnEditarC.Size = new System.Drawing.Size(160, 42);
             this.btnEditarC.TabIndex = 15;
             this.btnEditarC.Text = "Editar";
+            this.btnEditarC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEditarC.Click += new System.EventHandler(this.btnEditarC_Click);
             // 
             // btnAgregarCla
@@ -194,9 +196,10 @@
             this.btnAgregarCla.OnHoverImage = null;
             this.btnAgregarCla.OnPressedColor = System.Drawing.Color.Black;
             this.btnAgregarCla.Radius = 20;
-            this.btnAgregarCla.Size = new System.Drawing.Size(144, 40);
+            this.btnAgregarCla.Size = new System.Drawing.Size(160, 42);
             this.btnAgregarCla.TabIndex = 15;
             this.btnAgregarCla.Text = "Agregar";
+            this.btnAgregarCla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregarCla.Click += new System.EventHandler(this.btnAgregarCla_Click);
             // 
             // btnClose

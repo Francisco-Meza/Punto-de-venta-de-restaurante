@@ -106,6 +106,7 @@
             // 
             // TxtNumComensales
             // 
+            this.TxtNumComensales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtNumComensales.BackColor = System.Drawing.Color.Transparent;
             this.TxtNumComensales.BaseColor = System.Drawing.Color.White;
             this.TxtNumComensales.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -123,6 +124,7 @@
             // 
             // TxtDescripcion
             // 
+            this.TxtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.TxtDescripcion.BaseColor = System.Drawing.Color.White;
             this.TxtDescripcion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -140,6 +142,7 @@
             // 
             // TxtNumero
             // 
+            this.TxtNumero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtNumero.BackColor = System.Drawing.Color.Transparent;
             this.TxtNumero.BaseColor = System.Drawing.Color.White;
             this.TxtNumero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -186,7 +189,7 @@
             this.BtnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardar.Image")));
             this.BtnGuardar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(295, 527);
+            this.BtnGuardar.Location = new System.Drawing.Point(306, 509);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -194,7 +197,7 @@
             this.BtnGuardar.OnHoverImage = null;
             this.BtnGuardar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnGuardar.Radius = 20;
-            this.BtnGuardar.Size = new System.Drawing.Size(144, 40);
+            this.BtnGuardar.Size = new System.Drawing.Size(160, 42);
             this.BtnGuardar.TabIndex = 13;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
