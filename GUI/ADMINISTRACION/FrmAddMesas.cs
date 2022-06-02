@@ -12,9 +12,14 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmAddMesas : Form
     {
-        public FrmAddMesas()
+        public FrmAddMesas(FrmMenu menu)
         {
             InitializeComponent();
+        }
+
+        public FrmAddMesas(FrmMenu menu, int id)
+        {
+
         }
     }
 }

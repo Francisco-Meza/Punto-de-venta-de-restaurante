@@ -11,21 +11,23 @@ namespace LOGICA_DE_NEGOCIOS
 {
     public class ClsMesa_N
     {
-        public static DataTable Read()
+        ClsMesa_D Datos = new ClsMesa_D();
+        ClsMesa obj = new ClsMesa();
+        public DataTable Read()
         {
-            ClsMesa_D Datos = new ClsMesa_D();
             return Datos.Read();
         }
-        public static DataTable Read(string valor)
+        public DataTable Read(string valor)
         {
-            ClsMesa_D Datos = new ClsMesa_D();
             if (Validaciones.WithForCompareAsciiValue(valor)) return Datos.Read(valor);
             else return null;
         }
-        public static string Create(string id, string numeroMesa, string descripcion, string numeroComensales)
+        public DataTable Read(int id)
         {
-            ClsMesa_D Datos = new ClsMesa_D();
-            ClsMesa obj = new ClsMesa();
+            return Datos.Read(id);
+        }
+        public string Create(string id, string numeroMesa, string descripcion, string numeroComensales)
+        {
             if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
             else return "El id ingresado no es valido";
             if (Validaciones.SoloNumero(numeroMesa)) obj.NumeroMesa = int.Parse(numeroMesa);
@@ -37,10 +39,8 @@ namespace LOGICA_DE_NEGOCIOS
             return Datos.Create(obj);
 
         }
-        public static string Update(string id, string numeroMesa, string descripcion, string numeroComensales)
+        public string Update(string id, string numeroMesa, string descripcion, string numeroComensales)
         {
-            ClsMesa_D Datos = new ClsMesa_D();
-            ClsMesa obj = new ClsMesa();
             if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
             else return "El id ingresado no es valido";
             if (Validaciones.SoloNumero(numeroMesa)) obj.NumeroMesa = int.Parse(numeroMesa);
@@ -51,11 +51,9 @@ namespace LOGICA_DE_NEGOCIOS
             else return "El numero de comensales no tiene un formato correcto, intente no usar caracteres especiales";
             return Datos.Update(obj);
         }
-        public static string Delete(string id)
+        public string Delete(int id)
         {
-            ClsMesa_D Datos = new ClsMesa_D();
-            if (Validaciones.SoloNumero(id)) return Datos.Delete(int.Parse(id));
-            else return "El formato del id es incorrecto";
+            return Datos.Delete(id);
         }
     }
 }

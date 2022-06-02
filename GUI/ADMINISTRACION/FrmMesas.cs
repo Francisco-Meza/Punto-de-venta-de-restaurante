@@ -13,10 +13,13 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmMesas : Form
     {
-        private readonly FrmMenu padreMenu;
+        private readonly FrmMenu menu;
+        private int id;
+        private ClsMesa_N mesa = new ClsMesa_N();
+        private DataTable datos = new DataTable();
         public FrmMesas(FrmMenu padreMenu)
         {
-            this.padreMenu = padreMenu;
+            this.menu = padreMenu;
             InitializeComponent();
             Read();
         }
@@ -24,19 +27,51 @@ namespace GUI.ADMINISTRACION
         {
             try
             {
-                dgvListaMesas.DataSource = ClsMesa_N.Read();
+                datos = mesa.Read();
+                if (datos != null)
+                {
+                    dgvListaMesas.DataSource = datos;
+                    dgvListaMesas.Columns[0].Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo cargar la informacion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message + e.StackTrace);
+                MessageBox.Show("Error contactarse con el administrador detalle del error:\n" + e.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
             }
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-           
+            menu.AbrirFHijo(new FrmAddMesas(menu));
+            this.Dispose();
         }
 
-        
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            int row = dgvListaMesas.CurrentRow.Index;
+            id = Convert.ToInt32(dgvListaMesas.Rows[row].Cells[0].Value);
+            menu.AbrirFHijo(new FrmAddMesas(menu,id));
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int row = dgvListaMesas.CurrentRow.Index;
+            id = Convert.ToInt32(dgvListaMesas.Rows[row].Cells[0].Value);
+            string msj = mesa.Delete(id);
+            if (msj.Equals("OK"))
+            {
+                MessageBox.Show("Se elimino el usuario con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Read();
+            }
+            else
+            {
+                MessageBox.Show(msj, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
