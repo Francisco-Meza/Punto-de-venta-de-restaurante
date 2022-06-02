@@ -148,7 +148,6 @@ namespace GUI
         private void IconRestaurar_Click(object sender, EventArgs e)//-------- Realiza el evento de poner el formulario a su tamaño normal
         {
             this.Size = new Size(sw, sh);
-            this.Size = new Size(950, 600);
             this.Location = new Point(Lx, Ly);
             IconRestaurar.Visible = false;
             IconMaximizar.Visible = true;
