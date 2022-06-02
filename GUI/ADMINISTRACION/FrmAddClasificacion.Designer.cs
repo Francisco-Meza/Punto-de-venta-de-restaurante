@@ -52,7 +52,8 @@
             // 
             // BtnGuardarCla
             // 
-            this.BtnGuardarCla.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnGuardarCla.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnGuardarCla.AnimationHoverSpeed = 0.07F;
             this.BtnGuardarCla.AnimationSpeed = 0.03F;
             this.BtnGuardarCla.BackColor = System.Drawing.Color.Transparent;
@@ -65,7 +66,7 @@
             this.BtnGuardarCla.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarCla.Image")));
             this.BtnGuardarCla.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardarCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardarCla.Location = new System.Drawing.Point(272, 459);
+            this.BtnGuardarCla.Location = new System.Drawing.Point(288, 501);
             this.BtnGuardarCla.Name = "BtnGuardarCla";
             this.BtnGuardarCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardarCla.OnHoverBorderColor = System.Drawing.Color.Black;

@@ -99,7 +99,7 @@
             this.TxtPrecioPro.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.TxtPrecioPro.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TxtPrecioPro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrecioPro.Location = new System.Drawing.Point(219, 258);
+            this.TxtPrecioPro.Location = new System.Drawing.Point(219, 268);
             this.TxtPrecioPro.Name = "TxtPrecioPro";
             this.TxtPrecioPro.PasswordChar = '\0';
             this.TxtPrecioPro.Radius = 10;
@@ -214,7 +214,7 @@
             this.BtnGuardarPro.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarPro.Image")));
             this.BtnGuardarPro.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardarPro.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardarPro.Location = new System.Drawing.Point(310, 540);
+            this.BtnGuardarPro.Location = new System.Drawing.Point(299, 537);
             this.BtnGuardarPro.Name = "BtnGuardarPro";
             this.BtnGuardarPro.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardarPro.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -222,7 +222,7 @@
             this.BtnGuardarPro.OnHoverImage = null;
             this.BtnGuardarPro.OnPressedColor = System.Drawing.Color.Black;
             this.BtnGuardarPro.Radius = 20;
-            this.BtnGuardarPro.Size = new System.Drawing.Size(170, 46);
+            this.BtnGuardarPro.Size = new System.Drawing.Size(160, 42);
             this.BtnGuardarPro.TabIndex = 8;
             this.BtnGuardarPro.Text = "Guardar";
             this.BtnGuardarPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

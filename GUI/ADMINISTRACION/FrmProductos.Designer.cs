@@ -157,7 +157,7 @@
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -170,7 +170,7 @@
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 20;
-            this.gunaButton1.Size = new System.Drawing.Size(120, 40);
+            this.gunaButton1.Size = new System.Drawing.Size(160, 42);
             this.gunaButton1.TabIndex = 14;
             this.gunaButton1.Text = "Eliminar";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -185,7 +185,7 @@
             this.btnEditar.BorderColor = System.Drawing.Color.Black;
             this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -198,7 +198,7 @@
             this.btnEditar.OnHoverImage = null;
             this.btnEditar.OnPressedColor = System.Drawing.Color.Black;
             this.btnEditar.Radius = 20;
-            this.btnEditar.Size = new System.Drawing.Size(120, 40);
+            this.btnEditar.Size = new System.Drawing.Size(160, 42);
             this.btnEditar.TabIndex = 13;
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -214,7 +214,7 @@
             this.btnAgregar.BorderColor = System.Drawing.Color.Black;
             this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAgregar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -227,7 +227,7 @@
             this.btnAgregar.OnHoverImage = null;
             this.btnAgregar.OnPressedColor = System.Drawing.Color.Black;
             this.btnAgregar.Radius = 20;
-            this.btnAgregar.Size = new System.Drawing.Size(120, 40);
+            this.btnAgregar.Size = new System.Drawing.Size(160, 42);
             this.btnAgregar.TabIndex = 12;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

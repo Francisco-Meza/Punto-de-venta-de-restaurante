@@ -357,7 +357,7 @@
             this.BtnAgregar.OnHoverImage = null;
             this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnAgregar.Radius = 20;
-            this.BtnAgregar.Size = new System.Drawing.Size(144, 40);
+            this.BtnAgregar.Size = new System.Drawing.Size(160, 42);
             this.BtnAgregar.TabIndex = 39;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -385,7 +385,7 @@
             this.BtnEliminar.OnHoverImage = null;
             this.BtnEliminar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnEliminar.Radius = 20;
-            this.BtnEliminar.Size = new System.Drawing.Size(152, 40);
+            this.BtnEliminar.Size = new System.Drawing.Size(160, 42);
             this.BtnEliminar.TabIndex = 40;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -413,15 +413,14 @@
             this.BtnEditar.OnHoverImage = null;
             this.BtnEditar.OnPressedColor = System.Drawing.Color.Black;
             this.BtnEditar.Radius = 20;
-            this.BtnEditar.Size = new System.Drawing.Size(167, 40);
+            this.BtnEditar.Size = new System.Drawing.Size(160, 42);
             this.BtnEditar.TabIndex = 41;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmPerfilPersonal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(757, 646);
             this.Controls.Add(this.BtnAgregar);

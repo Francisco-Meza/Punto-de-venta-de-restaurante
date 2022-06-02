@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedidos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedidos));
             this.PanelPrincipal = new Guna.UI.WinForms.GunaPanel();
+            this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnFinalizar = new Guna.UI.WinForms.GunaButton();
@@ -43,7 +44,6 @@
             this.columnFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnIdPersonal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BtnAgregar = new Guna.UI.WinForms.GunaButton();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaPedidos)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +63,34 @@
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(757, 542);
             this.PanelPrincipal.TabIndex = 0;
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnAgregar.AnimationHoverSpeed = 0.07F;
+            this.BtnAgregar.AnimationSpeed = 0.03F;
+            this.BtnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.BtnAgregar.BorderColor = System.Drawing.Color.Black;
+            this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAgregar.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
+            this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAgregar.Location = new System.Drawing.Point(65, 382);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAgregar.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAgregar.OnHoverImage = null;
+            this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAgregar.Radius = 20;
+            this.BtnAgregar.Size = new System.Drawing.Size(145, 40);
+            this.BtnAgregar.TabIndex = 8;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BtnCerrarHijo
             // 
@@ -139,7 +167,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditar.AnimationHoverSpeed = 0.07F;
             this.btnEditar.AnimationSpeed = 0.03F;
             this.btnEditar.BackColor = System.Drawing.Color.Transparent;
@@ -265,34 +293,6 @@
             this.columnEstado.HeaderText = "Estado";
             this.columnEstado.Name = "columnEstado";
             this.columnEstado.ReadOnly = true;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnAgregar.AnimationHoverSpeed = 0.07F;
-            this.BtnAgregar.AnimationSpeed = 0.03F;
-            this.BtnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.BtnAgregar.BorderColor = System.Drawing.Color.Black;
-            this.BtnAgregar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnAgregar.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnAgregar.ForeColor = System.Drawing.Color.White;
-            this.BtnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("BtnAgregar.Image")));
-            this.BtnAgregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.BtnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAgregar.Location = new System.Drawing.Point(65, 382);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.BtnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnAgregar.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnAgregar.OnHoverImage = null;
-            this.BtnAgregar.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnAgregar.Radius = 20;
-            this.BtnAgregar.Size = new System.Drawing.Size(145, 40);
-            this.BtnAgregar.TabIndex = 8;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmPedidos
             // 

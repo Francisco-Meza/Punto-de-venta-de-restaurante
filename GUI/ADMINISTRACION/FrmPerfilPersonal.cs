@@ -12,8 +12,10 @@ namespace GUI
 {
     public partial class FrmPerfilPersonal : Form
     {
-        public FrmPerfilPersonal()
+        private readonly FrmMenu padreMenu;
+        public FrmPerfilPersonal(FrmMenu padreMenu)
         {
+            this.padreMenu = padreMenu;
             InitializeComponent();
         }
 
