@@ -18,6 +18,7 @@ namespace GUI.ADMINISTRACION
         private ClsClasificacion_N clasificacion;
         private DataTable datos;
         private string nombre, des;
+        private string msj;
         public FrmAddClasificacion(FrmMenu menu)
         {
             this.menu = menu;
@@ -37,6 +38,11 @@ namespace GUI.ADMINISTRACION
             des = datos.Rows[0][1].ToString();
             TxtNombreClasificacion.Text = nombre;
             TxtDescripcionClas.Text = des;
+        }
+        private void ObtenerTextos()
+        {
+            nombre = TxtNombreClasificacion.Text;
+            des = TxtDescripcionClas.Text;
         }
         public void Validar()
         {
@@ -59,7 +65,43 @@ namespace GUI.ADMINISTRACION
             }
         }
 
-        
+        private void BtnGuardarCla_Click(object sender, EventArgs e)
+        {
+            if (id == 0)
+            {
+                ObtenerTextos();
+                msj = clasificacion.Create(nombre,des);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                ObtenerTextos();
+                msj = clasificacion.Update(id,nombre, des);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se actualizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {

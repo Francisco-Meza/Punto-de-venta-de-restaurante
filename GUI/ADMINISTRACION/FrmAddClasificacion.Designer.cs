@@ -78,6 +78,7 @@
             this.BtnGuardarCla.TabIndex = 9;
             this.BtnGuardarCla.Text = "Guardar";
             this.BtnGuardarCla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardarCla.Click += new System.EventHandler(this.BtnGuardarCla_Click);
             // 
             // BtnCerrarHijo
             // 
