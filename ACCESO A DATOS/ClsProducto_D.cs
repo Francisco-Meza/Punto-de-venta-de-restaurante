@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cdm = new SqlCommand("SP_READ_PRODUCTO", sqlCon);
+                SqlCommand cdm = new SqlCommand("SP_LISTAR_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cdm.ExecuteReader();
@@ -77,15 +77,12 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cdm = new SqlCommand("SP_CREATE_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
-                cdm.Parameters.Add("idProducto", SqlDbType.Int).Value = obj.IdProducto;
-                cdm.Parameters.Add("nombre", SqlDbType.VarChar).Value = obj.Nombre;
-                cdm.Parameters.Add("descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
-                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
-                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
-                
-                
+                cdm.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
+                cdm.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                cdm.Parameters.Add("@idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
+                cdm.Parameters.Add("@precio", SqlDbType.Int).Value = obj.Precio;
                 sqlCon.Open();
-               //MENSAJE//
+                msj = (cdm.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -109,14 +106,13 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cdm = new SqlCommand("SP_UPDATE_PRODUCTO", sqlCon);
                 cdm.CommandType = CommandType.StoredProcedure;
-                cdm.Parameters.Add("idProducto", SqlDbType.Int).Value = obj.IdProducto;
-                cdm.Parameters.Add("nombre", SqlDbType.VarChar).Value = obj.Nombre;
-                cdm.Parameters.Add("descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
-                cdm.Parameters.Add("idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
-                cdm.Parameters.Add("precio", SqlDbType.Int).Value = obj.Precio;
-               
+                cdm.Parameters.Add("@idProducto", SqlDbType.Int).Value = obj.IdProducto;
+                cdm.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
+                cdm.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
+                cdm.Parameters.Add("@idClsificacion", SqlDbType.Int).Value = obj.IdClasificacion;
+                cdm.Parameters.Add("@precio", SqlDbType.Int).Value = obj.Precio;
                 sqlCon.Open();
-                //mensaje
+                msj = (cdm.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -131,6 +127,34 @@ namespace ACCESO_A_DATOS
             }
             return msj;
         }
+        public DataTable Read(int id)
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_PRODUCTO_ID", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = id;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
         public string Delete(int id)
         {
             string msj = "";
@@ -142,7 +166,7 @@ namespace ACCESO_A_DATOS
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                //Mensaje
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -156,6 +180,34 @@ namespace ACCESO_A_DATOS
                 }
             }
             return msj;
+        }
+        public DataTable ReadClasificacion()
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_PRODUCTOS_CLASIFICACION", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
         }
     }
 

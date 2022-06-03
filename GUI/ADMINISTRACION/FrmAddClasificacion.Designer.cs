@@ -66,7 +66,7 @@
             this.BtnGuardarCla.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuardarCla.Image")));
             this.BtnGuardarCla.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnGuardarCla.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardarCla.Location = new System.Drawing.Point(288, 501);
+            this.BtnGuardarCla.Location = new System.Drawing.Point(381, 45);
             this.BtnGuardarCla.Name = "BtnGuardarCla";
             this.BtnGuardarCla.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.BtnGuardarCla.OnHoverBorderColor = System.Drawing.Color.Black;

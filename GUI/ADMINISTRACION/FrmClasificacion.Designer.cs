@@ -53,6 +53,7 @@
             this.dgvClasificacion.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvClasificacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvClasificacion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClasificacion.BackgroundColor = System.Drawing.Color.White;
             this.dgvClasificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvClasificacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -148,6 +149,7 @@
             this.btnElimiCla.TabIndex = 15;
             this.btnElimiCla.Text = "Eliminar";
             this.btnElimiCla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnElimiCla.Click += new System.EventHandler(this.btnElimiCla_Click);
             // 
             // btnEditarC
             // 

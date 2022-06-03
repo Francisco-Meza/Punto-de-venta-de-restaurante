@@ -56,6 +56,7 @@ namespace GUI.ADMINISTRACION
             int row = dgvListaMesas.CurrentRow.Index;
             id = Convert.ToInt32(dgvListaMesas.Rows[row].Cells[0].Value);
             menu.AbrirFHijo(new FrmAddMesas(menu,id));
+            this.Dispose();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

@@ -44,7 +44,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.gunaLabel1.Location = new System.Drawing.Point(31, 26);
+            this.gunaLabel1.Location = new System.Drawing.Point(31, 66);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(96, 21);
             this.gunaLabel1.TabIndex = 42;
@@ -145,6 +145,7 @@
             this.dgvListaMesas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvListaMesas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListaMesas.BackgroundColor = System.Drawing.Color.White;
             this.dgvListaMesas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvListaMesas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -169,7 +170,7 @@
             this.dgvListaMesas.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListaMesas.EnableHeadersVisualStyles = false;
             this.dgvListaMesas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvListaMesas.Location = new System.Drawing.Point(22, 50);
+            this.dgvListaMesas.Location = new System.Drawing.Point(35, 119);
             this.dgvListaMesas.Name = "dgvListaMesas";
             this.dgvListaMesas.ReadOnly = true;
             this.dgvListaMesas.RowHeadersVisible = false;
