@@ -236,15 +236,16 @@
             this.dgvProductosPedido.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.dgvProductosPedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProductosPedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProductosPedido.BackgroundColor = System.Drawing.Color.White;
             this.dgvProductosPedido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProductosPedido.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvProductosPedido.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProductosPedido.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -302,35 +303,30 @@
             this.columnIdDetalle.HeaderText = "No.-";
             this.columnIdDetalle.Name = "columnIdDetalle";
             this.columnIdDetalle.ReadOnly = true;
-            this.columnIdDetalle.Width = 134;
             // 
             // NombreProd
             // 
             this.NombreProd.HeaderText = "Nombre";
             this.NombreProd.Name = "NombreProd";
             this.NombreProd.ReadOnly = true;
-            this.NombreProd.Width = 134;
             // 
             // columnIdProducto
             // 
             this.columnIdProducto.HeaderText = "Clave Producto";
             this.columnIdProducto.Name = "columnIdProducto";
             this.columnIdProducto.ReadOnly = true;
-            this.columnIdProducto.Width = 133;
             // 
             // columnCantidad
             // 
             this.columnCantidad.HeaderText = "Cantidad";
             this.columnCantidad.Name = "columnCantidad";
             this.columnCantidad.ReadOnly = true;
-            this.columnCantidad.Width = 134;
             // 
             // columnPrecio
             // 
             this.columnPrecio.HeaderText = "Precio unitario";
             this.columnPrecio.Name = "columnPrecio";
             this.columnPrecio.ReadOnly = true;
-            this.columnPrecio.Width = 134;
             // 
             // label1
             // 

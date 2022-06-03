@@ -387,7 +387,7 @@
             this.txtConfirContra.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.txtConfirContra.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtConfirContra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirContra.Location = new System.Drawing.Point(226, 476);
+            this.txtConfirContra.Location = new System.Drawing.Point(226, 427);
             this.txtConfirContra.Name = "txtConfirContra";
             this.txtConfirContra.PasswordChar = '\0';
             this.txtConfirContra.Radius = 10;
@@ -406,7 +406,7 @@
             this.cmbPuesto.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbPuesto.ForeColor = System.Drawing.Color.Black;
             this.cmbPuesto.FormattingEnabled = true;
-            this.cmbPuesto.Location = new System.Drawing.Point(226, 426);
+            this.cmbPuesto.Location = new System.Drawing.Point(226, 480);
             this.cmbPuesto.Name = "cmbPuesto";
             this.cmbPuesto.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.cmbPuesto.OnHoverItemForeColor = System.Drawing.Color.White;
