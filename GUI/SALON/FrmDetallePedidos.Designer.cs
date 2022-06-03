@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new Guna.UI.WinForms.GunaButton();
-            this.btnEditar = new Guna.UI.WinForms.GunaButton();
             this.NumCantidad = new Guna.UI.WinForms.GunaNumeric();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnGuardar = new Guna.UI.WinForms.GunaButton();
@@ -50,6 +49,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbProductos = new Guna.UI.WinForms.GunaComboBox();
             this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
+            this.cbMesa = new Guna.UI.WinForms.GunaComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosPedido)).BeginInit();
             this.SuspendLayout();
@@ -57,11 +58,12 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.LightCyan;
+            this.gunaPanel1.Controls.Add(this.label5);
+            this.gunaPanel1.Controls.Add(this.cbMesa);
             this.gunaPanel1.Controls.Add(this.label4);
             this.gunaPanel1.Controls.Add(this.label3);
             this.gunaPanel1.Controls.Add(this.label2);
             this.gunaPanel1.Controls.Add(this.btnAgregar);
-            this.gunaPanel1.Controls.Add(this.btnEditar);
             this.gunaPanel1.Controls.Add(this.NumCantidad);
             this.gunaPanel1.Controls.Add(this.btnEliminar);
             this.gunaPanel1.Controls.Add(this.btnGuardar);
@@ -129,31 +131,6 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.AnimationHoverSpeed = 0.07F;
-            this.btnEditar.AnimationSpeed = 0.03F;
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.btnEditar.BorderColor = System.Drawing.Color.Black;
-            this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnEditar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(74, 81);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEditar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnEditar.OnHoverImage = null;
-            this.btnEditar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEditar.Radius = 10;
-            this.btnEditar.Size = new System.Drawing.Size(90, 28);
-            this.btnEditar.TabIndex = 6;
-            this.btnEditar.Text = "Editar";
             // 
             // NumCantidad
             // 
@@ -243,7 +220,7 @@
             this.dgvProductosPedido.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -383,6 +360,37 @@
             this.cbClasificacion.Size = new System.Drawing.Size(125, 28);
             this.cbClasificacion.TabIndex = 0;
             // 
+            // cbMesa
+            // 
+            this.cbMesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbMesa.BackColor = System.Drawing.Color.Transparent;
+            this.cbMesa.BaseColor = System.Drawing.Color.White;
+            this.cbMesa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.cbMesa.BorderSize = 1;
+            this.cbMesa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbMesa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMesa.FocusedColor = System.Drawing.Color.Empty;
+            this.cbMesa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMesa.ForeColor = System.Drawing.Color.Black;
+            this.cbMesa.FormattingEnabled = true;
+            this.cbMesa.Location = new System.Drawing.Point(72, 81);
+            this.cbMesa.Name = "cbMesa";
+            this.cbMesa.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.cbMesa.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbMesa.Radius = 10;
+            this.cbMesa.Size = new System.Drawing.Size(125, 28);
+            this.cbMesa.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(60, 58);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Mesa:";
+            // 
             // FrmDetallePedidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -408,7 +416,6 @@
         private Guna.UI.WinForms.GunaDataGridView dgvProductosPedido;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaComboBox cbProductos;
-        private Guna.UI.WinForms.GunaButton btnEditar;
         private Guna.UI.WinForms.GunaButton btnAgregar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -418,5 +425,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecio;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaComboBox cbMesa;
     }
 }

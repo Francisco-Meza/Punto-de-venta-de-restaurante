@@ -7,21 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LOGICA_DE_NEGOCIOS;
 
 namespace GUI
 {
     public partial class FrmDetallePedidos : Form
     {
         private string clasificacion, producto;
-        int cantidad;
-        public FrmDetallePedidos()
+        int cantidad, idPedido, id;
+        private FrmMenu menu;
+        private ClsPedidoLocal_N local;
+        private const int mesero = 1;
+        private const int cajero = 3;
+        public FrmDetallePedidos(FrmMenu menu, int id)
         {
             InitializeComponent();
-            
+            this.menu = menu;
+            idPedido = 0;
+            this.id = id;
             cbClasificacion.KeyDown += new KeyEventHandler(Control_KeyDown);
             cbProductos.KeyDown += new KeyEventHandler(Control_KeyDown);
             NumCantidad.KeyDown += new KeyEventHandler(Control_KeyDown);
             btnAgregar.KeyDown += new KeyEventHandler(Control_KeyDown);
+            IniciarCombos();
+        }
+        private void IniciarCombos()
+        {
+            switch (id)
+            {
+                case mesero:
+                    {
+                        local = new ClsPedidoLocal_N();
+                        cbMesa.DataSource = local.ReadMesas();
+                        cbMesa.DisplayMember = "NUMERO";
+                        cbMesa.ValueMember = "ID";
+                        //
+                        cbClasificacion.DataSource = local.ReadClasificacion();
+                        cbClasificacion.DisplayMember = "NOMBRE";
+                        cbClasificacion.ValueMember = "ID";
+                        //
+                        cbProductos.DataSource = local.ReadProducto();
+                        cbProductos.DisplayMember = "NOMBRE";
+                        cbProductos.ValueMember = "ID";
+                        break;
+                    }
+                default:
+                    break;
+            }
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)

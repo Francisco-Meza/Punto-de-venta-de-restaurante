@@ -122,6 +122,12 @@ namespace GUI
         }
         int Lx, Ly;
         int sw, sh;
+
+        public int IdCuenta { get => _idCuenta; }
+        public int IdPuesto { get => _idPuesto; }
+        public string NombrePuesto { get => _nombrePuesto; }
+        public string NombrePersona { get => _nombrePersona; }
+
         private void PanelBarra_MouseDown(object sender, MouseEventArgs e) //---Se llama un  metodo para poder mover el formuario
         {
             RelaseCapture();
