@@ -70,8 +70,7 @@ namespace GUI
             if (msj.Equals("OK"))
             {
                 MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                menu.AbrirFHijo(new FrmPedidos(menu));
-                this.Dispose();
+                IniciarDatos();
             }
             else if (msj.Equals("NO"))
             {

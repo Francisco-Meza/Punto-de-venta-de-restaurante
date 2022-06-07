@@ -74,6 +74,8 @@ namespace GUI.ADMINISTRACION
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmClasificacion(menu));
+                    this.Dispose();
                 }
                 else if (msj.Equals("NO"))
                 {
@@ -91,6 +93,8 @@ namespace GUI.ADMINISTRACION
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se actualizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmClasificacion(menu));
+                    this.Dispose();
                 }
                 else if (msj.Equals("NO"))
                 {

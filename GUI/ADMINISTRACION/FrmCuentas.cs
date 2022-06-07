@@ -63,12 +63,16 @@ namespace GUI.ADMINISTRACION
             string msj = cuenta.Delete(id);
             if (msj.Equals("OK"))
             {
-                MessageBox.Show("Se elimino el usuario con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 IniciarDatos();
+            }
+            else if (msj.Equals("NO"))
+            {
+                MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show(msj, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

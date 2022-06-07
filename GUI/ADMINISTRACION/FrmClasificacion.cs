@@ -67,7 +67,7 @@ namespace GUI.ADMINISTRACION
             }
             else if (msj.Equals("NO"))
             {
-                MessageBox.Show("Error al eliminar el producto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

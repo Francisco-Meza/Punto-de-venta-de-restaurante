@@ -18,6 +18,7 @@ namespace GUI.ADMINISTRACION
         private int id;
         private string msj;
         private DataTable Datos;
+        private FrmMenu menu;
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
@@ -27,11 +28,17 @@ namespace GUI.ADMINISTRACION
                 msj = mesa.Create(numeroMesa,descripcion,numeroComensales);
                 if (msj.Equals("OK"))
                 {
-                    MessageBox.Show("Se dio de alta la mesa con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmMesas(menu));
+                    this.Dispose();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Se elimino la mesa con exito", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -39,11 +46,17 @@ namespace GUI.ADMINISTRACION
                 msj = mesa.Update(id,numeroMesa, descripcion, numeroComensales);
                 if (msj.Equals("OK"))
                 {
-                    MessageBox.Show("Se dio de alta la mesa con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Se actualizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmMesas(menu));
+                    this.Dispose();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Se elimino la mesa con exito", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -68,6 +81,7 @@ namespace GUI.ADMINISTRACION
             numeroComensales = "";
             id = 0;
             mesa = new ClsMesa_N();
+            this.menu = menu;
         }
 
         public FrmAddMesas(FrmMenu menu, int id)
@@ -83,6 +97,7 @@ namespace GUI.ADMINISTRACION
             TxtNumero.Text = numeroMesa;
             TxtDescripcion.Text = descripcion;
             TxtNumComensales.Text = numeroComensales;
+            this.menu = menu;
         }
     }
 }
