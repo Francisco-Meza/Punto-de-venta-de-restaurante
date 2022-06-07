@@ -159,13 +159,13 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CREATE_PEDIDOS_LOCAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_CREATE_PEDIDOS_LOCALES", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@idCuenta", SqlDbType.VarChar).Value = obj.IdCuenta;
                 cmd.Parameters.Add("@idMesa", SqlDbType.VarChar).Value = obj.IdMesa;
                 cmd.Parameters.Add("@detalles", SqlDbType.Structured).Value = obj.Detalles;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -213,11 +213,37 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_PEDIDO_LOCAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_DELETE_PEDIDO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
+            }
+            catch (Exception e)
+            {
+                msj = e.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+            return msj;
+        }
+        public string Cerrar(int id)
+        {
+            string msj = "";
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_CERRAR_PEDIDO", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                sqlCon.Open();
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {

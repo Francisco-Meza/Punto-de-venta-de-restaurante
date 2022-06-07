@@ -112,6 +112,12 @@
     <Compile Include="ADMINISTRACION\FrmMesas.Designer.cs">
       <DependentUpon>FrmMesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAgregarProductoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarProductoDetalle.Designer.cs">
+      <DependentUpon>FrmAgregarProductoDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="SALON\FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmMesas.resx">
       <DependentUpon>FrmMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarProductoDetalle.resx">
+      <DependentUpon>FrmAgregarProductoDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>

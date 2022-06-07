@@ -60,7 +60,7 @@ namespace GUI
             this.Dispose();
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
+        private void gunaButton1_Click_1(object sender, EventArgs e)
         {
             int row = dgvListaPedidos.CurrentRow.Index;
             id = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);

@@ -532,6 +532,7 @@
             this.PanelPadre.Size = new System.Drawing.Size(757, 646);
             this.PanelPadre.TabIndex = 3;
             this.PanelPadre.TabStop = true;
+            this.PanelPadre.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelPadre_Paint);
             // 
             // FrmMenu
             // 

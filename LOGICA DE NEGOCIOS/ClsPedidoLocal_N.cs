@@ -43,6 +43,10 @@ namespace LOGICA_DE_NEGOCIOS
         {
             return Datos.Delete(id);
         }
+        public string Cerrar(int id)
+        {
+            return Datos.Cerrar(id);
+        }
         public DataTable ReadMesas()
         {
             return Datos.ReadMesas();

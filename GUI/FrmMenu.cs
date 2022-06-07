@@ -67,8 +67,7 @@ namespace GUI
                 case 2://Para Cajero
                     {
                       
-                        BtnPedidosG.Enabled = true;
-                        BtnPedidosG.Visible = true;
+                        
                         //Prube
                         BtnProductos.Enabled = true;
                         BtnProductos.Visible = true;
@@ -88,6 +87,12 @@ namespace GUI
                         BtnPedidosLocal.Visible = true;
                         BtnPerfil.Enabled = true;
                         BtnPerfil.Visible = true;
+                        lblCajero.Enabled = true;
+                        lblCajero.Visible= true;
+                        lblMesero.Enabled = true;
+                        lblMesero.Visible = true;
+                        
+                        
                         break;
                     }
                 case 3://Para Mesero
@@ -199,6 +204,11 @@ namespace GUI
         private void BtnPerfil_Click(object sender, EventArgs e)
         {
             AbrirFHijo(new FrmPerfilPersonal(this));
+        }
+
+        private void PanelPadre_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void BtnMesas_Click(object sender, EventArgs e)

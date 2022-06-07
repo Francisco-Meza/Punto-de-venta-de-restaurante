@@ -145,6 +145,7 @@
             this.gunaButton1.TabIndex = 14;
             this.gunaButton1.Text = "Eliminar";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click_1);
             // 
             // btnEditar
             // 
