@@ -102,5 +102,12 @@ namespace GUI
                 MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            int row = dgvListaPedidos.CurrentRow.Index;
+            idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
+            menu.AbrirFHijo(new FrmDetallePedidos(menu, idPedido));
+        }
     }
 }
