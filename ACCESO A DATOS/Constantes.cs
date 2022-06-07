@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ACCESO_A_DATOS
-{//
+{
     public static class Constantes
     {
         public const string francisco = "DESKTOP-4MR4OFL\\MSSQLSERVER00";
