@@ -13,10 +13,10 @@ namespace GUI.ADMINISTRACION
 {
     public partial class FrmPuesto : Form
     {
-        private readonly FrmMenu padreMenu;
-        public FrmPuesto(FrmMenu padreMenu)
+        private readonly FrmMenu menu;
+        public FrmPuesto(FrmMenu menu)
         {
-            this.padreMenu = padreMenu;
+            this.menu = menu;
             InitializeComponent();
             Read();
         }
@@ -33,7 +33,7 @@ namespace GUI.ADMINISTRACION
         }
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            padreMenu.AbrirFHijo(new FrmAddPuesto());
+            menu.AbrirFHijo(new FrmAddPuesto(menu));
         }
     }
 }

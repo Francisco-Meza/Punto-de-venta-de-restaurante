@@ -112,14 +112,20 @@ namespace GUI
                         puesto = Convert.ToInt32(cmbPuesto.SelectedValue);
                         correo = TxtCorreo.Text;
                         telefono = TxtTelefonoPersonal.Text;
-                        string msj = cuenta.Create(puesto, correo, clave, nombre, apePa, apeMa, fechaN);
+                        string msj = cuenta.Create(puesto, correo, clave, nombre, apePa, apeMa, fechaN,telefono);
                         if (msj.Equals("OK"))
                         {
-                            MessageBox.Show("Se dio de alta el usuario con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            menu.AbrirFHijo(new FrmCuentas(menu));
+                            this.Dispose();
+                        }
+                        else if (msj.Equals("NO"))
+                        {
+                            MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show(msj, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else
@@ -150,11 +156,17 @@ namespace GUI
                         string msj = cuenta.Update(this.id,puesto, correo, clave, nombre, apePa, apeMa, fechaN, telefono);
                         if (msj.Equals("OK"))
                         {
-                            MessageBox.Show("Se actualizo el usuario con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Se actualizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            menu.AbrirFHijo(new FrmCuentas(menu));
+                            this.Dispose();
+                        }
+                        else if (msj.Equals("NO"))
+                        {
+                            MessageBox.Show("No se pudo actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show(msj, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                     else

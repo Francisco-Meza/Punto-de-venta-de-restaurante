@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_READ_CLASIFICACION", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_CLASIFICACION", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
@@ -28,7 +28,7 @@ namespace ACCESO_A_DATOS
             }
             catch (Exception e)
             {
-
+                return null;
                 throw;
             }
             finally
@@ -57,8 +57,36 @@ namespace ACCESO_A_DATOS
             }
             catch (Exception e)
             {
-
+                return null;
                 throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
+        public DataTable Read(int id)
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_CLASIFICACION_ID", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = id;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception)
+            {
+                return null;
             }
             finally
             {
@@ -78,11 +106,10 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_CREATE_CLASIFICACION", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
                 cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "Completo" : "No se acompleto el proceso";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -111,7 +138,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "Completo" : "No se acompleto el proceso";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -138,7 +165,7 @@ namespace ACCESO_A_DATOS
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "Completo" : "No se acompleto el proceso";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {

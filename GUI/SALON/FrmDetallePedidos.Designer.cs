@@ -33,23 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbMesa = new Guna.UI.WinForms.GunaComboBox();
             this.btnAgregar = new Guna.UI.WinForms.GunaButton();
-            this.btnEditar = new Guna.UI.WinForms.GunaButton();
-            this.NumCantidad = new Guna.UI.WinForms.GunaNumeric();
             this.btnEliminar = new Guna.UI.WinForms.GunaButton();
             this.btnGuardar = new Guna.UI.WinForms.GunaButton();
             this.dgvProductosPedido = new Guna.UI.WinForms.GunaDataGridView();
-            this.columnIdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbProductos = new Guna.UI.WinForms.GunaComboBox();
-            this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosPedido)).BeginInit();
             this.SuspendLayout();
@@ -57,50 +47,49 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.LightCyan;
-            this.gunaPanel1.Controls.Add(this.label4);
-            this.gunaPanel1.Controls.Add(this.label3);
-            this.gunaPanel1.Controls.Add(this.label2);
+            this.gunaPanel1.Controls.Add(this.label5);
+            this.gunaPanel1.Controls.Add(this.cbMesa);
             this.gunaPanel1.Controls.Add(this.btnAgregar);
-            this.gunaPanel1.Controls.Add(this.btnEditar);
-            this.gunaPanel1.Controls.Add(this.NumCantidad);
             this.gunaPanel1.Controls.Add(this.btnEliminar);
             this.gunaPanel1.Controls.Add(this.btnGuardar);
             this.gunaPanel1.Controls.Add(this.dgvProductosPedido);
             this.gunaPanel1.Controls.Add(this.label1);
-            this.gunaPanel1.Controls.Add(this.cbProductos);
-            this.gunaPanel1.Controls.Add(this.cbClasificacion);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(757, 542);
             this.gunaPanel1.TabIndex = 0;
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(577, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Cantidad:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(375, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Mesa:";
             // 
-            // label3
+            // cbMesa
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(400, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Producto:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(222, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Clasificación:";
+            this.cbMesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbMesa.BackColor = System.Drawing.Color.Transparent;
+            this.cbMesa.BaseColor = System.Drawing.Color.White;
+            this.cbMesa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
+            this.cbMesa.BorderSize = 1;
+            this.cbMesa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbMesa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMesa.FocusedColor = System.Drawing.Color.Empty;
+            this.cbMesa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMesa.ForeColor = System.Drawing.Color.Black;
+            this.cbMesa.FormattingEnabled = true;
+            this.cbMesa.Location = new System.Drawing.Point(428, 21);
+            this.cbMesa.Name = "cbMesa";
+            this.cbMesa.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+            this.cbMesa.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbMesa.Radius = 10;
+            this.cbMesa.Size = new System.Drawing.Size(125, 28);
+            this.cbMesa.TabIndex = 11;
             // 
             // btnAgregar
             // 
@@ -116,7 +105,7 @@
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAgregar.Location = new System.Drawing.Point(99, 483);
+            this.btnAgregar.Location = new System.Drawing.Point(99, 457);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -129,50 +118,6 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.AnimationHoverSpeed = 0.07F;
-            this.btnEditar.AnimationSpeed = 0.03F;
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.btnEditar.BorderColor = System.Drawing.Color.Black;
-            this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnEditar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditar.Location = new System.Drawing.Point(74, 81);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.btnEditar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEditar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnEditar.OnHoverImage = null;
-            this.btnEditar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEditar.Radius = 10;
-            this.btnEditar.Size = new System.Drawing.Size(90, 28);
-            this.btnEditar.TabIndex = 6;
-            this.btnEditar.Text = "Editar";
-            // 
-            // NumCantidad
-            // 
-            this.NumCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.NumCantidad.BackColor = System.Drawing.Color.Transparent;
-            this.NumCantidad.BaseColor = System.Drawing.Color.White;
-            this.NumCantidad.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.NumCantidad.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.NumCantidad.ButtonForeColor = System.Drawing.Color.White;
-            this.NumCantidad.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.NumCantidad.ForeColor = System.Drawing.Color.Black;
-            this.NumCantidad.Location = new System.Drawing.Point(580, 79);
-            this.NumCantidad.Maximum = ((long)(9999999));
-            this.NumCantidad.Minimum = ((long)(1));
-            this.NumCantidad.Name = "NumCantidad";
-            this.NumCantidad.Radius = 10;
-            this.NumCantidad.Size = new System.Drawing.Size(75, 30);
-            this.NumCantidad.TabIndex = 5;
-            this.NumCantidad.Value = ((long)(1));
             // 
             // btnEliminar
             // 
@@ -188,7 +133,7 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminar.Location = new System.Drawing.Point(495, 483);
+            this.btnEliminar.Location = new System.Drawing.Point(495, 457);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.OnHoverBaseColor = System.Drawing.Color.DarkRed;
             this.btnEliminar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -215,7 +160,7 @@
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnGuardar.Location = new System.Drawing.Point(302, 483);
+            this.btnGuardar.Location = new System.Drawing.Point(302, 457);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
             this.btnGuardar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -227,6 +172,7 @@
             this.btnGuardar.TabIndex = 3;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // dgvProductosPedido
             // 
@@ -243,7 +189,7 @@
             this.dgvProductosPedido.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -251,12 +197,6 @@
             this.dgvProductosPedido.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProductosPedido.ColumnHeadersHeight = 40;
             this.dgvProductosPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvProductosPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnIdDetalle,
-            this.NombreProd,
-            this.columnIdProducto,
-            this.columnCantidad,
-            this.columnPrecio});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -267,7 +207,7 @@
             this.dgvProductosPedido.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductosPedido.EnableHeadersVisualStyles = false;
             this.dgvProductosPedido.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
-            this.dgvProductosPedido.Location = new System.Drawing.Point(42, 130);
+            this.dgvProductosPedido.Location = new System.Drawing.Point(40, 68);
             this.dgvProductosPedido.Name = "dgvProductosPedido";
             this.dgvProductosPedido.ReadOnly = true;
             this.dgvProductosPedido.RowHeadersVisible = false;
@@ -298,90 +238,16 @@
             this.dgvProductosPedido.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             this.dgvProductosPedido.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // columnIdDetalle
-            // 
-            this.columnIdDetalle.HeaderText = "No.-";
-            this.columnIdDetalle.Name = "columnIdDetalle";
-            this.columnIdDetalle.ReadOnly = true;
-            // 
-            // NombreProd
-            // 
-            this.NombreProd.HeaderText = "Nombre";
-            this.NombreProd.Name = "NombreProd";
-            this.NombreProd.ReadOnly = true;
-            // 
-            // columnIdProducto
-            // 
-            this.columnIdProducto.HeaderText = "Clave Producto";
-            this.columnIdProducto.Name = "columnIdProducto";
-            this.columnIdProducto.ReadOnly = true;
-            // 
-            // columnCantidad
-            // 
-            this.columnCantidad.HeaderText = "Cantidad";
-            this.columnCantidad.Name = "columnCantidad";
-            this.columnCantidad.ReadOnly = true;
-            // 
-            // columnPrecio
-            // 
-            this.columnPrecio.HeaderText = "Precio unitario";
-            this.columnPrecio.Name = "columnPrecio";
-            this.columnPrecio.ReadOnly = true;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 17);
+            this.label1.Location = new System.Drawing.Point(75, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Detalles de pedido";
-            // 
-            // cbProductos
-            // 
-            this.cbProductos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbProductos.BackColor = System.Drawing.Color.Transparent;
-            this.cbProductos.BaseColor = System.Drawing.Color.White;
-            this.cbProductos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.cbProductos.BorderSize = 1;
-            this.cbProductos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbProductos.FocusedColor = System.Drawing.Color.Empty;
-            this.cbProductos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbProductos.ForeColor = System.Drawing.Color.Black;
-            this.cbProductos.FormattingEnabled = true;
-            this.cbProductos.Location = new System.Drawing.Point(403, 81);
-            this.cbProductos.Name = "cbProductos";
-            this.cbProductos.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.cbProductos.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbProductos.Radius = 10;
-            this.cbProductos.Size = new System.Drawing.Size(125, 28);
-            this.cbProductos.TabIndex = 0;
-            // 
-            // cbClasificacion
-            // 
-            this.cbClasificacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbClasificacion.BackColor = System.Drawing.Color.Transparent;
-            this.cbClasificacion.BaseColor = System.Drawing.Color.White;
-            this.cbClasificacion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.cbClasificacion.BorderSize = 1;
-            this.cbClasificacion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbClasificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbClasificacion.FocusedColor = System.Drawing.Color.Empty;
-            this.cbClasificacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbClasificacion.ForeColor = System.Drawing.Color.Black;
-            this.cbClasificacion.FormattingEnabled = true;
-            this.cbClasificacion.Location = new System.Drawing.Point(222, 81);
-            this.cbClasificacion.Name = "cbClasificacion";
-            this.cbClasificacion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
-            this.cbClasificacion.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbClasificacion.Radius = 10;
-            this.cbClasificacion.Size = new System.Drawing.Size(125, 28);
-            this.cbClasificacion.TabIndex = 0;
             // 
             // FrmDetallePedidos
             // 
@@ -401,22 +267,12 @@
         #endregion
 
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaComboBox cbClasificacion;
-        private Guna.UI.WinForms.GunaNumeric NumCantidad;
         private Guna.UI.WinForms.GunaButton btnEliminar;
         private Guna.UI.WinForms.GunaButton btnGuardar;
         private Guna.UI.WinForms.GunaDataGridView dgvProductosPedido;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaComboBox cbProductos;
-        private Guna.UI.WinForms.GunaButton btnEditar;
         private Guna.UI.WinForms.GunaButton btnAgregar;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdDetalle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreProd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecio;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaComboBox cbMesa;
     }
 }

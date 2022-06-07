@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_LISTAR_PEDIDO", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_PEDIDOS_LOCAL", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
@@ -68,6 +68,90 @@ namespace ACCESO_A_DATOS
                 }
             }
         }
+        public DataTable ReadMesas()
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_PEDIDOS_MESAS", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
+        public DataTable ReadClasificacion()
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_PEDIDOS_CLASIFICACION", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
+        public DataTable ReadProducto()
+        {
+            SqlDataReader resultado;
+            DataTable tabla = new DataTable();
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_READ_PEDIDOS_PRODUCTO", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                sqlCon.Open();
+                resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                return tabla;
+            }
+            catch (Exception e)
+            {
+                return null;
+                throw;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
         public string Create(ClsPedidoLocal obj)
         {
             string msj = "";
@@ -75,14 +159,13 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_CREATE_PEDIDO_LOCAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_CREATE_PEDIDOS_LOCALES", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@fecha", SqlDbType.VarChar).Value = obj.Fecha;
-                cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = obj.Estado;
                 cmd.Parameters.Add("@idCuenta", SqlDbType.VarChar).Value = obj.IdCuenta;
                 cmd.Parameters.Add("@idMesa", SqlDbType.VarChar).Value = obj.IdMesa;
+                cmd.Parameters.Add("@detalles", SqlDbType.Structured).Value = obj.Detalles;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el pedido local";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -105,13 +188,10 @@ namespace ACCESO_A_DATOS
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_UPDATE_PEDIDO_LOCAL", sqlCon);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@fecha", SqlDbType.VarChar).Value = obj.Fecha;
-                cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = obj.Estado;
                 cmd.Parameters.Add("@idCuenta", SqlDbType.VarChar).Value = obj.IdCuenta;
-                cmd.Parameters.Add("@idMesa", SqlDbType.VarChar).Value = obj.IdMesa;
+                cmd.Parameters.Add("@detalles", SqlDbType.Structured).Value = obj.Detalles;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el pedido local";
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -133,11 +213,37 @@ namespace ACCESO_A_DATOS
             try
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
-                SqlCommand cmd = new SqlCommand("SP_DELETE_PEDIDO_LOCAL", sqlCon);
+                SqlCommand cmd = new SqlCommand("SP_DELETE_PEDIDO", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo insertar el pedido local";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
+            }
+            catch (Exception e)
+            {
+                msj = e.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+            return msj;
+        }
+        public string Cerrar(int id)
+        {
+            string msj = "";
+            SqlConnection sqlCon = new SqlConnection();
+            try
+            {
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_CERRAR_PEDIDO", sqlCon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                sqlCon.Open();
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {

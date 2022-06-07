@@ -86,8 +86,9 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@apelPat", SqlDbType.VarChar).Value = obj.ApelPat;
                 cmd.Parameters.Add("@apelMat", SqlDbType.VarChar).Value = obj.ApelMat;
                 cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = obj.FechaNacimiento;
+                cmd.Parameters.Add("@telefono", SqlDbType.VarChar).Value = obj.Telefono;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "No se pudo insertar la cuenta";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -122,7 +123,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@fecha", SqlDbType.Date).Value = obj.FechaNacimiento;
                 cmd.Parameters.Add("@telefono", SqlDbType.VarChar).Value = obj.Telefono;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "No se pudo actualizar la cuenta";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
@@ -149,7 +150,7 @@ namespace ACCESO_A_DATOS
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@idCuenta", SqlDbType.Int).Value = id;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "No se pudo insertar la cuenta";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {

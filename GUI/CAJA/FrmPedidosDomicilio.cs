@@ -24,7 +24,7 @@ namespace GUI
             if (TxtNombreCliente.Text != "" && TxtTelefonoCliente.Text != "" && txtCalleCliente.Text !="" 
                 && txtNumCasaCliente.Text != "" && txtColoniaCliente.Text != "" && txtLocalidadCliente.Text != "")// al poner datos en los textbox se habre el menu
             {
-                padreMenu.AbrirFHijo(new FrmDetallePedidos());
+                padreMenu.AbrirFHijo(new FrmDetallePedidos(padreMenu,1));
             }
             else //si los textbox estan vacios muestra el mensaje
             {

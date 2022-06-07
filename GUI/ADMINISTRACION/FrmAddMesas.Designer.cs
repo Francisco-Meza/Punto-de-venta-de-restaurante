@@ -201,6 +201,7 @@
             this.BtnGuardar.TabIndex = 13;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // FrmAddMesas
             // 

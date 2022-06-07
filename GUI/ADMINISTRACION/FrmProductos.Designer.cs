@@ -33,10 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.dgvListaPedidos = new Guna.UI.WinForms.GunaDataGridView();
-            this.columnIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnIdClasificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.btnEditar = new Guna.UI.WinForms.GunaButton();
@@ -52,7 +48,6 @@
             this.dgvListaPedidos.AllowUserToResizeColumns = false;
             this.dgvListaPedidos.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvListaPedidos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListaPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -64,7 +59,7 @@
             this.dgvListaPedidos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -72,14 +67,9 @@
             this.dgvListaPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListaPedidos.ColumnHeadersHeight = 21;
             this.dgvListaPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvListaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnIdProducto,
-            this.columnDescripcion,
-            this.columnIdClasificacion,
-            this.ColumnPrecio});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -118,30 +108,6 @@
             this.dgvListaPedidos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
             this.dgvListaPedidos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // columnIdProducto
-            // 
-            this.columnIdProducto.HeaderText = "Producto";
-            this.columnIdProducto.Name = "columnIdProducto";
-            this.columnIdProducto.ReadOnly = true;
-            // 
-            // columnDescripcion
-            // 
-            this.columnDescripcion.HeaderText = "Descripcion";
-            this.columnDescripcion.Name = "columnDescripcion";
-            this.columnDescripcion.ReadOnly = true;
-            // 
-            // columnIdClasificacion
-            // 
-            this.columnIdClasificacion.HeaderText = "Clasificacion";
-            this.columnIdClasificacion.Name = "columnIdClasificacion";
-            this.columnIdClasificacion.ReadOnly = true;
-            // 
-            // ColumnPrecio
-            // 
-            this.ColumnPrecio.HeaderText = "Precio";
-            this.ColumnPrecio.Name = "ColumnPrecio";
-            this.ColumnPrecio.ReadOnly = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -179,6 +145,7 @@
             this.gunaButton1.TabIndex = 14;
             this.gunaButton1.Text = "Eliminar";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click_1);
             // 
             // btnEditar
             // 
@@ -282,9 +249,5 @@
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton btnEditar;
         private Guna.UI.WinForms.GunaButton btnAgregar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnDescripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdClasificacion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPrecio;
     }
 }

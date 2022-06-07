@@ -150,6 +150,7 @@
             this.btnElimiCla.TabIndex = 15;
             this.btnElimiCla.Text = "Eliminar";
             this.btnElimiCla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnElimiCla.Click += new System.EventHandler(this.btnElimiCla_Click);
             // 
             // btnEditarC
             // 

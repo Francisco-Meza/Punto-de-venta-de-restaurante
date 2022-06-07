@@ -28,7 +28,7 @@ namespace LOGICA_DE_NEGOCIOS
             if (Validaciones.WithForCompareAsciiValue(valor)) return Datos.Read(valor);
             else return null;
         }
-        public  string Create(int idTipoPuesto, string correo, string contrasena,string nombrePersona,string apelPat,string apelMat,DateTime fechaNacimiento)
+        public  string Create(int idTipoPuesto, string correo, string contrasena,string nombrePersona,string apelPat,string apelMat,DateTime fechaNacimiento, string telefono)
         {
             obj.IdTipoPuesto = idTipoPuesto;
             if (Validaciones.VerificarCorreo(correo)) obj.Correo = correo;
@@ -42,6 +42,7 @@ namespace LOGICA_DE_NEGOCIOS
             if (Validaciones.WithForCompareAsciiValue(apelMat)) obj.ApelMat = apelMat;
             else return "El apellido materno no tiene un formato correcto, intente no usar caracteres especiales";
             obj.FechaNacimiento = fechaNacimiento;
+            obj.Telefono = telefono;
             return Datos.Create(obj);
         }
         public string Update(int id, int idTipoPuesto, string correo, string contrasena, string nombrePersona, string apelPat, string apelMat, DateTime fechaNacimiento, string telefono)

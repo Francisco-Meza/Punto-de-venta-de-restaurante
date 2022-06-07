@@ -56,6 +56,7 @@ namespace GUI.ADMINISTRACION
             int row = dgvListaMesas.CurrentRow.Index;
             id = Convert.ToInt32(dgvListaMesas.Rows[row].Cells[0].Value);
             menu.AbrirFHijo(new FrmAddMesas(menu,id));
+            this.Dispose();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -65,12 +66,16 @@ namespace GUI.ADMINISTRACION
             string msj = mesa.Delete(id);
             if (msj.Equals("OK"))
             {
-                MessageBox.Show("Se elimino el usuario con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Read();
+            }
+            else if (msj.Equals("NO"))
+            {
+                MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show(msj, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

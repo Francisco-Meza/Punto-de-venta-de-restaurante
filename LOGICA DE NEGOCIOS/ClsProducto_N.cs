@@ -11,51 +11,51 @@ namespace LOGICA_DE_NEGOCIOS
 {
     public class ClsProducto_N
     {
-        public static DataTable Read()
+        private ClsProducto_D Datos = new ClsProducto_D();
+        ClsProducto obj = new ClsProducto();
+        public DataTable Read()
         {
-            ClsProducto_D Datos = new ClsProducto_D();
             return Datos.Read();
         }
         //pendinte
-        public static DataTable Read(string Valor)
+        public DataTable Read(string Valor)
         {
-            ClsProducto_D Datos = new ClsProducto_D();
             return Datos.Read(Valor);
         }
-        public static string Create(string idProduc,string idClas,string precio,string nombre,string descrip)
+        public DataTable Read(int id)
         {
-            ClsProducto_D Datos = new ClsProducto_D();
-            ClsProducto obj = new ClsProducto();
-            obj.IdProducto = int.Parse(idProduc);
+            return Datos.Read(id);
+        }
+        public string Create(int idClas,string precio,string nombre,string descrip)
+        {
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
             else return "El nombre no tiene un formato correcto, intente no usar caracterese especiales";
             if (Validaciones.WithForCompareAsciiValue(descrip)) obj.Descripcion = descrip;
             else return "Intente no usar caracterese especiales, solo letras";
-            if (Validaciones.SoloNumero(idClas)) obj.IdClasificacion = int.Parse(idClas);
-            else return "El ID ingresado no es valido";
+            obj.IdClasificacion = idClas;
             if (Validaciones.SoloNumero(precio)) obj.Precio = int.Parse(precio);
             else return "Solo numeros";
             return Datos.Create(obj);
         }
-        public static string Update(string idProduc, string idClas, string precio, string nombre, string descrip)
+        public string Update(int idProduc, int idClas, string precio, string nombre, string descrip)
         {
-            ClsProducto_D Datos = new ClsProducto_D();
-            ClsProducto obj = new ClsProducto();
-            obj.IdProducto = int.Parse(idProduc);
+            obj.IdProducto = idProduc;
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
             else return "El nombre no tiene un formato correcto, intente no usar caracterese especiales";
             if (Validaciones.WithForCompareAsciiValue(descrip)) obj.Descripcion = descrip;
             else return "Intente no usar caracterese especiales, solo letras";
-            if (Validaciones.SoloNumero(idClas)) obj.IdClasificacion = int.Parse(idClas);
-            else return "El ID ingresado no es valido";
+            obj.IdClasificacion = idClas;
             if (Validaciones.SoloNumero(precio)) obj.Precio = int.Parse(precio);
             else return "Solo numeros";
             return Datos.Update(obj);
         }
-        public static string Delete(int id)
+        public string Delete(int id)
         {
-            ClsProducto_D Datos = new ClsProducto_D();
             return Datos.Delete(id);
+        }
+        public DataTable ReadClasificacion()
+        {
+            return Datos.ReadClasificacion();
         }
     }
 }

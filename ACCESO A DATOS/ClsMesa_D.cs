@@ -106,7 +106,6 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_CREATE_MESA", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = obj.Id;
                 cmd.Parameters.Add("@numeroMesa", SqlDbType.Int).Value = obj.NumeroMesa;
                 cmd.Parameters.Add("@descripcion", SqlDbType.VarChar).Value = obj.Descripcion;
                 cmd.Parameters.Add("@numeroComensales", SqlDbType.Int).Value = obj.NumeroComensales;

@@ -26,10 +26,8 @@ namespace LOGICA_DE_NEGOCIOS
         {
             return Datos.Read(id);
         }
-        public string Create(string id, string numeroMesa, string descripcion, string numeroComensales)
+        public string Create(string numeroMesa, string descripcion, string numeroComensales)
         {
-            if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
-            else return "El id ingresado no es valido";
             if (Validaciones.SoloNumero(numeroMesa)) obj.NumeroMesa = int.Parse(numeroMesa);
             else return "El numero de mesa no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(descripcion)) obj.Descripcion = descripcion;
@@ -39,10 +37,9 @@ namespace LOGICA_DE_NEGOCIOS
             return Datos.Create(obj);
 
         }
-        public string Update(string id, string numeroMesa, string descripcion, string numeroComensales)
+        public string Update(int id, string numeroMesa, string descripcion, string numeroComensales)
         {
-            if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
-            else return "El id ingresado no es valido";
+            obj.Id = id;
             if (Validaciones.SoloNumero(numeroMesa)) obj.NumeroMesa = int.Parse(numeroMesa);
             else return "El numero de mesa no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(descripcion)) obj.Descripcion = descripcion;
