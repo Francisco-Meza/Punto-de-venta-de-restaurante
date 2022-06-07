@@ -73,6 +73,11 @@ namespace GUI.ADMINISTRACION
             TxtNumComensales.Text = "";
         }
 
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            menu.AbrirFHijo(new FrmMesas(menu));
+        }
+
         public FrmAddMesas(FrmMenu menu)
         {
             InitializeComponent();

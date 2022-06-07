@@ -40,7 +40,7 @@ namespace GUI
 
         private void BtnCerrarHijo_Click(object sender, EventArgs e)
         {
-            this.Close();
+            menu.AbrirFHijo(new FrmProductos(menu));
         }
 
         private void TxtApeM_KeyPress(object sender, KeyPressEventArgs e)
