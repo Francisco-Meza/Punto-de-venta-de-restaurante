@@ -44,7 +44,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.gunaLabel1.Location = new System.Drawing.Point(31, 66);
+            this.gunaLabel1.Location = new System.Drawing.Point(31, 30);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(96, 21);
             this.gunaLabel1.TabIndex = 42;
@@ -140,7 +140,7 @@
             this.dgvListaMesas.AllowUserToDeleteRows = false;
             this.dgvListaMesas.AllowUserToResizeColumns = false;
             this.dgvListaMesas.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightCyan;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvListaMesas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvListaMesas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -171,7 +171,7 @@
             this.dgvListaMesas.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListaMesas.EnableHeadersVisualStyles = false;
             this.dgvListaMesas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvListaMesas.Location = new System.Drawing.Point(35, 119);
+            this.dgvListaMesas.Location = new System.Drawing.Point(35, 101);
             this.dgvListaMesas.Name = "dgvListaMesas";
             this.dgvListaMesas.ReadOnly = true;
             this.dgvListaMesas.RowHeadersVisible = false;

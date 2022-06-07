@@ -67,6 +67,11 @@ namespace GUI.ADMINISTRACION
             }
         }
 
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            menu.AbrirFHijo(new FrmPuesto(menu));
+        }
+
         private void Validar()
         {
             if (TxtDescripcion.Text != "" && TxtNombre.Text != "")
