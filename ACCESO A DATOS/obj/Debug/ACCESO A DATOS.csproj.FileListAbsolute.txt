@@ -16,3 +16,12 @@ C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Deb
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CopyComplete
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.dll
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.pdb
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\bin\Debug\ACCESO A DATOS.dll
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\bin\Debug\ACCESO A DATOS.pdb
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\bin\Debug\ENTIDADES.dll
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\bin\Debug\ENTIDADES.pdb
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.AssemblyReference.cache
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CoreCompileInputs.cache
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.csproj.CopyComplete
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.dll
+D:\Proyectos Visual Studio Escuela\ACCESO A DATOS\obj\Debug\ACCESO A DATOS.pdb

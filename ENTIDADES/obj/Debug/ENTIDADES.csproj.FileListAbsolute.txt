@@ -22,3 +22,9 @@ C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\EN
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.dll
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\ENTIDADES\obj\Debug\ENTIDADES.pdb
+D:\Proyectos Visual Studio Escuela\ENTIDADES\bin\Debug\ENTIDADES.dll
+D:\Proyectos Visual Studio Escuela\ENTIDADES\bin\Debug\ENTIDADES.pdb
+D:\Proyectos Visual Studio Escuela\ENTIDADES\obj\Debug\ENTIDADES.csproj.AssemblyReference.cache
+D:\Proyectos Visual Studio Escuela\ENTIDADES\obj\Debug\ENTIDADES.csproj.CoreCompileInputs.cache
+D:\Proyectos Visual Studio Escuela\ENTIDADES\obj\Debug\ENTIDADES.dll
+D:\Proyectos Visual Studio Escuela\ENTIDADES\obj\Debug\ENTIDADES.pdb

@@ -108,3 +108,39 @@ C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.exe
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.pdb
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAgregarProductoDetalle.resources
 C:\Users\52333\source\repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmAgregarProductoDetalle.resources
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\GUI.exe.config
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\GUI.exe
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\GUI.pdb
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\FontAwesome.Sharp.dll
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\LOGICA DE NEGOCIOS.dll
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\ACCESO A DATOS.dll
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\ENTIDADES.dll
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\LOGICA DE NEGOCIOS.pdb
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\ACCESO A DATOS.pdb
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\ACCESO A DATOS.dll.config
+D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\ENTIDADES.pdb
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddClasificacion.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddMesas.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmAddPersonal.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmAddProductos.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmAddPuesto.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmClasificacion.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmCuentas.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmPuesto.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.ADMINISTRACION.FrmMesas.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmAgregarProductoDetalle.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmDetallePedidos.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmLogin.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmMenu.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmPedidos.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmPedidosDomicilio.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmPerfilPersonal.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmProductos.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmTicket.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.exe
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.pdb
