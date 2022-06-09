@@ -21,6 +21,7 @@ namespace GUI
         private const int cajero = 3;
         private DataTable datos, dg;
         private string msj;
+        private int idDetalle;
         public FrmDetallePedidos(FrmMenu menu, int idCuenta)
         {
             InitializeComponent();
@@ -32,24 +33,56 @@ namespace GUI
             dg = new DataTable();
             IniciarCombos();
         }
+        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPedido)
+        {
+            InitializeComponent();
+            this.menu = menu;
+            this.idPedido = idPedido;
+            this.idCuenta = idCuenta;
+            local = new ClsPedidoLocal_N();
+            datos = new DataTable();
+            dg = new DataTable();
+            IniciarCombos(this.idPedido);
+        }
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             idMesa = Convert.ToInt32(cbMesa.SelectedValue);
-            msj = local.Create(idCuenta, idMesa, datos);
-            if (msj.Equals("OK"))
+            if (idPedido == 0)
             {
-                MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                menu.AbrirFHijo(new FrmPedidos(menu));
-                this.Dispose();
-            }
-            else if (msj.Equals("NO"))
-            {
-                MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                msj = local.Create(idCuenta, idMesa, datos);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmPedidos(menu));
+                    this.Dispose();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                msj = local.Update(idPedido, datos);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmPedidos(menu));
+                    this.Dispose();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -71,11 +104,31 @@ namespace GUI
             datos.Columns.Add("PRECIO");
             dgvProductosPedido.DataSource = dg;
         }
+        private void IniciarCombos(int idPedido)
+        {
+            datos = local.Read2(idPedido);
+            cbMesa.DataSource = local.ReadMesas();
+
+            cbMesa.Enabled = false;
+            cbMesa.DisplayMember = "NOMBRE";
+            cbMesa.ValueMember = "ID";
+            dg = local.Read(idPedido);
+            dgvProductosPedido.DataSource = datos;
+        }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this);
-            a.Show();
+            if(idPedido == 0)
+            {
+                FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this);
+                a.Show();
+            }
+            else
+            {
+                idDetalle = dgvProductosPedido.Rows.Count;
+                FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this,idDetalle);
+                a.Show();
+            }
         }
 
         public void añadir(int idDetalle, int idProducto, string nombre, int cantidad,int precio)

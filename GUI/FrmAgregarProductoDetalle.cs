@@ -34,6 +34,16 @@ namespace GUI
             IniciarDatos();
             dgvProductos.Columns[0].Visible = false;
         }
+        public FrmAgregarProductoDetalle(FrmDetallePedidos obj, int idDetalle)
+        {
+            InitializeComponent();
+            productos = new ClsProducto_N();
+            this.obj = obj;
+            datos = new DataTable();
+            this.idDetalle = idDetalle;
+            IniciarDatos();
+            dgvProductos.Columns[0].Visible = false;
+        }
         private void IniciarDatos()
         {
             datos = productos.Read();

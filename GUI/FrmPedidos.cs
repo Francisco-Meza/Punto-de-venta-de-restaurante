@@ -107,7 +107,7 @@ namespace GUI
         {
             int row = dgvListaPedidos.CurrentRow.Index;
             idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            menu.AbrirFHijo(new FrmDetallePedidos(menu, idPedido));
+            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta,idPedido));
         }
     }
 }
