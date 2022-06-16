@@ -58,22 +58,26 @@ namespace GUI.ADMINISTRACION
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            int row = dgvCuentas.CurrentRow.Index;
-            id = Convert.ToInt32(dgvCuentas.Rows[row].Cells[0].Value);
-            string msj = cuenta.Delete(id);
-            if (msj.Equals("OK"))
+            DialogResult dialog = MessageBox.Show("¿Seguro que quieres eliminar?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.OK)
             {
-                MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                IniciarDatos();
-            }
-            else if (msj.Equals("NO"))
-            {
-                MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                int row = dgvCuentas.CurrentRow.Index;
+                id = Convert.ToInt32(dgvCuentas.Rows[row].Cells[0].Value);
+                string msj = cuenta.Delete(id);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    IniciarDatos();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            } 
         }
 
         private void BtnEditar_Click_1(object sender, EventArgs e)

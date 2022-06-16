@@ -18,10 +18,18 @@ namespace GUI
         DataTable datos;
         private int idDetalle, idProducto, cantidad, precio;
         private string nombre;
+        private int n;
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            if (obj.GetRows() > 3)
+            {
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("Ocupas agregar minimo 3 productos","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
 
         public FrmAgregarProductoDetalle(FrmDetallePedidos obj)
@@ -34,6 +42,12 @@ namespace GUI
             IniciarDatos();
             dgvProductos.Columns[0].Visible = false;
         }
+
+        private void FrmAgregarProductoDetalle_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            obj.Regresar();
+        }
+
         public FrmAgregarProductoDetalle(FrmDetallePedidos obj, int idDetalle)
         {
             InitializeComponent();

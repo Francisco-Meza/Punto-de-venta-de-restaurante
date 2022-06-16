@@ -9,7 +9,7 @@ namespace ENTIDADES
 {
     public class ClsPedidoLocal
     {
-        
+
         DateTime _fecha;
         string _estado;
 
@@ -17,6 +17,7 @@ namespace ENTIDADES
         int _idCuenta;
         int _idMesa;
         DataTable detalles;
+        int _idPedido;
 
         public DateTime Fecha { get => _fecha; set => _fecha = value; }
         public string Estado { get => _estado; set => _estado = value; }
@@ -25,5 +26,6 @@ namespace ENTIDADES
         public int IdCuenta { get => _idCuenta; set => _idCuenta = value; }
         public int IdMesa { get => _idMesa; set => _idMesa = value; }
         public DataTable Detalles { get => detalles; set => detalles = value; }
+        public int IdPedido { get => _idPedido; set => _idPedido = value; }
     }
 }

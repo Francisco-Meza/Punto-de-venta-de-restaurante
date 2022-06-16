@@ -116,16 +116,17 @@ namespace GUI
                         if (msj.Equals("OK"))
                         {
                             MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            menu.AbrirFHijo(new FrmCuentas(menu));
-                            this.Dispose();
+                            Regresar();
                         }
                         else if (msj.Equals("NO"))
                         {
                             MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Regresar();
                         }
                         else
                         {
                             MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Regresar();
                         }
                     }
                     else
@@ -157,16 +158,17 @@ namespace GUI
                         if (msj.Equals("OK"))
                         {
                             MessageBox.Show("Se actualizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            menu.AbrirFHijo(new FrmCuentas(menu));
-                            this.Dispose();
+                            Regresar();
                         }
                         else if (msj.Equals("NO"))
                         {
                             MessageBox.Show("No se pudo actualizar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Regresar();
                         }
                         else
                         {
                             MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Regresar();
                         }
                     }
                     else
@@ -191,6 +193,10 @@ namespace GUI
                 BtnGuardar.Enabled = false;
             }
         }
-
+        public void Regresar()
+        {
+            menu.AbrirFHijo(new FrmCuentas(menu));
+            this.Dispose();
+        }
     }
 }

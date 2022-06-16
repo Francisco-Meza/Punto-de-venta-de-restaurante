@@ -62,21 +62,25 @@ namespace GUI
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
-            int row = dgvListaPedidos.CurrentRow.Index;
-            id = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            string msj = producto.Delete(id);
-            if (msj.Equals("OK"))
+            DialogResult dialog = MessageBox.Show("¿Seguro que quieres eliminar?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.OK)
             {
-                MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Read();
-            }
-            else if (msj.Equals("NO"))
-            {
-                MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int row = dgvListaPedidos.CurrentRow.Index;
+                id = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
+                string msj = producto.Delete(id);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Read();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

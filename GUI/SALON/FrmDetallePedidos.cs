@@ -54,16 +54,17 @@ namespace GUI
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    menu.AbrirFHijo(new FrmPedidos(menu));
-                    this.Dispose();
+                    Regresar();
                 }
                 else if (msj.Equals("NO"))
                 {
                     MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
                 else
                 {
                     MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
             }
             else
@@ -72,18 +73,24 @@ namespace GUI
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    menu.AbrirFHijo(new FrmPedidos(menu));
-                    this.Dispose();
+                    Regresar();
                 }
                 else if (msj.Equals("NO"))
                 {
                     MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
                 else
                 {
                     MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
             }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void IniciarCombos()
@@ -95,7 +102,7 @@ namespace GUI
             dg.Columns.Add("NOMBRE");
             dg.Columns.Add("CANTIDAD");
             dg.Columns.Add("PRECIO");
-            
+
             //
             datos.Columns.Add("ID_DETALLE");
             datos.Columns.Add("ID_PRODUCTO");
@@ -118,20 +125,20 @@ namespace GUI
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            if(idPedido == 0)
+            if (idPedido == 0)
             {
                 FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this);
-                a.Show();
+                a.ShowDialog();
             }
             else
             {
                 idDetalle = dgvProductosPedido.Rows.Count;
-                FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this,idDetalle);
-                a.Show();
+                FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this, idDetalle);
+                a.ShowDialog();
             }
         }
 
-        public void añadir(int idDetalle, int idProducto, string nombre, int cantidad,int precio)
+        public void añadir(int idDetalle, int idProducto, string nombre, int cantidad, int precio)
         {
             DataRow filas = dg.NewRow();
             filas["NUMERO"] = idDetalle;
@@ -154,9 +161,18 @@ namespace GUI
             Control ctr = (Control)sender;
             if ((e.KeyCode == Keys.Enter) || (e.KeyCode == Keys.Tab))
             {
-                    ctr.Parent.SelectNextControl(ctr, true, true, true, true);
-                    e.Handled = true;               
+                ctr.Parent.SelectNextControl(ctr, true, true, true, true);
+                e.Handled = true;
             }
+        }
+        public int GetRows()
+        {
+            return dgvProductosPedido.Rows.Count;
+        }
+        public void Regresar()
+        {
+            menu.AbrirFHijo(new FrmPedidos(menu));
+            this.Dispose();
         }
     }
 }
