@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -45,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -117,6 +123,17 @@
     </Compile>
     <Compile Include="FrmAgregarProductoDetalle.Designer.cs">
       <DependentUpon>FrmAgregarProductoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporte.Designer.cs">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteVentas.rpt</DependentUpon>
     </Compile>
     <Compile Include="SALON\FrmDetallePedidos.cs">
       <SubType>Form</SubType>
@@ -200,6 +217,13 @@
     <EmbeddedResource Include="FrmAgregarProductoDetalle.resx">
       <DependentUpon>FrmAgregarProductoDetalle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporte.resx">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteVentas.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +281,9 @@
       <Project>{74fce611-5be1-421b-a8d5-2215f258182f}</Project>
       <Name>LOGICA DE NEGOCIOS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

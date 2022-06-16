@@ -35,5 +35,10 @@ namespace GUI.ADMINISTRACION
         {
             menu.AbrirFHijo(new FrmAddPuesto(menu));
         }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

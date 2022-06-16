@@ -18,8 +18,9 @@ namespace GUI
         private int idCuenta;
         private ClsPedidoLocal_N local;
         private DataTable datos;
-        private const int mesero = 1;
-        private const int cajero = 3;
+        private const int admin = 1;
+        private const int cajero = 2;
+        private const int mesero = 3;
         private int idPedido;
         private string msj;
         public FrmPedidos(FrmMenu menu)
@@ -36,6 +37,18 @@ namespace GUI
             this.idCuenta = menu.IdCuenta;
             switch (idPuesto)
             {
+                case admin:
+                    {
+                        local = new ClsPedidoLocal_N();
+                        datos = local.Read();
+                        dgvListaPedidos.DataSource = datos;
+                        break;
+                    }
+                case cajero:
+                    {
+
+                        break;
+                    }
                 case mesero:
                     {
                         local = new ClsPedidoLocal_N();
@@ -59,26 +72,33 @@ namespace GUI
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta));
+            FrmDetallePedidos pedido = new FrmDetallePedidos(menu, idCuenta);
+            menu.AbrirFHijo(pedido);
+            FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(pedido);
+            a.ShowDialog();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int row = dgvListaPedidos.CurrentRow.Index;
-            idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            msj = local.Delete(idPedido);
-            if (msj.Equals("OK"))
+            DialogResult dialog = MessageBox.Show("¿Seguro que quieres eliminar?", "Advertencia", MessageBoxButtons.OKCancel,MessageBoxIcon.Warning);
+            if (dialog == DialogResult.OK)
             {
-                MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                IniciarDatos();
-            }
-            else if (msj.Equals("NO"))
-            {
-                MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int row = dgvListaPedidos.CurrentRow.Index;
+                idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
+                msj = local.Delete(idPedido);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se elimino con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    IniciarDatos();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se pudo eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -107,7 +127,7 @@ namespace GUI
         {
             int row = dgvListaPedidos.CurrentRow.Index;
             idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            menu.AbrirFHijo(new FrmDetallePedidos(menu, idPedido));
+            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta,idPedido));
         }
     }
 }

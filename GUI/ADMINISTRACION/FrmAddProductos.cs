@@ -69,15 +69,16 @@ namespace GUI
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se dio de alta el producto con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    menu.AbrirFHijo(new FrmProductos(menu));
-                    this.Dispose();
+                    Regresar();
                 }else if (msj.Equals("NO"))
                 {
                     MessageBox.Show("Error al registrar el producto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
                 else
                 {
                     MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
             }
             else
@@ -87,16 +88,17 @@ namespace GUI
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se actualizo el producto", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    menu.AbrirFHijo(new FrmProductos(menu));
-                    this.Dispose();
+                    Regresar();
                 }
                 else if (msj.Equals("NO"))
                 {
                     MessageBox.Show("Error al registrar el producto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
                 else
                 {
                     MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
             }
 
@@ -157,6 +159,11 @@ namespace GUI
             {
                 MessageBox.Show("Ocurrio un error", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        public void Regresar()
+        {
+            menu.AbrirFHijo(new FrmProductos(menu));
+            this.Dispose();
         }
     }
 }

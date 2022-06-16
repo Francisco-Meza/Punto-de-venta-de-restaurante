@@ -36,7 +36,6 @@
             this.BtnPedidosG = new Guna.UI.WinForms.GunaButton();
             this.lblAdministrador = new Guna.UI.WinForms.GunaLabel();
             this.lblCajero = new Guna.UI.WinForms.GunaLabel();
-            this.BtnPerfil = new Guna.UI.WinForms.GunaButton();
             this.BtnPuesto = new Guna.UI.WinForms.GunaButton();
             this.BtnCuentas = new Guna.UI.WinForms.GunaButton();
             this.BtnPedidosLocal = new Guna.UI.WinForms.GunaButton();
@@ -84,7 +83,6 @@
             this.PnlMenu.Controls.Add(this.BtnPedidosG);
             this.PnlMenu.Controls.Add(this.lblAdministrador);
             this.PnlMenu.Controls.Add(this.lblCajero);
-            this.PnlMenu.Controls.Add(this.BtnPerfil);
             this.PnlMenu.Controls.Add(this.BtnPuesto);
             this.PnlMenu.Controls.Add(this.BtnCuentas);
             this.PnlMenu.Controls.Add(this.BtnPedidosLocal);
@@ -147,33 +145,6 @@
             this.lblCajero.TabIndex = 4;
             this.lblCajero.Text = "Cajero";
             this.lblCajero.Visible = false;
-            // 
-            // BtnPerfil
-            // 
-            this.BtnPerfil.AnimationHoverSpeed = 0.07F;
-            this.BtnPerfil.AnimationSpeed = 0.03F;
-            this.BtnPerfil.BaseColor = System.Drawing.Color.Transparent;
-            this.BtnPerfil.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnPerfil.BorderSize = 1;
-            this.BtnPerfil.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnPerfil.Enabled = false;
-            this.BtnPerfil.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnPerfil.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BtnPerfil.ForeColor = System.Drawing.Color.Black;
-            this.BtnPerfil.Image = ((System.Drawing.Image)(resources.GetObject("BtnPerfil.Image")));
-            this.BtnPerfil.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnPerfil.Location = new System.Drawing.Point(0, 351);
-            this.BtnPerfil.Name = "BtnPerfil";
-            this.BtnPerfil.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.BtnPerfil.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnPerfil.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnPerfil.OnHoverImage = null;
-            this.BtnPerfil.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnPerfil.Size = new System.Drawing.Size(193, 42);
-            this.BtnPerfil.TabIndex = 7;
-            this.BtnPerfil.Text = "Perfil";
-            this.BtnPerfil.Visible = false;
-            this.BtnPerfil.Click += new System.EventHandler(this.BtnPerfil_Click);
             // 
             // BtnPuesto
             // 
@@ -458,7 +429,7 @@
             this.IconMaximizar.IconColor = System.Drawing.Color.Black;
             this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMaximizar.IconSize = 40;
-            this.IconMaximizar.Location = new System.Drawing.Point(647, -1);
+            this.IconMaximizar.Location = new System.Drawing.Point(454, -1);
             this.IconMaximizar.Name = "IconMaximizar";
             this.IconMaximizar.Size = new System.Drawing.Size(57, 40);
             this.IconMaximizar.TabIndex = 0;
@@ -474,7 +445,7 @@
             this.IconRestaurar.IconColor = System.Drawing.Color.Black;
             this.IconRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconRestaurar.IconSize = 40;
-            this.IconRestaurar.Location = new System.Drawing.Point(647, -3);
+            this.IconRestaurar.Location = new System.Drawing.Point(454, -3);
             this.IconRestaurar.Name = "IconRestaurar";
             this.IconRestaurar.Size = new System.Drawing.Size(56, 49);
             this.IconRestaurar.TabIndex = 0;
@@ -490,7 +461,7 @@
             this.IconMinimizar.IconColor = System.Drawing.Color.Black;
             this.IconMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMinimizar.IconSize = 40;
-            this.IconMinimizar.Location = new System.Drawing.Point(584, 1);
+            this.IconMinimizar.Location = new System.Drawing.Point(391, 1);
             this.IconMinimizar.Name = "IconMinimizar";
             this.IconMinimizar.Size = new System.Drawing.Size(56, 36);
             this.IconMinimizar.TabIndex = 0;
@@ -506,7 +477,7 @@
             this.IconCerrar.IconColor = System.Drawing.Color.Black;
             this.IconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconCerrar.IconSize = 40;
-            this.IconCerrar.Location = new System.Drawing.Point(701, 3);
+            this.IconCerrar.Location = new System.Drawing.Point(508, 3);
             this.IconCerrar.Name = "IconCerrar";
             this.IconCerrar.Size = new System.Drawing.Size(44, 37);
             this.IconCerrar.TabIndex = 0;
@@ -587,7 +558,6 @@
         private Guna.UI.WinForms.GunaLabel lblAdministrador;
         private Guna.UI.WinForms.GunaLabel lblCajero;
         private Guna.UI.WinForms.GunaButton BtnCuentas;
-        private Guna.UI.WinForms.GunaButton BtnPerfil;
         private Guna.UI.WinForms.GunaButton BtnClasificacion;
         private Guna.UI.WinForms.GunaPanel PnlMenu;
     }

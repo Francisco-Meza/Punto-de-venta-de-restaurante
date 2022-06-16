@@ -33,9 +33,9 @@ namespace LOGICA_DE_NEGOCIOS
             obj.Detalles = detalles;
             return Datos.Create(obj);
         }
-        public string Update(int idCuenta, DataTable detalles)
+        public string Update(int idPedido, DataTable detalles)
         {
-            obj.IdCuenta = idCuenta;
+            obj.IdPedido = idPedido;
             obj.Detalles = detalles;
             return Datos.Update(obj);
         }
@@ -58,6 +58,14 @@ namespace LOGICA_DE_NEGOCIOS
         public DataTable ReadProducto()
         {
             return Datos.ReadProducto();
+        }
+        public DataTable Read(int id)
+        {
+            return Datos.Read(id);
+        }
+        public DataTable Read2(int id)
+        {
+            return Datos.Read2(id);
         }
     }
 }
