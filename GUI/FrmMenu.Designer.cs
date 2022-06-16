@@ -398,8 +398,8 @@
             // PanelBarra
             // 
             this.PanelBarra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(198)))), ((int)(((byte)(83)))));
-            this.PanelBarra.Controls.Add(this.lblNombrePersona);
             this.PanelBarra.Controls.Add(this.IconMaximizar);
+            this.PanelBarra.Controls.Add(this.lblNombrePersona);
             this.PanelBarra.Controls.Add(this.IconRestaurar);
             this.PanelBarra.Controls.Add(this.IconMinimizar);
             this.PanelBarra.Controls.Add(this.IconCerrar);
@@ -429,7 +429,7 @@
             this.IconMaximizar.IconColor = System.Drawing.Color.Black;
             this.IconMaximizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMaximizar.IconSize = 40;
-            this.IconMaximizar.Location = new System.Drawing.Point(454, -1);
+            this.IconMaximizar.Location = new System.Drawing.Point(639, 0);
             this.IconMaximizar.Name = "IconMaximizar";
             this.IconMaximizar.Size = new System.Drawing.Size(57, 40);
             this.IconMaximizar.TabIndex = 0;
@@ -445,7 +445,7 @@
             this.IconRestaurar.IconColor = System.Drawing.Color.Black;
             this.IconRestaurar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconRestaurar.IconSize = 40;
-            this.IconRestaurar.Location = new System.Drawing.Point(454, -3);
+            this.IconRestaurar.Location = new System.Drawing.Point(639, -3);
             this.IconRestaurar.Name = "IconRestaurar";
             this.IconRestaurar.Size = new System.Drawing.Size(56, 49);
             this.IconRestaurar.TabIndex = 0;
@@ -461,9 +461,9 @@
             this.IconMinimizar.IconColor = System.Drawing.Color.Black;
             this.IconMinimizar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconMinimizar.IconSize = 40;
-            this.IconMinimizar.Location = new System.Drawing.Point(391, 1);
+            this.IconMinimizar.Location = new System.Drawing.Point(591, 3);
             this.IconMinimizar.Name = "IconMinimizar";
-            this.IconMinimizar.Size = new System.Drawing.Size(56, 36);
+            this.IconMinimizar.Size = new System.Drawing.Size(55, 27);
             this.IconMinimizar.TabIndex = 0;
             this.IconMinimizar.UseVisualStyleBackColor = true;
             this.IconMinimizar.Click += new System.EventHandler(this.IconMinimizar_Click);
@@ -477,7 +477,7 @@
             this.IconCerrar.IconColor = System.Drawing.Color.Black;
             this.IconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconCerrar.IconSize = 40;
-            this.IconCerrar.Location = new System.Drawing.Point(508, 3);
+            this.IconCerrar.Location = new System.Drawing.Point(701, 2);
             this.IconCerrar.Name = "IconCerrar";
             this.IconCerrar.Size = new System.Drawing.Size(44, 37);
             this.IconCerrar.TabIndex = 0;
