@@ -48,62 +48,35 @@ namespace GUI
                         BtnClasificacion.Visible = true;
                         BtnCuentas.Enabled = true;
                         BtnCuentas.Visible = true;
+
                         lblAdministrador.Enabled = true;
                         lblAdministrador.Visible = true;
-                         /*lblAdministrador.Location = new Point(this.Top);
-                         BtnPersonal.Location = new Point(0, lblAdministrador.Width);
-                         BtnCuentas.Location = new Point(0, BtnPersonal.Width);
-                         BtnPuesto.Location = new Point(0, BtnCuentas.Width);
-                         BtnProductos.Location = new Point(0, BtnPuesto.Width);
-                         BtnClasificacion.Location = new Point(0, BtnProductos.Width);
-                         BtnMesas.Location = new Point(0, BtnClasificacion.Width);
-                         BtnPedidosG.Location = new Point(0, BtnMesas.Width);*/
-                      
-                            
-
-
+                        lblAdministrador.Location = new Point(this.Top);
+                        lblAdministrador.Top = 25;
+                        BtnPuesto.Location = new Point(0, lblAdministrador.Location.Y+lblAdministrador.Height+10);
+                        BtnCuentas.Location = new Point(0, BtnPuesto.Location.Y + BtnPuesto.Height);
+                        BtnProductos.Location = new Point(0, BtnCuentas.Location.Y+BtnCuentas.Height);
+                        BtnClasificacion.Location = new Point(0, BtnProductos.Location.Y+BtnProductos.Height);
+                        BtnMesas.Location = new Point(0, BtnClasificacion.Location.Y+BtnClasificacion.Height);
+                        BtnPedidosG.Location = new Point(0, BtnMesas.Location.Y + BtnMesas.Height);
                         break;
                     }
                 case 2://Para Cajero
                     {
-                      
-                        
-                        //Prube
-                        BtnProductos.Enabled = true;
-                        BtnProductos.Visible = true;
                         BtnPedidosG.Enabled = true;
                         BtnPedidosG.Visible = true;
-                        BtnPuesto.Enabled = true;
-                        BtnPuesto.Visible = true;
-                        BtnMesas.Enabled = true;
-                        BtnMesas.Visible = true;
-                        BtnClasificacion.Enabled = true;
-                        BtnClasificacion.Visible = true;
-                        BtnCuentas.Enabled = true;
-                        BtnCuentas.Visible = true;
-                        lblAdministrador.Enabled = true;
-                        lblAdministrador.Visible = true;
-                        BtnPedidosLocal.Enabled = true;
-                        BtnPedidosLocal.Visible = true;
-                        BtnPerfil.Enabled = true;
-                        BtnPerfil.Visible = true;
                         lblCajero.Enabled = true;
-                        lblCajero.Visible= true;
-                        lblMesero.Enabled = true;
-                        lblMesero.Visible = true;
-                        
-                        
+                        lblCajero.Visible = true;
+                        lblCajero.Location = new Point(this.Top);
+                        BtnPedidosG.Location = new Point(0, lblCajero.Location.Y + lblCajero.Height);
                         break;
                     }
                 case 3://Para Mesero
                     {
                         lblMesero.Location = new Point(0, 0);
                         BtnPedidosLocal.Location = new Point(0,lblMesero.Height);
-                        BtnPerfil.Location = new Point(0, BtnPedidosLocal.Height);
                         BtnPedidosLocal.Enabled = true;
                         BtnPedidosLocal.Visible = true;
-                        BtnPerfil.Enabled = true;
-                        BtnPerfil.Visible = true;
 
                         break;
                     }

@@ -188,8 +188,9 @@ namespace ACCESO_A_DATOS
             {
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_UPDATE_PEDIDOS_LOCALES", sqlCon);
-                cmd.Parameters.Add("@idPedido", SqlDbType.Int).Value = obj.IdCuenta;
-                cmd.Parameters.Add("@detalles", SqlDbType.Structured).Value = obj.Detalles;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@datos", SqlDbType.Structured).Value = obj.Detalles;
+                cmd.Parameters.Add("@idPedido", SqlDbType.Int).Value = obj.IdPedido;  
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }

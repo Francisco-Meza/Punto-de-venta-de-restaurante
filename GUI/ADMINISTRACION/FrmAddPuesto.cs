@@ -30,16 +30,17 @@ namespace GUI.ADMINISTRACION
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    menu.AbrirFHijo(new FrmPuesto(menu));
-                    this.Dispose();
+                    Regresar();
                 }
                 else if (msj.Equals("NO"))
                 {
                     MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
                 else
                 {
                     MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Regresar();
                 }
             }
             else
@@ -87,6 +88,11 @@ namespace GUI.ADMINISTRACION
         {
             TxtNombre.Text = "";
             TxtDescripcion.Text = "";
+        }
+        public void Regresar()
+        {
+            menu.AbrirFHijo(new FrmPuesto(menu));
+            this.Dispose();
         }
     }
 }

@@ -57,21 +57,25 @@ namespace GUI.ADMINISTRACION
 
         private void btnElimiCla_Click(object sender, EventArgs e)
         {
-            int row = dgvClasificacion.CurrentRow.Index;
-            id = Convert.ToInt32(dgvClasificacion.Rows[row].Cells[0].Value);
-            string msj = clasificacion.Delete(id);
-            if (msj.Equals("OK"))
+            DialogResult dialog = MessageBox.Show("¿Seguro que quieres eliminar?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dialog == DialogResult.OK)
             {
-                MessageBox.Show("Se elimino la clasificacion con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                IniciarDatos();
-            }
-            else if (msj.Equals("NO"))
-            {
-                MessageBox.Show("Error al eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                int row = dgvClasificacion.CurrentRow.Index;
+                id = Convert.ToInt32(dgvClasificacion.Rows[row].Cells[0].Value);
+                string msj = clasificacion.Delete(id);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se elimino la clasificacion con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    IniciarDatos();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("Error al eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

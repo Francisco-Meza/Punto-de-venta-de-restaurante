@@ -35,7 +35,7 @@ namespace LOGICA_DE_NEGOCIOS
         }
         public string Update(int idPedido, DataTable detalles)
         {
-            obj.IdCuenta = idPedido;
+            obj.IdPedido = idPedido;
             obj.Detalles = detalles;
             return Datos.Update(obj);
         }
