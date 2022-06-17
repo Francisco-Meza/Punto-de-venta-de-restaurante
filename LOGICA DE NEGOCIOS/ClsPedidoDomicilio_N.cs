@@ -12,6 +12,8 @@ namespace LOGICA_DE_NEGOCIOS
 {
     public class ClsPedidoDomicilio_N
     {
+        ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
+        ClsPedidoDomicilio obj = new ClsPedidoDomicilio();
         public static DataTable Read()
         {
             ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
@@ -22,39 +24,54 @@ namespace LOGICA_DE_NEGOCIOS
             ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
             return Datos.Read(valor);
         }
-        public static string Create(string id, string numeroTelefono, string nombre, string idDomicilio)
+        public  string Create(string idCuenta, string numeroTelefono, string nombre, string calle, string numero, string colonia, string localidad, DataTable detalle)
         {
-            ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
-            ClsPedidoDomicilio obj = new ClsPedidoDomicilio();
-            if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
+            if (Validaciones.SoloNumero(idCuenta)) obj.IdCuenta = int.Parse(idCuenta);
             else return "El ID ingresado no es valido";
             if (Validaciones.SoloNumero(numeroTelefono)) obj.NumeroTelefono = int.Parse(numeroTelefono);
             else return "El numero ingresado no es correcto";
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
+            else return "El nombre de la  persona no tiene un formato correcto, intente no usar caracteres especiales";
+            if (Validaciones.WithForCompareAsciiValue(colonia)) obj.Colonia = nombre;
             else return "El nombre de la colonia no tiene un formato correcto, intente no usar caracteres especiales";
-            if (Validaciones.WithForCompareAsciiValue(idDomicilio)) obj.IdDomicilio = int.Parse(idDomicilio);
-            else return "El ID no es valido";
+            if (Validaciones.WithForCompareAsciiValue(calle)) obj.Calle = calle;
+            else return "El nombre de la calle no tiene un formato correcto, intente no usar caracteres especiales";
+            if (Validaciones.SoloNumero(numero)) obj.Numero = int.Parse(numero);
+            else return "El numero ingresado no es correcto";
+            if (Validaciones.WithForCompareAsciiValue(localidad)) obj.Localidad = localidad;
+            else return "El nombre de la localidad no tiene un formato correcto, intente no usar caracteres especiales";
+            obj.Detalle = detalle;
             return Datos.Create(obj);
         }
-        public static string Update(string id, string numeroTelefono, string nombre, string idDomicilio)
+        public  string Update(string id, string idCuenta, string numeroTelefono, string nombre, string calle, string numero, string colonia, string localidad, DataTable detalle)
         {
-            ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
-            ClsPedidoDomicilio obj = new ClsPedidoDomicilio();
-            if (Validaciones.SoloNumero(id)) obj.Id = int.Parse(id);
+            
+            if (Validaciones.SoloNumero(id)) obj.IdP = int.Parse(id);
+            else return "El ID ingresado no es valido";
+            if (Validaciones.SoloNumero(idCuenta)) obj.IdCuenta = int.Parse(idCuenta);
             else return "El ID ingresado no es valido";
             if (Validaciones.SoloNumero(numeroTelefono)) obj.NumeroTelefono = int.Parse(numeroTelefono);
             else return "El numero ingresado no es correcto";
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
+            else return "El nombre de la persona no tiene un formato correcto, intente no usar caracteres especiales";
+            if (Validaciones.WithForCompareAsciiValue(calle)) obj.Calle = calle;
+            else return "El nombre de la calle no tiene un formato correcto, intente no usar caracteres especiales";
+            if (Validaciones.SoloNumero(numero)) obj.Numero = int.Parse(numero);
+            else return "El numero ingresado no es correcto";
+            if (Validaciones.WithForCompareAsciiValue(colonia)) obj.Colonia = colonia;
             else return "El nombre de la colonia no tiene un formato correcto, intente no usar caracteres especiales";
-            if (Validaciones.WithForCompareAsciiValue(idDomicilio)) obj.IdDomicilio = int.Parse(idDomicilio);
-            else return "El ID no es valido";
+            if (Validaciones.WithForCompareAsciiValue(localidad)) obj.Localidad = localidad;
+            else return "El nombre de la localidad no tiene un formato correcto, intente no usar caracteres especiales";
+            obj.Detalle = detalle;
             return Datos.Update(obj);
         }
-        public static string Delete(string id)
+        /*public string Delete(string id)
         {
-            ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
-            if (Validaciones.SoloNumero(id)) return Datos.Delete(int.Parse(id));
-            else return "El formato del ID es incorrecto";
+           // return Datos.Delete(id);
+        }*/
+        public string Cerrar(int id)
+        {
+           return Datos.Cerrar(id);
         }
 
     }
