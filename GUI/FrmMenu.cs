@@ -73,6 +73,8 @@ namespace GUI
                     }
                 case 3://Para Mesero
                     {
+                        lblMesero.Enabled = true;
+                        lblMesero.Visible = true;
                         lblMesero.Location = new Point(this.Top);
                         BtnPedidosG.Location = new Point(0, lblMesero.Location.Y + lblMesero.Height);
                         BtnPedidosG.Enabled = true;

@@ -46,7 +46,7 @@ namespace GUI
                     }
                 case cajero:
                     {
-
+                        BtnAgregar.Click = 
                         break;
                     }
                 case mesero:

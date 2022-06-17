@@ -22,6 +22,7 @@ namespace GUI
         private DataTable datos, dg;
         private string msj;
         private int idDetalle;
+        private int i;
         public FrmDetallePedidos(FrmMenu menu, int idCuenta)
         {
             InitializeComponent();
@@ -120,7 +121,7 @@ namespace GUI
             cbMesa.DisplayMember = "NOMBRE";
             cbMesa.ValueMember = "ID";
             dg = local.Read(idPedido);
-            dgvProductosPedido.DataSource = datos;
+            dgvProductosPedido.DataSource = dg;
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -133,6 +134,7 @@ namespace GUI
             else
             {
                 idDetalle = dgvProductosPedido.Rows.Count;
+                Console.WriteLine(idDetalle);
                 FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this, idDetalle);
                 a.ShowDialog();
             }
@@ -154,6 +156,22 @@ namespace GUI
             filas2["CANTIDAD"] = cantidad;
             filas2["PRECIO"] = precio;
             datos.Rows.Add(filas2);
+        }
+        public bool Comparar(int idPedido)
+        {
+            for(i = 0; i < dgvProductosPedido.Rows.Count; i++)
+            {
+                if (Convert.ToInt32(datos.Rows[i][1]) == idPedido)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public void añadir(int cantidad)
+        {
+            datos.Rows[i][2] = cantidad;
+            dg.Rows[i][2] = cantidad;
         }
 
         public void Control_KeyDown(object sender, KeyEventArgs e)

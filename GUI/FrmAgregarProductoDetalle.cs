@@ -38,7 +38,7 @@ namespace GUI
             productos = new ClsProducto_N();
             this.obj = obj;
             datos = new DataTable();
-            idDetalle = 0;
+            idDetalle = obj.GetRows();
             IniciarDatos();
             dgvProductos.Columns[0].Visible = false;
         }
@@ -76,14 +76,20 @@ namespace GUI
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            
             int row = dgvProductos.CurrentRow.Index;
-            idDetalle++;
             idProducto = Convert.ToInt32(dgvProductos.Rows[row].Cells[0].Value);
-            nombre = dgvProductos.Rows[row].Cells[1].Value.ToString();
             cantidad = Convert.ToInt32(NumCantidad.Value);
-            precio = Convert.ToInt32(dgvProductos.Rows[row].Cells[4].Value);
-            obj.añadir(idDetalle,idProducto,nombre,cantidad,precio);
+            if (obj.Comparar(idProducto))
+            {
+                idDetalle++;
+                nombre = dgvProductos.Rows[row].Cells[1].Value.ToString();
+                precio = Convert.ToInt32(dgvProductos.Rows[row].Cells[4].Value);
+                obj.añadir(idDetalle, idProducto, nombre, cantidad, precio);
+            }
+            else
+            {
+                obj.añadir(cantidad);
+            }
         }
     }
 }
