@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using GUI.ADMINISTRACION;
+using GUI.REPORTES;
 
 namespace GUI
 {
@@ -26,7 +27,6 @@ namespace GUI
             IniciarDatos();
             this.SetStyle(ControlStyles.ResizeRedraw, true);//Elimina los parpadeos
             this.DoubleBuffered = true;
-            
         }
         
         private void IniciarDatos()//Verifica si que tipo de usuario entro
@@ -59,6 +59,10 @@ namespace GUI
                         BtnClasificacion.Location = new Point(0, BtnProductos.Location.Y+BtnProductos.Height);
                         BtnMesas.Location = new Point(0, BtnClasificacion.Location.Y+BtnClasificacion.Height);
                         BtnPedidosG.Location = new Point(0, BtnMesas.Location.Y + BtnMesas.Height);
+                        btnReportes.Enabled = true;
+                        btnReportes.Visible = true;
+                        btnReportes.Location = new Point(0, BtnPedidosG.Location.Y + btnReportes.Height);
+                        AbrirFHijo(new FrmReportes());
                         break;
                     }
                 case 2://Para Cajero
@@ -69,15 +73,16 @@ namespace GUI
                         lblCajero.Visible = true;
                         lblCajero.Location = new Point(this.Top);
                         BtnPedidosG.Location = new Point(0, lblCajero.Location.Y + lblCajero.Height);
+                        AbrirFHijo(new FrmPedidos(this));
                         break;
                     }
                 case 3://Para Mesero
                     {
-                        lblMesero.Location = new Point(0, 0);
-                        BtnPedidosLocal.Location = new Point(0,lblMesero.Height);
-                        BtnPedidosLocal.Enabled = true;
-                        BtnPedidosLocal.Visible = true;
-
+                        lblMesero.Location = new Point(this.Top);
+                        BtnPedidosG.Location = new Point(0, lblMesero.Location.Y + lblMesero.Height);
+                        BtnPedidosG.Enabled = true;
+                        BtnPedidosG.Visible = true;
+                        AbrirFHijo(new FrmPedidos(this));
                         break;
                     }
                 default:
@@ -182,6 +187,11 @@ namespace GUI
         private void PanelPadre_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            AbrirFHijo(new FrmReportes());
         }
 
         private void BtnMesas_Click(object sender, EventArgs e)

@@ -124,16 +124,34 @@
     <Compile Include="FrmAgregarProductoDetalle.Designer.cs">
       <DependentUpon>FrmAgregarProductoDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmReporte.cs">
+    <Compile Include="REPORTES\FrmReporteMesas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmReporte.Designer.cs">
-      <DependentUpon>FrmReporte.cs</DependentUpon>
+    <Compile Include="REPORTES\FrmReporteMesas.Designer.cs">
+      <DependentUpon>FrmReporteMesas.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReporteVentas.cs">
+    <Compile Include="REPORTES\FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTES\FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTES\FrmReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTES\FrmReporteVentas.Designer.cs">
+      <DependentUpon>FrmReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTES\ReporteVentas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteVentas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTES\ReporteVentasMes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteVentasMes.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SALON\FrmDetallePedidos.cs">
@@ -218,12 +236,22 @@
     <EmbeddedResource Include="FrmAgregarProductoDetalle.resx">
       <DependentUpon>FrmAgregarProductoDetalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmReporte.resx">
-      <DependentUpon>FrmReporte.cs</DependentUpon>
+    <EmbeddedResource Include="REPORTES\FrmReporteMesas.resx">
+      <DependentUpon>FrmReporteMesas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReporteVentas.rpt">
+    <EmbeddedResource Include="REPORTES\FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTES\FrmReporteVentas.resx">
+      <DependentUpon>FrmReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTES\ReporteVentas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteVentas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTES\ReporteVentasMes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteVentasMes.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>

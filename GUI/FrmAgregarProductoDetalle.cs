@@ -45,7 +45,10 @@ namespace GUI
 
         private void FrmAgregarProductoDetalle_FormClosed(object sender, FormClosedEventArgs e)
         {
-            obj.Regresar();
+            if(e.CloseReason == CloseReason.UserClosing)
+            {
+                obj.Regresar();
+            }
         }
 
         public FrmAgregarProductoDetalle(FrmDetallePedidos obj, int idDetalle)
