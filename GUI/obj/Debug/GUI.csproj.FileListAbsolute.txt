@@ -144,7 +144,6 @@ D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.ca
 D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.exe
 D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.pdb
-D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmReporte.resources
 D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\CrystalDecisions.ReportSource.dll
 D:\Proyectos Visual Studio Escuela\GUI\bin\Debug\CrystalDecisions.Shared.dll
@@ -180,3 +179,6 @@ C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\CrystalD
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\stdole.dll
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmReporte.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmReporteMesas.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.REPORTES.FrmReporteVentas.resources
+D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.REPORTES.FrmReportes.resources
