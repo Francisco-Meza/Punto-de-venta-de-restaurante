@@ -1,6 +1,8 @@
-﻿namespace GUI
+﻿using GUI.REPORTES;
+
+namespace GUI
 {
-    partial class FrmReporte
+    partial class FrmReporteMesas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +31,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReporteVentas1 = new GUI.ReporteVentas();
+            this.ReporteVentas1 = new GUI.REPORTES.ReporteVentas();
             this.SuspendLayout();
             // 
             // crystalReportViewer1

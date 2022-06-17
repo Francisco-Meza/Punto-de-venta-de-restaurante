@@ -207,18 +207,19 @@
             this.dgvTiket.AllowUserToDeleteRows = false;
             this.dgvTiket.AllowUserToResizeColumns = false;
             this.dgvTiket.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
             this.dgvTiket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTiket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTiket.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dgvTiket.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTiket.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvTiket.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Empty;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTiket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTiket.ColumnHeadersHeight = 40;
@@ -274,28 +275,24 @@
             this.columnIdDetalle.HeaderText = "No.-";
             this.columnIdDetalle.Name = "columnIdDetalle";
             this.columnIdDetalle.ReadOnly = true;
-            this.columnIdDetalle.Width = 137;
             // 
             // columnNombreProducto
             // 
             this.columnNombreProducto.HeaderText = "Nombre del producto";
             this.columnNombreProducto.Name = "columnNombreProducto";
             this.columnNombreProducto.ReadOnly = true;
-            this.columnNombreProducto.Width = 137;
             // 
             // columnCantidad
             // 
             this.columnCantidad.HeaderText = "Cantidad";
             this.columnCantidad.Name = "columnCantidad";
             this.columnCantidad.ReadOnly = true;
-            this.columnCantidad.Width = 137;
             // 
             // columnPrecio
             // 
             this.columnPrecio.HeaderText = "Precio unitario";
             this.columnPrecio.Name = "columnPrecio";
             this.columnPrecio.ReadOnly = true;
-            this.columnPrecio.Width = 137;
             // 
             // FrmTicket
             // 

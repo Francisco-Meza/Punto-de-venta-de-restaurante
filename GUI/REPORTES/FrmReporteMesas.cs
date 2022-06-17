@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FrmReporte : Form
+    public partial class FrmReporteMesas : Form
     {
-        public FrmReporte()
+        public FrmReporteMesas()
         {
             InitializeComponent();
         }
