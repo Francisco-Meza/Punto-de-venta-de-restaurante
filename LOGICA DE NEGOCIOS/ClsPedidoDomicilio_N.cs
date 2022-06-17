@@ -14,22 +14,18 @@ namespace LOGICA_DE_NEGOCIOS
     {
         ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
         ClsPedidoDomicilio obj = new ClsPedidoDomicilio();
-        public static DataTable Read()
+        public DataTable Read()
         {
-            ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
             return Datos.Read();
         }
-        public static DataTable Read(string valor)
+        public DataTable Read(string valor)
         {
-            ClsPedidoDomicilio_D Datos = new ClsPedidoDomicilio_D();
             return Datos.Read(valor);
         }
-        public  string Create(string idCuenta, string numeroTelefono, string nombre, string calle, string numero, string colonia, string localidad, DataTable detalle)
+        public  string Create(int idCuenta, string numeroTelefono, string nombre, string calle, string numero, string colonia, string localidad, DataTable detalle)
         {
-            if (Validaciones.SoloNumero(idCuenta)) obj.IdCuenta = int.Parse(idCuenta);
-            else return "El ID ingresado no es valido";
-            if (Validaciones.SoloNumero(numeroTelefono)) obj.NumeroTelefono = int.Parse(numeroTelefono);
-            else return "El numero ingresado no es correcto";
+            obj.IdCuenta = idCuenta;
+            obj.NumeroTelefono = numeroTelefono;
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
             else return "El nombre de la  persona no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(colonia)) obj.Colonia = nombre;
@@ -43,15 +39,12 @@ namespace LOGICA_DE_NEGOCIOS
             obj.Detalle = detalle;
             return Datos.Create(obj);
         }
-        public  string Update(string id, string idCuenta, string numeroTelefono, string nombre, string calle, string numero, string colonia, string localidad, DataTable detalle)
+        public  string Update(int idPedido, int idCuenta, string numeroTelefono, string nombre, string calle, string numero, string colonia, string localidad, DataTable detalle)
         {
-            
-            if (Validaciones.SoloNumero(id)) obj.IdP = int.Parse(id);
-            else return "El ID ingresado no es valido";
-            if (Validaciones.SoloNumero(idCuenta)) obj.IdCuenta = int.Parse(idCuenta);
-            else return "El ID ingresado no es valido";
-            if (Validaciones.SoloNumero(numeroTelefono)) obj.NumeroTelefono = int.Parse(numeroTelefono);
-            else return "El numero ingresado no es correcto";
+
+            obj.IdP = idPedido;
+            obj.IdCuenta = idCuenta;
+            obj.NumeroTelefono = numeroTelefono;
             if (Validaciones.WithForCompareAsciiValue(nombre)) obj.Nombre = nombre;
             else return "El nombre de la persona no tiene un formato correcto, intente no usar caracteres especiales";
             if (Validaciones.WithForCompareAsciiValue(calle)) obj.Calle = calle;
@@ -65,10 +58,10 @@ namespace LOGICA_DE_NEGOCIOS
             obj.Detalle = detalle;
             return Datos.Update(obj);
         }
-        /*public string Delete(string id)
+        public string Delete(int id)
         {
-           // return Datos.Delete(id);
-        }*/
+           return Datos.Delete(id);
+        }
         public string Cerrar(int id)
         {
            return Datos.Cerrar(id);

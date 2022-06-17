@@ -13,18 +13,29 @@ namespace GUI
     public partial class FrmPedidosDomicilio : Form
     {
         private readonly FrmMenu padreMenu;
-        public FrmPedidosDomicilio(FrmMenu padreMenu)
+        private int idCuenta;
+        private int idPuesto;
+        private string nombre, telefono, calle, numero, colonia, localidad;
+        public FrmPedidosDomicilio(FrmMenu padreMenu, int idCuenta, int idPuesto)
         {
             this.padreMenu = padreMenu;
+            this.idCuenta = idCuenta;
+            this.idPuesto = idPuesto;
             InitializeComponent();
         }
 
         private void BtnAceptarDomicilio_Click(object sender, EventArgs e)
         {
-            if (TxtNombreCliente.Text != "" && TxtTelefonoCliente.Text != "" && txtCalleCliente.Text !="" 
+            if (TxtNombreCliente.Text != "" && TxtTelefonoCliente.Text != "" && txtCalleCliente.Text != ""
                 && txtNumCasaCliente.Text != "" && txtColoniaCliente.Text != "" && txtLocalidadCliente.Text != "")// al poner datos en los textbox se habre el menu
             {
-                padreMenu.AbrirFHijo(new FrmDetallePedidos(padreMenu,1));
+                nombre = TxtNombreCliente.Text;
+                telefono = TxtTelefonoCliente.Text;
+                calle = txtCalleCliente.Text;
+                numero = txtNumCasaCliente.Text;
+                colonia = txtColoniaCliente.Text;
+                localidad = txtLocalidadCliente.Text;
+                padreMenu.AbrirFHijo(new FrmDetallePedidos(padreMenu,idCuenta, idPuesto,nombre,telefono,calle,numero,colonia,localidad));
             }
             else //si los textbox estan vacios muestra el mensaje
             {

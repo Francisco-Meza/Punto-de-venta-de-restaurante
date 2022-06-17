@@ -201,10 +201,6 @@ namespace GUI
             AbrirFHijo(new FrmMesas(this));
         }
         //Cajero-----------------------------
-        private void BtnPedidoDomi_Click(object sender, EventArgs e)
-        {
-            AbrirFHijo(new FrmPedidosDomicilio(this));
-        }
         private void BtnPedidosG_Click(object sender, EventArgs e)
         {
 

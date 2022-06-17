@@ -478,7 +478,6 @@
             this.BtnPedidoDomi.TabIndex = 1;
             this.BtnPedidoDomi.Text = "Pedidos Domicilio";
             this.BtnPedidoDomi.Visible = false;
-            this.BtnPedidoDomi.Click += new System.EventHandler(this.BtnPedidoDomi_Click);
             // 
             // BtnPedidos
             // 
