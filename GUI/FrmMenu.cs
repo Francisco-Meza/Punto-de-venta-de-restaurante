@@ -78,6 +78,8 @@ namespace GUI
                     }
                 case 3://Para Mesero
                     {
+                        lblMesero.Enabled = true;
+                        lblMesero.Visible = true;
                         lblMesero.Location = new Point(this.Top);
                         BtnPedidosG.Location = new Point(0, lblMesero.Location.Y + lblMesero.Height);
                         BtnPedidosG.Enabled = true;
@@ -199,10 +201,6 @@ namespace GUI
             AbrirFHijo(new FrmMesas(this));
         }
         //Cajero-----------------------------
-        private void BtnPedidoDomi_Click(object sender, EventArgs e)
-        {
-            AbrirFHijo(new FrmPedidosDomicilio(this));
-        }
         private void BtnPedidosG_Click(object sender, EventArgs e)
         {
 

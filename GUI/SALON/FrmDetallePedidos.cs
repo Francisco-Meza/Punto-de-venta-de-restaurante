@@ -14,31 +14,55 @@ namespace GUI
     public partial class FrmDetallePedidos : Form
     {
         private string clasificacion, producto;
-        int cantidad, idPedido, idCuenta, idMesa;
+        int cantidad, idPedido, idCuenta, idMesa, idPuesto;
         private FrmMenu menu;
         private ClsPedidoLocal_N local;
-        private const int mesero = 1;
-        private const int cajero = 3;
+        private ClsPedidoDomicilio_N domicilio;
+        private const int admin = 1;
+        private const int cajero = 2;
+        private const int mesero = 3;
         private DataTable datos, dg;
         private string msj;
         private int idDetalle;
-        public FrmDetallePedidos(FrmMenu menu, int idCuenta)
+        private int i;
+        private string nombre, telefono, calle, numero, colonia, localidad;
+        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPuesto)
         {
             InitializeComponent();
             this.menu = menu;
             idPedido = 0;
             this.idCuenta = idCuenta;
+            this.idPuesto = idPuesto;
             local = new ClsPedidoLocal_N();
             datos = new DataTable();
             dg = new DataTable();
             IniciarCombos();
         }
-        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPedido)
+        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPuesto, string nombre, string telefono, string calle, string numero, string colonia, string localidad)
+        {
+            InitializeComponent();
+            this.menu = menu;
+            idPedido = 0;
+            this.idCuenta = idCuenta;
+            this.idPuesto = idPuesto;
+            this.nombre = nombre;
+            this.telefono = telefono;
+            this.calle = calle;
+            this.numero = numero;
+            this.colonia = colonia;
+            this.localidad = localidad;
+            domicilio = new ClsPedidoDomicilio_N();
+            datos = new DataTable();
+            dg = new DataTable();
+            IniciarDatosDomicilio();
+        }
+        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPedido, int idPuesto)
         {
             InitializeComponent();
             this.menu = menu;
             this.idPedido = idPedido;
             this.idCuenta = idCuenta;
+            this.idPuesto = idPuesto;
             local = new ClsPedidoLocal_N();
             datos = new DataTable();
             dg = new DataTable();
@@ -47,24 +71,46 @@ namespace GUI
 
         private void btnGuardar_Click_1(object sender, EventArgs e)
         {
-            idMesa = Convert.ToInt32(cbMesa.SelectedValue);
             if (idPedido == 0)
             {
-                msj = local.Create(idCuenta, idMesa, datos);
-                if (msj.Equals("OK"))
+                if (idPuesto == mesero || idPuesto == admin)
                 {
-                    MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Regresar();
+                    idMesa = Convert.ToInt32(cbMesa.SelectedValue);
+                    msj = local.Create(idCuenta, idMesa, datos);
+                    if (msj.Equals("OK"))
+                    {
+                        MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Regresar();
+                    }
+                    else if (msj.Equals("NO"))
+                    {
+                        MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Regresar();
+                    }
+                    else
+                    {
+                        MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Regresar();
+                    }
                 }
-                else if (msj.Equals("NO"))
+                else if (idPuesto == cajero)
                 {
-                    MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Regresar();
-                }
-                else
-                {
-                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Regresar();
+                    msj = domicilio.Create(idCuenta, telefono, nombre, calle, numero, colonia, localidad, datos);
+                    if (msj.Equals("OK"))
+                    {
+                        MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Regresar();
+                    }
+                    else if (msj.Equals("NO"))
+                    {
+                        MessageBox.Show("No se pudo registrar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Regresar();
+                    }
+                    else
+                    {
+                        MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Regresar();
+                    }
                 }
             }
             else
@@ -111,6 +157,23 @@ namespace GUI
             datos.Columns.Add("PRECIO");
             dgvProductosPedido.DataSource = dg;
         }
+        private void IniciarDatosDomicilio()
+        {
+            cbMesa.Enabled = false;
+            cbMesa.Visible = false;
+            dg.Columns.Add("NUMERO");
+            dg.Columns.Add("NOMBRE");
+            dg.Columns.Add("CANTIDAD");
+            dg.Columns.Add("PRECIO");
+
+            //
+            datos.Columns.Add("ID_DETALLE");
+            datos.Columns.Add("ID_PRODUCTO");
+            datos.Columns.Add("NOMBRE_PRODUCTO");
+            datos.Columns.Add("CANTIDAD");
+            datos.Columns.Add("PRECIO");
+            dgvProductosPedido.DataSource = dg;
+        }
         private void IniciarCombos(int idPedido)
         {
             datos = local.Read2(idPedido);
@@ -120,7 +183,7 @@ namespace GUI
             cbMesa.DisplayMember = "NOMBRE";
             cbMesa.ValueMember = "ID";
             dg = local.Read(idPedido);
-            dgvProductosPedido.DataSource = datos;
+            dgvProductosPedido.DataSource = dg;
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -133,6 +196,7 @@ namespace GUI
             else
             {
                 idDetalle = dgvProductosPedido.Rows.Count;
+                Console.WriteLine(idDetalle);
                 FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(this, idDetalle);
                 a.ShowDialog();
             }
@@ -154,6 +218,22 @@ namespace GUI
             filas2["CANTIDAD"] = cantidad;
             filas2["PRECIO"] = precio;
             datos.Rows.Add(filas2);
+        }
+        public bool Comparar(int idPedido)
+        {
+            for(i = 0; i < dgvProductosPedido.Rows.Count; i++)
+            {
+                if (Convert.ToInt32(datos.Rows[i][1]) == idPedido)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public void añadir(int cantidad)
+        {
+            datos.Rows[i][2] = cantidad;
+            dg.Rows[i][2] = cantidad;
         }
 
         public void Control_KeyDown(object sender, KeyEventArgs e)

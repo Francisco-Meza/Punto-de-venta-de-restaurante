@@ -17,6 +17,7 @@ namespace GUI
         private int idPuesto;
         private int idCuenta;
         private ClsPedidoLocal_N local;
+        private ClsPedidoDomicilio_N domicilio;
         private DataTable datos;
         private const int admin = 1;
         private const int cajero = 2;
@@ -42,11 +43,17 @@ namespace GUI
                         local = new ClsPedidoLocal_N();
                         datos = local.Read();
                         dgvListaPedidos.DataSource = datos;
+                        btnFinalizar.Enabled = true;
+                        btnFinalizar.Visible = true;
                         break;
                     }
                 case cajero:
                     {
-
+                        domicilio = new ClsPedidoDomicilio_N();
+                        datos = domicilio.Read();
+                        dgvListaPedidos.DataSource = datos;
+                        btnFinalizar.Enabled = true;
+                        btnFinalizar.Visible = true;
                         break;
                     }
                 case mesero:
@@ -54,6 +61,8 @@ namespace GUI
                         local = new ClsPedidoLocal_N();
                         datos = local.Read();
                         dgvListaPedidos.DataSource = datos;
+                        btnFinalizar.Enabled = true;
+                        btnFinalizar.Visible = true;
                         break;
                     }
                 default:
@@ -72,10 +81,18 @@ namespace GUI
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
-            FrmDetallePedidos pedido = new FrmDetallePedidos(menu, idCuenta);
-            menu.AbrirFHijo(pedido);
-            FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(pedido);
-            a.ShowDialog();
+            if (idPuesto == cajero)
+            {
+                FrmPedidosDomicilio pedido = new FrmPedidosDomicilio(menu,idCuenta,idPuesto);
+                menu.AbrirFHijo(pedido);
+            }
+            else
+            {
+                FrmDetallePedidos pedido = new FrmDetallePedidos(menu, idCuenta, idPuesto);
+                menu.AbrirFHijo(pedido);
+                FrmAgregarProductoDetalle a = new FrmAgregarProductoDetalle(pedido);
+                a.ShowDialog();
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -127,7 +144,7 @@ namespace GUI
         {
             int row = dgvListaPedidos.CurrentRow.Index;
             idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta,idPedido));
+            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta,idPedido,idPuesto));
         }
     }
 }

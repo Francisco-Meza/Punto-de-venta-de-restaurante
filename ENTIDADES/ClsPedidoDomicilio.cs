@@ -11,7 +11,7 @@ namespace ENTIDADES
     {
         int _idP;
         int _id;
-        int _numeroTelefono;
+        string _numeroTelefono;
         string _nombrePersona;
         string _calle;
         int _numero;
@@ -19,11 +19,9 @@ namespace ENTIDADES
         string _localidad;
         DataTable _detalle;
 
-       
-
         public int IdCuenta { get => _id; set => _id = value; }
         public int IdP { get => _idP; set => _idP = value; }
-        public int NumeroTelefono { get => _numeroTelefono; set => _numeroTelefono = value; }
+        public string NumeroTelefono { get => _numeroTelefono; set => _numeroTelefono = value; }
         public string Nombre { get => _nombrePersona; set => _nombrePersona = value; }
         public string Calle { get => _calle; set => _calle = value; }
         public int Numero { get => _numero; set => _numero = value; }
