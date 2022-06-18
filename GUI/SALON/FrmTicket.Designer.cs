@@ -39,14 +39,10 @@
             this.btnImprimir = new Guna.UI.WinForms.GunaButton();
             this.btnCerrar = new Guna.UI.WinForms.GunaButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
             this.dgvTiket = new Guna.UI.WinForms.GunaDataGridView();
-            this.columnIdDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnNombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -79,7 +75,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(346, 22);
+            this.lblFecha.Location = new System.Drawing.Point(259, 22);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(59, 21);
             this.lblFecha.TabIndex = 1;
@@ -161,12 +157,13 @@
             this.btnCerrar.TabIndex = 2;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lblTotal);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblSubtotal);
             this.groupBox1.Location = new System.Drawing.Point(507, 298);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(250, 169);
@@ -174,14 +171,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "A pagar";
             // 
-            // label3
+            // lblTotal
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Total";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(52, 117);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(31, 13);
+            this.lblTotal.TabIndex = 2;
+            this.lblTotal.Text = "Total";
             // 
             // label2
             // 
@@ -192,14 +189,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "16% IVA";
             // 
-            // label1
+            // lblSubtotal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Precio subtotal";
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Location = new System.Drawing.Point(17, 43);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(77, 13);
+            this.lblSubtotal.TabIndex = 0;
+            this.lblSubtotal.Text = "Precio subtotal";
             // 
             // dgvTiket
             // 
@@ -207,7 +204,7 @@
             this.dgvTiket.AllowUserToDeleteRows = false;
             this.dgvTiket.AllowUserToResizeColumns = false;
             this.dgvTiket.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvTiket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTiket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTiket.BackgroundColor = System.Drawing.Color.LightCyan;
@@ -215,20 +212,14 @@
             this.dgvTiket.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvTiket.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Empty;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTiket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTiket.ColumnHeadersHeight = 40;
             this.dgvTiket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvTiket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnIdDetalle,
-            this.columnNombreProducto,
-            this.columnCantidad,
-            this.columnPrecio});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -270,30 +261,6 @@
             this.dgvTiket.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.dgvTiket.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // columnIdDetalle
-            // 
-            this.columnIdDetalle.HeaderText = "No.-";
-            this.columnIdDetalle.Name = "columnIdDetalle";
-            this.columnIdDetalle.ReadOnly = true;
-            // 
-            // columnNombreProducto
-            // 
-            this.columnNombreProducto.HeaderText = "Nombre del producto";
-            this.columnNombreProducto.Name = "columnNombreProducto";
-            this.columnNombreProducto.ReadOnly = true;
-            // 
-            // columnCantidad
-            // 
-            this.columnCantidad.HeaderText = "Cantidad";
-            this.columnCantidad.Name = "columnCantidad";
-            this.columnCantidad.ReadOnly = true;
-            // 
-            // columnPrecio
-            // 
-            this.columnPrecio.HeaderText = "Precio unitario";
-            this.columnPrecio.Name = "columnPrecio";
-            this.columnPrecio.ReadOnly = true;
-            // 
             // FrmTicket
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -321,15 +288,11 @@
         private Guna.UI.WinForms.GunaLabel lblPersonal;
         private Guna.UI.WinForms.GunaLabel lblFecha;
         private Guna.UI.WinForms.GunaDataGridView dgvTiket;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnIdDetalle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnNombreProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnPrecio;
         private Guna.UI.WinForms.GunaButton btnImprimir;
         private Guna.UI.WinForms.GunaButton btnCerrar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSubtotal;
     }
 }

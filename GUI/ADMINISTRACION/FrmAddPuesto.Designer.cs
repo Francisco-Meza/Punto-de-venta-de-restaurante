@@ -235,8 +235,7 @@
             // 
             // FrmAddPuesto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(757, 542);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.gunaPanel1);

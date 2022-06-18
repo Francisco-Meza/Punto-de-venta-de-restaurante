@@ -22,6 +22,7 @@ namespace GUI
         private const int admin = 1;
         private const int cajero = 2;
         private const int mesero = 3;
+        private const int cocinero = 4;
         private int idPedido;
         private string msj;
         public FrmPedidos(FrmMenu menu)
@@ -63,6 +64,18 @@ namespace GUI
                         dgvListaPedidos.DataSource = datos;
                         btnFinalizar.Enabled = true;
                         btnFinalizar.Visible = true;
+                        break;
+                    }
+                case cocinero:
+                    {
+                        BtnAgregar.Enabled = false;
+                        BtnAgregar.Visible = false;
+                        btnEliminar.Enabled = false;
+                        btnEliminar.Visible = false;
+                        local = new ClsPedidoLocal_N();
+                        datos = local.Read();
+                        dgvListaPedidos.DataSource = datos;
+                        btnEditar.Text = "Ver";
                         break;
                     }
                 default:
@@ -123,6 +136,8 @@ namespace GUI
         {
             int row = dgvListaPedidos.CurrentRow.Index;
             idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
+            FrmTicket ticket = new FrmTicket(idPedido);
+            ticket.ShowDialog();
             msj = local.Cerrar(idPedido);
             if (msj.Equals("OK"))
             {

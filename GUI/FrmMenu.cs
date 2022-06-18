@@ -17,6 +17,10 @@ namespace GUI
     {
         private int _idCuenta, _idPuesto;
         private string _nombrePuesto, _nombrePersona;
+        private const int admin = 1;
+        private const int cajero = 2;
+        private const int mesero = 3;
+        private const int cocinero = 4;
         public FrmMenu(DataTable datos)
         {
             InitializeComponent();
@@ -34,7 +38,7 @@ namespace GUI
             lblNombrePersona.Text = "Bienvenido "+_nombrePersona;
             switch (_idPuesto)
             {
-                case 1://Para administrador
+                case admin://Para administrador
                     {
                         BtnProductos.Enabled = true;
                         BtnProductos.Visible = true;
@@ -65,7 +69,7 @@ namespace GUI
                         AbrirFHijo(new FrmReportes());
                         break;
                     }
-                case 2://Para Cajero
+                case cajero://Para Cajero
                     {
                         BtnPedidosG.Enabled = true;
                         BtnPedidosG.Visible = true;
@@ -76,7 +80,7 @@ namespace GUI
                         AbrirFHijo(new FrmPedidos(this));
                         break;
                     }
-                case 3://Para Mesero
+                case mesero://Para Mesero
                     {
                         lblMesero.Enabled = true;
                         lblMesero.Visible = true;
@@ -84,6 +88,11 @@ namespace GUI
                         BtnPedidosG.Location = new Point(0, lblMesero.Location.Y + lblMesero.Height);
                         BtnPedidosG.Enabled = true;
                         BtnPedidosG.Visible = true;
+                        AbrirFHijo(new FrmPedidos(this));
+                        break;
+                    }
+                case cocinero:
+                    {
                         AbrirFHijo(new FrmPedidos(this));
                         break;
                     }

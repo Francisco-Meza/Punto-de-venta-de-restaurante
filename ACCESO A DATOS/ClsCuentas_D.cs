@@ -28,8 +28,7 @@ namespace ACCESO_A_DATOS
             }
             catch (Exception e)
             {
-
-                throw;
+                return null;
             }
             finally
             {

@@ -51,6 +51,7 @@
     <Compile Include="ClsPersonal_D.cs" />
     <Compile Include="ClsProducto_D.cs" />
     <Compile Include="ClsPuesto_D.cs" />
+    <Compile Include="ClsTicket_D.cs" />
     <Compile Include="ClsTipoPuesto_D.cs" />
     <Compile Include="Constantes.cs" />
     <Compile Include="Entidades\Clasificacion.cs" />

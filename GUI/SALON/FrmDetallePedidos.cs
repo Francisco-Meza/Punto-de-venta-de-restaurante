@@ -21,6 +21,7 @@ namespace GUI
         private const int admin = 1;
         private const int cajero = 2;
         private const int mesero = 3;
+        private const int cocinero = 4;
         private DataTable datos, dg;
         private string msj;
         private int idDetalle;
@@ -134,6 +135,12 @@ namespace GUI
             }
         }
 
+        private void BtnCerrarHijo_Click(object sender, EventArgs e)
+        {
+            menu.AbrirFHijo(new FrmPedidos(menu));
+            this.Dispose();
+        }
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
@@ -161,6 +168,7 @@ namespace GUI
         {
             cbMesa.Enabled = false;
             cbMesa.Visible = false;
+            label5.Enabled = false;
             dg.Columns.Add("NUMERO");
             dg.Columns.Add("NOMBRE");
             dg.Columns.Add("CANTIDAD");
@@ -177,11 +185,28 @@ namespace GUI
         private void IniciarCombos(int idPedido)
         {
             datos = local.Read2(idPedido);
-            cbMesa.DataSource = local.ReadMesas();
-
-            cbMesa.Enabled = false;
-            cbMesa.DisplayMember = "NOMBRE";
-            cbMesa.ValueMember = "ID";
+            if(idPuesto != cajero)
+            {
+                cbMesa.DataSource = local.ReadMesas();
+                cbMesa.Enabled = false;
+                cbMesa.DisplayMember = "NOMBRE";
+                cbMesa.ValueMember = "ID";
+            }
+            else
+            {
+                label5.Enabled = false;
+                cbMesa.Enabled = false;
+                cbMesa.Visible = false;
+            }
+            if (idPuesto == cocinero)
+            {
+                btnAgregar.Enabled = false;
+                btnAgregar.Visible = false;
+                btnEliminar.Enabled = false;
+                btnEliminar.Visible = false;
+                btnGuardar.Enabled = false;
+                btnGuardar.Visible = false;
+            }
             dg = local.Read(idPedido);
             dgvProductosPedido.DataSource = dg;
         }

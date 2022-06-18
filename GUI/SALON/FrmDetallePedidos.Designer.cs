@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDetallePedidos));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.cbMesa = new Guna.UI.WinForms.GunaComboBox();
@@ -40,6 +40,7 @@
             this.btnGuardar = new Guna.UI.WinForms.GunaButton();
             this.dgvProductosPedido = new Guna.UI.WinForms.GunaDataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnCerrarHijo = new FontAwesome.Sharp.IconButton();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosPedido)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.LightCyan;
+            this.gunaPanel1.Controls.Add(this.BtnCerrarHijo);
             this.gunaPanel1.Controls.Add(this.label5);
             this.gunaPanel1.Controls.Add(this.cbMesa);
             this.gunaPanel1.Controls.Add(this.btnAgregar);
@@ -181,31 +183,31 @@
             this.dgvProductosPedido.AllowUserToDeleteRows = false;
             this.dgvProductosPedido.AllowUserToResizeColumns = false;
             this.dgvProductosPedido.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
-            this.dgvProductosPedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(231)))), ((int)(((byte)(203)))));
+            this.dgvProductosPedido.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvProductosPedido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProductosPedido.BackgroundColor = System.Drawing.Color.White;
             this.dgvProductosPedido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProductosPedido.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvProductosPedido.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProductosPedido.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProductosPedido.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvProductosPedido.ColumnHeadersHeight = 40;
             this.dgvProductosPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProductosPedido.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(239)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(201)))), ((int)(((byte)(138)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProductosPedido.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvProductosPedido.EnableHeadersVisualStyles = false;
             this.dgvProductosPedido.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(231)))), ((int)(((byte)(201)))));
             this.dgvProductosPedido.Location = new System.Drawing.Point(40, 68);
@@ -250,6 +252,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Detalles de pedido";
             // 
+            // BtnCerrarHijo
+            // 
+            this.BtnCerrarHijo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnCerrarHijo.FlatAppearance.BorderSize = 0;
+            this.BtnCerrarHijo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrarHijo.IconChar = FontAwesome.Sharp.IconChar.Reply;
+            this.BtnCerrarHijo.IconColor = System.Drawing.Color.Black;
+            this.BtnCerrarHijo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCerrarHijo.IconSize = 40;
+            this.BtnCerrarHijo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnCerrarHijo.Location = new System.Drawing.Point(686, 10);
+            this.BtnCerrarHijo.Name = "BtnCerrarHijo";
+            this.BtnCerrarHijo.Size = new System.Drawing.Size(46, 39);
+            this.BtnCerrarHijo.TabIndex = 13;
+            this.BtnCerrarHijo.UseVisualStyleBackColor = true;
+            this.BtnCerrarHijo.Click += new System.EventHandler(this.BtnCerrarHijo_Click);
+            // 
             // FrmDetallePedidos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -275,5 +294,6 @@
         private Guna.UI.WinForms.GunaButton btnAgregar;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaComboBox cbMesa;
+        private FontAwesome.Sharp.IconButton BtnCerrarHijo;
     }
 }

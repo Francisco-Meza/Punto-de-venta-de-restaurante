@@ -178,7 +178,6 @@ C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\CrystalD
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\bin\Debug\stdole.dll
-C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmReporte.resources
 D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.FrmReporteMesas.resources
 D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.REPORTES.FrmReporteVentas.resources
 D:\Proyectos Visual Studio Escuela\GUI\obj\Debug\GUI.REPORTES.FrmReportes.resources
@@ -238,3 +237,6 @@ D:\PROYECTO - RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.pdb
 D:\PROYECTO - RESTAURANTE\GUI\bin\Debug\ACCESO A DATOS.dll.config
 D:\PROYECTO - RESTAURANTE\GUI\bin\Debug\ENTIDADES.pdb
 D:\PROYECTO - RESTAURANTE\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.FrmReporteMesas.resources
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.REPORTES.FrmReportes.resources
+C:\Users\balaz\Source\Repos\Punto-de-venta-de-restaurante\GUI\obj\Debug\GUI.REPORTES.FrmReporteVentas.resources
