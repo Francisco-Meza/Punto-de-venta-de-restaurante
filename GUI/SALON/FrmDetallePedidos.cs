@@ -27,6 +27,7 @@ namespace GUI
         private int idDetalle;
         private int i;
         private string nombre, telefono, calle, numero, colonia, localidad;
+        private bool estado;
         public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPuesto)
         {
             InitializeComponent();
@@ -57,13 +58,14 @@ namespace GUI
             dg = new DataTable();
             IniciarDatosDomicilio();
         }
-        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPedido, int idPuesto)
+        public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPedido, int idPuesto, bool estado)
         {
             InitializeComponent();
             this.menu = menu;
             this.idPedido = idPedido;
             this.idCuenta = idCuenta;
             this.idPuesto = idPuesto;
+            this.estado = estado;
             local = new ClsPedidoLocal_N();
             datos = new DataTable();
             dg = new DataTable();
@@ -209,6 +211,16 @@ namespace GUI
             }
             dg = local.Read(idPedido);
             dgvProductosPedido.DataSource = dg;
+            if (!estado)
+            {
+                btnAgregar.Enabled = false;
+                btnAgregar.Visible = false;
+                btnEliminar.Enabled = false;
+                btnEliminar.Visible = false;
+                btnGuardar.Enabled = false;
+                btnGuardar.Visible = false;
+                MessageBox.Show("Este pedido se encuentra terminado, solo podra ver la informacion","ADVERTENCIA",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)

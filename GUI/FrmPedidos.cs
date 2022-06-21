@@ -135,31 +135,40 @@ namespace GUI
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
             int row = dgvListaPedidos.CurrentRow.Index;
-            idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            FrmTicket ticket = new FrmTicket(idPedido);
-            ticket.ShowDialog();
-            msj = local.Cerrar(idPedido);
-            if (msj.Equals("OK"))
+            bool estado = (dgvListaPedidos.Rows[row].Cells[3].Value.ToString().Equals("ACTIVO"));
+            if (estado)
             {
-                MessageBox.Show("Se finalizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                menu.AbrirFHijo(new FrmPedidos(menu));
-                this.Dispose();
-            }
-            else if (msj.Equals("NO"))
-            {
-                MessageBox.Show("No se finalizar eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
+                FrmTicket ticket = new FrmTicket(idPedido);
+                ticket.ShowDialog();
+                msj = local.Cerrar(idPedido);
+                if (msj.Equals("OK"))
+                {
+                    MessageBox.Show("Se finalizo con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    menu.AbrirFHijo(new FrmPedidos(menu));
+                    this.Dispose();
+                }
+                else if (msj.Equals("NO"))
+                {
+                    MessageBox.Show("No se finalizar eliminar", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show(msj, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Este pedido se encuentra terminado", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             int row = dgvListaPedidos.CurrentRow.Index;
+            bool estado = (dgvListaPedidos.Rows[row].Cells[3].Value.ToString().Equals("ACTIVO"));
             idPedido = Convert.ToInt32(dgvListaPedidos.Rows[row].Cells[0].Value);
-            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta,idPedido,idPuesto));
+            menu.AbrirFHijo(new FrmDetallePedidos(menu, idCuenta,idPedido,idPuesto,estado));
         }
     }
 }
