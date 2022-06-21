@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ACCESO A DATOS"
   ],
-  "SelectedNode": "\\PUNTO_DE_VENTA_RESTAURANTE.sln",
+  "SelectedNode": "\\ACCESO A DATOS\\ClsTicket_D.cs",
   "PreviewInSolutionExplorer": false
 }
