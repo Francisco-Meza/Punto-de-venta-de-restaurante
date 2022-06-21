@@ -19,7 +19,7 @@ namespace ACCESO_A_DATOS
         private ClsConexion()
         {
             this._base = "Restaurante";
-            this._servidor = Constantes.francisco;
+            this._servidor = Constantes.francisco2;
             this._usuario = "Master";
             this._clave = "MAFRAD2";
             this._seguridad = true;
