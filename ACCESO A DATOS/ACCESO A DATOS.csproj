@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsChef_D.cs" />
     <Compile Include="ClsClasificacion_D.cs" />
     <Compile Include="ClsConexion.cs" />
     <Compile Include="ClsCuentas_D.cs" />

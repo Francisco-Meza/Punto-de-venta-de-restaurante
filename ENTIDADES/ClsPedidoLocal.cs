@@ -9,7 +9,7 @@ namespace ENTIDADES
 {
     public class ClsPedidoLocal
     {
-
+        string _nota;
         DateTime _fecha;
         string _estado;
 
@@ -21,6 +21,7 @@ namespace ENTIDADES
 
         public DateTime Fecha { get => _fecha; set => _fecha = value; }
         public string Estado { get => _estado; set => _estado = value; }
+        public string Nota { get => _nota; set => _nota = value; }
 
         //llave foranea 
         public int IdCuenta { get => _idCuenta; set => _idCuenta = value; }
