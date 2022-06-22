@@ -11,7 +11,7 @@ namespace ACCESO_A_DATOS
 {
     public class ClsChef_D
     {
-        public DataTable Read()
+        public DataTable Read(int id)
         {
             SqlDataReader resultado;
             DataTable tabla = new DataTable();
@@ -21,6 +21,7 @@ namespace ACCESO_A_DATOS
                 sqlCon = ClsConexion.GetInstancia().CreateConnection();
                 SqlCommand cmd = new SqlCommand("SP_READ_NOTAS", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = id;
                 sqlCon.Open();
                 resultado = cmd.ExecuteReader();
                 tabla.Load(resultado);
@@ -38,33 +39,32 @@ namespace ACCESO_A_DATOS
                 }
             }
         }
-    }
-   /* public string Update(ClsPedidoLocal obj)
-    {
-        string msj = "";
-        SqlConnection sqlCon = new SqlConnection();
-        try
+        public string Update(int id, string estado)
         {
-            sqlCon = ClsConexion.GetInstancia().CreateConnection();
-            SqlCommand cmd = new SqlCommand("SP_UPDATE_NOTAS", sqlCon);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@idPedido", SqlDbType.Int).Value = obj.IdPedido;
-            cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = obj.Nombre;
-            cmd.Parameters.Add("@notas", SqlDbType.VarChar).Value = obj.Nota;
-            sqlCon.Open();
-            msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el pedido a domicilio";
-        }
-        catch (Exception e)
-        {
-            msj = e.Message;
-        }
-        finally
-        {
-            if (sqlCon.State == ConnectionState.Open)
+            string msj = "";
+            SqlConnection sqlCon = new SqlConnection();
+            try
             {
-                sqlCon.Close();
+                sqlCon = ClsConexion.GetInstancia().CreateConnection();
+                SqlCommand cmd = new SqlCommand("SP_UPDATE_NOTAS", sqlCon);
+                cmd.Parameters.Add("@id", SqlDbType.VarChar).Value = id;
+                cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = estado;
+                sqlCon.Open();
+                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "No se pudo actualizar el pedido ";
             }
+            catch (Exception e)
+            {
+                msj = e.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+            return msj;
         }
-        return msj;
-    }*/
+    }
+    
 }
