@@ -26,17 +26,33 @@ namespace LOGICA_DE_NEGOCIOS
         {
             return Datos.Read(valor);
         }
-        public string Create(int idCuenta, int idMesa, DataTable detalles)
+        public string Create(int idCuenta, int idMesa, DataTable detalles, string nota)
         {
             obj.IdCuenta = idCuenta;
             obj.IdMesa = idMesa;
             obj.Detalles = detalles;
+            if (nota != string.Empty)
+            {
+                obj.Nota = nota;
+            }
+            else
+            {
+                obj.Nota = null;
+            }
             return Datos.Create(obj);
         }
-        public string Update(int idPedido, DataTable detalles)
+        public string Update(int idPedido, DataTable detalles, string nota)
         {
             obj.IdPedido = idPedido;
             obj.Detalles = detalles;
+            if (nota != string.Empty)
+            {
+                obj.Nota = nota;
+            }
+            else
+            {
+                obj.Nota = null;
+            }
             return Datos.Update(obj);
         }
         public string Delete(int id)

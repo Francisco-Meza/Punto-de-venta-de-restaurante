@@ -191,6 +191,12 @@
       <DependentUpon>ReporteVentasMes.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SALON\FrmAgregarNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALON\FrmAgregarNota.Designer.cs">
+      <DependentUpon>FrmAgregarNota.cs</DependentUpon>
+    </Compile>
     <Compile Include="SALON\FrmDetallePedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +241,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SALON\FrmLeerNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALON\FrmLeerNota.Designer.cs">
+      <DependentUpon>FrmLeerNota.cs</DependentUpon>
+    </Compile>
     <Compile Include="SALON\PedidosChef.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +308,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteVentasMes.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SALON\FrmAgregarNota.resx">
+      <DependentUpon>FrmAgregarNota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmDetallePedidos.resx">
       <DependentUpon>FrmDetallePedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -317,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMINISTRACION\FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALON\FrmLeerNota.resx">
+      <DependentUpon>FrmLeerNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SALON\FrmTicket.resx">
       <DependentUpon>FrmTicket.cs</DependentUpon>

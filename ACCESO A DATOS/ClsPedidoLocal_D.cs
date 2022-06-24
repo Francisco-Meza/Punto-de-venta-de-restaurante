@@ -164,6 +164,14 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@idCuenta", SqlDbType.Int).Value = obj.IdCuenta;
                 cmd.Parameters.Add("@idMesa", SqlDbType.Int).Value = obj.IdMesa;
                 cmd.Parameters.Add("@detalles", SqlDbType.Structured).Value = obj.Detalles;
+                if(obj.Nota == null)
+                {
+                    cmd.Parameters.Add("@nota", SqlDbType.VarChar).Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.Add("@nota", SqlDbType.VarChar).Value = obj.Nota;
+                }
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
@@ -190,7 +198,15 @@ namespace ACCESO_A_DATOS
                 SqlCommand cmd = new SqlCommand("SP_UPDATE_PEDIDOS_LOCALES", sqlCon);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@datos", SqlDbType.Structured).Value = obj.Detalles;
-                cmd.Parameters.Add("@idPedido", SqlDbType.Int).Value = obj.IdPedido;  
+                cmd.Parameters.Add("@idPedido", SqlDbType.Int).Value = obj.IdPedido;
+                if (obj.Nota == null)
+                {
+                    cmd.Parameters.Add("@nota", SqlDbType.VarChar).Value = DBNull.Value;
+                }
+                else
+                {
+                    cmd.Parameters.Add("@nota", SqlDbType.VarChar).Value = obj.Nota;
+                }
                 sqlCon.Open();
                 msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }

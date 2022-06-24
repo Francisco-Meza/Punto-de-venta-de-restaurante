@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using GUI.ADMINISTRACION;
 using GUI.REPORTES;
+using GUI.SALON;
 
 namespace GUI
 {
@@ -93,7 +94,7 @@ namespace GUI
                     }
                 case cocinero:
                     {
-                        AbrirFHijo(new FrmPedidos(this));
+                        AbrirFHijo(new PedidosChef(this));
                         break;
                     }
                 default:

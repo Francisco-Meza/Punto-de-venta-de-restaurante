@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LOGICA_DE_NEGOCIOS;
+using GUI.SALON;
 
 namespace GUI
 {
@@ -28,6 +29,10 @@ namespace GUI
         private int i;
         private string nombre, telefono, calle, numero, colonia, localidad;
         private bool estado;
+        private string nota;
+
+        public string Nota { get => nota; set => nota = value; }
+
         public FrmDetallePedidos(FrmMenu menu, int idCuenta, int idPuesto)
         {
             InitializeComponent();
@@ -79,7 +84,7 @@ namespace GUI
                 if (idPuesto == mesero || idPuesto == admin)
                 {
                     idMesa = Convert.ToInt32(cbMesa.SelectedValue);
-                    msj = local.Create(idCuenta, idMesa, datos);
+                    msj = local.Create(idCuenta, idMesa, datos,Nota);
                     if (msj.Equals("OK"))
                     {
                         MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -118,7 +123,7 @@ namespace GUI
             }
             else
             {
-                msj = local.Update(idPedido, datos);
+                msj = local.Update(idPedido, datos,Nota);
                 if (msj.Equals("OK"))
                 {
                     MessageBox.Show("Se registro con exito", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -141,6 +146,12 @@ namespace GUI
         {
             menu.AbrirFHijo(new FrmPedidos(menu));
             this.Dispose();
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            FrmAgregarNota a = new FrmAgregarNota(this);
+            a.ShowDialog();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

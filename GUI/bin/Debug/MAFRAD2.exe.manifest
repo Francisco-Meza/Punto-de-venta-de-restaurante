@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ACCESO A DATOS.dll" size="29184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ACCESO A DATOS.dll" size="30208">
       <assemblyIdentity name="ACCESO A DATOS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ul0rWPW7csT9gNg5gV8b1vhovLFNL6uso74wgKmsFWk=</dsig:DigestValue>
+        <dsig:DigestValue>sERqzX2j2tCtyrV3jbDYVZWPDh1/Zv6n1CrM0YHrcoA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -283,26 +283,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LOGICA DE NEGOCIOS.dll" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LOGICA DE NEGOCIOS.dll" size="22016">
       <assemblyIdentity name="LOGICA DE NEGOCIOS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wNFABlZM8tNL+MU2GESKNHFgNme1MQ8pfwRt3JPI17Y=</dsig:DigestValue>
+        <dsig:DigestValue>SitAsWauaCalEgwvGxzLyL/DmLZGflT2M9T29F58+0U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MAFRAD2.exe" size="490520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MAFRAD2.exe" size="492568">
       <assemblyIdentity name="MAFRAD2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hN1PtjlWKsixl2xa7YY6JLij5l8bdfomQe3Cp3yZLSU=</dsig:DigestValue>
+        <dsig:DigestValue>yS1Bz7b9GicoY3HsRH/qcHmehLPzkwLq0MOZ/Ua1qcI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
