@@ -305,7 +305,37 @@ namespace GUI.SALON
         private void Actualizar()
         {
             datos.IniciarDatos();
-            IniciarDatos();
+            pedidosID = datos.Pedidos;
+            atendio = datos.Atendio;
+            nota = datos.Nota;
+            for (int i = 0; i < 4; i++)
+            {
+                if (i < pedidosID.Length)
+                {
+                    source = datos.Read(pedidosID[i]);
+                    lblPedido[i].Text = "Atendio: " + atendio[i].ToString();
+                    //Atendio
+                    lblAtendio[i].Text = "Número de pedido: " + pedidosID[i].ToString();
+                    //Notas
+                    if (nota[i] != string.Empty)
+                    {
+                        btnNota[i].Name = i.ToString();
+                        btnNota[i].Click += LeerNota;
+                    }
+                    //DataGridView
+                    dg[i].DataSource = source;
+                    panel[i].Visible = true;
+                    panel[i].Enabled = true;
+                }
+                else
+                {
+                    panel[i].Visible = false;
+                    panel[i].Enabled = false;
+                }
+            }
+
+            /*datos.IniciarDatos();
+            IniciarDatos();*/
         }
 
         private void btncargar_Click(object sender, EventArgs e)

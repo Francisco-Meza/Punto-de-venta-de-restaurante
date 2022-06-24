@@ -79,7 +79,7 @@ namespace ACCESO_A_DATOS
                 cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 cmd.Parameters.Add("@estado", SqlDbType.VarChar).Value = estado;
                 sqlCon.Open();
-                msj = (cmd.ExecuteNonQuery() == 1) ? "OK" : "NO";
+                msj = (cmd.ExecuteNonQuery() >= 1) ? "OK" : "NO";
             }
             catch (Exception e)
             {
